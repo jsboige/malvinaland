@@ -1,0 +1,500 @@
+/* Styles pour le Monde du Damier */
+
+/* Variables de couleurs inspirées du panneau solaire */
+:root {
+    --bleu-solaire: #1a5f9e;
+    --bleu-fonce: #0a3b6d;
+    --bleu-clair: #4d8bc9;
+    --noir-panneau: #121212;
+    --gris-metallique: #7a8899;
+    --gris-clair: #d1d8e0;
+    --blanc-lumiere: #f8f9fa;
+    --accent-soleil: #ffd700;
+}
+
+/* Styles de base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--gris-clair);
+    color: var(--noir-panneau);
+    line-height: 1.6;
+}
+
+/* En-tête */
+.monde-header {
+    background: linear-gradient(to right, var(--bleu-fonce), var(--bleu-solaire));
+    color: var(--blanc-lumiere);
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-style: italic;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.monde-nav {
+    margin-top: 1.5rem;
+}
+
+.monde-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.monde-nav li {
+    margin: 0 1rem;
+}
+
+.monde-nav a {
+    color: var(--blanc-lumiere);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.monde-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-soleil);
+    transition: width 0.3s;
+}
+
+.monde-nav a:hover {
+    color: var(--accent-soleil);
+}
+
+.monde-nav a:hover::after {
+    width: 100%;
+}
+
+/* Sections principales */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    margin-bottom: 4rem;
+    background-color: var(--blanc-lumiere);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: var(--bleu-solaire);
+    border-bottom: 2px solid var(--gris-metallique);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+/* Section Description */
+.description-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.description-text {
+    flex: 1 1 500px;
+}
+
+.description-images {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.description-images figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.description-images img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+    display: block;
+}
+
+.description-images img:hover {
+    transform: scale(1.03);
+}
+
+.description-images figcaption {
+    background-color: var(--bleu-fonce);
+    color: var(--blanc-lumiere);
+    padding: 0.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Section Ambiance */
+.ambiance-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.ambiance-text {
+    flex: 1 1 500px;
+}
+
+.ambiance-visual {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.damier-representation {
+    width: 100%;
+    aspect-ratio: 48/20;
+    background-color: var(--noir-panneau);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.damier-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(48, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    gap: 1px;
+}
+
+/* Section Histoire */
+.histoire-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.histoire-text {
+    flex: 1 1 600px;
+}
+
+.histoire-text blockquote {
+    background-color: rgba(26, 95, 158, 0.1);
+    border-left: 4px solid var(--bleu-solaire);
+    margin: 0;
+    padding: 1rem 1.5rem;
+    font-style: italic;
+    position: relative;
+}
+
+.histoire-text blockquote::before {
+    content: '"';
+    font-size: 4rem;
+    position: absolute;
+    left: 0.5rem;
+    top: -1rem;
+    color: var(--bleu-solaire);
+    opacity: 0.2;
+}
+
+.histoire-image {
+    flex: 1 1 300px;
+}
+
+.histoire-image figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.histoire-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.histoire-image figcaption {
+    background-color: var(--bleu-fonce);
+    color: var(--blanc-lumiere);
+    padding: 0.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Section Énigmes */
+.enigme-card {
+    background-color: var(--gris-clair);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.enigme-card h3 {
+    color: var(--bleu-fonce);
+    margin-top: 0;
+    border-bottom: 1px solid var(--gris-metallique);
+    padding-bottom: 0.5rem;
+}
+
+.enigme-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.enigme-description {
+    flex: 1 1 400px;
+}
+
+.enigme-visuel {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mecanisme-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.mecanisme-list li {
+    background-color: var(--gris-metallique);
+    color: var(--blanc-lumiere);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+
+.mecanisme-list li.active {
+    background-color: var(--bleu-solaire);
+    opacity: 1;
+}
+
+.enigme-indice {
+    background-color: rgba(255, 215, 0, 0.1);
+    border-left: 4px solid var(--accent-soleil);
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+.enigme-indice h4 {
+    margin-top: 0;
+    color: var(--bleu-fonce);
+}
+
+/* Grilles des énigmes */
+.bataille-navale-container, .echiquier-container {
+    width: 100%;
+    aspect-ratio: 48/20;
+    background-color: var(--noir-panneau);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bataille-navale-grid, .echiquier-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.bataille-navale-grid {
+    grid-template-columns: repeat(48, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    gap: 1px;
+}
+
+.echiquier-grid {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 1px;
+}
+
+/* Section Personnages */
+.personnage-card {
+    background-color: var(--gris-clair);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.personnage-card h3 {
+    color: var(--bleu-fonce);
+    margin-top: 0;
+    border-bottom: 1px solid var(--gris-metallique);
+    padding-bottom: 0.5rem;
+}
+
+.personnage-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.personnage-portrait {
+    flex: 0 0 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.portrait-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: var(--bleu-solaire);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanc-lumiere);
+    font-size: 4rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.personnage-dialogues {
+    flex: 1 1 500px;
+}
+
+.dialogue {
+    margin-bottom: 1.5rem;
+}
+
+.dialogue h4 {
+    color: var(--bleu-solaire);
+    margin-bottom: 0.5rem;
+}
+
+.dialogue blockquote {
+    background-color: rgba(26, 95, 158, 0.1);
+    border-left: 4px solid var(--bleu-solaire);
+    margin: 0;
+    padding: 1rem 1.5rem;
+    font-style: italic;
+}
+
+/* Pied de page */
+.monde-footer {
+    background: linear-gradient(to right, var(--bleu-fonce), var(--bleu-solaire));
+    color: var(--blanc-lumiere);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.navigation-mondes h3 {
+    margin-top: 0;
+}
+
+.mondes-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.mondes-list a {
+    color: var(--blanc-lumiere);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.mondes-list a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.footer-credits {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .monde-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .monde-nav li {
+        margin: 0.5rem 0;
+    }
+    
+    .description-content,
+    .ambiance-content,
+    .histoire-content,
+    .enigme-content,
+    .personnage-content {
+        flex-direction: column;
+    }
+    
+    .personnage-portrait {
+        margin: 0 auto;
+    }
+    
+    .portrait-placeholder {
+        width: 120px;
+        height: 120px;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .monde-header {
+        padding: 1rem 0.5rem;
+    }
+    
+    .header-content h1 {
+        font-size: 2rem;
+    }
+    
+    section {
+        padding: 1.5rem 1rem;
+    }
+    
+    .enigme-card,
+    .personnage-card {
+        padding: 1rem;
+    }
+}

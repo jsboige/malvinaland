@@ -1,0 +1,281 @@
+/* Styles pour le monde des jeux */
+
+/* Variables de couleurs */
+:root {
+    --primary-color: #4a86e8; /* Bleu ciel pour représenter le monde des jeux */
+    --secondary-color: #ff9900; /* Orange pour les accents */
+    --background-color: #f9f7f2; /* Beige clair pour le fond */
+    --text-color: #333333; /* Gris foncé pour le texte */
+    --accent-color-1: #6aa84f; /* Vert pour les éléments naturels */
+    --accent-color-2: #9fc5e8; /* Bleu clair pour les éléments aériens */
+    --accent-color-3: #f6b26b; /* Orange clair pour les éléments chaleureux */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Styles de base */
+body {
+    font-family: 'Quicksand', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Navigation */
+nav {
+    margin-top: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Contenu principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Sections */
+.section-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px var(--shadow-color);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.section-card:hover {
+    transform: translateY(-5px);
+}
+
+.section-card h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color-2);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.section-card h3 {
+    color: var(--secondary-color);
+    margin-top: 1.5rem;
+}
+
+/* Placeholders pour les images */
+.image-placeholder {
+    background-color: var(--accent-color-2);
+    height: 200px;
+    border-radius: 8px;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.placeholder-text {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+/* Citations */
+blockquote {
+    background-color: rgba(154, 205, 50, 0.1);
+    border-left: 4px solid var(--accent-color-1);
+    padding: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Listes */
+ul {
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Énigmes */
+.enigme {
+    background-color: rgba(74, 134, 232, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.enigme h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.enigme-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.enigme-objectif, .enigme-mecanisme {
+    flex: 1;
+    min-width: 250px;
+}
+
+.enigme-objectif h4, .enigme-mecanisme h4, .enigme-materiel h4, .enigme-enonce h4, .enigme-solution h4 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.enigme-mecanisme ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.checked {
+    color: var(--accent-color-1);
+    font-weight: bold;
+}
+
+.unchecked {
+    color: #999;
+}
+
+/* PNJ */
+.pnj {
+    margin-bottom: 2rem;
+}
+
+.pnj h3 {
+    color: var(--secondary-color);
+    border-bottom: 1px dashed var(--accent-color-3);
+    padding-bottom: 0.5rem;
+}
+
+.tirade {
+    margin-bottom: 1rem;
+}
+
+.tirade h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Pied de page */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Styles responsifs */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .enigme-details {
+        flex-direction: column;
+    }
+    
+    .section-card {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+    
+    .section-card h2 {
+        font-size: 1.3rem;
+    }
+    
+    .section-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .image-placeholder {
+        height: 150px;
+    }
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes swing {
+    0%, 100% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+}
+
+.trampoline-animation:hover {
+    animation: bounce 1s infinite;
+}
+
+.balancoire-animation:hover {
+    animation: swing 2s infinite;
+}
+
+/* Styles spécifiques pour les éléments interactifs */
+.interactive-element {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.interactive-element:hover {
+    filter: brightness(1.1);
+    transform: scale(1.05);
+}

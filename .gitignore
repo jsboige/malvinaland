@@ -1,0 +1,19 @@
+# Exclure temporairement les images pour le premier push
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+
+# Exclure les archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Exclure les fichiers système
+.DS_Store
+Thumbs.db
