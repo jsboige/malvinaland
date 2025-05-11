@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le monde Elysée</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue dans le monde Elysée</h1>
+        <p class="description">Le Monde Elysée est le seul monde situé à l'extérieur du domaine clôturé de Malvinhaland. C'est un monde d'accueil constitué de l'espace à l'entrée de la propriété et de deux caravanes résidentielles: "l'Elysée" et "le Bedouin".</p>
+    </header>
+
+    <main>
+        <section class="presentation">
+            <h2>Découvrez le monde diplomatique</h2>
+            <div class="image-gallery">
+                <figure>
+                    <img src="20250509_163300.jpg" alt="Caravane Elysée" class="gallery-image">
+                    <figcaption>L'Elysée - Une caravane au style pittoresque et aristocratique</figcaption>
+                </figure>
+                <figure>
+                    <img src="20250509_163358.jpg" alt="Caravane Bedouin" class="gallery-image">
+                    <figcaption>Le Bedouin - Une caravane moderne aux touches ethniques colorées</figcaption>
+                </figure>
+            </div>
+            <p>Ces deux caravanes, nommées respectivement "l'Elysée" et "le Bedouin", présentent des caractéristiques distinctes qui leur confèrent une personnalité unique et raffinée. Elles sont le seuil entre le monde ordinaire et l'univers enchanté de Malvinhaland.</p>
+        </section>
+
+        <section class="epreuves" id="epreuves">
+            <h2>Épreuves diplomatiques</h2>
+            <p class="intro-epreuves">Pour progresser dans votre voyage à travers Malvinhaland, vous devrez résoudre ces énigmes diplomatiques laissées par Éloi de Hauteville et Samir Al-Fayoumi.</p>
+            
+            <div class="epreuve" id="traite-secret">
+                <h3>Épreuve 1: Le Traité Secret</h3>
+                <div class="epreuve-content">
+                    <div class="epreuve-image">
+                        <img src="20250509_163149.jpg" alt="Tas de bois codé" class="epreuve-img">
+                    </div>
+                    <div class="epreuve-description">
+                        <p>Les diplomates ont toujours su cacher leurs messages les plus importants à la vue de tous. Éloi de Hauteville, l'éminent diplomate, codait ses messages confidentiels dans les éléments les plus ordinaires.</p>
+                        <p>Observez attentivement le tas de bois à l'entrée de la propriété. Cherchez près de l'arbre sentinelle un indice qui vous guidera vers un code dissimulé à la vue de tous, comme un traité secret caché dans les clauses apparentes d'un accord public.</p>
+                        <div class="indices-container">
+                            <button class="indice-btn" data-indice="1">Indice 1</button>
+                            <button class="indice-btn" data-indice="2">Indice 2</button>
+                            <button class="solution-btn" data-solution="traite-secret">Solution</button>
+                            <div class="indice indice-1 hidden">
+                                <p>Dans le monde de la diplomatie, les ressources les plus précieuses sont souvent celles que l'on stocke pour les temps de crise. Observez comment elles sont organisées, car rien n'est laissé au hasard dans l'arrangement d'un protocole international.</p>
+                            </div>
+                            <div class="indice indice-2 hidden">
+                                <p>Les couleurs et les positions ont une signification précise, comme les sceaux sur un document officiel. Cherchez des marques colorées sur certaines bûches et reportez-les sur un schéma.</p>
+                            </div>
+                            <div class="solution solution-traite-secret hidden">
+                                <p>Les bûches marquées forment un motif qui, lorsqu'il est observé depuis la chaise près de l'arbre, révèle le chiffre "1842" (code du coffre-fort). En connectant les marques de même couleur dans l'ordre alphabétique des rangées (A→E), les lignes ainsi formées dessinent les chiffres.</p>
+                                <p>Ce code permet d'ouvrir le coffre-fort dans l'Elysée qui contient un fragment d'un traité international secret avec le mot "PASSAGE".</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="epreuve" id="correspondance-codee">
+                <h3>Épreuve 2: La Correspondance Codée</h3>
+                <div class="epreuve-content">
+                    <div class="epreuve-image">
+                        <img src="20250509_163417.jpg" alt="Bibliothèque du Bedouin" class="epreuve-img">
+                    </div>
+                    <div class="epreuve-description">
+                        <p>Samir Al-Fayoumi, l'érudit polyglotte et conseiller des grands de ce monde, croyait que les langues sont les véritables instruments de la diplomatie, des ponts entre les nations comme entre les mondes.</p>
+                        <p>Utilisez le guide de conversation russe et d'autres livres diplomatiques de la bibliothèque du Bedouin pour traduire un message multilingue complexe qui révèle l'emplacement d'un sceau diplomatique ancien caché dans la structure même de la caravane.</p>
+                        <div class="indices-container">
+                            <button class="indice-btn" data-indice="3">Indice 1</button>
+                            <button class="indice-btn" data-indice="4">Indice 2</button>
+                            <button class="solution-btn" data-solution="correspondance-codee">Solution</button>
+                            <div class="indice indice-3 hidden">
+                                <p>Les ambassades anciennes étaient des lieux d'échange non seulement de marchandises, mais aussi de connaissances codifiées. Cherchez les points de connexion entre les différentes langues diplomatiques.</p>
+                            </div>
+                            <div class="indice indice-4 hidden">
+                                <p>Examinez attentivement les coussins de la banquette. Leurs motifs ne sont pas de simples décorations, mais des alphabets oubliés utilisés par les chancelleries anciennes.</p>
+                            </div>
+                            <div class="solution solution-correspondance-codee hidden">
+                                <p>Les fragments du message sont cachés sous le coussin rouge ("Celui qui cherche le passage doit d'abord trouver le"), derrière la photo encadrée ("порог между мирами" - seuil entre les mondes), et dans la boîte à thé ("والمفتاح في الأرض" - et la clé est dans le sol).</p>
+                                <p>Le message complet révèle l'emplacement d'un compartiment secret sous la banquette du Bedouin, contenant un sceau diplomatique avec le mot "SEUIL" gravé au dos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="epreuve" id="miroir-alliances">
+                <h3>Épreuve 3: Le Miroir des Alliances</h3>
+                <div class="epreuve-content">
+                    <div class="epreuve-image">
+                        <img src="20250509_163507.jpg" alt="Miroir ovale" class="epreuve-img">
+                    </div>
+                    <div class="epreuve-description">
+                        <p>Entre reflet et réalité se cache la vérité des alliances de Malvinhaland. Les diplomates ont toujours su que la lumière est la clé qui révèle les intentions cachées.</p>
+                        <p>Utilisez le miroir ovale au cadre doré dans l'Elysée pour révéler un message diplomatique invisible à l'œil nu, puis combinez ce message avec des éléments trouvés dans les deux caravanes pour créer un dispositif optique complexe.</p>
+                        <div class="indices-container">
+                            <button class="indice-btn" data-indice="5">Indice 1</button>
+                            <button class="indice-btn" data-indice="6">Indice 2</button>
+                            <button class="solution-btn" data-solution="miroir-alliances">Solution</button>
+                            <div class="indice indice-5 hidden">
+                                <p>Certaines vérités ne se révèlent que sous l'effet de la chaleur d'une négociation ou d'une lumière particulière projetée sur un traité.</p>
+                            </div>
+                            <div class="indice indice-6 hidden">
+                                <p>Les ambassades étaient toujours orientées selon les points cardinaux lors des rencontres importantes. Observez comment la lumière traverse les espaces à différents moments de la journée.</p>
+                            </div>
+                            <div class="solution solution-miroir-alliances hidden">
+                                <p>Un message écrit avec de l'encre thermosensible sur le mur près du miroir devient visible lorsqu'on le chauffe légèrement. Il indique: "La lumière révèle ce que l'ombre dissimule. Cherchez la source cachée à 16h42, heure de la signature du Grand Traité."</p>
+                                <p>En assemblant le dispositif optique (lentille, prisme, filtre coloré, cadre métallique et plaque gravée) et en le positionnant correctement à l'heure indiquée, une projection révèle une carte des alliances avec le mot "DUALITÉ" au centre.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Le Monde Elysée - Porte d'entrée vers Malvinhaland</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
