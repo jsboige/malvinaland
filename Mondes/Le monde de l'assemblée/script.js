@@ -4,55 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Bienvenue dans le monde de l\'assemblée!');
     
     // Initialisation des fonctionnalités
-    initNavigation();
+    // La navigation est maintenant gérée par Core/navigation.js
     initReadMoreButtons();
     initImageGallery();
     initFireEffect();
     initAmbientSounds();
 });
-
-/**
- * Initialise la navigation principale
- */
-function initNavigation() {
-    const mainNavigation = document.getElementById('main-navigation');
-    
-    if (mainNavigation) {
-        // Liste des mondes disponibles
-        const mondes = [
-            { id: 'assemblee', name: '🔥 Monde de l\'Assemblée', url: '../Le monde de l\'assemblée/index.html' },
-            { id: 'grange', name: '🌍 Monde de la Grange', url: '../Le monde de la grange/index.html' },
-            { id: 'reves', name: '🌙 Monde des Rêves', url: '../Le monde des rêves/index.html' },
-            { id: 'damier', name: '🌍 Monde du Damier', url: '../Le monde du damier/index.html' },
-            { id: 'linge', name: '🌍 Monde du Linge', url: '../Le monde du linge/index.html' },
-            { id: 'verger', name: '🌍 Monde du Verger', url: '../Le monde du verger/index.html' },
-            { id: 'zob', name: '🌍 Monde du Zob', url: '../Le monde du Zob/index.html' },
-            { id: 'elysee', name: '🌍 Monde Elysée', url: '../Le monde Elysée/index.html' },
-            { id: 'karibu', name: '🌍 Monde Karibu', url: '../Le monde Karibu/index.html' },
-            { id: 'sphinx', name: '🌍 Monde Orange des Sphinx', url: '../Le monde orange des Sphinx/index.html' }
-        ];
-        
-        // Création des liens de navigation
-        mondes.forEach(monde => {
-            if (monde.id !== 'assemblee') { // Ne pas inclure le monde actuel
-                const li = document.createElement('li');
-                const a = document.createElement('a');
-                a.href = monde.url;
-                a.textContent = monde.name;
-                li.appendChild(a);
-                mainNavigation.appendChild(li);
-            }
-        });
-        
-        // Ajout d'un lien vers l'accueil
-        const homeLi = document.createElement('li');
-        const homeLink = document.createElement('a');
-        homeLink.href = '../../index.html';
-        homeLink.textContent = '🏠 Accueil';
-        homeLi.appendChild(homeLink);
-        mainNavigation.appendChild(homeLi);
-    }
-}
 
 /**
  * Initialise les boutons "Lire la suite" pour les documents historiques

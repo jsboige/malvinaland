@@ -1,204 +1,220 @@
 /**
- * Système de navigation pour Les Mondes de Malvinha
- * Ce fichier gère la navigation entre les différents mondes
+ * Navigation commune pour tous les mondes de Malvinha
+ * Ce fichier utilise la configuration centralisée des mondes pour générer la navigation
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Système de navigation des Mondes de Malvinha chargé');
-    
-    // Initialisation du système de navigation
-    initNavigation();
+    console.log('Initialisation de la navigation commune...');
+    initCommonNavigation();
 });
 
 /**
- * Initialise le système de navigation
+ * Initialise la navigation commune à tous les mondes
  */
-function initNavigation() {
-    // Liste des mondes disponibles
-    const mondes = [
-        {
-            id: 'assemblee',
-            nom: 'Le Monde de l\'Assemblée',
-            couleur: '#e74c3c',
-            description: 'Un lieu mystique avec deux cercles d\'assemblée qui semblent suspendus hors du temps.',
-            path: 'Mondes/Le monde de l\'assemblée/index.html'
-        },
-        {
-            id: 'grange',
-            nom: 'Le Monde de la Grange',
-            couleur: '#2ecc71',
-            description: 'Un bâtiment longitudinal avec quatre façades distinctes et un espace végétalisé.',
-            path: 'Mondes/Le monde de la grange/index.html'
-        },
-        {
-            id: 'jeux',
-            nom: 'Le Monde des Jeux',
-            couleur: '#3498db',
-            description: 'Le Royaume de l\'Enfance Éternelle, avec un grand trampoline octogonal au centre.',
-            path: 'Mondes/Le monde des jeux/index.html'
-        },
-        {
-            id: 'reves',
-            nom: 'Le Monde des Rêves',
-            couleur: '#9b59b6',
-            description: 'Un point de convergence mystique entre les différents mondes de Malvinhaland.',
-            path: 'Mondes/Le monde des rêves/index.html'
-        },
-        {
-            id: 'damier',
-            nom: 'Le Monde du Damier',
-            couleur: '#4d8bc9',
-            description: 'Un lieu dominé par un imposant panneau solaire photovoltaïque formant un damier de 48×20 cellules.',
-            path: 'Mondes/Le monde du damier/index.html'
-        },
-        {
-            id: 'linge',
-            nom: 'Le Monde du Linge',
-            couleur: '#f1c40f',
-            description: 'Un jardin enchanteur avec une longue corde à linge bleue tendue entre deux arbres.',
-            path: 'Mondes/Le monde du linge/index.html'
-        },
-        {
-            id: 'zob',
-            nom: 'Le Monde du Zob',
-            couleur: '#e67e22',
-            description: 'Une yourte distinctive entourée d\'une végétation luxuriante.',
-            path: 'Mondes/Le monde du Zob/index.html'
-        },
-        {
-            id: 'elysee',
-            nom: 'Le Monde Elysée',
-            couleur: '#95a5a6',
-            description: 'L\'espace d\'accueil avec deux caravanes résidentielles, "l\'Elysée" et "le Bedouin".',
-            path: 'Mondes/Le monde Elysée/index.html'
-        },
-        {
-            id: 'karibu',
-            nom: 'Le Monde Karibu',
-            couleur: '#d35400',
-            description: 'Une cuisine d\'été rustique au cœur du domaine de Malvinha.',
-            path: 'Mondes/Le monde Karibu/index.html'
-        },
-        {
-            id: 'sphinx',
-            nom: 'Le Monde Orange des Sphinx',
-            couleur: '#f39c12',
-            description: 'Un monde mystérieux gardé par des sphinx.',
-            path: 'Mondes/Le monde orange des Sphinx/index.html'
-        }
-    ];
+function initCommonNavigation() {
+    // Récupérer l'élément de navigation
+    const mainNavigation = document.getElementById('main-navigation');
     
-    // Génération du menu de navigation
-    generateNavigationMenu(mondes);
-    
-    // Mise en évidence du monde actuel
-    highlightCurrentWorld(mondes);
-    
-    // Gestion des événements de navigation
-    setupNavigationEvents();
-}
-
-/**
- * Génère le menu de navigation à partir de la liste des mondes
- */
-function generateNavigationMenu(mondes) {
-    const navContainer = document.querySelector('.navigation-mondes');
-    if (!navContainer) return;
-    
-    const navList = navContainer.querySelector('ul') || document.createElement('ul');
-    navList.className = 'mondes-list';
-    
-    // Vider la liste existante
-    navList.innerHTML = '';
-    
-    // Ajouter chaque monde à la liste
-    mondes.forEach(monde => {
-        const listItem = document.createElement('li');
-        const link = document.createElement('a');
-        
-        link.href = `../../${monde.path}`;
-        link.textContent = monde.nom;
-        link.dataset.mondeId = monde.id;
-        link.style.borderLeft = `4px solid ${monde.couleur}`;
-        
-        listItem.appendChild(link);
-        navList.appendChild(listItem);
-    });
-    
-    // Ajouter la liste au conteneur si elle n'y est pas déjà
-    if (!navContainer.querySelector('ul')) {
-        navContainer.appendChild(navList);
+    if (!mainNavigation) {
+        console.error('Élément de navigation non trouvé');
+        return;
     }
-}
-
-/**
- * Met en évidence le monde actuel dans le menu de navigation
- */
-function highlightCurrentWorld(mondes) {
+    
+    // Déterminer le monde actuel à partir de l'URL
     const currentPath = window.location.pathname;
+    const currentMonde = getCurrentMonde(currentPath);
     
-    // Trouver le monde correspondant au chemin actuel
-    const currentMonde = mondes.find(monde => {
-        const mondePath = monde.path.replace(/\\/g, '/');
-        return currentPath.includes(mondePath);
-    });
+    // Charger la configuration des mondes
+    let mondesConfig = [];
     
-    if (currentMonde) {
-        const currentLink = document.querySelector(`.mondes-list a[data-monde-id="${currentMonde.id}"]`);
-        if (currentLink) {
-            currentLink.classList.add('active-monde');
-            currentLink.style.backgroundColor = currentMonde.couleur;
-            currentLink.style.color = '#ffffff';
-        }
-    }
-}
-
-/**
- * Configure les événements pour la navigation
- */
-function setupNavigationEvents() {
-    const navLinks = document.querySelectorAll('.mondes-list a');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('mouseenter', () => {
-            const mondeId = link.dataset.mondeId;
-            showMondePreview(mondeId);
-        });
+    // Vérifier si la configuration est déjà disponible (via script séparé)
+    if (typeof MONDES_CONFIG !== 'undefined') {
+        mondesConfig = MONDES_CONFIG;
+        generateNavigation(mainNavigation, mondesConfig, currentMonde);
+    } else {
+        // Sinon, charger la configuration dynamiquement
+        const configPath = getRelativePath(currentPath, 'Core/mondes-config.js');
         
-        link.addEventListener('mouseleave', () => {
-            hideMondePreview();
-        });
-    });
-}
-
-/**
- * Affiche un aperçu du monde au survol
- */
-function showMondePreview(mondeId) {
-    // Implémentation future : afficher une info-bulle ou une prévisualisation du monde
-    console.log(`Aperçu du monde : ${mondeId}`);
-}
-
-/**
- * Cache l'aperçu du monde
- */
-function hideMondePreview() {
-    // Implémentation future : cacher l'info-bulle ou la prévisualisation
-}
-
-/**
- * Fonction utilitaire pour naviguer vers un monde spécifique
- */
-function navigateToWorld(mondeId) {
-    const mondes = document.querySelectorAll('.mondes-list a');
-    const targetMonde = Array.from(mondes).find(monde => monde.dataset.mondeId === mondeId);
-    
-    if (targetMonde) {
-        window.location.href = targetMonde.href;
+        // Créer et charger le script
+        const script = document.createElement('script');
+        script.src = configPath;
+        script.onload = () => {
+            generateNavigation(mainNavigation, MONDES_CONFIG, currentMonde);
+        };
+        script.onerror = () => {
+            console.error('Erreur lors du chargement de la configuration des mondes');
+            // Fallback à une navigation minimale
+            generateFallbackNavigation(mainNavigation);
+        };
+        
+        document.head.appendChild(script);
     }
 }
 
-// Exposer les fonctions de navigation globalement
-window.MalvinhaNavigation = {
-    navigateToWorld
-};
+/**
+ * Génère la navigation à partir de la configuration des mondes
+ */
+function generateNavigation(navigationElement, mondesConfig, currentMonde) {
+    // Vider la navigation existante
+    navigationElement.innerHTML = '';
+    
+    // Ajouter les liens vers les mondes
+    mondesConfig.forEach(monde => {
+        // Ne pas inclure le monde actuel dans la navigation
+        if (monde.id !== currentMonde) {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            
+            // Déterminer le chemin relatif vers le monde
+            const relativePath = getRelativePathToMonde(currentMonde, monde.id);
+            
+            a.href = relativePath;
+            a.textContent = monde.name;
+            a.title = monde.description || '';
+            
+            // Ajouter une classe pour le style spécifique au monde
+            a.classList.add(`monde-${monde.id}`);
+            
+            li.appendChild(a);
+            navigationElement.appendChild(li);
+        }
+    });
+    
+    // Ajouter un lien vers l'accueil
+    const homeLi = document.createElement('li');
+    const homeLink = document.createElement('a');
+    
+    // Déterminer le chemin relatif vers l'accueil
+    const homeRelativePath = getRelativePathToHome(currentMonde);
+    
+    homeLink.href = homeRelativePath;
+    homeLink.textContent = '🏠 Accueil';
+    homeLink.classList.add('home-link');
+    
+    homeLi.appendChild(homeLink);
+    navigationElement.appendChild(homeLi);
+    
+    // Ajouter un lien vers la carte
+    const mapLi = document.createElement('li');
+    const mapLink = document.createElement('a');
+    
+    // Déterminer le chemin relatif vers la carte
+    const mapRelativePath = getRelativePathToMap(currentMonde);
+    
+    mapLink.href = mapRelativePath;
+    mapLink.textContent = '🗺️ Carte';
+    mapLink.classList.add('map-link');
+    
+    mapLi.appendChild(mapLink);
+    navigationElement.appendChild(mapLi);
+}
+
+/**
+ * Génère une navigation de secours minimale en cas d'erreur
+ */
+function generateFallbackNavigation(navigationElement) {
+    navigationElement.innerHTML = `
+        <li><a href="../../index.html">🏠 Accueil</a></li>
+        <li><a href="../../Mondes/Carte de Malvinaland stylisée.png">🗺️ Carte</a></li>
+    `;
+}
+
+/**
+ * Détermine l'ID du monde actuel à partir du chemin
+ */
+function getCurrentMonde(path) {
+    // Extraire le nom du monde à partir du chemin
+    const matches = path.match(/Le monde (de l['a]|du|des)\s*([^\/]+)/i);
+    
+    if (matches && matches[2]) {
+        const mondeName = matches[2].toLowerCase().trim();
+        
+        // Correspondance entre les noms de dossiers et les IDs
+        const nameToId = {
+            'assemblée': 'assemblee',
+            'grange': 'grange',
+            'jeux': 'jeux',
+            'rêves': 'reves',
+            'damier': 'damier',
+            'linge': 'linge',
+            'verger': 'verger',
+            'zob': 'zob',
+            'elysée': 'elysee',
+            'karibu': 'karibu',
+            'orange des sphinx': 'sphinx'
+        };
+        
+        return nameToId[mondeName] || null;
+    }
+    
+    return null;
+}
+
+/**
+ * Calcule le chemin relatif entre le monde actuel et un autre monde
+ */
+function getRelativePathToMonde(currentMonde, targetMonde) {
+    if (!currentMonde) {
+        // Si on ne peut pas déterminer le monde actuel, utiliser un chemin absolu
+        return `Mondes/Le monde ${getMondeFullName(targetMonde)}/index.html`;
+    }
+    
+    // Si on est dans un monde, le chemin vers un autre monde est toujours "../Le monde X/index.html"
+    return `../Le monde ${getMondeFullName(targetMonde)}/index.html`;
+}
+
+/**
+ * Obtient le nom complet du monde à partir de son ID
+ */
+function getMondeFullName(mondeId) {
+    const mondeNames = {
+        'assemblee': 'de l\'assemblée',
+        'grange': 'de la grange',
+        'jeux': 'des jeux',
+        'reves': 'des rêves',
+        'damier': 'du damier',
+        'linge': 'du linge',
+        'verger': 'du verger',
+        'zob': 'du Zob',
+        'elysee': 'Elysée',
+        'karibu': 'Karibu',
+        'sphinx': 'orange des Sphinx'
+    };
+    
+    return mondeNames[mondeId] || mondeId;
+}
+
+/**
+ * Calcule le chemin relatif vers l'accueil depuis le monde actuel
+ */
+function getRelativePathToHome(currentMonde) {
+    if (!currentMonde) {
+        return 'index.html';
+    }
+    
+    return '../../index.html';
+}
+
+/**
+ * Calcule le chemin relatif vers la carte depuis le monde actuel
+ */
+function getRelativePathToMap(currentMonde) {
+    if (!currentMonde) {
+        return 'Mondes/Carte de Malvinaland stylisée.png';
+    }
+    
+    return '../Carte de Malvinaland stylisée.png';
+}
+
+/**
+ * Calcule le chemin relatif entre le chemin actuel et une cible
+ */
+function getRelativePath(currentPath, targetPath) {
+    // Simplification : si on est dans un monde, on remonte de deux niveaux
+    if (currentPath.includes('/Mondes/Le monde')) {
+        return '../../' + targetPath;
+    }
+    
+    // Si on est à la racine
+    return targetPath;
+}
