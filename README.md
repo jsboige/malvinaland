@@ -1,6 +1,8 @@
-# Les mondes de Malvinha - Procédure de déploiement
+# 🌍 Malvinaland - Jeu de Piste Immersif
 
-Ce document explique la procédure de déploiement du projet "Les mondes de Malvinha" selon la nouvelle arborescence qui sépare le site web déployable (léger) des ressources volumineuses (photos haute résolution).
+Bienvenue dans le dépôt du jeu de piste immersif "Malvinaland", conçu pour la maison de campagne à Sabres. Cette aventure narrative et ludique propose un parcours d'énigmes à travers le jardin, les bâtiments et les espaces décorés de la propriété.
+
+Ce document explique également la procédure de déploiement du projet selon la nouvelle arborescence qui sépare le site web déployable (léger) des ressources volumineuses (photos haute résolution).
 
 ## Structure du projet
 
