@@ -1,220 +1,345 @@
 /**
- * Navigation commune pour tous les mondes de Malvinha
- * Ce fichier utilise la configuration centralisée des mondes pour générer la navigation
+ * Script de navigation pour Les mondes de Malvinha
+ *
+ * Ce script gère la navigation desktop et mobile du site, avec un menu hamburger
+ * pour les appareils mobiles et une navigation horizontale pour les écrans plus larges.
+ *
+ * Fonctionnalités principales :
+ * - Menu hamburger responsive pour les appareils mobiles
+ * - Animations fluides pour l'ouverture/fermeture du menu
+ * - Support tactile optimisé pour les appareils mobiles
+ * - Navigation fluide avec défilement doux vers les sections
+ * - Mise en évidence automatique de la section active lors du défilement
+ * - Accessibilité améliorée avec attributs ARIA et support clavier
+ * - Optimisations de performance pour éviter les problèmes de jank visuel
  */
 
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('Initialisation de la navigation commune...');
-    initCommonNavigation();
-});
-
-/**
- * Initialise la navigation commune à tous les mondes
- */
-function initCommonNavigation() {
-    // Récupérer l'élément de navigation
-    const mainNavigation = document.getElementById('main-navigation');
+document.addEventListener('DOMContentLoaded', function() {
+    // Éléments du DOM
+    const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+    const body = document.body;
     
-    if (!mainNavigation) {
-        console.error('Élément de navigation non trouvé');
-        return;
+    // Créer un overlay pour fermer le menu en cliquant à l'extérieur
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+    body.appendChild(overlay);
+    
+    /**
+     * Fonction pour ouvrir/fermer le menu mobile avec animation
+     * Cette fonction gère l'état du menu, les attributs d'accessibilité,
+     * et les animations d'entrée/sortie des éléments du menu
+     */
+    function toggleMobileNav() {
+        // Basculer les classes active pour le bouton, le menu et l'overlay
+        mobileNavToggle.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+        overlay.classList.toggle('active');
+        
+        // Mettre à jour les attributs ARIA pour l'accessibilité
+        const isExpanded = mobileNav.classList.contains('active');
+        mobileNavToggle.setAttribute('aria-expanded', isExpanded);
+        mobileNav.setAttribute('aria-hidden', !isExpanded);
+        
+        // Gestion du défilement de la page
+        if (mobileNav.classList.contains('active')) {
+            // Empêcher le défilement du body quand le menu est ouvert
+            body.style.overflow = 'hidden';
+            
+            // Animation séquentielle des éléments du menu
+            const menuItems = mobileNav.querySelectorAll('li');
+            menuItems.forEach((item, index) => {
+                // Stocker l'index pour l'animation séquentielle via CSS
+                item.style.setProperty('--item-index', index);
+                
+                // Réinitialiser l'animation pour permettre de la rejouer
+                item.style.opacity = '0';
+                item.style.transform = 'translateX(20px)';
+                
+                // Forcer un reflow pour que l'animation se déclenche
+                // Cette technique est nécessaire pour réinitialiser l'animation
+                void item.offsetWidth;
+                
+                // Appliquer l'animation avec un délai progressif
+                // Chaque élément apparaît 50ms après le précédent
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateX(0)';
+                }, 50 * index);
+            });
+        } else {
+            // Restaurer le défilement après l'animation de fermeture
+            setTimeout(() => {
+                body.style.overflow = '';
+            }, 300); // Délai correspondant à la durée de l'animation
+        }
     }
     
-    // Déterminer le monde actuel à partir de l'URL
-    const currentPath = window.location.pathname;
-    const currentMonde = getCurrentMonde(currentPath);
+    // Événement pour le bouton hamburger avec gestion tactile améliorée
+    mobileNavToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        toggleMobileNav();
+    });
     
-    // Charger la configuration des mondes
-    let mondesConfig = [];
+    // Support tactile amélioré
+    mobileNavToggle.addEventListener('touchend', function(e) {
+        e.preventDefault();
+        toggleMobileNav();
+    });
     
-    // Vérifier si la configuration est déjà disponible (via script séparé)
-    if (typeof MONDES_CONFIG !== 'undefined') {
-        mondesConfig = MONDES_CONFIG;
-        generateNavigation(mainNavigation, mondesConfig, currentMonde);
-    } else {
-        // Sinon, charger la configuration dynamiquement
-        const configPath = getRelativePath(currentPath, 'Core/mondes-config.js');
+    // Fermer le menu en cliquant sur l'overlay
+    overlay.addEventListener('click', toggleMobileNav);
+    overlay.addEventListener('touchend', function(e) {
+        e.preventDefault();
+        toggleMobileNav();
+    });
+    
+    // Fermer le menu en cliquant sur un lien avec animation
+    const mobileNavLinks = mobileNav.querySelectorAll('a');
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Vérifier si c'est un lien d'ancrage (commence par #) ou un lien externe
+            const href = this.getAttribute('href');
+            const isAnchorLink = href && href.startsWith('#');
+            
+            if (isAnchorLink) {
+                e.preventDefault();
+                
+                // Ajouter un effet de clic
+                this.classList.add('link-clicked');
+                
+                // Petit délai pour l'animation
+                setTimeout(() => {
+                    toggleMobileNav();
+                    
+                    // Délai pour permettre la fermeture du menu avant le défilement
+                    setTimeout(() => {
+                        this.classList.remove('link-clicked');
+                        const targetId = href.substring(1);
+                        const targetElement = document.getElementById(targetId);
+                        
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }
+                    }, 300);
+                }, 150);
+            } else {
+                // Pour les liens externes, fermer simplement le menu et laisser le comportement par défaut
+                toggleMobileNav();
+            }
+        });
         
-        // Créer et charger le script
-        const script = document.createElement('script');
-        script.src = configPath;
-        script.onload = () => {
-            generateNavigation(mainNavigation, MONDES_CONFIG, currentMonde);
-        };
-        script.onerror = () => {
-            console.error('Erreur lors du chargement de la configuration des mondes');
-            // Fallback à une navigation minimale
-            generateFallbackNavigation(mainNavigation);
-        };
+        // Support tactile amélioré
+        link.addEventListener('touchend', function(e) {
+            e.preventDefault();
+            this.click();
+        });
+    });
+    
+    // Navigation fluide pour les liens desktop avec effet visuel
+    const desktopNavLinks = document.getElementById('desktop-nav').querySelectorAll('a');
+    desktopNavLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Vérifier si c'est un lien d'ancrage (commence par #) ou un lien externe
+            const href = this.getAttribute('href');
+            const isAnchorLink = href && href.startsWith('#');
+            
+            if (isAnchorLink) {
+                e.preventDefault();
+                
+                // Supprimer la classe active de tous les liens
+                desktopNavLinks.forEach(l => l.classList.remove('active'));
+                
+                // Ajouter la classe active au lien cliqué
+                this.classList.add('active');
+                
+                // Effet de clic
+                this.classList.add('link-clicked');
+                
+                const targetId = href.substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    // Ajouter une classe pour l'animation de transition
+                    targetElement.classList.add('page-transition');
+                    
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Retirer la classe d'animation après la transition
+                    setTimeout(() => {
+                        this.classList.remove('link-clicked');
+                        targetElement.classList.remove('page-transition');
+                    }, 500);
+                }
+            } else {
+                // Pour les liens externes, simplement mettre à jour la classe active
+                desktopNavLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            }
+        });
         
-        document.head.appendChild(script);
+        // Support tactile amélioré
+        link.addEventListener('touchend', function(e) {
+            e.preventDefault();
+            this.click();
+        });
+    });
+    
+    // Mettre en évidence la section active lors du défilement avec optimisation des performances
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+    
+    /**
+     * Utiliser requestAnimationFrame pour optimiser les performances de défilement
+     * Cette technique évite d'exécuter des calculs coûteux à chaque événement de défilement
+     */
+    let ticking = false;
+    
+    /**
+     * Met en évidence le lien de navigation correspondant à la section actuellement visible
+     * Cette fonction est optimisée pour éviter les problèmes de performance lors du défilement
+     */
+    function highlightActiveSection() {
+        // Position actuelle du défilement
+        let scrollPosition = window.scrollY;
+        
+        // Vérifier chaque section pour déterminer laquelle est visible
+        sections.forEach(section => {
+            // Calculer les limites de la section avec un offset pour une meilleure UX
+            const sectionTop = section.offsetTop - 100; // Offset pour déclencher plus tôt
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute('id');
+            
+            // Vérifier si la position de défilement est dans cette section
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                // Mettre à jour les classes active dans les liens de navigation
+                navLinks.forEach(link => {
+                    // Supprimer la classe active de tous les liens
+                    link.classList.remove('active');
+                    // Ajouter la classe active au lien correspondant à la section
+                    if (link.getAttribute('href') === '#' + sectionId) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+        
+        // Réinitialiser le flag pour permettre la prochaine mise à jour
+        ticking = false;
     }
-}
-
-/**
- * Génère la navigation à partir de la configuration des mondes
- */
-function generateNavigation(navigationElement, mondesConfig, currentMonde) {
-    // Vider la navigation existante
-    navigationElement.innerHTML = '';
     
-    // Ajouter les liens vers les mondes
-    mondesConfig.forEach(monde => {
-        // Ne pas inclure le monde actuel dans la navigation
-        if (monde.id !== currentMonde) {
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            
-            // Déterminer le chemin relatif vers le monde
-            const relativePath = getRelativePathToMonde(currentMonde, monde.id);
-            
-            a.href = relativePath;
-            a.textContent = monde.name;
-            a.title = monde.description || '';
-            
-            // Ajouter une classe pour le style spécifique au monde
-            a.classList.add(`monde-${monde.id}`);
-            
-            li.appendChild(a);
-            navigationElement.appendChild(li);
+    /**
+     * Événement de défilement optimisé pour mettre à jour la section active
+     * Utilise requestAnimationFrame pour limiter les calculs et améliorer les performances
+     */
+    window.addEventListener('scroll', function() {
+        // Vérifier si une mise à jour est déjà en attente
+        if (!ticking) {
+            // Planifier une mise à jour au prochain frame d'animation
+            window.requestAnimationFrame(function() {
+                highlightActiveSection();
+            });
+            // Marquer qu'une mise à jour est en attente
+            ticking = true;
         }
     });
     
-    // Ajouter un lien vers l'accueil
-    const homeLi = document.createElement('li');
-    const homeLink = document.createElement('a');
+    // Initialiser la section active au chargement
+    highlightActiveSection();
     
-    // Déterminer le chemin relatif vers l'accueil
-    const homeRelativePath = getRelativePathToHome(currentMonde);
+    /**
+     * Gestionnaire pour les événements de redimensionnement avec debounce
+     * Évite les calculs excessifs pendant le redimensionnement de la fenêtre
+     */
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        // Annuler le timer précédent pour éviter les calculs multiples
+        clearTimeout(resizeTimer);
+        // Définir un nouveau timer (technique de debounce)
+        resizeTimer = setTimeout(function() {
+            // Recalculer les positions des sections après redimensionnement
+            highlightActiveSection();
+        }, 250); // Attendre 250ms après la fin du redimensionnement
+    });
     
-    homeLink.href = homeRelativePath;
-    homeLink.textContent = '🏠 Accueil';
-    homeLink.classList.add('home-link');
-    
-    homeLi.appendChild(homeLink);
-    navigationElement.appendChild(homeLi);
-    
-    // Ajouter un lien vers la carte
-    const mapLi = document.createElement('li');
-    const mapLink = document.createElement('a');
-    
-    // Déterminer le chemin relatif vers la carte
-    const mapRelativePath = getRelativePathToMap(currentMonde);
-    
-    mapLink.href = mapRelativePath;
-    mapLink.textContent = '🗺️ Carte';
-    mapLink.classList.add('map-link');
-    
-    mapLi.appendChild(mapLink);
-    navigationElement.appendChild(mapLi);
-}
-
-/**
- * Génère une navigation de secours minimale en cas d'erreur
- */
-function generateFallbackNavigation(navigationElement) {
-    navigationElement.innerHTML = `
-        <li><a href="../../index.html">🏠 Accueil</a></li>
-        <li><a href="../../Mondes/Carte de Malvinaland stylisée.png">🗺️ Carte</a></li>
-    `;
-}
-
-/**
- * Détermine l'ID du monde actuel à partir du chemin
- */
-function getCurrentMonde(path) {
-    // Extraire le nom du monde à partir du chemin
-    const matches = path.match(/Le monde (de l['a]|du|des)\s*([^\/]+)/i);
-    
-    if (matches && matches[2]) {
-        const mondeName = matches[2].toLowerCase().trim();
+    /**
+     * Ajouter des retours visuels pour les interactions tactiles
+     * Améliore l'expérience utilisateur sur les appareils tactiles en fournissant
+     * un feedback visuel immédiat lors des interactions
+     */
+    document.querySelectorAll('.interactive').forEach(element => {
+        // Ajouter une classe au début de l'interaction tactile
+        element.addEventListener('touchstart', function() {
+            this.classList.add('touch-active');
+        });
         
-        // Correspondance entre les noms de dossiers et les IDs
-        const nameToId = {
-            'assemblée': 'assemblee',
-            'grange': 'grange',
-            'jeux': 'jeux',
-            'rêves': 'reves',
-            'damier': 'damier',
-            'linge': 'linge',
-            'verger': 'verger',
-            'zob': 'zob',
-            'elysée': 'elysee',
-            'karibu': 'karibu',
-            'orange des sphinx': 'sphinx'
-        };
+        // Supprimer la classe à la fin de l'interaction tactile
+        element.addEventListener('touchend', function() {
+            this.classList.remove('touch-active');
+        });
+    });
+    
+    /**
+     * Gestionnaire d'événements pour la touche Échap
+     * Améliore l'accessibilité en permettant de fermer le menu mobile avec la touche Échap
+     */
+    document.addEventListener('keydown', function(e) {
+        // Fermer le menu mobile si la touche Échap est pressée et que le menu est ouvert
+        if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
+            toggleMobileNav();
+        }
+    });
+    
+    // Initialiser les attributs ARIA au chargement
+    mobileNavToggle.setAttribute('aria-expanded', 'false');
+    mobileNav.setAttribute('aria-hidden', 'true');
+    
+    // Améliorer l'accessibilité du menu mobile
+    mobileNavToggle.setAttribute('aria-label', 'Menu de navigation');
+    
+    /**
+     * Gestionnaire pour fermer automatiquement le menu mobile lors du redimensionnement
+     * Si l'utilisateur passe d'une vue mobile à une vue desktop avec le menu ouvert,
+     * celui-ci sera automatiquement fermé pour éviter les problèmes d'interface
+     */
+    window.addEventListener('resize', function() {
+        // Si la fenêtre est redimensionnée à une largeur supérieure au breakpoint mobile
+        // et que le menu mobile est ouvert, le fermer automatiquement
+        if (window.innerWidth > 768 && mobileNav.classList.contains('active')) {
+            toggleMobileNav();
+        }
+    });
+    
+    /**
+     * Fonction alternative pour déterminer la section active basée sur la position dans le viewport
+     * Cette méthode est plus précise que celle basée uniquement sur scrollY car elle prend en compte
+     * la position réelle des éléments dans la fenêtre visible
+     */
+    function setActiveLink() {
+        // Trouver la première section dont le haut est proche ou au-dessus du haut de la fenêtre
+        // et dont le bas est encore visible dans la fenêtre
+        const currentSection = Array.from(sections).find(section => {
+            const rect = section.getBoundingClientRect();
+            // La section est considérée comme "active" si son haut est à moins de 100px du haut de la fenêtre
+            // et que son bas est encore visible (au-delà du haut de la fenêtre)
+            return rect.top <= 100 && rect.bottom > 100;
+        });
         
-        return nameToId[mondeName] || null;
+        // Si une section active est trouvée, mettre à jour les liens de navigation
+        if (currentSection) {
+            const id = currentSection.getAttribute('id');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === '#' + id) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
     }
-    
-    return null;
-}
-
-/**
- * Calcule le chemin relatif entre le monde actuel et un autre monde
- */
-function getRelativePathToMonde(currentMonde, targetMonde) {
-    if (!currentMonde) {
-        // Si on ne peut pas déterminer le monde actuel, utiliser un chemin absolu
-        return `Mondes/Le monde ${getMondeFullName(targetMonde)}/index.html`;
-    }
-    
-    // Si on est dans un monde, le chemin vers un autre monde est toujours "../Le monde X/index.html"
-    return `../Le monde ${getMondeFullName(targetMonde)}/index.html`;
-}
-
-/**
- * Obtient le nom complet du monde à partir de son ID
- */
-function getMondeFullName(mondeId) {
-    const mondeNames = {
-        'assemblee': 'de l\'assemblée',
-        'grange': 'de la grange',
-        'jeux': 'des jeux',
-        'reves': 'des rêves',
-        'damier': 'du damier',
-        'linge': 'du linge',
-        'verger': 'du verger',
-        'zob': 'du Zob',
-        'elysee': 'Elysée',
-        'karibu': 'Karibu',
-        'sphinx': 'orange des Sphinx'
-    };
-    
-    return mondeNames[mondeId] || mondeId;
-}
-
-/**
- * Calcule le chemin relatif vers l'accueil depuis le monde actuel
- */
-function getRelativePathToHome(currentMonde) {
-    if (!currentMonde) {
-        return 'index.html';
-    }
-    
-    return '../../index.html';
-}
-
-/**
- * Calcule le chemin relatif vers la carte depuis le monde actuel
- */
-function getRelativePathToMap(currentMonde) {
-    if (!currentMonde) {
-        return 'Mondes/Carte de Malvinaland stylisée.png';
-    }
-    
-    return '../Carte de Malvinaland stylisée.png';
-}
-
-/**
- * Calcule le chemin relatif entre le chemin actuel et une cible
- */
-function getRelativePath(currentPath, targetPath) {
-    // Simplification : si on est dans un monde, on remonte de deux niveaux
-    if (currentPath.includes('/Mondes/Le monde')) {
-        return '../../' + targetPath;
-    }
-    
-    // Si on est à la racine
-    return targetPath;
-}
+});
