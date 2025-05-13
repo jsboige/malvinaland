@@ -1,8 +1,8 @@
-# 🌍 Les Mondes de Malvinha - Jeu de Piste Immersif
+# 🌍 Malvinaland - Jeu de Piste Immersif
 
 ## 📖 Introduction au jeu de piste
 
-Bienvenue dans le dépôt du jeu de piste immersif "Les Mondes de Malvinha", conçu pour la maison de campagne à Sabres. Cette aventure narrative et ludique propose un parcours d'énigmes à travers le jardin, les bâtiments et les espaces décorés de la propriété.
+Bienvenue dans le dépôt du jeu de piste immersif "Malvinaland", conçu pour la maison de campagne à Sabres. Cette aventure narrative et ludique propose un parcours d'énigmes à travers le jardin, les bâtiments et les espaces décorés de la propriété.
 
 Le domaine est symboliquement divisé en **11 "mondes"**, chacun inspiré d'un décor ou d'une ambiance particulière, et porteur d'énigmes uniques. Les joueurs devront explorer ces mondes, résoudre des défis et collecter des indices pour résoudre le mystère central : l'enlèvement d'une princesse.
 
