@@ -37,4 +37,4 @@ docs/docs/
 ressources/
 
 # Fichiers de configuration spécifiques à l''environnement local
-deploy.ps1
+# deploy.ps1 est maintenant inclus dans le dépôt pour faciliter le travail des autres agents
