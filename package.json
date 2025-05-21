@@ -1,0 +1,30 @@
+{
+  "name": "malvinaland",
+  "version": "1.0.0",
+  "description": "Site web du jeu de piste immersif Malvinaland",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "build:all": "INCLUDE_ORGANISATEURS=true eleventy",
+    "optimize-images": "node scripts/optimize-images.js",
+    "clean": "powershell -File scripts/clean-repository.ps1",
+    "deploy": "powershell -File scripts/deploy.ps1"
+  },
+  "keywords": [
+    "malvinaland",
+    "jeu",
+    "immersif"
+  ],
+  "author": "Équipe Malvinaland",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "luxon": "^3.4.3",
+    "markdown-it": "^13.0.1",
+    "markdown-it-container": "^3.0.0",
+    "sharp": "^0.32.6",
+    "glob": "^10.3.3"
+  }
+}
