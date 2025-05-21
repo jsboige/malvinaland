@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="format-detection" content="telephone=no">
+  <title>Accueil - Malvinaland - Malvinaland</title>
+  <meta name="description" content="Jeu de piste immersif dans les mondes de Malvinaland">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <meta name="theme-color" content="#3f51b5">
+  <link rel="preconnect" href="https://malvinaland.myia.io">
+  <link rel="manifest" href="/manifest.json">
+    <script src="Core/menu-mobile-fix.js" defer></script></head>
+<body class="">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          
+          <li><a href="/" >🏠 Accueil</a></li>
+          
+          <li><a href="/carte/" >🗺️ Carte</a></li>
+          
+          <li><a href="/narration/" >📚 Narration</a></li>
+          
+          <li><a href="/personnages/" >👥 Personnages</a></li>
+          
+          
+          
+          
+          <li class="auth-links">
+            <a href="/login/" class="auth-link login-link">🔑 Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">🚪 Déconnexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          
+          <li><a href="/" >🏠 Accueil</a></li>
+          
+          <li><a href="/carte/" >🗺️ Carte</a></li>
+          
+          <li><a href="/narration/" >📚 Narration</a></li>
+          
+          <li><a href="/personnages/" >👥 Personnages</a></li>
+          
+          
+          
+          
+          <li class="auth-links">
+            <a href="/login/" class="auth-link login-link">🔑 Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">🚪 Déconnexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <h1>Bienvenue dans les mondes de Malvinaland</h1>
+<p>Bienvenue dans l'univers immersif de Malvinaland, un jeu de piste où réalité et imaginaire se rencontrent pour créer une expérience unique. Explorez des mondes fascinants, résolvez des énigmes et découvrez les secrets cachés de ce lieu extraordinaire.</p>
+<h2>Les mondes à explorer</h2>
+<div class="mondes-grid">
+  <a href="/content/mondes/assemblee/" class="monde-card" style="--monde-color: #e74c3c;">
+    <h3>🔥 Le Monde de l&#39;Assemblée</h3>
+    <p>Un lieu mystique avec deux cercles d&#39;assemblée qui semblent suspendus hors du temps.</p>
+  </a>
+  <a href="/content/mondes/damier/" class="monde-card" style="--monde-color: #87CEEB;">
+    <h3>🌞 Le Monde du Damier</h3>
+    <p>Un lieu dominé par un imposant panneau solaire photovoltaïque, symbole de l&#39;énergie et de la précision mathématique.</p>
+  </a>
+  <a href="/content/mondes/elysee/" class="monde-card" style="--monde-color: #FFFFFF;">
+    <h3>🏛️ Le Monde Elysée</h3>
+    <p>Un monde d&#39;accueil constitué de deux caravanes résidentielles aux styles contrastés, symbolisant la diplomatie et le passage.</p>
+  </a>
+  <a href="/content/mondes/grange/" class="monde-card" style="--monde-color: #2ecc71;">
+    <h3>🌍 Le Monde de la Grange</h3>
+    <p>Un bâtiment longitudinal avec quatre façades distinctives et un espace végétalisé.</p>
+  </a>
+  <a href="/content/mondes/jeux/" class="monde-card" style="--monde-color: #3498db;">
+    <h3>🌍 Le Monde des Jeux</h3>
+    <p>Le Royaume de l&#39;Enfance Éternelle, avec un grand trampoline octogonal au centre.</p>
+  </a>
+  <a href="/content/mondes/karibu/" class="monde-card" style="--monde-color: #FFA500;">
+    <h3>🔥 Le Monde Karibu</h3>
+    <p>Une cuisine d&#39;été rustique incarnant l&#39;hospitalité et l&#39;accueil, point culminant de l&#39;aventure.</p>
+  </a>
+  <a href="/content/mondes/linge/" class="monde-card" style="--monde-color: #9370DB;">
+    <h3>🧵 Le Monde du Linge</h3>
+    <p>Un sanctuaire des traditions du lavage et de l&#39;entretien du linge, avec une corde à linge bleue comme élément central.</p>
+  </a>
+  <a href="/content/mondes/reves/" class="monde-card" style="--monde-color: #9b59b6;">
+    <h3>🌙 Le Monde des Rêves</h3>
+    <p>Un point de convergence mystique entre les différents mondes de Malvinaland.</p>
+  </a>
+  <a href="/content/mondes/sphinx/" class="monde-card" style="--monde-color: #FF4500;">
+    <h3>🐱 Le Monde Orange des Sphinx</h3>
+    <p>Un domaine mystérieux dominé par une bâtisse aux murs orange vif, gardé par des sphinx félins.</p>
+  </a>
+  <a href="/content/mondes/verger/" class="monde-card" style="--monde-color: #FFC0CB;">
+    <h3>🌳 Le Monde du Verger</h3>
+    <p>Un sanctuaire naturel abritant un modeste verger de jeunes arbres fruitiers variés.</p>
+  </a>
+  <a href="/content/mondes/zob/" class="monde-card" style="--monde-color: #FF7F50;">
+    <h3>🧘 Le Monde du Zob</h3>
+    <p>Un espace de contemplation centré autour d&#39;une yourte octogonale avec une ouverture en forme d&#39;étoile au sommet.</p>
+  </a>
+</div>
+<h2>L'histoire de Malvinaland</h2>
+<p>Malvinaland est un lieu où les frontières entre les mondes s'estompent, où chaque espace raconte une histoire et cache des mystères à découvrir. La princesse Malvina, gardienne de ces lieux, a disparu, capturée par le mystérieux Collectionneur d'Âmes. Votre mission, si vous l'acceptez, est d'explorer les différents mondes, de résoudre les énigmes et de retrouver la princesse avant qu'il ne soit trop tard.</p>
+<p>Chaque monde possède sa propre atmosphère, ses propres défis et ses propres secrets. En naviguant d'un monde à l'autre, vous découvrirez progressivement les indices qui vous mèneront à la princesse captive.</p>
+<h2>Comment jouer</h2>
+<ol>
+<li><strong>Explorez les mondes</strong> : Visitez chaque monde et imprégnez-vous de son ambiance unique.</li>
+<li><strong>Observez attentivement</strong> : Chaque détail peut être un indice.</li>
+<li><strong>Résolvez les énigmes</strong> : Chaque monde propose des défis à relever.</li>
+<li><strong>Collectez les indices</strong> : Ils vous guideront vers la princesse.</li>
+<li><strong>Collaborez</strong> : Certaines énigmes nécessitent la coopération de plusieurs joueurs.</li>
+</ol>
+<p>Êtes-vous prêt à vous lancer dans cette aventure extraordinaire ? Choisissez un monde et commencez votre exploration !</p>
+<div class="cta-container">
+  <a href="/carte/" class="cta-button">Voir la carte des mondes</a>
+</div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 19/05/2025 Malvinaland</p>
+      <div class="footer-navigation">
+        
+        <a href="/">Accueil</a> | 
+        
+        <a href="/carte/">Carte</a> | 
+        
+        <a href="/narration/">Narration</a> | 
+        
+        <a href="/personnages/">Personnages</a>
+        
+        <a href="/login/" style="opacity: 0.5; font-size: 0.9em;">Organisateurs</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+  <script src="/assets/js/image-loader.js" defer></script>
+  <script src="/assets/js/fix-mobile-menu.js" defer></script>
+  <script src="/assets/js/register-sw.js" defer></script>
+  
+</body>
+</html>
+
+
+

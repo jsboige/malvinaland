@@ -1,0 +1,438 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="format-detection" content="telephone=no">
+  <title>Malvinaland - Jeu de piste immersif</title>
+  <meta name="description" content="Explorez les mondes fascinants de Malvinaland, un jeu de piste immersif où réalité et imaginaire se rencontrent.">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <meta name="theme-color" content="#3f51b5">
+  <link rel="preconnect" href="https://malvinaland.myia.io">
+  <link rel="manifest" href="/manifest.json">
+  <style>
+    /* Styles spécifiques à la page d'accueil */
+    .hero-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                  linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+    }
+    
+    .hero-section h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .hero-section p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 1.5rem;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+      margin: 0.5rem;
+    }
+    
+    .cta-button:hover {
+      background-color: var(--link-hover-color);
+      transform: translateY(-2px);
+      color: white;
+    }
+    
+    .cta-container {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    
+    .monde-card {
+      border-top: 4px solid var(--monde-color, var(--primary-color));
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    
+    .monde-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--monde-color, var(--primary-color));
+      opacity: 0.1;
+      transition: opacity 0.3s;
+    }
+    
+    .monde-card:hover::before {
+      opacity: 0.2;
+    }
+    
+    .monde-card h3 {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .monde-card h3::before {
+      content: attr(data-icon);
+      font-size: 1.5em;
+      line-height: 1;
+    }
+    
+    .features-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .feature-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    .map-preview {
+      width: 100%;
+      max-width: 800px;
+      margin: 2rem auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s;
+      display: block;
+    }
+    
+    .map-preview:hover {
+      transform: scale(1.02);
+    }
+    
+    .fade-in {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+    
+    /* Remplacer la définition de la grille des mondes */
+    .mondes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .section-title {
+      text-align: center;
+      margin: 3rem 0 2rem;
+    }
+    
+    .section-title h2 {
+      display: inline-block;
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+    }
+    
+    @media (max-width: 768px) {
+      .hero-section {
+        padding: 3rem 1rem;
+      }
+      
+      .hero-section h1 {
+        font-size: 2.2rem;
+      }
+      
+      .features-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+    <script src="/Core/menu-mobile-fix.js" defer></script></head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/" class="active">🏠 Accueil</a></li>
+          <li><a href="/content/carte/">🗺️ Carte</a></li>
+          <li><a href="/content/narration/">📚 Narration</a></li>
+          <li><a href="/content/personnages/">👥 Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">🔑 Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">🚪 Déconnexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/" class="active">🏠 Accueil</a></li>
+          <li><a href="/content/carte/">🗺️ Carte</a></li>
+          <li><a href="/content/narration/">📚 Narration</a></li>
+          <li><a href="/content/personnages/">👥 Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">🔑 Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">🚪 Déconnexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <!-- Section héro -->
+      <section class="hero-section monde-section">
+        <h1>Bienvenue dans les mondes de Malvinaland</h1>
+        <p>Explorez un univers immersif où réalité et imaginaire se rencontrent pour créer une expérience unique. Résolvez des énigmes, découvrez des secrets et partez à la recherche de la princesse Malvina.</p>
+        <div>
+          <a href="/content/carte/" class="cta-button">Explorer la carte</a>
+          <a href="#mondes" class="cta-button">Découvrir les mondes</a>
+        </div>
+      </section>
+      
+      <!-- Section caractéristiques -->
+      <section class="features-section">
+        <div class="feature-card monde-section">
+          <div class="feature-icon">🗺️</div>
+          <h3>Exploration immersive</h3>
+          <p>Parcourez des lieux uniques et découvrez leurs secrets cachés dans une aventure qui mêle réel et imaginaire.</p>
+        </div>
+        <div class="feature-card monde-section">
+          <div class="feature-icon">🧩</div>
+          <h3>Énigmes captivantes</h3>
+          <p>Résolvez des puzzles ingénieux qui mettent à l'épreuve votre logique et votre créativité.</p>
+        </div>
+        <div class="feature-card monde-section">
+          <div class="feature-icon">👥</div>
+          <h3>Aventure collaborative</h3>
+          <p>Unissez vos forces avec d'autres joueurs pour surmonter des défis qui nécessitent coopération et entraide.</p>
+        </div>
+      </section>
+      
+      <!-- Section carte -->
+      <div class="section-title">
+        <h2>Carte des mondes</h2>
+      </div>
+      <section class="map-section monde-section">
+        <a href="/content/carte/" style="display: block; text-align: center;">
+          <div style="width: 100%; max-width: 800px; height: 300px; margin: 0 auto; background: linear-gradient(45deg, #f1f1f1, #e1e1e1); border-radius: 8px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
+            <div style="text-align: center;">
+              <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Carte des mondes</h3>
+              <p>Cliquez pour explorer la carte interactive</p>
+            </div>
+          </div>
+        </a>
+        <div class="cta-container">
+          <a href="/content/carte/" class="cta-button">Voir la carte complète</a>
+        </div>
+      </section>
+      
+      <!-- Section mondes -->
+      <div class="section-title" id="mondes">
+        <h2>Les mondes à explorer</h2>
+      </div>
+      <div class="mondes-grid">
+        <a href="/content/mondes/assemblee/" class="monde-card" style="--monde-color: #e74c3c;">
+          <h3 data-icon="🔥">Le Monde de l'Assemblée</h3>
+          <p>Un lieu mystique avec deux cercles d'assemblée qui semblent suspendus hors du temps.</p>
+        </a>
+        <a href="/content/mondes/damier/" class="monde-card" style="--monde-color: #87CEEB;">
+          <h3 data-icon="🌞">Le Monde du Damier</h3>
+          <p>Un lieu dominé par un imposant panneau solaire photovoltaïque, symbole de l'énergie et de la précision mathématique.</p>
+        </a>
+        <a href="/content/mondes/elysee/" class="monde-card" style="--monde-color: #FFFFFF;">
+          <h3 data-icon="🏛️">Le Monde Elysée</h3>
+          <p>Un monde d'accueil constitué de deux caravanes résidentielles aux styles contrastés, symbolisant la diplomatie et le passage.</p>
+        </a>
+        <a href="/content/mondes/grange/" class="monde-card" style="--monde-color: #2ecc71;">
+          <h3 data-icon="🌍">Le Monde de la Grange</h3>
+          <p>Un bâtiment longitudinal avec quatre façades distinctives et un espace végétalisé.</p>
+        </a>
+        <a href="/content/mondes/jeux/" class="monde-card" style="--monde-color: #3498db;">
+          <h3 data-icon="🎮">Le Monde des Jeux</h3>
+          <p>Le Royaume de l'Enfance Éternelle, avec un grand trampoline octogonal au centre.</p>
+        </a>
+        <a href="/content/mondes/karibu/" class="monde-card" style="--monde-color: #FFA500;">
+          <h3 data-icon="🔥">Le Monde Karibu</h3>
+          <p>Une cuisine d'été rustique incarnant l'hospitalité et l'accueil, point culminant de l'aventure.</p>
+        </a>
+        <a href="/content/mondes/linge/" class="monde-card" style="--monde-color: #9370DB;">
+          <h3 data-icon="🧵">Le Monde du Linge</h3>
+          <p>Un sanctuaire des traditions du lavage et de l'entretien du linge, avec une corde à linge bleue comme élément central.</p>
+        </a>
+        <a href="/content/mondes/reves/" class="monde-card" style="--monde-color: #9b59b6;">
+          <h3 data-icon="🌙">Le Monde des Rêves</h3>
+          <p>Un point de convergence mystique entre les différents mondes de Malvinaland.</p>
+        </a>
+        <a href="/content/mondes/sphinx/" class="monde-card" style="--monde-color: #FF4500;">
+          <h3 data-icon="🐱">Le Monde Orange des Sphinx</h3>
+          <p>Un domaine mystérieux dominé par une bâtisse aux murs orange vif, gardé par des sphinx félins.</p>
+        </a>
+        <a href="/content/mondes/verger/" class="monde-card" style="--monde-color: #FFC0CB;">
+          <h3 data-icon="🌳">Le Monde du Verger</h3>
+          <p>Un sanctuaire naturel abritant un modeste verger de jeunes arbres fruitiers variés.</p>
+        </a>
+        <a href="/content/mondes/zob/" class="monde-card" style="--monde-color: #FF7F50;">
+          <h3 data-icon="🧘">Le Monde du Zob</h3>
+          <p>Un espace de contemplation centré autour d'une yourte octogonale avec une ouverture en forme d'étoile au sommet.</p>
+        </a>
+      </div>
+      
+      <!-- Section histoire -->
+      <div class="section-title">
+        <h2>L'histoire de Malvinaland</h2>
+      </div>
+      <section class="histoire-section monde-section">
+        <p>Malvinaland est un lieu où les frontières entre les mondes s'estompent, où chaque espace raconte une histoire et cache des mystères à découvrir. La princesse Malvina, gardienne de ces lieux, a disparu, capturée par le mystérieux Collectionneur d'Âmes.</p>
+        <p>Votre mission, si vous l'acceptez, est d'explorer les différents mondes, de résoudre les énigmes et de retrouver la princesse avant qu'il ne soit trop tard.</p>
+        <p>Chaque monde possède sa propre atmosphère, ses propres défis et ses propres secrets. En naviguant d'un monde à l'autre, vous découvrirez progressivement les indices qui vous mèneront à la princesse captive.</p>
+      </section>
+      
+      <!-- Section comment jouer -->
+      <div class="section-title">
+        <h2>Comment jouer</h2>
+      </div>
+      <section class="howto-section monde-section">
+        <ol>
+          <li><strong>Explorez les mondes</strong> : Visitez chaque monde et imprégnez-vous de son ambiance unique.</li>
+          <li><strong>Observez attentivement</strong> : Chaque détail peut être un indice.</li>
+          <li><strong>Résolvez les énigmes</strong> : Chaque monde propose des défis à relever.</li>
+          <li><strong>Collectez les indices</strong> : Ils vous guideront vers la princesse.</li>
+          <li><strong>Collaborez</strong> : Certaines énigmes nécessitent la coopération de plusieurs joueurs.</li>
+        </ol>
+        <p>Êtes-vous prêt à vous lancer dans cette aventure extraordinaire ? Choisissez un monde et commencez votre exploration !</p>
+        <div class="cta-container">
+          <a href="/content/carte/" class="cta-button">Voir la carte des mondes</a>
+          <a href="/content/narration/" class="cta-button">Découvrir la narration</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 16/05/2025 Malvinaland</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/content/narration/">Narration</a> |
+        <a href="/content/personnages/">Personnages</a>
+        <a href="/content/login/" style="opacity: 0.5; font-size: 0.9em;">Organisateurs</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+  <script src="/assets/js/image-loader.js" defer></script>
+  <!-- Script de menu mobile déjà chargé en tête de page -->
+  <script src="/assets/js/register-sw.js" defer></script>
+  
+  <script>
+    // Script pour les animations supplémentaires
+    document.addEventListener('DOMContentLoaded', function() {
+      // Animer les sections au défilement
+      const sections = document.querySelectorAll('.monde-section');
+      
+      // Options pour l'observateur d'intersection
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+      
+      // Créer l'observateur d'intersection
+      const sectionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      
+      // Observer chaque section
+      sections.forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        sectionObserver.observe(section);
+      });
+      
+      // Ajouter un effet de survol aux cartes de mondes
+      const mondeCards = document.querySelectorAll('.monde-card');
+      mondeCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-5px)';
+          this.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.2)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+          this.style.transform = '';
+          this.style.boxShadow = '';
+        });
+      });
+      
+      // Vérifier si le navigateur prend en charge les préférences de réduction de mouvement
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      if (prefersReducedMotion.matches) {
+        // Désactiver les animations pour les utilisateurs qui préfèrent réduire les mouvements
+        document.querySelectorAll('.fade-in, .monde-card, .feature-card').forEach(el => {
+          el.style.transition = 'none';
+          el.style.transform = 'none';
+          el.style.opacity = '1';
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

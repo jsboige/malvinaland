@@ -1,0 +1,112 @@
+﻿<h1>Mondes de Malvinaland</h1>
+<p>Ce dossier contient tous les mondes de Malvinaland. Chaque monde est représenté par un sous-dossier contenant au minimum un fichier <code>index.md</code> qui décrit le monde.</p>
+<h2>Liste des mondes actuels</h2>
+<ul>
+<li><strong>assemblee/</strong> - Le Monde de l'Assemblée</li>
+<li><strong>damier/</strong> - Le Monde du Damier</li>
+<li><strong>elysee/</strong> - Le Monde Elysée</li>
+<li><strong>grange/</strong> - Le Monde de la Grange</li>
+<li><strong>jeux/</strong> - Le Monde des Jeux</li>
+<li><strong>karibu/</strong> - Le Monde Karibu</li>
+<li><strong>linge/</strong> - Le Monde du Linge</li>
+<li><strong>reves/</strong> - Le Monde des Rêves</li>
+<li><strong>sphinx/</strong> - Le Monde Orange des Sphinx</li>
+<li><strong>verger/</strong> - Le Monde du Verger</li>
+<li><strong>zob/</strong> - Le Monde du Zob</li>
+</ul>
+<h2>Structure d'un monde</h2>
+<p>Chaque monde est organisé de la même façon:</p>
+<pre><code>mondes/
+└── [nom-du-monde]/
+    ├── index.md         # Description principale du monde
+    └── [autres-fichiers] # Fichiers supplémentaires si nécessaire
+</code></pre>
+<p>Le fichier <code>index.md</code> contient toutes les informations sur le monde:</p>
+<ul>
+<li>Description du lieu</li>
+<li>Ambiance et atmosphère</li>
+<li>Histoire locale</li>
+<li>Énigmes proposées</li>
+<li>Notes pour les organisateurs (visibles uniquement par les organisateurs)</li>
+</ul>
+<h2>Comment modifier un monde existant</h2>
+<ol>
+<li>Naviguez vers le dossier du monde que vous souhaitez modifier</li>
+<li>Ouvrez le fichier <code>index.md</code></li>
+<li>Effectuez vos modifications en respectant la structure existante</li>
+<li>Validez vos modifications (commit)</li>
+</ol>
+<h3>Sections typiques d'un monde</h3>
+<p>Les mondes suivent généralement cette structure:</p>
+<pre><code class="language-markdown">---
+layout: layouts/monde.njk
+title: Nom du Monde
+monde: identifiant-du-monde
+---
+
+## 🏞️ Introduction et description du lieu
+...
+
+## 🎭 Ambiance et atmosphère
+...
+
+## 📚 Histoire locale
+...
+
+::: organisateurs-only
+### Notes pour les organisateurs
+...
+:::
+
+## 🧩 Énigmes proposées dans ce monde
+
+### 🔐 Énigme 1 – Titre de l'énigme
+...
+
+::: organisateurs-only
+#### Solution de l'énigme 1
+...
+:::
+</code></pre>
+<h2>Comment ajouter un nouveau monde</h2>
+<ol>
+<li>Créez un nouveau dossier dans <code>mondes/</code> avec le nom du monde (en minuscules, sans espaces)</li>
+<li>Créez un fichier <code>index.md</code> dans ce dossier en utilisant le modèle disponible dans <code>templates/nouveau-monde.md</code></li>
+<li>Remplissez toutes les sections du modèle avec vos propres informations</li>
+<li>Ajoutez les images du monde dans le dossier <code>assets/images/mondes/[nom-du-monde]/</code></li>
+<li>Mettez à jour le fichier <code>src/_data/mondes.js</code> pour inclure le nouveau monde dans la navigation</li>
+</ol>
+<h3>Mise à jour du fichier mondes.js</h3>
+<p>Pour ajouter votre monde à la navigation, vous devez modifier le fichier <code>src/_data/mondes.js</code>:</p>
+<pre><code class="language-javascript">module.exports = [
+  // ... autres mondes ...
+  {
+    name: &quot;Nom du Monde&quot;,
+    slug: &quot;nom-du-monde&quot;,
+    color: &quot;#HEXCODE&quot;, // Code couleur pour la carte
+    position: { x: 123, y: 456 }, // Position sur la carte
+    description: &quot;Brève description du monde&quot;
+  },
+  // ... autres mondes ...
+];
+</code></pre>
+<h2>Conseils pour la création et la modification des mondes</h2>
+<ul>
+<li><strong>Soyez cohérent</strong> avec l'univers global de Malvinaland</li>
+<li><strong>Utilisez des émojis</strong> en début de section pour améliorer la lisibilité</li>
+<li><strong>Incluez des images</strong> pour illustrer le monde</li>
+<li><strong>Détaillez les énigmes</strong> avec leurs solutions dans les sections organisateurs-only</li>
+<li><strong>Pensez aux connexions</strong> avec les autres mondes</li>
+<li><strong>Respectez le ton</strong> et l'ambiance générale du jeu</li>
+</ul>
+<h2>Ressources utiles</h2>
+<ul>
+<li><a href="../../../templates/nouveau-monde.md">Modèle de nouveau monde</a></li>
+<li><a href="../../../templates/nouvelle-enigme.md">Modèle de nouvelle énigme</a></li>
+<li><a href="https://www.markdownguide.org/basic-syntax/">Guide de syntaxe Markdown</a></li>
+</ul>
+<p>Pour plus d'informations sur la modification du contenu, consultez le fichier <code>COMMENT_MODIFIER.md</code> à la racine du projet.</p>
+
+
+
+

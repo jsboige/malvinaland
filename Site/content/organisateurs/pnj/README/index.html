@@ -1,0 +1,127 @@
+﻿<h1>Personnages Non-Joueurs (PNJ) de Malvinaland</h1>
+<p>Ce dossier contient les informations sur les Personnages Non-Joueurs (PNJ) de Malvinaland. Ces personnages sont essentiels pour guider les joueurs, enrichir l'histoire et faciliter la résolution des énigmes.</p>
+<h2>Liste des PNJ actuels</h2>
+<ul>
+<li><strong>celestine/</strong> - Madame Célestine de Lunargent (Interprète des Rêves)</li>
+<li><strong>lili/</strong> - Liliane &quot;Lili&quot; Cœur-de-Lumière (Voyageuse Onirique)</li>
+<li><strong>gardien-verger/</strong> - Le Gardien du Verger</li>
+<li><strong>collectionneur/</strong> - Le Collectionneur d'Âmes</li>
+<li><strong>princesse/</strong> - La Princesse Malvina</li>
+</ul>
+<h2>Structure d'un PNJ</h2>
+<p>Chaque PNJ est organisé de la même façon:</p>
+<pre><code>pnj/
+└── [nom-du-pnj]/
+    └── index.md         # Description complète du PNJ
+</code></pre>
+<p>Le fichier <code>index.md</code> contient toutes les informations sur le PNJ:</p>
+<ul>
+<li>Caractéristiques principales (rôle, âge, apparence)</li>
+<li>Traits de personnalité</li>
+<li>Phrases récurrentes</li>
+<li>Interactions avec les joueurs</li>
+<li>Dialogues spécifiques aux énigmes</li>
+</ul>
+<h2>Comment modifier un PNJ existant</h2>
+<ol>
+<li>Naviguez vers le dossier du PNJ que vous souhaitez modifier</li>
+<li>Ouvrez le fichier <code>index.md</code></li>
+<li>Effectuez vos modifications en respectant la structure existante</li>
+<li>Validez vos modifications (commit)</li>
+</ol>
+<h3>Sections typiques d'un PNJ</h3>
+<p>Les fiches de PNJ suivent généralement cette structure:</p>
+<pre><code class="language-markdown">---
+layout: layouts/organisateur.njk
+title: Nom du PNJ - Malvinaland
+---
+
+# Nom du PNJ
+
+![Nom du PNJ](/assets/images/pnj/image-du-pnj.jpg)
+
+**Rôle** : Description du rôle
+**Âge** : Âge du personnage
+**Apparence** : Description physique
+**Voix** : Caractéristiques de la voix
+**Gestuelle** : Description des mouvements
+
+**Accessoires caractéristiques** :
+- Accessoire 1
+- Accessoire 2
+- Accessoire 3
+
+**Traits de personnalité** : Description du caractère
+
+**Phrases récurrentes** :
+- &quot;Phrase typique 1&quot;
+- &quot;Phrase typique 2&quot;
+- &quot;Phrase typique 3&quot;
+
+**Présence dans les mondes** : Liste des mondes où ce PNJ apparaît
+
+## Interactions avec les joueurs
+...
+
+## Connaissances et indices
+...
+
+## Dialogues spécifiques aux énigmes
+...
+</code></pre>
+<h2>Comment ajouter un nouveau PNJ</h2>
+<ol>
+<li>Créez un nouveau dossier dans <code>pnj/</code> avec le nom du PNJ (en minuscules, sans espaces)</li>
+<li>Créez un fichier <code>index.md</code> dans ce dossier en utilisant le modèle disponible dans <code>templates/nouveau-pnj.md</code></li>
+<li>Remplissez toutes les sections du modèle avec vos propres informations</li>
+<li>Ajoutez l'image du PNJ dans le dossier <code>assets/images/pnj/</code></li>
+<li>Mettez à jour le fichier <code>index.md</code> à la racine du dossier <code>pnj/</code> pour inclure le nouveau PNJ dans la liste</li>
+</ol>
+<h3>Mise à jour de la liste des PNJ</h3>
+<p>Pour ajouter votre PNJ à la liste principale, vous devez modifier le fichier <code>index.md</code> à la racine du dossier <code>pnj/</code> en ajoutant un lien vers votre nouveau PNJ:</p>
+<pre><code class="language-markdown">## Fiches détaillées
+
+Pour accéder aux fiches complètes de chaque PNJ, incluant les dialogues spécifiques pour chaque énigme et les variations selon les groupes d'âge, cliquez sur les liens ci-dessous :
+
+- [Madame Célestine de Lunargent](/organisateurs/pnj/celestine/)
+- [Liliane &quot;Lili&quot; Cœur-de-Lumière](/organisateurs/pnj/lili/)
+- [Le Gardien du Verger](/organisateurs/pnj/gardien-verger/)
+- [Le Collectionneur d'Âmes](/organisateurs/pnj/collectionneur/)
+- [La Princesse Malvina](/organisateurs/pnj/princesse/)
+- [Nom de votre nouveau PNJ](/organisateurs/pnj/nom-du-nouveau-pnj/)
+</code></pre>
+<h2>Conseils pour la création et la modification des PNJ</h2>
+<ul>
+<li><strong>Créez des personnages mémorables</strong> avec des traits distinctifs</li>
+<li><strong>Définissez des phrases caractéristiques</strong> qui aident à identifier le personnage</li>
+<li><strong>Prévoyez des interactions</strong> avec les différentes énigmes</li>
+<li><strong>Assurez la cohérence</strong> avec l'univers global de Malvinaland</li>
+<li><strong>Pensez aux accessoires</strong> qui aideront la personne incarnant le PNJ</li>
+<li><strong>Détaillez les connaissances</strong> que le PNJ peut partager avec les joueurs</li>
+<li><strong>Incluez des conseils d'interprétation</strong> pour aider les organisateurs</li>
+</ul>
+<h2>Conseils pour l'interprétation des PNJ</h2>
+<h3>Préparation</h3>
+<ol>
+<li><strong>Familiarisez-vous avec l'histoire</strong> : Connaissez bien le background et les motivations de votre personnage</li>
+<li><strong>Pratiquez les phrases clés</strong> : Maîtrisez les expressions caractéristiques pour les utiliser naturellement</li>
+<li><strong>Préparez les accessoires</strong> : Rassemblez tous les éléments nécessaires à votre costume</li>
+<li><strong>Anticipez les questions</strong> : Préparez des réponses aux questions probables des joueurs</li>
+</ol>
+<h3>Pendant le jeu</h3>
+<ol>
+<li><strong>Restez dans le personnage</strong> : Maintenez la voix, la gestuelle et l'attitude de votre PNJ</li>
+<li><strong>Adaptez-vous aux joueurs</strong> : Ajustez vos indices selon la progression et les difficultés rencontrées</li>
+<li><strong>Guidez subtilement</strong> : Aidez les joueurs sans résoudre les énigmes à leur place</li>
+<li><strong>Créez des moments mémorables</strong> : Utilisez des révélations dramatiques ou des moments d'émotion</li>
+</ol>
+<h2>Ressources utiles</h2>
+<ul>
+<li><a href="../../../../templates/nouveau-pnj.md">Modèle de nouveau PNJ</a></li>
+<li><a href="https://www.markdownguide.org/basic-syntax/">Guide de syntaxe Markdown</a></li>
+</ul>
+<p>Pour plus d'informations sur la modification du contenu, consultez le fichier <code>COMMENT_MODIFIER.md</code> à la racine du projet.</p>
+
+
+
+
