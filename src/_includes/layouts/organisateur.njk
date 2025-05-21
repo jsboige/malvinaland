@@ -1,0 +1,97 @@
+---
+layout: layouts/base.njk
+bodyClass: organisateur-page protected-page
+customStyles: "/assets/css/organisateur.css"
+---
+
+<div class="organisateur-header">
+  <h1>{{ title }}</h1>
+  <div class="organisateur-actions">
+    <button id="pocket-button" class="pocket-button" aria-label="Masquer le contenu">
+      <span class="icon">👁️</span>
+    </button>
+    <button id="contrast-button" class="contrast-button" aria-label="Mode contraste élevé" onclick="toggleHighContrast()">
+      <span class="icon">🌙</span>
+    </button>
+  </div>
+</div>
+
+<div class="organisateur-content">
+  {{ content | safe }}
+</div>
+
+<script>
+  // Vérifier si l'utilisateur est authentifié
+  document.addEventListener('DOMContentLoaded', function() {
+    const isAuthenticated = sessionStorage.getItem('authenticated') === 'true';
+    const userRole = sessionStorage.getItem('userRole');
+    
+    // Vérifier si l'utilisateur est authentifié et a un rôle valide
+    if (!isAuthenticated || (userRole !== 'organisateur' && userRole !== 'pnj')) {
+      // Rediriger vers la page de connexion
+      window.location.href = '/login/';
+      return;
+    }
+    
+    // Vérifier les restrictions d'accès pour les PNJ
+    if (userRole === 'pnj') {
+      // Les PNJ ne peuvent accéder qu'aux pages PNJ
+      const currentPath = window.location.pathname;
+      const isPnjPage = currentPath.includes('/pnj/') || currentPath === '/organisateurs/pnj/';
+      
+      if (!isPnjPage) {
+        // Rediriger vers le dashboard PNJ
+        window.location.href = '/organisateurs/pnj/dashboard/';
+      }
+    }
+  });
+  
+  // Fonction pour masquer rapidement le contenu
+  document.getElementById('pocket-button').addEventListener('click', function() {
+    document.body.classList.toggle('stealth-mode');
+    
+    // Changer l'icône du bouton selon le mode
+    const icon = this.querySelector('.icon');
+    if (document.body.classList.contains('stealth-mode')) {
+      icon.textContent = '👁️‍🗨️';
+      this.setAttribute('aria-label', 'Afficher le contenu');
+    } else {
+      icon.textContent = '👁️';
+      this.setAttribute('aria-label', 'Masquer le contenu');
+    }
+  });
+  
+  // Fonction pour basculer le mode contraste élevé
+  function toggleHighContrast() {
+    document.body.classList.toggle('high-contrast');
+    
+    // Stocker la préférence de l'utilisateur
+    const isHighContrast = document.body.classList.contains('high-contrast');
+    localStorage.setItem('highContrast', isHighContrast);
+    
+    // Mettre à jour le bouton de contraste
+    const contrastButton = document.getElementById('contrast-button');
+    const icon = contrastButton.querySelector('.icon');
+    
+    if (isHighContrast) {
+      icon.textContent = '☀️';
+      contrastButton.setAttribute('aria-label', 'Mode normal');
+    } else {
+      icon.textContent = '🌙';
+      contrastButton.setAttribute('aria-label', 'Mode contraste élevé');
+    }
+  }
+  
+  // Appliquer les préférences utilisateur au chargement
+  document.addEventListener('DOMContentLoaded', function() {
+    const isHighContrast = localStorage.getItem('highContrast') === 'true';
+    if (isHighContrast) {
+      document.body.classList.add('high-contrast');
+      
+      const contrastButton = document.getElementById('contrast-button');
+      const icon = contrastButton.querySelector('.icon');
+      icon.textContent = '☀️';
+      contrastButton.setAttribute('aria-label', 'Mode normal');
+    }
+  });
+</script>

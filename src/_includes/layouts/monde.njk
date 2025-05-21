@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+bodyClass: monde-page
+customStyles: "/assets/css/monde.css"
+customScripts: 
+  - "/assets/js/image-loader.js"
+---
+
+<div class="monde-header" style="--monde-color: {{ mondes[monde].couleur }};">
+  <h1>{{ mondes[monde].icone }} {{ mondes[monde].nom }}</h1>
+  <nav class="monde-navigation">
+    <a href="/">Accueil</a>
+    <a href="/carte/">Carte</a>
+  </nav>
+</div>
+
+<div class="monde-content">
+  {{ content | safe }}
+  
+  {% if mondes[monde].position.voisins.length > 0 %}
+  <section class="monde-section">
+    <h2>🧭 Mondes voisins</h2>
+    <div class="monde-section-content">
+      <div class="mondes-navigation">
+        {% for voisinId in mondes[monde].position.voisins %}
+          {% set voisin = mondes[voisinId] %}
+          <a href="/mondes/{{ voisinId }}/" class="monde-card" style="--monde-color: {{ voisin.couleur }};">
+            <h3>{{ voisin.icone }} {{ voisin.nom }}</h3>
+            <p>{{ voisin.description }}</p>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+</div>
