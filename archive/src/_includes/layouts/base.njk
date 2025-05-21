@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} - {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  {% if customStyles %}<link rel="stylesheet" href="{{ customStyles }}">{% endif %}
+  <meta name="theme-color" content="#3f51b5">
+  <link rel="preconnect" href="{{ site.url }}">
+</head>
+<body class="{% if bodyClass %}{{ bodyClass }}{% endif %}">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">{{ site.title }}</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          {% for item in site.navigation %}
+          <li><a href="{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.icon }} {{ item.text }}</a></li>
+          {% endfor %}
+          
+          {% if site.includeOrganisateurs %}
+            {% for item in site.organisateursNavigation %}
+            <li><a href="{{ item.url }}" class="{{ item.class }} {% if page.url == item.url %}active{% endif %}">{{ item.icon }} {{ item.text }}</a></li>
+            {% endfor %}
+          {% endif %}
+          
+          <li class="auth-links">
+            <a href="/login/" class="auth-link login-link">🔑 Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">🚪 Déconnexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          {% for item in site.navigation %}
+          <li><a href="{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.icon }} {{ item.text }}</a></li>
+          {% endfor %}
+          
+          {% if site.includeOrganisateurs %}
+            {% for item in site.organisateursNavigation %}
+            <li><a href="{{ item.url }}" class="{{ item.class }} {% if page.url == item.url %}active{% endif %}">{{ item.icon }} {{ item.text }}</a></li>
+            {% endfor %}
+          {% endif %}
+          
+          <li class="auth-links">
+            <a href="/login/" class="auth-link login-link">🔑 Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">🚪 Déconnexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      {{ content | safe }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {{ site.buildTime | readableDate }} {{ site.title }}</p>
+      <div class="footer-navigation">
+        {% for item in site.navigation %}
+        <a href="{{ item.url }}">{{ item.text }}</a>{% if not loop.last %} | {% endif %}
+        {% endfor %}
+        <a href="/login/" style="opacity: 0.5; font-size: 0.9em;">Organisateurs</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+  <script src="/assets/js/image-loader.js" defer></script>
+  <script src="/assets/js/fix-mobile-menu.js" defer></script>
+  {% if customScripts %}
+    {% for script in customScripts %}
+    <script src="{{ script }}" defer></script>
+    {% endfor %}
+  {% endif %}
+</body>
+</html>

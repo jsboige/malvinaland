@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte des Mondes - Malvinaland</title>
+  <meta name="description" content="Carte interactive des mondes de Malvinaland">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <meta name="theme-color" content="#3f51b5">
+  <link rel="preconnect" href="https://malvinaland.myia.io">
+</head>
+<body class="">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          
+          <li><a href="/" >🏠 Accueil</a></li>
+          
+          <li><a href="/carte/" >🗺️ Carte</a></li>
+          
+          <li><a href="/narration/" >📚 Narration</a></li>
+          
+          <li><a href="/personnages/" >👥 Personnages</a></li>
+          
+          
+          
+          
+          <li class="auth-links">
+            <a href="/login/" class="auth-link login-link">🔑 Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">🚪 Déconnexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          
+          <li><a href="/" >🏠 Accueil</a></li>
+          
+          <li><a href="/carte/" >🗺️ Carte</a></li>
+          
+          <li><a href="/narration/" >📚 Narration</a></li>
+          
+          <li><a href="/personnages/" >👥 Personnages</a></li>
+          
+          
+          
+          
+          <li class="auth-links">
+            <a href="/login/" class="auth-link login-link">🔑 Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">🚪 Déconnexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <h1>Carte des Mondes de Malvinaland</h1>
+<p>Explorez la carte interactive des mondes de Malvinaland. Chaque monde est représenté par une couleur distinctive et contient ses propres mystères à découvrir.</p>
+<div class="carte-container">
+  <img src="/assets/images/carte/Carte de Malvinaland stylisée.png" alt="Carte de Malvinaland" class="carte-image" usemap="#carte-map">
+  <map name="carte-map">
+    <area shape="poly" coords="150,200,200,180,250,200,200,220" alt="Le monde de l'assemblée" href="/mondes/assemblee/" title="Le monde de l'assemblée">
+    <area shape="poly" coords="300,150,350,130,400,150,350,170" alt="Le monde de la grange" href="/mondes/grange/" title="Le monde de la grange">
+    <area shape="poly" coords="450,200,500,180,550,200,500,220" alt="Le monde des jeux" href="/mondes/jeux/" title="Le monde des jeux">
+    <area shape="poly" coords="300,250,350,230,400,250,350,270" alt="Le monde des rêves" href="/mondes/reves/" title="Le monde des rêves">
+    <area shape="poly" coords="450,300,500,280,550,300,500,320" alt="Le monde du damier" href="/mondes/damier/" title="Le monde du damier">
+    <area shape="poly" coords="150,300,200,280,250,300,200,320" alt="Le monde du linge" href="/mondes/linge/" title="Le monde du linge">
+    <area shape="poly" coords="300,350,350,330,400,350,350,370" alt="Le monde du verger" href="/mondes/verger/" title="Le monde du verger">
+    <area shape="poly" coords="450,350,500,330,550,350,500,370" alt="Le monde du Zob" href="/mondes/zob/" title="Le monde du Zob">
+    <area shape="poly" coords="150,350,200,330,250,350,200,370" alt="Le monde Elysée" href="/mondes/elysee/" title="Le monde Elysée">
+    <area shape="poly" coords="300,400,350,380,400,400,350,420" alt="Le monde Karibu" href="/mondes/karibu/" title="Le monde Karibu">
+    <area shape="poly" coords="450,400,500,380,550,400,500,420" alt="Le monde orange des Sphinx" href="/mondes/sphinx/" title="Le monde orange des Sphinx">
+  </map>
+</div>
+<h2>Légende de la carte</h2>
+<ul>
+<li><strong>Rouge</strong> : Le monde de l'assemblée</li>
+<li><strong>Vert</strong> : Le monde de la grange</li>
+<li><strong>Bleu</strong> : Le monde des jeux</li>
+<li><strong>Violet</strong> : Le monde des rêves</li>
+<li><strong>Bleu clair</strong> : Le monde du damier</li>
+<li><strong>Violet clair</strong> : Le monde du linge</li>
+<li><strong>Rose</strong> : Le monde du verger</li>
+<li><strong>Corail</strong> : Le monde du Zob</li>
+<li><strong>Blanc</strong> : Le monde Elysée</li>
+<li><strong>Orange vif</strong> : Le monde Karibu</li>
+<li><strong>Orange rouge</strong> : Le monde orange des Sphinx</li>
+</ul>
+<h2>Connexions entre les mondes</h2>
+<p>Les mondes de Malvinaland sont interconnectés par des passages mystiques. Chaque monde est relié à plusieurs autres, formant un réseau complexe de chemins à explorer.</p>
+<style>
+  .carte-container {
+    position: relative;
+    max-width: 100%;
+    margin: 2rem 0;
+  }
+  
+  .carte-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #3f51b5;
+    border-radius: 8px;
+  }
+</style>
+<script src="/assets/js/image-loader.js" defer></script>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 15/05/2025 Malvinaland</p>
+      <div class="footer-navigation">
+        
+        <a href="/">Accueil</a> | 
+        
+        <a href="/carte/">Carte</a> | 
+        
+        <a href="/narration/">Narration</a> | 
+        
+        <a href="/personnages/">Personnages</a>
+        
+        <a href="/login/" style="opacity: 0.5; font-size: 0.9em;">Organisateurs</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+  <script src="/assets/js/image-loader.js" defer></script>
+  
+  <script src="/assets/js/fix-mobile-menu.js" defer></script>`n</body>
+</html>
+

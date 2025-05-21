@@ -1,0 +1,166 @@
+{
+  "timestamp": "2025-05-14T01:09:48.831Z",
+  "pages": [
+    {
+      "name": "accueil",
+      "url": "file:///d:/Production/malvinaland/Site/Core/index.html",
+      "wordCount": 3066,
+      "contentQualityScore": 10,
+      "narrativeElements": {
+        "description": true,
+        "ambiance": true,
+        "history": true,
+        "enigmas": true
+      },
+      "keyTopics": [
+        "assemblée",
+        "jeux",
+        "rêves",
+        "damier",
+        "linge",
+        "verger",
+        "Zob",
+        "Elysée",
+        "Karibu",
+        "Sphinx",
+        "énigme",
+        "Collectionneur d'Âmes"
+      ],
+      "readabilityScore": 6,
+      "sentimentAnalysis": {
+        "sentiment": "positif",
+        "score": "1.00"
+      },
+      "enigmas": [
+        "Énigme 1 – Le Cercle des Gardiens</li>\n            <li>🔐",
+        "Énigme 2 – Le Message des Flammes</li>\n            <li>🔐",
+        "Énigme 3 – Le Secret du Bosquet</li>\n          </ul>\n        </section>\n        <section id=\"monde-grange\">\n          <h2>🌍 Monde de la Grange</h2>\n          <h3>🏞 Description du lieu</h3>\n          <p>Le monde de la Grange est principalement constitué des 4 façades d'un bâtiment longitudinal dans lequel il n'est pas prévu de rentrer dans le cadre du jeu, ainsi que d'un espace végétalisé situé derrière le bâtiment. Il est en vert sur la carte de Malvinhaland. Chacune des quatre façades est ornée ou construite d'éléments caractéristiques, typiquement en bois, qui devraient apparaître sur les photos pour inspirer des énigmes.</p>\n          <p>Parmi les éléments notables, un sac de boxe accroché à la corniche extérieure par une corde, pas mal de boisures et poutres dans lesquelles il sera facile de cacher des indices, un tapis circulaire sous lequel on peut scotcher un indice, un petit masque africain, une table d'extérieur, un endroit où l'herbe laisse place à un tas de sciures, un tuyau d'eau qui pourrait servir à arroser ou nettoyer un objet, une banquette arrière de voiture dont on pourrait prétendre qu'il s'agit des sièges d'un avion qui s'est écrasé, avec un bout de carte caché dans le siège, un escabeau qui permet d'atteindre le niveau supérieur des poutres d'encadrement, des arbres et buissons variés pouvant cacher des indices, un coffre pouvant renfermer des indices, et divers éléments de décoration.</p>\n          <h3>🧩 Énigmes proposées dans ce monde</h3>\n          <ul>\n            <li>🔐",
+        "Énigme 1 – [Nom ou court résumé]</li>\n            <li>🔐",
+        "Énigme 2 – [Nom ou court résumé]</li>\n            <li>🔐",
+        "Énigme 3 – [Nom ou court résumé]</li>\n          </ul>\n        </section>\n        <section id=\"monde-jeux\">\n          <h2>🌍 Monde des Jeux – Le Royaume de l'Enfance Éternelle</h2>\n          <h3>🏞 Description du lieu</h3>\n          <p>Le Monde des Jeux est situé à l'un des coins du domaine de Malvinhaland, voisin du Monde de l'Assemblée et du Monde des Rêves. Représenté en bleu sur la carte, ce monde incarne l'essence même de l'enfance et de la joie pure.</p>\n          <p>Au centre de cet espace ludique trône un grand trampoline octogonal, dont la toile noire tendue invite à s'élever vers le ciel. Ses poteaux métalliques, solidement ancrés dans le sol, forment un cercle parfait qui délimite cet espace de liberté aérienne.</p>\n          <h3>🎭 Ambiance / inspiration</h3>\n          <p>Le Monde des Jeux est un espace de transition et de transformation. C'est un lieu où le temps semble suspendu, où les frontières entre réalité et imaginaire s'estompent. L'ambiance qui y règne est celle d'une nostalgie douce et lumineuse, évoquant ces après-midis d'été interminables où, enfants, nous jouions jusqu'à ce que le soleil disparaisse à l'horizon.</p>\n          <h3>📚 Histoire locale</h3>\n          <p>Dans les temps anciens, avant même que Malvinhaland ne porte ce nom, le Monde des Jeux était un lieu sacré où les enfants venaient déposer leurs rêves les plus précieux. On raconte que chaque éclat de rire, chaque cri de joie qui résonnait ici renforçait la barrière magique protégeant tous les mondes environnants.</p>\n          <h3>🧩 Énigmes proposées dans ce monde</h3>\n          <ul>\n            <li>🔐",
+        "Énigme 1 – Le Saut Céleste</li>\n            <li>🔐",
+        "Énigme 2 – Le Pendule des Souvenirs</li>\n            <li>🔐",
+        "Énigme 3 – Le Cercle des Esprits</li>\n          </ul>\n        </section>\n        <section id=\"monde-reves\">\n          <h2>🌙 Le Monde des Rêves</h2>\n          <h3>📖 Description détaillée du lieu</h3>\n          <p>Le Monde des Rêves est un point de convergence mystique entre les différents mondes de Malvinhaland. Il est caractérisé par une entrée emblématique avec une arche en bois ornée de motifs peints et une pancarte \"Monde des rêves\".</p>\n          <p>Ce lieu est connu pour son ambiance onirique, avec une atmosphère mystique et éthérée, des tons pastel, et des sons de carillons éoliens et de murmures indistincts.</p>\n          <h3>📚 Histoire locale</h3>\n          <p>Le Monde des Rêves était le centre spirituel de Malvinhaland, où les princesses ancestrales protégeaient les rêves des habitants. Le Collectionneur d'Âmes a fragilisé ce royaume en capturant la princesse, mais des fragments de souvenirs subsistent, révélant sa jalousie envers la capacité de la princesse à inspirer des rêves.</p>\n          <h3>🧩 Énigmes proposées dans ce monde</h3>\n          <ul>\n            <li>🔐",
+        "Énigme 1 – Le Portail des Symboles</li>\n            <li>🔐",
+        "Énigme 2 – Les Coquillages Murmureurs</li>\n            <li>🔐",
+        "Énigme 3 – La Constellation du Tipi</li>\n          </ul>\n        </section>\n        <section id=\"monde-damier\">\n          <h2>🌍 Monde du Damier</h2>\n          <h3>🏞 Description du lieu</h3>\n          <p>Le Monde du Damier est le plus petit monde de Malvinhaland, situé en bleu clair à droite sur la carte. Ce lieu singulier est dominé par un imposant panneau solaire photovoltaïque, véritable prouesse technologique au cœur de la nature.</p>\n          <p>L'installation est montée sur une structure inclinée en bois, orientée pour capter au maximum la lumière du soleil. À l'arrière du panneau, le câblage et la structure métallique forment un véritable damier technique, où chaque dalle devient une case potentielle pour des énigmes.</p>\n          <h3>🎭 Ambiance / inspiration</h3>\n          <p>Le Monde du Damier incarne la fusion entre technologie et nature, entre innovation et tradition. C'est un monde de contrastes et de symétrie, où la précision mathématique du panneau solaire dialogue avec l'environnement organique qui l'entoure.</p>\n          <h3>📚 Histoire locale</h3>\n          <p>Dans les temps anciens, les habitants avaient découvert le secret de capturer l'essence même du soleil. Ils créèrent \"La Matrice Solaire\" - un immense damier magique capable de transformer la lumière en énergie pure. Mais le Collectionneur a effacé les symboles sacrés et perturbé l'harmonie du lieu.</p>\n          <h3>🧩 Énigmes proposées dans ce monde</h3>\n          <ul>\n            <li>🔐",
+        "Énigme 1 – La Bataille Solaire</li>\n            <li>🔐",
+        "Énigme 2 – L'Échiquier Énergétique</li>\n            <li>🔐",
+        "Énigme 3 – Le Code Binaire Solaire</li>\n          </ul>\n        </section>\n        <section id=\"monde-linge\">\n          <h2>🌍 Monde du Linge</h2>\n          <h3>🏞 Description du lieu</h3>\n          <p>Le Monde du Linge est composé de la partie du jardin située derrière la maison du monde orange des sphinx. Ce lieu enchanteur se caractérise par un mélange harmonieux d'éléments naturels et domestiques, avec une végétation variée et luxuriante.</p>\n          <p>L'élément central est une longue corde à linge bleue tendue entre deux arbres imposants, avec des pinces à linge colorées accrochées à différentes hauteurs, créant un motif visuel rythmé.</p>\n          <h3>🎭 Ambiance / inspiration</h3>\n          <p>Le Monde du Linge est un espace de transition entre le domestique et le sauvage, entre l'ordre et la nature. C'est un \"monde suspendu\" où le temps semble s'être arrêté, évoquant la simplicité d'une vie rurale d'autrefois.</p>\n          <h3>📚 Histoire locale</h3>\n          <p>On raconte que vivait autrefois une vieille lavandière aux doigts agiles et à la mémoire infaillible. Chaque jour, elle suspendait le linge des habitants de Malvinhaland sur sa corde magique, et chaque pince à linge qu'elle utilisait portait un message codé, une histoire, un secret.</p>\n          <h3>🧩 Énigmes proposées dans ce monde</h3>\n          <ul>\n            <li>🔐",
+        "Énigme 1 – La Partition de la Lavandière</li>\n            <li>🔐",
+        "Énigme 2 – Le Secret de la Souche</li>\n            <li>🔐",
+        "Énigme 3 – Le Passage du Temps</li>\n          </ul>\n        </section>\n        <section id=\"monde-verger\">\n          <h2>🌍 Monde du Verger</h2>\n          <h3>🏞 Description du lieu</h3>\n          <p>Le Monde du Verger est l'un des plus vastes et des plus enchanteurs de Malvinhaland, s'étendant majestueusement sur la partie est du domaine. Ce sanctuaire naturel est dominé par un verger d'arbres fruitiers variés, créant un calendrier naturel où chaque arbre raconte l'histoire du temps qui passe.</p>\n          <p>Au cœur du verger se dresse un buisson dense, formant un dédale naturel. Une échelle en bois permet d'accéder aux branches hautes, offrant une perspective unique sur l'ensemble du domaine. Une petite cabane à oiseaux peinte en bleu pâle attire l'œil par sa délicatesse.</p>\n          <h3>🎭 Ambiance / inspiration</h3>\n          <p>Le Monde du Verger incarne \"Le Monde de la Connaissance Cyclique\" - un lieu où le temps n'est pas linéaire mais circulaire, où chaque fin annonce un nouveau commencement. L'ambiance qui règne ici est celle d'une abondance tranquille et d'une sagesse ancestrale.</p>\n          <h3>📚 Histoire locale</h3>\n          <p>Le Verger de Malvinhaland n'a pas toujours été ce havre de paix et d'abondance. Il y a fort longtemps, cette terre était aride et stérile, jusqu'à l'arrivée de Pomona, une femme mystérieuse qui planta le premier arbre et créa une bibliothèque vivante de connaissances.</p>\n          <h3>🧩 Énigmes proposées dans ce monde</h3>\n          <ul>\n            <li>🔐",
+        "Énigme 1 – L'Arbre des Saisons</li>\n            <li>🔐",
+        "Énigme 2 – Le Secret de la Cabane</li>\n            <li>🔐",
+        "Énigme 3 – Le Labyrinthe du Buisson</li>\n          </ul>\n        </section>\n        <section id=\"monde-zob\">\n          <h2>🌍 Monde du Zob</h2>\n          <h3>🏞 Description du lieu</h3>\n          <p>Le Monde du Zob est organisé autour d'une yourte distinctive dénommée \"le Zob\" et de la végétation luxuriante qui l'entoure. La yourte est une structure octogonale moderne et soignée, avec un toit en bardeaux noirs et des murs en bois peints en orange terracotta.</p>\n          <p>Autour de la yourte s'étend un domaine naturel varié, avec un espace intime caché derrière une rangée de bambous, un arbre majestueux aux branches accessibles, et un petit appentis offrant une cachette discrète.</p>\n          <h3>🎭 Ambiance / inspiration</h3>\n          <p>Le Monde du Zob est un \"monde de contemplation et de connexion\", où la frontière entre l'habitat humain et la nature s'estompe. C'est un espace de transition entre le matériel et le spirituel, entre l'action et la méditation.</p>\n          <h3>📚 Histoire locale</h3>\n          <p>On raconte que le Monde du Zob tire son nom d'un ancien ermite nommé Zobel qui, fatigué du tumulte du monde extérieur, vint s'installer dans ce coin reculé de Malvinhaland. Architecte de formation et philosophe de cœur, il construisit de ses mains cette yourte unique.</p>\n          <h3>🧩 Énigmes proposées dans ce monde</h3>\n          <ul>\n            <li>🔐",
+        "Énigme 1 – Le Journal de Zobel</li>\n            <li>🔐",
+        "Énigme 2 – La Constellation du Bambou</li>\n            <li>🔐",
+        "Énigme 3 – L'Échelle des Perceptions</li>\n          </ul>\n        </section>\n        <section id=\"monde-elysee\">\n          <h2>🌍 Monde Elysée</h2>\n          <h3>🏞 Description du lieu</h3>\n          <p>Le Monde Elysée est le seul monde situé à l'extérieur du domaine clôturé de Malvinhaland. Ce monde d'accueil est constitué de l'espace à l'entrée de la propriété et de deux caravanes résidentielles, \"l'Elysée\" et \"le Bedouin\", situées à environ 50 mètres l'une de l'autre.</p>\n          <p>L'Elysée est une caravane au style pittoresque avec un intérieur en bois aux tons chauds, tandis que le Bedouin arbore un extérieur blanc avec des détails gris et un intérieur moderne mêlant fonctionnalité contemporaine et touches ethniques colorées.</p>\n          <h3>🎭 Ambiance / inspiration</h3>\n          <p>Le Monde Elysée est un \"monde de transition et de dualité\", servant de passerelle entre l'extérieur et l'univers enchanté de Malvinhaland. C'est un espace liminal où se rencontrent deux réalités : celle du quotidien ordinaire et celle de l'aventure extraordinaire qui attend les visiteurs.</p>\n          <h3>📚 Histoire locale</h3>\n          <p>On raconte que le Monde Elysée tire son nom d'une légende locale selon laquelle deux voyageurs, Éloi et Samir, décidèrent de poser leurs caravanes à l'orée d'une forêt qui semblait les appeler. Leurs caravanes, \"l'Elysée\" et \"le Bedouin\", sont les témoins de leur passage et de leur quête de lieux où les frontières entre les mondes s'estompent.</p>\n          <h3>🧩 Énigmes proposées dans ce monde</h3>\n          <ul>\n            <li>🔐",
+        "Énigme 1 – Le Code du Voyageur</li>\n            <li>🔐",
+        "Énigme 2 – Les Langues Oubliées</li>\n            <li>🔐",
+        "Énigme 3 – Le Miroir des Réalités</li>\n          </ul>\n        </section>\n        <section id=\"monde-karibu\">\n          <h2>🌍 Monde Karibu</h2>\n          <h3>🏞 Description du lieu</h3>\n          <p>Le Monde Karibu est une cuisine d'été rustique située au cœur du domaine de Malvinha. Cet espace chaleureux se compose d'une pièce intérieure fonctionnelle et d'une terrasse accueillante, formant un lieu de rassemblement privilégié pour les invités.</p>\n          <p>La cuisine d'été présente un charme authentique avec sa charpente apparente et ses espaces de travail bien organisés. Sur les étagères, une collection de bouteilles d'alcool s'aligne comme des sentinelles colorées, reflétant la lumière naturelle qui baigne l'espace.</p>\n          <h3>🎭 Ambiance / inspiration</h3>\n          <p>Le Monde Karibu incarne l'essence même de la convivialité et de l'hospitalité. C'est un lieu de partage et de rassemblement où les barrières sociales s'effacent autour d'un repas ou d'une boisson. L'ambiance y est à la fois chaleureuse et mystérieuse.</p>\n          <h3>📚 Histoire locale</h3>\n          <p>Le Monde Karibu occupe une place centrale dans l'histoire du Collectionneur d'Âmes. Ce personnage énigmatique a choisi ce lieu en raison de sa position stratégique au cœur du domaine et de l'énergie particulière qui y circule.</p>\n          <h3>🧩 Énigmes proposées dans ce monde</h3>\n          <ul>\n            <li>🔐",
+        "Énigme 1 – Le Code des Spiritueux</li>\n            <li>🔐",
+        "Énigme 2 – Les Gardiens de Cristal</li>\n            <li>🔐",
+        "Énigme 3 – La Mélodie des Bouchons</li>\n          </ul>\n        </section>\n    </main>\n    <footer>\n        <p>&copy; 2025 Les mondes de Malvinha</p>\n        <div class=\"footer-navigation\">\n            <a href=\"index.html\">Accueil</a> |\n            <a href=\"carte.html\">Carte</a>\n        </div>\n    </footer>\n</body>\n</html>"
+      ],
+      "summary": "# Résumé du contenu\n\n## Titres principaux\n\n- Bienvenue dans les mondes de Malvinha\n- Introduction\n- Monde 1\n- Monde 2\n- 🔥 Le Monde de l'Assemblée\n- 🏞️ Introduction et description du lieu\n- 🎭 Ambiance et atmosphère\n- 📚 Histoire locale\n- 🧩 Énigmes proposées dans ce monde\n- 🌍 Monde de la Grange\n- 🏞 Description du lieu\n- 🧩 Énigmes proposées dans ce monde\n- 🌍 Monde des Jeux – Le Royaume de l'Enfance Éternelle\n- 🏞 Description du lieu\n- 🎭 Ambiance / inspiration\n- 📚 Histoire locale\n- 🧩 Énigmes proposées dans ce monde\n- 🌙 Le Monde des Rêves\n- 📖 Description détaillée du lieu\n- 📚 Histoire locale\n- 🧩 Énigmes proposées dans ce monde\n- 🌍 Monde du Damier\n- 🏞 Description du lieu\n- 🎭 Ambiance / inspiration\n- 📚 Histoire locale\n- 🧩 Énigmes proposées dans ce monde\n- 🌍 Monde du Linge\n- 🏞 Description du lieu\n- 🎭 Ambiance / inspiration\n- 📚 Histoire locale\n- 🧩 Énigmes proposées dans ce monde\n- 🌍 Monde du Verger\n- 🏞 Description du lieu\n- 🎭 Ambiance / inspiration\n- 📚 Histoire locale\n- 🧩 Énigmes proposées dans ce monde\n- 🌍 Monde du Zob\n- 🏞 Description du lieu\n- 🎭 Ambiance / inspiration\n- 📚 Histoire locale\n- 🧩 Énigmes proposées dans ce monde\n- 🌍 Monde Elysée\n- 🏞 Description du lieu\n- 🎭 Ambiance / inspiration\n- 📚 Histoire locale\n- 🧩 Énigmes proposées dans ce monde\n- 🌍 Monde Karibu\n- 🏞 Description du lieu\n- 🎭 Ambiance / inspiration\n- 📚 Histoire locale\n- 🧩 Énigmes proposées dans ce monde\n\n## Éléments narratifs\n\n### Description\nLe monde de la Grange est principalement constitué des 4 façades d'un bâtiment longitudinal dans lequel il n'est pas prévu de rentrer dans le cadre du jeu, ainsi que d'un espace végétalisé situé derrière le bâtiment. Il est en vert sur la carte de Malvinhaland. Chacune des quatre façades est ornée ou construite d'éléments caractéristiques, typiquement en bois, qui devraient apparaître sur les photos pour inspirer des énigmes....\n\n### Ambiance\nLe Monde de l'Assemblée est imprégné d'une atmosphère de communion et de rituel. L'air y semble plus dense, chargé des échos de cérémonies anciennes et de décisions importantes. Les cercles évoquent les rassemblements tribaux où l'égalité règne, où chaque voix peut être entendue, où le feu central symbolise la force vitale qui unit tous les participants....\n\n### Histoire\nIl y a bien longtemps, avant même que Malvinhaland ne porte ce nom, ce lieu était connu comme le Cercle des Gardiens. C'est ici que se réunissaient les protecteurs des différents mondes, ceux qui maintenaient l'équilibre entre les forces visibles et invisibles....\n\n## Énigmes\n\n1. Énigme 1 – Le Cercle des Gardiens</li>\n2. Énigme 2 – Le Message des Flammes</li>\n3. Énigme 3 – Le Secret du Bosquet</li>\n4. Énigme 1 – [Nom ou court résumé]</li>\n5. Énigme 2 – [Nom ou court résumé]</li>\n6. Énigme 3 – [Nom ou court résumé]</li>\n7. Énigme 1 – Le Saut Céleste</li>\n8. Énigme 2 – Le Pendule des Souvenirs</li>\n9. Énigme 3 – Le Cercle des Esprits</li>\n10. Énigme 1 – Le Portail des Symboles</li>\n11. Énigme 2 – Les Coquillages Murmureurs</li>\n12. Énigme 3 – La Constellation du Tipi</li>\n13. Énigme 1 – La Bataille Solaire</li>\n14. Énigme 2 – L'Échiquier Énergétique</li>\n15. Énigme 3 – Le Code Binaire Solaire</li>\n16. Énigme 1 – La Partition de la Lavandière</li>\n17. Énigme 2 – Le Secret de la Souche</li>\n18. Énigme 3 – Le Passage du Temps</li>\n19. Énigme 1 – L'Arbre des Saisons</li>\n20. Énigme 2 – Le Secret de la Cabane</li>\n21. Énigme 3 – Le Labyrinthe du Buisson</li>\n22. Énigme 1 – Le Journal de Zobel</li>\n23. Énigme 2 – La Constellation du Bambou</li>\n24. Énigme 3 – L'Échelle des Perceptions</li>\n25. Énigme 1 – Le Code du Voyageur</li>\n26. Énigme 2 – Les Langues Oubliées</li>\n27. Énigme 3 – Le Miroir des Réalités</li>\n28. Énigme 1 – Le Code des Spiritueux</li>\n29. Énigme 2 – Les Gardiens de Cristal</li>\n30. Énigme 3 – La Mélodie des Bouchons</li>\n"
+    },
+    {
+      "name": "carte",
+      "url": "file:///d:/Production/malvinaland/Site/Core/carte.html",
+      "wordCount": 1074,
+      "contentQualityScore": 5,
+      "narrativeElements": {
+        "description": false,
+        "ambiance": false,
+        "history": false,
+        "enigmas": false
+      },
+      "keyTopics": [
+        "assemblée",
+        "jeux",
+        "rêves",
+        "damier",
+        "linge",
+        "verger",
+        "Zob",
+        "Elysée",
+        "Karibu",
+        "Sphinx"
+      ],
+      "readabilityScore": 9,
+      "sentimentAnalysis": {
+        "sentiment": "neutre",
+        "score": 0
+      },
+      "enigmas": [],
+      "summary": "# Résumé du contenu\n\n## Titres principaux\n\n- Carte de Malvinaland\n- Carte des Mondes de Malvinaland\n- Légende de la carte\n\n## Éléments narratifs\n\n"
+    },
+    {
+      "name": "monde-assemblee",
+      "url": "file:///d:/Production/malvinaland/Site/Mondes/Le%20monde%20de%20l'assembl%C3%A9e/index.html",
+      "error": "ENOENT: no such file or directory, open 'd:\\Production\\malvinaland\\Site\\Mondes\\Le%20monde%20de%20l'assembl%C3%A9e\\index.html'"
+    },
+    {
+      "name": "monde-jeux",
+      "url": "file:///d:/Production/malvinaland/Site/Mondes/Le%20monde%20des%20jeux/index.html",
+      "error": "ENOENT: no such file or directory, open 'd:\\Production\\malvinaland\\Site\\Mondes\\Le%20monde%20des%20jeux\\index.html'"
+    },
+    {
+      "name": "monde-reves",
+      "url": "file:///d:/Production/malvinaland/Site/Mondes/Le%20monde%20des%20r%C3%AAves/index.html",
+      "error": "ENOENT: no such file or directory, open 'd:\\Production\\malvinaland\\Site\\Mondes\\Le%20monde%20des%20r%C3%AAves\\index.html'"
+    },
+    {
+      "name": "monde-damier",
+      "url": "file:///d:/Production/malvinaland/Site/Mondes/Le%20monde%20du%20damier/index.html",
+      "error": "ENOENT: no such file or directory, open 'd:\\Production\\malvinaland\\Site\\Mondes\\Le%20monde%20du%20damier\\index.html'"
+    },
+    {
+      "name": "monde-linge",
+      "url": "file:///d:/Production/malvinaland/Site/Mondes/Le%20monde%20du%20linge/index.html",
+      "error": "ENOENT: no such file or directory, open 'd:\\Production\\malvinaland\\Site\\Mondes\\Le%20monde%20du%20linge\\index.html'"
+    },
+    {
+      "name": "monde-verger",
+      "url": "file:///d:/Production/malvinaland/Site/Mondes/Le%20monde%20du%20verger/index.html",
+      "error": "ENOENT: no such file or directory, open 'd:\\Production\\malvinaland\\Site\\Mondes\\Le%20monde%20du%20verger\\index.html'"
+    },
+    {
+      "name": "monde-zob",
+      "url": "file:///d:/Production/malvinaland/Site/Mondes/Le%20monde%20du%20Zob/index.html",
+      "error": "ENOENT: no such file or directory, open 'd:\\Production\\malvinaland\\Site\\Mondes\\Le%20monde%20du%20Zob\\index.html'"
+    },
+    {
+      "name": "monde-elysee",
+      "url": "file:///d:/Production/malvinaland/Site/Mondes/Le%20monde%20Elys%C3%A9e/index.html",
+      "error": "ENOENT: no such file or directory, open 'd:\\Production\\malvinaland\\Site\\Mondes\\Le%20monde%20Elys%C3%A9e\\index.html'"
+    },
+    {
+      "name": "monde-karibu",
+      "url": "file:///d:/Production/malvinaland/Site/Mondes/Le%20monde%20Karibu/index.html",
+      "error": "ENOENT: no such file or directory, open 'd:\\Production\\malvinaland\\Site\\Mondes\\Le%20monde%20Karibu\\index.html'"
+    },
+    {
+      "name": "monde-sphinx",
+      "url": "file:///d:/Production/malvinaland/Site/Mondes/Le%20monde%20orange%20des%20Sphinx/index.html",
+      "error": "ENOENT: no such file or directory, open 'd:\\Production\\malvinaland\\Site\\Mondes\\Le%20monde%20orange%20des%20Sphinx\\index.html'"
+    }
+  ],
+  "summary": {
+    "totalPages": 12,
+    "totalWords": 4140,
+    "averageWordsPerPage": 345,
+    "contentQualityScore": 1.3,
+    "narrativeElements": {
+      "description": 1,
+      "ambiance": 1,
+      "history": 1,
+      "enigmas": 1,
+      "descriptionPercent": 8,
+      "ambiancePercent": 8,
+      "historyPercent": 8,
+      "enigmasPercent": 8
+    }
+  }
+}

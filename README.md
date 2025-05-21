@@ -2,133 +2,172 @@
 
 Bienvenue dans le dépôt du jeu de piste immersif "Malvinaland", conçu pour la maison de campagne à Sabres. Cette aventure narrative et ludique propose un parcours d'énigmes à travers le jardin, les bâtiments et les espaces décorés de la propriété.
 
-Ce document explique également la procédure de déploiement du projet selon la nouvelle arborescence qui sépare le site web déployable (léger) des ressources volumineuses (photos haute résolution).
+## 🎮 L'univers de Malvinaland
 
-## Structure du projet
+Malvinaland est un univers parallèle composé de plusieurs mondes interconnectés, chacun avec ses propres règles, habitants et défis. Ces mondes étaient autrefois en parfaite harmonie, reliés par des passages magiques permettant aux habitants de voyager librement entre eux. Cependant, un événement mystérieux a perturbé cet équilibre, isolant chaque monde et effaçant partiellement la mémoire collective.
 
-La nouvelle arborescence est organisée comme suit :
+Les participants incarnent des "Voyageurs", des êtres dotés de la capacité rare de traverser les frontières entre les mondes. Leur mission est de restaurer les connexions entre les différents mondes de Malvinaland en résolvant des énigmes et en accomplissant des quêtes spécifiques dans chaque royaume.
 
-```
-Les mondes de Malvinha/
-│
-├── site/                           # Site web déployable (léger)
-│   ├── index.html                  # Page de redirection vers Core/index.html
-│   ├── web.config                  # Configuration IIS
-│   ├── Core/                       # Configuration et navigation communes
-│   │   ├── mondes-config.js
-│   │   ├── navigation.js
-│   │   ├── image-loader.js         # Script de chargement différé des images
-│   │   └── index.html              # Page d'accueil principale
-│   │
-│   ├── Mondes/                     # Structure légère des mondes
-│   │   ├── Carte de Malvinaland stylisée.png  # Image essentielle
-│   │   ├── web.config
-│   │   │
-│   │   ├── Le monde de l'assemblée/
-│   │   │   ├── index.html
-│   │   │   ├── script.js
-│   │   │   ├── styles.css
-│   │   │   └── thumbnails/         # Miniatures des images (légères)
-│   │   │
-│   │   └── [Autres mondes...]
-│   │
-│   └── Site/                       # Structure modulaire du site
-│
-├── ressources/                     # Ressources volumineuses (non déployées)
-│   └── images/                     # Images haute résolution
-│       ├── Le monde de l'assemblée/
-│       ├── Le monde de la grange/
-│       └── [Autres mondes...]
-│
-└── docs/                           # Documentation et fichiers de développement
-```
+### 🧩 Concept du jeu
 
-## Procédure de déploiement
+Le jeu propose une expérience immersive où les joueurs explorent physiquement différents espaces (les "mondes") de la propriété, interagissent avec des personnages non-joueurs (PNJ), et résolvent des énigmes pour progresser dans l'histoire. Chaque monde possède sa propre ambiance, son histoire locale et ses défis uniques.
 
-### Prérequis
+Au fur et à mesure de leur progression, les joueurs collectent des "Fragments d'Unité" qui leur permettent de reconstituer l'histoire complète de Malvinaland et de restaurer les connexions entre les mondes.
 
-- PowerShell 5.1 ou supérieur
-- .NET Framework 4.5 ou supérieur (pour la manipulation des images)
-- Droits d'administrateur sur le serveur de déploiement
+## 🗺️ Les mondes de Malvinaland
 
-### Étapes de déploiement
+Malvinaland est composé de 11 mondes distincts, chacun avec son propre thème et son ambiance unique :
 
-1. **Préparation**
-   - Cloner ou télécharger le projet complet
-   - Ouvrir une console PowerShell en tant qu'administrateur
-   - Se positionner dans le répertoire racine du projet
+- **🔥 Le Monde de l'Assemblée** - Un lieu mystique avec deux cercles d'assemblée qui semblent suspendus hors du temps.
+- **🌍 Le Monde de la Grange** - Un bâtiment longitudinal avec quatre façades distinctives et un espace végétalisé.
+- **🌍 Le Monde des Jeux** - Le Royaume de l'Enfance Éternelle, avec un grand trampoline octogonal au centre.
+- **🌙 Le Monde des Rêves** - Un point de convergence mystique entre les différents mondes de Malvinaland.
+- **🌞 Le Monde du Damier** - Un lieu dominé par un imposant panneau solaire photovoltaïque, symbole de l'énergie et de la précision mathématique.
+- **🧵 Le Monde du Linge** - Un sanctuaire des traditions du lavage et de l'entretien du linge, avec une corde à linge bleue comme élément central.
+- **🌳 Le Monde du Verger** - Un sanctuaire naturel abritant un modeste verger de jeunes arbres fruitiers variés.
+- **🧘 Le Monde du Zob** - Un espace de contemplation centré autour d'une yourte octogonale avec une ouverture en forme d'étoile au sommet.
+- **🏛️ Le Monde Elysée** - Un monde d'accueil constitué de deux caravanes résidentielles aux styles contrastés, symbolisant la diplomatie et le passage.
+- **🔥 Le Monde Karibu** - Une cuisine d'été rustique incarnant l'hospitalité et l'accueil, point culminant de l'aventure.
+- **🐱 Le Monde Orange des Sphinx** - Un domaine mystérieux dominé par une bâtisse aux murs orange vif, gardé par des sphinx félins.
 
-2. **Exécution du script de déploiement**
-   ```powershell
-   .\deploy.ps1
+## 👥 Les personnages
+
+Le jeu met en scène plusieurs personnages non-joueurs (PNJ) qui guident, défient ou aident les joueurs dans leur quête. Parmi eux :
+
+- **Le Gardien des Mondes** - Une figure mystérieuse qui possède une connaissance profonde de Malvinaland et guide les Voyageurs.
+- **Le Collectionneur d'Âmes** - Une entité énigmatique qui aurait orchestré la séparation des mondes.
+- **La Princesse Malvina** - Un personnage central qui contient en elle la Flamme Éternelle, essentielle à l'équilibre des mondes.
+
+D'autres personnages peuplent les différents mondes, chacun avec sa propre histoire et ses motivations.
+
+## 📋 Trame narrative
+
+L'aventure se déroule en plusieurs actes :
+
+1. **Prologue : L'appel des Voyageurs** - Les participants découvrent leur mission : restaurer l'harmonie entre les mondes.
+2. **Acte I : La découverte des mondes** - Exploration des premiers mondes et collecte des premiers Fragments d'Unité.
+3. **Acte II : La révélation** - Découverte que la séparation des mondes était délibérée.
+4. **Acte III : La confrontation** - Accès au monde Karibu et confrontation avec le Collectionneur d'Âmes.
+5. **Épilogue : L'équilibre retrouvé** - Utilisation des Fragments d'Unité pour établir un nouvel équilibre dans Malvinaland.
+
+---
+
+## 🛠️ Informations techniques
+
+### Structure du dépôt
+
+Le dépôt est organisé de la manière suivante:
+
+#### Dossiers principaux
+
+- **src/** - Contient la version principale du site web Malvinaland basée sur 11ty (Eleventy)
+  - **_data/** - Données utilisées par 11ty (configurations des mondes, etc.)
+  - **_includes/** - Layouts et composants réutilisables
+  - **assets/** - Ressources statiques (CSS, JavaScript, etc.)
+  - **content/** - Contenu principal du site en Markdown
+    - **mondes/** - Pages spécifiques à chaque monde
+    - **organisateurs/** - Pages réservées aux organisateurs
+- **archive/** - Versions précédentes du site
+- **ressources/** - Ressources utilisées par le site
+  - **images/** - Images des différents mondes
+- **scripts/** - Scripts utilitaires pour le déploiement et la maintenance
+
+### Accès au site
+
+**IMPORTANT** : Le site Malvinaland est accessible UNIQUEMENT via le domaine **https://malvinaland.myia.io/**.
+
+Ce domaine pointe directement vers le répertoire `site` de ce dépôt via la configuration IIS. Il n'y a pas besoin de déploiement supplémentaire. Il suffit d'alimenter le répertoire `site` et IIS le servira automatiquement via le nom de domaine.
+
+### Installation et développement
+
+#### Prérequis
+
+- Node.js (version recommandée: 16.x ou supérieure)
+- npm (inclus avec Node.js)
+
+#### Installation
+
+1. Cloner le dépôt
+2. Installer les dépendances:
+   ```
+   npm install
    ```
 
-3. **Vérification**
-   - Vérifier que la structure de dossiers a été correctement créée
-   - Vérifier que les miniatures ont été générées dans les dossiers `thumbnails/`
-   - Vérifier que les images haute résolution ont été déplacées dans le dossier `ressources/images/`
+#### Développement local
 
-4. **Déploiement sur le serveur web**
-   - Copier uniquement le dossier `site/` sur le serveur web
-   - Conserver le dossier `ressources/` sur un stockage local ou un serveur de fichiers séparé
+Pour lancer le serveur de développement 11ty:
 
-## Fonctionnement du chargement différé des images
-
-Le système de chargement différé des images fonctionne comme suit :
-
-1. Les images haute résolution sont stockées dans le dossier `ressources/images/`
-2. Des miniatures légères sont générées et stockées dans les dossiers `thumbnails/` de chaque monde
-3. Le script `image-loader.js` détecte les images avec l'attribut `data-high-res` et les charge en arrière-plan lorsque :
-   - L'utilisateur survole l'image avec la souris
-   - L'utilisateur clique sur l'image
-   - L'image devient visible dans la fenêtre du navigateur
-
-### Exemple d'utilisation dans le HTML
-
-```html
-<img src="thumbnails/image.jpg" data-high-res="../../ressources/images/Le monde de l'assemblée/image.jpg" alt="Description de l'image">
+```
+npm run dev
 ```
 
-## Maintenance et mise à jour
+Le site sera accessible à l'adresse http://localhost:8080 (uniquement pour le développement local).
 
-### Ajout de nouvelles images
+**Note** : Le développement local est uniquement destiné aux tests. Le site final est accessible via **https://malvinaland.myia.io/**.
 
-Pour ajouter de nouvelles images à un monde existant :
+#### Construction du site
 
-1. Placer les images haute résolution dans le dossier `ressources/images/[Nom du monde]/`
-2. Exécuter à nouveau le script `deploy.ps1` pour générer les miniatures
-3. Mettre à jour les références dans les fichiers HTML
+Pour construire le site (version joueurs uniquement):
 
-### Ajout d'un nouveau monde
+```
+npm run build
+```
 
-Pour ajouter un nouveau monde :
+Pour construire le site complet (joueurs et organisateurs):
 
-1. Créer le dossier du monde dans la structure existante
-2. Ajouter les fichiers HTML, JS et CSS nécessaires
-3. Ajouter les images dans le dossier `ressources/images/[Nouveau monde]/`
-4. Mettre à jour le fichier `Core/mondes-config.js` pour inclure le nouveau monde
-5. Exécuter le script `deploy.ps1` pour générer la structure complète
+```
+npm run build:all
+```
 
-## Résolution des problèmes courants
+Le site généré se trouvera dans le dossier `dist/`.
 
-### Les miniatures ne sont pas générées
+### Déploiement
 
-- Vérifier que le .NET Framework est correctement installé
-- Vérifier les droits d'accès aux dossiers
-- Consulter les logs d'erreur générés par le script
+**IMPORTANT** : Le site est déjà configuré pour être servi via IIS à l'adresse **https://malvinaland.myia.io/**.
 
-### Les images haute résolution ne se chargent pas
+Le déploiement consiste simplement à mettre à jour le contenu du répertoire `site` :
 
-- Vérifier que les chemins relatifs sont corrects dans les attributs `data-high-res`
-- Vérifier que le script `image-loader.js` est bien chargé dans les pages HTML
-- Vérifier la console du navigateur pour d'éventuelles erreurs JavaScript
+1. Construire le site avec `npm run build` ou `npm run build:all`
+2. Le contenu généré dans `dist/` est automatiquement copié dans le répertoire `site/`
+3. IIS sert automatiquement le contenu mis à jour via **https://malvinaland.myia.io/**
 
-### Erreurs lors de l'exécution du script de déploiement
+### Maintenance
 
-- Exécuter PowerShell en tant qu'administrateur
-- Vérifier la politique d'exécution PowerShell avec la commande `Get-ExecutionPolicy`
-- Si nécessaire, modifier la politique avec `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process`
+Des scripts utilitaires sont disponibles dans le dossier `scripts/` pour faciliter la maintenance du site:
 
-## Support et contact
+- **clean-repository.ps1** - Nettoie les fichiers temporaires
+- **identify-missing-images.ps1** - Identifie les images manquantes
+- **optimize-images.js** - Optimise les images pour le web
+- **prepare-commit.ps1** - Prépare les fichiers pour un commit
 
-Pour toute question ou assistance concernant la procédure de déploiement, veuillez contacter l'équipe de développement à l'adresse suivante : [adresse email].
+## 📝 Édition du contenu
+
+Le contenu du site est stocké sous forme de fichiers Markdown dans le dossier `src/content/`. Cette approche offre plusieurs avantages:
+
+- **Source unique de vérité** - Tout le contenu est stocké dans des fichiers Markdown faciles à éditer
+- **Séparation du contenu et de la présentation** - Le contenu est indépendant du HTML et du CSS
+- **Gestion des versions** - Les modifications du contenu sont facilement suivies avec Git
+- **Contenu conditionnel** - Certaines parties du contenu peuvent être visibles uniquement pour les organisateurs
+
+### Structure du contenu
+
+- **src/content/index.md** - Page d'accueil
+- **src/content/carte.md** - Page de la carte
+- **src/content/narration.md** - Page de narration
+- **src/content/personnages.md** - Page des personnages
+- **src/content/mondes/** - Pages des différents mondes
+- **src/content/organisateurs/** - Pages réservées aux organisateurs
+
+### Syntaxe spéciale
+
+Pour marquer du contenu comme visible uniquement pour les organisateurs:
+
+```markdown
+::: organisateurs-only
+Ce contenu ne sera visible que pour les organisateurs.
+:::
+```
+
+## 📄 Licence
+
+Ce projet est sous licence propriétaire. Tous droits réservés.

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le monde des jeux - Les mondes de Malvinha</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <h1>?? Monde des Jeux – Le Royaume de l'Enfance Éternelle</h1>
+        <nav>
+            <ul>
+                <li><a href="#description">Description</a></li>
+                <li><a href="#ambiance">Ambiance</a></li>
+                <li><a href="#histoire">Histoire</a></li>
+                <li><a href="#enigmes">Énigmes</a></li>
+                <li><a href="#pnj">Personnages</a></li>
+                <li><a href="#intrigue">Intrigue</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="progression-container">
+        <div class="progression-bar">
+            <div class="progression-fill" id="progression-fill"></div>
+        </div>
+        <div class="progression-text">
+            <span id="enigmes-resolues">0</span>/3 énigmes résolues
+        </div>
+        <div class="phrase-complete" id="phrase-complete">
+            <span id="mot1" class="mot-phrase">L'OSCILLATION</span>
+            <span id="et" class="mot-phrase">et la</span>
+            <span id="mot2" class="mot-phrase">RÉSONANCE</span>
+            <span id="de" class="mot-phrase">de</span>
+            <span id="mot3" class="mot-phrase">l'ENFANCE</span>
+        </div>
+        <div id="indice-karibu" class="indice-karibu">
+            <p>?? Indice débloqué : Rendez-vous au monde Karibu pour découvrir le barbecue mystérieux...</p>
+        </div>
+    </div>
+
+    <main>
+        <section id="description" class="section-card">
+            <h2>?? Description du lieu</h2>
+            <div class="image-placeholder">
+                <div class="placeholder-text">Images du trampoline octogonal</div>
+            </div>
+            <p>Le Monde des Jeux est situé à l'un des coins du domaine de Malvinhaland, voisin du Monde de l'Assemblée et du Monde des Rêves. Représenté en bleu sur la carte, ce monde incarne l'essence même de l'enfance et de la joie pure. L'atmosphère qui y règne est à la fois ludique et compétitive, invitant les visiteurs à se défier tout en célébrant le plaisir simple du jeu.</p>
+            
+            <h3>Le trampoline octogonal</h3>
+            <p>Au centre de cet espace ludique trône un grand trampoline octogonal, dont la toile noire tendue invite à s'élever vers le ciel. Ses poteaux métalliques, solidement ancrés dans le sol, forment un cercle parfait qui délimite cet espace de liberté aérienne. Le trampoline symbolise l'aspiration humaine universelle à s'élever au-dessus des contraintes terrestres, un désir présent dans toutes les cultures depuis l'aube des temps.</p>
+            
+            <div class="image-placeholder">
+                <div class="placeholder-text">Images des balançoires</div>
+            </div>
+            <h3>Les balançoires</h3>
+            <p>Non loin, un coin balançoire a été aménagé près d'un arbre majestueux. Deux balançoires en bois y sont suspendues à des branches robustes. La première, simple et épurée, se balance doucement au gré du vent. La seconde, plus ornementée, est décorée de deux motifs sculptés dans le bois : une lune et un soleil, symboles des cycles éternels et des dualités cosmiques.</p>
+            
+            <div class="image-placeholder">
+                <div class="placeholder-text">Images du tipi de bambous</div>
+            </div>
+            <h3>Le tipi de bambous</h3>
+            <p>L'élément le plus mystérieux de ce monde est sans doute le tipi de bambous géants. Formé de longues tiges séchées qui s'élèvent vers le ciel en formant une structure conique, ce tipi abrite en son centre une souche d'arbre ancienne. Cette configuration n'est pas sans rappeler les huttes cérémonielles de certaines cultures ancestrales, où la connexion entre terre et ciel était célébrée.</p>
+        </section>
+
+        <section id="ambiance" class="section-card">
+            <h2>?? Ambiance / inspiration</h2>
+            <p>Le Monde des Jeux est un espace de transition et de transformation. C'est un lieu où le temps semble suspendu, où les frontières entre réalité et imaginaire s'estompent. L'ambiance qui y règne est celle d'une nostalgie douce et lumineuse, évoquant ces après-midis d'été interminables où, enfants, nous jouions jusqu'à ce que le soleil disparaisse à l'horizon.</p>
+            
+            <p>Ce monde s'inspire du concept universel de l'aire de jeu comme espace sacré. Dans de nombreuses cultures, les jeux d'enfants ne sont pas de simples divertissements, mais des rituels qui préparent à la vie adulte et maintiennent un lien avec le monde spirituel.</p>
+            
+            <p>Le trampoline symbolise l'élévation et la transcendance, la capacité à s'affranchir momentanément des lois de la gravité pour accéder à une perspective nouvelle. Les balançoires représentent le mouvement pendulaire entre différents états d'être, entre différents mondes – un va-et-vient hypnotique qui, dans certaines traditions, était utilisé lors des rites de passage.</p>
+            
+            <p>Quant au tipi, il incarne le concept de seuil, de portail entre les mondes. Sa base circulaire symbolise la Terre Mère, tandis que sa pointe dirigée vers le ciel représente la connexion avec le monde spirituel.</p>
+        </section>
+
+        <section id="histoire" class="section-card">
+            <h2>?? Histoire locale</h2>
+            <blockquote>
+                <p>Dans les temps anciens, avant même que Malvinhaland ne porte ce nom, le Monde des Jeux était un lieu sacré où les enfants venaient déposer leurs rêves les plus précieux. On raconte que chaque éclat de rire, chaque cri de joie qui résonnait ici renforçait la barrière magique protégeant tous les mondes environnants.</p>
+                
+                <p>C'est ici que la princesse Malvina venait souvent se réfugier lorsque le poids de ses responsabilités devenait trop lourd. Elle s'élançait vers le ciel sur le trampoline, se balançait entre ombre et lumière, ou méditait au centre du tipi de bambous.</p>
+                
+                <p>Mais le Collectionneur d'Âmes a compris que ces fragments contenaient une puissance particulière. Plus que tout autre lieu, le Monde des Jeux représente une menace pour ses projets, car l'innocence et la joie qui y règnent sont les antithèses de son pouvoir corrupteur.</p>
+            </blockquote>
+
+            <h3>La légende du Gardien des Jeux</h3>
+            <p>Les anciens racontent qu'un esprit bienveillant nommé Ludivin veille sur le Monde des Jeux depuis sa création. Invisible aux yeux des adultes, il se manifeste parfois aux enfants sous la forme d'une lueur bleutée qui danse entre les bambous du tipi ou virevolte autour du trampoline.</p>
+            
+            <h3>Les champions mythiques du Monde des Jeux</h3>
+            <p>Au fil des siècles, certains visiteurs du Monde des Jeux ont laissé une empreinte si profonde que leurs exploits sont devenus légendaires. Parmi eux :</p>
+            
+            <ul>
+                <li><strong>Éléonore la Voltigeuse</strong>, qui aurait effectué sept sauts périlleux consécutifs sur le trampoline avant d'atterrir gracieusement sur la pointe des pieds.</li>
+                <li><strong>Les jumeaux Soleil-Lune</strong>, Aurèle et Séléna, qui maîtrisaient l'art de la balançoire synchronisée.</li>
+                <li><strong>Le Sage Bambou</strong>, un vieil homme qui venait méditer chaque jour dans le tipi.</li>
+            </ul>
+        </section>
+
+        <section id="enigmes" class="section-card">
+            <h2>?? Énigmes proposées dans ce monde</h2>
+            
+            <div class="enigme" id="enigme1">
+                <h3>?? Énigme 1 – Le Saut Céleste</h3>
+                <div class="enigme-details">
+                    <div class="enigme-objectif">
+                        <h4>?? Objectif</h4>
+                        <p>Les joueurs doivent photographier avec leur smartphone un message contenu dans un tube transparent fixé au-dessus du trampoline, visible en sautant à une hauteur modérée.</p>
+                    </div>
+                    
+                    <div class="enigme-mecanisme">
+                        <h4>?? Mécanisme principal</h4>
+                        <ul>
+                            <li><span class="checked">?</span> Observation</li>
+                            <li><span class="unchecked">?</span> Réflexion logique</li>
+                            <li><span class="checked">?</span> Autre : Défi physique</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="enigme-enonce">
+                    <h4>?? Énoncé à lire aux joueurs</h4>
+                    <blockquote>
+                        <p>"Pour capturer un fragment d'âme, vous devez vous élever au-dessus du sol. Sautez sur le trampoline et observez le tube transparent. Prenez une photo du message lorsque vous êtes au point culminant de votre saut."</p>
+                    </blockquote>
+                </div>
+                
+                <div class="enigme-indices">
+                    <h4>?? Indices</h4>
+                    <ul>
+                        <li>Regardez attentivement le tube fixé en hauteur</li>
+                        <li>Un miroir est placé à côté du trampoline pour vous aider à voir le message</li>
+                        <li>Le message est visible même avec un saut modéré</li>
+                    </ul>
+                </div>
+                
+                <div class="enigme-validation">
+                    <h4>? Validation</h4>
+                    <p>Entrez le mot découvert dans le tube transparent :</p>
+                    <form class="validation-form" id="form-enigme1">
+                        <input type="text" id="reponse-enigme1" placeholder="Votre réponse..." autocomplete="off">
+                        <button type="submit" class="btn-valider">Valider</button>
+                    </form>
+                    <div class="validation-feedback" id="feedback-enigme1"></div>
+                </div>
+                
+                <div class="enigme-solution">
+                    <h4>?? Fragment de solution débloqué</h4>
+                    <p>L'inscription dans le tube transparent contient le mot "OSCILLATION" écrit en lettres stylisées, accompagné d'un petit dessin d'enfant sur une balançoire.</p>
+                </div>
+            </div>
+            
+            <div class="enigme" id="enigme2">
+                <h3>?? Énigme 2 – Le Pendule des Souvenirs</h3>
+                <div class="enigme-objectif">
+                    <h4>?? Objectif</h4>
+                    <p>Les joueurs doivent utiliser les balançoires et regarder à travers un cadre avec filtre coloré pour découvrir un message formé par des symboles dessinés au sol.</p>
+                </div>
+                
+                <div class="enigme-enonce">
+                    <h4>?? Énoncé à lire aux joueurs</h4>
+                    <blockquote>
+                        <p>"Le temps est un pendule qui oscille entre passé et futur. Asseyez-vous sur la balançoire ornée du soleil et de la lune, et regardez le sol à travers le cadre coloré pendant que vous vous balancez."</p>
+                    </blockquote>
+                </div>
+                
+                <div class="enigme-indices">
+                    <h4>?? Indices</h4>
+                    <ul>
+                        <li>Observez les ombres projetées par la balançoire</li>
+                        <li>Le cadre coloré révèle des symboles invisibles à l'œil nu</li>
+                        <li>La perspective change selon l'angle de balancement</li>
+                    </ul>
+                </div>
+                
+                <div class="enigme-validation">
+                    <h4>? Validation</h4>
+                    <p>Entrez le mot formé par les symboles au sol :</p>
+                    <form class="validation-form" id="form-enigme2">
+                        <input type="text" id="reponse-enigme2" placeholder="Votre réponse..." autocomplete="off">
+                        <button type="submit" class="btn-valider">Valider</button>
+                    </form>
+                    <div class="validation-feedback" id="feedback-enigme2"></div>
+                </div>
+                
+                <div class="enigme-solution">
+                    <h4>?? Fragment de solution débloqué</h4>
+                    <p>En se balançant et en regardant à travers le cadre coloré, les joueurs découvrent le mot "RÉSONANCE" formé par les symboles au sol.</p>
+                </div>
+            </div>
+            
+            <div class="enigme" id="enigme3">
+                <h3>?? Énigme 3 – Le Cercle des Esprits</h3>
+                <div class="enigme-objectif">
+                    <h4>?? Objectif</h4>
+                    <p>Les joueurs doivent placer deux pierres colorées sur des marques spécifiques de la souche à l'intérieur du tipi et faire sonner un carillon pour révéler un message.</p>
+                </div>
+                
+                <div class="enigme-enonce">
+                    <h4>?? Énoncé à lire aux joueurs</h4>
+                    <blockquote>
+                        <p>"Le cercle est le symbole de l'âme éternelle que le Collectionneur convoite tant. Entrez dans le tipi et placez les pierres colorées sur les marques correspondantes de la souche. Faites sonner le carillon et observez les symboles qui apparaissent."</p>
+                    </blockquote>
+                </div>
+                
+                <div class="enigme-indices">
+                    <h4>?? Indices</h4>
+                    <ul>
+                        <li>Les pierres colorées réagissent à la lumière naturelle</li>
+                        <li>Observez les projections de lumière à travers les interstices du tipi</li>
+                        <li>Le son du carillon fait vibrer les segments gravés sur la souche</li>
+                    </ul>
+                </div>
+                
+                <div class="enigme-validation">
+                    <h4>? Validation</h4>
+                    <p>Entrez le mot révélé par les segments gravés :</p>
+                    <form class="validation-form" id="form-enigme3">
+                        <input type="text" id="reponse-enigme3" placeholder="Votre réponse..." autocomplete="off">
+                        <button type="submit" class="btn-valider">Valider</button>
+                    </form>
+                    <div class="validation-feedback" id="feedback-enigme3"></div>
+                </div>
+                
+                <div class="enigme-solution">
+                    <h4>?? Fragment de solution débloqué</h4>
+                    <p>Lorsque les pierres sont correctement placées et que le carillon sonne, les segments gravés sur la souche s'alignent pour révéler le mot "ENFANCE" et un dessin représentant un barbecue stylisé, indice pointant vers le monde Karibu.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pnj" class="section-card">
+            <h2>?? Tirades des PNJ</h2>
+            
+            <div class="pnj">
+                <h3>Madame Célestine de Lunargent</h3>
+                
+                <div class="tirade">
+                    <h4>À l'arrivée des joueurs :</h4>
+                    <blockquote>
+                        <p>"Ah, vous voici dans le Monde des Jeux, là où les frontières entre les âges s'estompent comme la rosée sous le soleil matinal. Savez-vous que les bambous de ce tipi ont poussé en une seule lune, jaillissant de la terre comme les souvenirs jaillissent parfois de notre mémoire ?"</p>
+                    </blockquote>
+                </div>
+            </div>
+            
+            <div class="pnj">
+                <h3>Liliane "Lili" Cœur-de-Lumière</h3>
+                
+                <div class="tirade">
+                    <h4>À l'arrivée des joueurs :</h4>
+                    <blockquote>
+                        <p>"Vous êtes dans mon monde préféré ! C'est ici que je viens quand je suis triste ou que j'ai peur. Vous avez vu le trampoline ? On peut sauter super haut ! Une fois, j'ai presque touché une feuille tout en haut de l'arbre !"</p>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="intrigue" class="section-card">
+            <h2>?? Intégration à l'intrigue principale</h2>
+            
+            <h3>Lien avec l'histoire du Collectionneur d'Âmes</h3>
+            <p>Le Monde des Jeux représente une menace particulière pour le Collectionneur d'Âmes. Les souvenirs d'enfance sont parmi les plus puissants fragments d'âme qu'il cherche à collecter, car ils contiennent une magie pure et non corrompue.</p>
+            
+            <h3>Progression narrative</h3>
+            <p>Ce monde s'inscrit dans la phase 2 "Exploration" de la progression narrative globale. Après avoir découvert l'enlèvement de la princesse (phase 1 "Introduction"), les joueurs explorent ici un aspect fondamental de la personnalité du Collectionneur : son incapacité à comprendre et à ressentir la joie simple de l'enfance.</p>
+            
+            <h3>Fragment d'histoire révélé</h3>
+            <p>La résolution complète des trois énigmes permet aux joueurs de reconstituer un fragment important de l'histoire : "L'OSCILLATION et la RÉSONANCE de l'ENFANCE". Cette phrase cryptique fait référence au mécanisme que le Collectionneur utilise pour drainer l'énergie de la princesse dans le barbecue Weber du monde Karibu.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Les mondes de Malvinha</p>
+    </footer>
+
+    <script src="script.js"></script>
+  <script src="/assets/js/fix-mobile-menu.js" defer></script>`n</body>
+</html>
+
+

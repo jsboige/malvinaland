@@ -1,4 +1,22 @@
-﻿# Ignorer toutes les images
+﻿# Dossiers générés
+dist/
+node_modules/
+.cache/
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.bak
+*.swp
+*.log
+*.cache
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Images (à l'exception des placeholders et des cartes)
 *.jpg
 *.jpeg
 *.png
@@ -7,34 +25,28 @@
 *.tiff
 *.webp
 
-# Mais inclure spécifiquement ces fichiers
-!Mondes/Carte de Malvinaland stylisée.png
-!Mondes/Carte de Malvinhaland.png
+# Exceptions pour les images importantes
+!ressources/images/**/*.png
+!ressources/images/**/*.jpg
+!ressources/images/**/*.jpeg
+!ressources/images/**/*.gif
+!ressources/images/**/*.svg
 
-# Fichiers système à ignorer
-.DS_Store
-Thumbs.db
-desktop.ini
+# Rapports générés
+*-report.csv
+*-report.md
+*-report.json
+*-report.html
 
-# Ignorer le dépôt Git imbriqué
-temp-repo/
+# Fichiers de configuration spécifiques à l'environnement local
+.env
+.env.local
+.env.*.local
 
-# Ignorer le répertoire de déploiement
-deployment/
+# Fichiers de sauvegarde
+*.backup
+web.config.backup
 
-# Fichiers temporaires et de build
-*.tmp
-*.temp
-*.bak
-*.swp
-*.log
-*.cache
-*.exe
-*.exemple
-
-# Dossiers spécifiques à ignorer
-docs/docs/
-ressources/
-
-# Fichiers de configuration spécifiques à l''environnement local
-# deploy.ps1 est maintenant inclus dans le dépôt pour faciliter le travail des autres agents
+# Fichiers d'archive (mais pas le dossier archive/ lui-même)
+*.archive
+*.archived

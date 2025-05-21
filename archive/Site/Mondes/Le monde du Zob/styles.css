@@ -1,0 +1,396 @@
+/* Styles pour le Monde du Zob */
+
+:root {
+    --zob-primary: #e67e22; /* Orange terracotta comme la yourte */
+    --zob-secondary: #2c3e50; /* Bleu foncé pour le toit */
+    --zob-accent: #27ae60; /* Vert bambou */
+    --zob-light: #f9f3e9; /* Beige clair pour le fond */
+    --zob-dark: #34495e; /* Gris foncé pour le texte */
+    --zob-highlight: #f1c40f; /* Jaune pour les accents */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--zob-light);
+    color: var(--zob-dark);
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+
+header {
+    background: linear-gradient(to right, var(--zob-primary), var(--zob-secondary));
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--zob-primary);
+    border-bottom: 2px solid var(--zob-accent);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+h3 {
+    color: var(--zob-secondary);
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+}
+
+h4 {
+    color: var(--zob-dark);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Styles spécifiques pour les sections */
+
+/* Section Description */
+.description-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.elements-list {
+    background-color: rgba(39, 174, 96, 0.1);
+    border-left: 4px solid var(--zob-accent);
+    padding: 1rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.elements-list ul {
+    margin: 0.5rem 0 0 0;
+    padding-left: 1.5rem;
+}
+
+.elements-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Section Ambiance */
+.ambiance-content {
+    position: relative;
+}
+
+.ambiance-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.ambiance-keywords span {
+    background-color: var(--zob-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.ambiance-keywords span:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Histoire */
+.histoire-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.histoire-paragraphe {
+    background-color: rgba(44, 62, 80, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.histoire-paragraphe::before {
+    content: "\201C";
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 3rem;
+    color: var(--zob-primary);
+    opacity: 0.3;
+}
+
+.histoire-paragraphe p {
+    margin: 0;
+    font-style: italic;
+}
+
+/* Section Énigmes */
+.enigmes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.enigme {
+    background-color: rgba(241, 196, 15, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    border-left: 4px solid var(--zob-highlight);
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.enigme:hover {
+    background-color: rgba(241, 196, 15, 0.1);
+    transform: translateY(-3px);
+}
+
+.enigme h3 {
+    margin-top: 0;
+    color: var(--zob-dark);
+}
+
+.enigme-objectif {
+    font-weight: bold;
+    color: var(--zob-secondary);
+}
+
+.enigme-mecanisme {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.enigme-mecanisme h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.enigme-mecanisme ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.enigme-indice {
+    background-color: rgba(39, 174, 96, 0.15);
+    padding: 1.2rem;
+    border-radius: 8px;
+    font-style: italic;
+    border: 1px dashed rgba(39, 174, 96, 0.3);
+    margin-top: 1rem;
+}
+
+.enigme-indice p {
+    margin: 0;
+}
+
+.enigme-solution {
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    background-color: rgba(44, 62, 80, 0.1);
+    border-radius: 8px;
+    display: none;
+    border: 1px solid rgba(44, 62, 80, 0.2);
+    font-weight: bold;
+    color: var(--zob-primary);
+}
+
+.enigme-solution.visible {
+    display: block;
+}
+
+/* Section PNJ */
+.pnj-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.pnj {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pnj h3 {
+    margin-top: 0;
+    color: var(--zob-primary);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.5rem;
+}
+
+.pnj-tirades {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tirade {
+    background-color: rgba(44, 62, 80, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.tirade h4 {
+    margin-top: 0;
+    color: var(--zob-secondary);
+    font-size: 1.1rem;
+}
+
+.tirade p {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+/* Section Intrigue */
+.intrigue-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.intrigue-content h3 {
+    margin-bottom: 0.5rem;
+}
+
+.intrigue-content ol, .intrigue-content ul {
+    margin-top: 0.5rem;
+}
+
+.intrigue-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--zob-secondary);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+/* Animations et effets */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .enigmes-container {
+        grid-template-columns: 1fr;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0.3rem 0;
+    }
+}
+
+/* Classes utilitaires */
+.hidden {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mt-0 {
+    margin-top: 0;
+}

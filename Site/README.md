@@ -1,28 +1,43 @@
-# Les mondes de Malvinha - Architecture Modulaire
+﻿# Malvinaland
 
-## Structure du Site
+Ce site prÃ©sente les diffÃ©rents mondes de Malvinaland, un univers imaginaire riche en mystÃ¨res et en aventures.
 
-Le site est organisé en modules distincts pour permettre un développement collaboratif et modulaire. Voici la structure des modules :
+## Structure du site
 
-- **Core** : Contient la structure de base, la navigation et les fonctionnalités communes.
-- **Mondes** : Chaque monde est un module indépendant, permettant de travailler sur un monde sans affecter les autres.
-- **Services** : Regroupe les fonctionnalités techniques partagées, comme le service worker.
-- **Composants** : Contient les éléments d'interface réutilisables, comme les styles CSS.
+* index.html : Page d'accueil
+* carte.html : Carte interactive des mondes
+* monde-*.html : Pages des diffÃ©rents mondes
+* Core/ : Scripts et styles communs
+* monde-*/ : Ressources spÃ©cifiques Ã  chaque monde
 
-## Collaboration
+## Mondes disponibles
 
-Chaque module peut être développé indépendamment, permettant à plusieurs équipes de travailler simultanément sur différentes parties du site. Voici quelques recommandations pour maintenir la cohérence :
+* Monde de l'AssemblÃ©e
+* Monde de la Grange
+* Monde des Jeux
+* Monde des RÃªves
+* Monde du Damier
+* Monde du Linge
+* Monde du Verger
+* Monde du Zob
+* Monde ElysÃ©e
+* Monde Karibu
+* Monde des Sphinx
 
-- **Conventions de nommage** : Utilisez des noms clairs et descriptifs pour les fichiers et les fonctions.
-- **Documentation** : Documentez les fonctionnalités et les composants pour faciliter la compréhension et la maintenance.
-- **Revue de code** : Effectuez des revues de code régulières pour assurer la qualité et la cohérence du code.
+## DÃ©ploiement
 
-## Maintien de la Cohérence
+Pour dÃ©ployer ce site sur IIS :
 
-Pour maintenir la cohérence du site, suivez ces directives :
+1. Assurez-vous que IIS est installÃ© avec le module URL Rewrite
+2. Copiez tous les fichiers dans le rÃ©pertoire racine du site IIS
+3. Configurez les autorisations appropriÃ©es pour IIS_IUSRS
+4. RedÃ©marrez le site IIS
 
-- **Modularité** : Assurez-vous que chaque module est autonome et peut être testé indépendamment.
-- **Réutilisabilité** : Créez des composants réutilisables pour éviter la duplication de code.
-- **Tests** : Écrivez des tests pour valider les fonctionnalités critiques.
+## Maintenance
 
-En suivant ces directives, le site "Les mondes de Malvinha" restera flexible et facile à maintenir, tout en permettant un développement rapide et collaboratif.
+En cas de problÃ¨me avec le menu mobile ou d'erreurs 404 :
+
+1. VÃ©rifiez que tous les fichiers ont Ã©tÃ© correctement copiÃ©s
+2. Assurez-vous que les rÃ©pertoires des mondes existent et contiennent un fichier readme.md
+3. Videz le cache du navigateur et du serveur IIS
+4. RedÃ©marrez le site IIS

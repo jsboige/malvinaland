@@ -1,0 +1,302 @@
+/* Styles spécifiques pour le monde de l'assemblée */
+
+:root {
+    --assemblee-primary: #a83232;
+    --assemblee-secondary: #ff9d45;
+    --assemblee-accent: #ffd700;
+    --assemblee-dark: #4a1c1c;
+    --assemblee-light: #fff5e6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--assemblee-light);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--assemblee-primary);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--assemblee-dark);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+section h2 {
+    background-color: var(--assemblee-primary);
+    color: white;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.8rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.section-content {
+    padding: 1.5rem;
+}
+
+/* Mise en page des sections avec images */
+.section-content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .section-content {
+        flex-direction: row;
+    }
+    
+    .text-content {
+        flex: 3;
+        padding-right: 1.5rem;
+    }
+    
+    .image-gallery {
+        flex: 2;
+    }
+}
+
+.text-content {
+    margin-bottom: 1.5rem;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.image-container {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.03);
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Styles pour les énigmes */
+.enigme-container {
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--assemblee-secondary);
+    padding-left: 1rem;
+}
+
+.enigme-container h3 {
+    color: var(--assemblee-primary);
+    margin-top: 0;
+}
+
+.enigme-description {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.enigme-indice {
+    background-color: var(--assemblee-light);
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    border-left: 3px solid var(--assemblee-accent);
+}
+
+/* Styles pour les personnages */
+.personnage-container {
+    margin-bottom: 2rem;
+}
+
+.personnage-container h3 {
+    color: var(--assemblee-primary);
+    margin-bottom: 0.5rem;
+}
+
+.personnage-style {
+    font-style: italic;
+    color: #666;
+    margin-top: 0;
+}
+
+.personnage-dialogue {
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.personnage-dialogue:before {
+    content: '"';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 3rem;
+    color: var(--assemblee-secondary);
+    opacity: 0.3;
+    line-height: 1;
+}
+
+/* Styles pour les documents historiques */
+.document-container {
+    margin-bottom: 2rem;
+}
+
+.document-container h3 {
+    color: var(--assemblee-primary);
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.document-content {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.document-full {
+    display: none;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #ccc;
+}
+
+.read-more-btn {
+    background-color: var(--assemblee-secondary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: var(--assemblee-dark);
+}
+
+/* Footer */
+footer {
+    background-color: var(--assemblee-dark);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.footer-navigation {
+    margin-top: 1rem;
+}
+
+.footer-navigation a {
+    color: var(--assemblee-light);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.footer-navigation a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Animation de flamme pour le titre */
+@keyframes flicker {
+    0% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--assemblee-accent), 0 0 20px var(--assemblee-accent); }
+    50% { text-shadow: 0 0 5px #fff, 0 0 15px var(--assemblee-secondary), 0 0 25px var(--assemblee-secondary); }
+    100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--assemblee-accent), 0 0 20px var(--assemblee-accent); }
+}
+
+header h1 {
+    animation: flicker 3s infinite alternate;
+}
+
+/* Effet de feu pour la vasque centrale */
+.fire-effect {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, var(--assemblee-accent) 0%, var(--assemblee-secondary) 50%, var(--assemblee-primary) 100%);
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 20px var(--assemblee-accent);
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.8; }
+}
