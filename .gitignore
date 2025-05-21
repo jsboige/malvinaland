@@ -46,7 +46,34 @@ desktop.ini
 # Fichiers de sauvegarde
 *.backup
 web.config.backup
+backup-before-cleanup/*.zip
 
 # Fichiers d'archive (mais pas le dossier archive/ lui-même)
 *.archive
 *.archived
+
+# Fichiers spécifiques à IIS
+applicationHost.config
+iisstart.*
+aspnet_client/
+logs/
+temp/
+IIS Temporary Compressed Files/
+inetpub/
+
+# Fichiers de logs IIS
+*.log
+*_log.txt
+*_log.ldf
+u_ex*.log
+W3SVC*/
+
+# Fichiers temporaires de déploiement
+deploy-temp/
+deploy-backup/
+
+# Fichiers temporaires de nettoyage
+commit-message.txt
+execute-cleanup-plan.ps1
+execute-cleanup-plan-fixed.ps1
+untracked_files.txt
