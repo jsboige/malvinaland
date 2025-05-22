@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord - Malvinaland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .card p {
+            color: #7f8c8d;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+        .emoji-icon {
+            font-size: 2em;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tableau de Bord Malvinaland</h1>
+        
+        <div class="section">
+            <h2>🌍 Mondes</h2>
+            <p>Accédez aux différents mondes de Malvinaland pour consulter ou modifier leur contenu.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3><span class="emoji-icon">🔥</span> Le Monde de l'Assemblée</h3>
+                    <p>Un lieu mystique avec deux cercles d'assemblée qui semblent suspendus hors du temps.</p>
+                    <a href="../contenu/mondes/assemblee/index.md">Consulter/Modifier</a>
+                </div>
+                <div class="card">
+                    <h3><span class="emoji-icon">🌍</span> Le Monde de la Grange</h3>
+                    <p>Un bâtiment longitudinal avec quatre façades distinctives et un espace végétalisé.</p>
+                    <a href="../contenu/mondes/grange/index.md">Consulter/Modifier</a>
+                </div>
+                <div class="card">
+                    <h3><span class="emoji-icon">🌍</span> Le Monde des Jeux</h3>
+                    <p>Le Royaume de l'Enfance Éternelle, avec un grand trampoline octogonal au centre.</p>
+                    <a href="../contenu/mondes/jeux/index.md">Consulter/Modifier</a>
+                </div>
+                <div class="card">
+                    <h3><span class="emoji-icon">🌙</span> Le Monde des Rêves</h3>
+                    <p>Un point de convergence mystique entre les différents mondes de Malvinaland.</p>
+                    <a href="../contenu/mondes/reves/index.md">Consulter/Modifier</a>
+                </div>
+                <div class="card">
+                    <h3><span class="emoji-icon">🌞</span> Le Monde du Damier</h3>
+                    <p>Un lieu dominé par un imposant panneau solaire photovoltaïque.</p>
+                    <a href="../contenu/mondes/damier/index.md">Consulter/Modifier</a>
+                </div>
+                <div class="card">
+                    <h3><span class="emoji-icon">🧵</span> Le Monde du Linge</h3>
+                    <p>Un sanctuaire des traditions du lavage et de l'entretien du linge.</p>
+                    <a href="../contenu/mondes/linge/index.md">Consulter/Modifier</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📚 Guides</h2>
+            <p>Consultez les guides pour vous aider à gérer et modifier le contenu de Malvinaland.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3><span class="emoji-icon">👁️</span> Guide de consultation</h3>
+                    <p>Comment consulter le site Malvinaland et naviguer entre les différents mondes.</p>
+                    <a href="../guides/consultation/GUIDE_CONSULTATION.md">Lire le guide</a>
+                </div>
+                <div class="card">
+                    <h3><span class="emoji-icon">✏️</span> Guide de modification</h3>
+                    <p>Comment modifier le contenu des mondes et des personnages.</p>
+                    <a href="../guides/modification/GUIDE_MODIFICATION.md">Lire le guide</a>
+                </div>
+                <div class="card">
+                    <h3><span class="emoji-icon">🗂️</span> Guide de structure</h3>
+                    <p>Comprendre la structure du projet et l'organisation des fichiers.</p>
+                    <a href="../guides/structure/GUIDE_STRUCTURE.md">Lire le guide</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🛠️ Outils</h2>
+            <p>Accédez aux outils pour gérer le site Malvinaland.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3><span class="emoji-icon">🚀</span> Déploiement du site</h3>
+                    <p>Outils pour déployer le site sur un serveur web.</p>
+                    <a href="../outils-techniques/deploy-site-local.ps1">Déployer localement</a>
+                </div>
+                <div class="card">
+                    <h3><span class="emoji-icon">🧹</span> Maintenance</h3>
+                    <p>Outils pour nettoyer et maintenir le dépôt.</p>
+                    <a href="../outils-techniques/clean-repository-simple.ps1">Nettoyer le dépôt</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
