@@ -1,0 +1,311 @@
+/* Styles spécifiques pour le monde du linge */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f4ff; /* Fond légèrement violet pour rappeler la couleur du monde */
+    color: #333;
+    padding-bottom: 60px; /* Espace pour le footer fixe */
+}
+
+header {
+    background: linear-gradient(to right, #6a4c93, #8a6db1); /* Dégradé violet */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+nav ul li {
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.section h2 {
+    background-color: #6a4c93;
+    color: white;
+    margin: 0;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.content {
+    padding: 20px;
+}
+
+blockquote {
+    border-left: 4px solid #8a6db1;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-color: #f0ebf7;
+    font-style: italic;
+}
+
+.enigme {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #fafafa;
+}
+
+.enigme h3 {
+    color: #6a4c93;
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.enigme h4 {
+    color: #555;
+    margin: 15px 0 5px;
+}
+
+.mecanismes {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.mecanismes li {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #eee;
+    border-radius: 15px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.mecanismes li.active {
+    background-color: #6a4c93;
+    color: white;
+}
+
+.enigme-details {
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.personnage {
+    background-color: #f0ebf7;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.personnage h3 {
+    color: #6a4c93;
+    margin-top: 0;
+}
+
+.personnage .description {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: linear-gradient(to right, #6a4c93, #8a6db1);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Éléments spécifiques au monde du linge */
+.corde-linge {
+    height: 5px;
+    background-color: #1e90ff; /* Bleu vif pour la corde */
+    margin: 20px 0;
+    position: relative;
+}
+
+.pince {
+    width: 15px;
+    height: 25px;
+    position: absolute;
+    border-radius: 3px;
+}
+
+.pince-rouge { background-color: #ff0000; }
+.pince-orange { background-color: #ff7f00; }
+.pince-jaune { background-color: #ffff00; }
+.pince-vert { background-color: #00ff00; }
+.pince-bleu { background-color: #0000ff; }
+.pince-indigo { background-color: #4b0082; }
+.pince-violet { background-color: #8a2be2; }
+
+/* Styles pour la galerie d'images */
+.galerie h3 {
+    color: #6a4c93;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-item {
+    width: calc(33.33% - 10px);
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.image-item:hover {
+    transform: scale(1.03);
+}
+
+.galerie-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-caption {
+    padding: 8px;
+    background-color: #f0ebf7;
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+}
+
+.galerie-complete {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.galerie-complete .image-item {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    nav ul li {
+        margin: 3px 5px;
+    }
+    
+    .section h2 {
+        font-size: 1.3em;
+    }
+    
+    .enigme, .personnage {
+        padding: 10px;
+    }
+    
+    .image-item {
+        width: calc(50% - 10px);
+    }
+    
+    .galerie-complete {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    main {
+        padding: 0 10px;
+    }
+    
+    .content {
+        padding: 15px;
+    }
+    
+    .mecanismes li {
+        font-size: 0.8em;
+        margin: 3px;
+        padding: 3px 8px;
+    }
+    
+    .image-item {
+        width: 100%;
+    }
+    
+    .galerie-complete {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animation pour les images de la galerie */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.galerie .image-item {
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+.galerie .image-item:nth-child(1) { animation-delay: 0.1s; }
+.galerie .image-item:nth-child(2) { animation-delay: 0.2s; }
+.galerie .image-item:nth-child(3) { animation-delay: 0.3s; }
+.galerie .image-item:nth-child(4) { animation-delay: 0.4s; }
+.galerie .image-item:nth-child(5) { animation-delay: 0.5s; }
+.galerie .image-item:nth-child(6) { animation-delay: 0.6s; }
