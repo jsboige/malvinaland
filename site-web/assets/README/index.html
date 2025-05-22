@@ -1,0 +1,110 @@
+<h1>Ressources de Malvinaland</h1>
+<p>Ce dossier contient toutes les ressources statiques utilisées par le site Malvinaland, notamment les fichiers CSS, JavaScript et les images.</p>
+<h2>Structure du dossier</h2>
+<pre><code>assets/
+├── css/             # Feuilles de style CSS
+│   ├── main.css     # Styles principaux du site
+│   ├── monde.css    # Styles spécifiques aux pages de mondes
+│   └── organisateur.css # Styles pour les pages organisateurs
+│
+├── js/              # Scripts JavaScript
+│   ├── auth.js      # Gestion de l'authentification
+│   ├── image-loader.js # Chargement optimisé des images
+│   └── navigation.js # Gestion de la navigation
+│
+└── images/          # Images du site
+    ├── mondes/      # Images des différents mondes
+    │   ├── assemblee/
+    │   ├── damier/
+    │   └── ...
+    ├── pnj/         # Images des personnages non-joueurs
+    └── ui/          # Images de l'interface utilisateur
+</code></pre>
+<h2>Comment ajouter ou modifier des ressources</h2>
+<h3>Ajouter des images</h3>
+<ol>
+<li>
+<p><strong>Pour un monde</strong>:</p>
+<ul>
+<li>Placez les images dans le dossier correspondant: <code>images/mondes/[nom-du-monde]/</code></li>
+<li>Utilisez des noms de fichiers descriptifs et en minuscules</li>
+<li>Optimisez les images pour le web (taille et poids raisonnables)</li>
+</ul>
+</li>
+<li>
+<p><strong>Pour un PNJ</strong>:</p>
+<ul>
+<li>Placez les images dans le dossier <code>images/pnj/</code></li>
+<li>Nommez l'image avec le nom du PNJ (en minuscules, sans espaces)</li>
+</ul>
+</li>
+</ol>
+<h3>Référencer des images dans le contenu Markdown</h3>
+<p>Pour afficher une image dans un fichier Markdown:</p>
+<pre><code class="language-markdown">![Texte alternatif](/assets/images/mondes/nom-du-monde/nom-image.jpg)
+</code></pre>
+<p>Pour créer une galerie d'images:</p>
+<pre><code class="language-markdown">&lt;div class=&quot;monde-gallery&quot;&gt;
+  &lt;img src=&quot;/assets/images/mondes/nom-du-monde/image1.jpg&quot; data-high-res=&quot;/assets/images/mondes/nom-du-monde/image1.jpg&quot; alt=&quot;Description de l'image&quot;&gt;
+  &lt;img src=&quot;/assets/images/mondes/nom-du-monde/image2.jpg&quot; data-high-res=&quot;/assets/images/mondes/nom-du-monde/image2.jpg&quot; alt=&quot;Description de l'image&quot;&gt;
+&lt;/div&gt;
+</code></pre>
+<h3>Modifier les styles CSS</h3>
+<p>Les fichiers CSS sont organisés selon leur fonction:</p>
+<ul>
+<li><strong>main.css</strong>: Styles globaux du site (header, footer, navigation, etc.)</li>
+<li><strong>monde.css</strong>: Styles spécifiques aux pages de mondes</li>
+<li><strong>organisateur.css</strong>: Styles pour les pages réservées aux organisateurs</li>
+</ul>
+<p>Si vous devez modifier l'apparence du site:</p>
+<ol>
+<li>Identifiez le fichier CSS approprié</li>
+<li>Effectuez vos modifications</li>
+<li>Testez les changements en local avant de les déployer</li>
+</ol>
+<h3>Modifier les scripts JavaScript</h3>
+<p>Les scripts JavaScript gèrent les fonctionnalités interactives du site:</p>
+<ul>
+<li><strong>auth.js</strong>: Gestion de l'authentification des organisateurs</li>
+<li><strong>image-loader.js</strong>: Chargement optimisé des images et galeries</li>
+<li><strong>navigation.js</strong>: Gestion de la navigation et des transitions</li>
+</ul>
+<p>Si vous devez modifier le comportement du site:</p>
+<ol>
+<li>Identifiez le script JavaScript approprié</li>
+<li>Effectuez vos modifications</li>
+<li>Testez les changements en local avant de les déployer</li>
+</ol>
+<h2>Bonnes pratiques</h2>
+<h3>Pour les images</h3>
+<ul>
+<li><strong>Optimisez les images</strong> avant de les ajouter (utilisez des outils comme ImageOptim, TinyPNG, etc.)</li>
+<li><strong>Utilisez des formats adaptés</strong>: JPG pour les photos, PNG pour les images avec transparence, SVG pour les icônes</li>
+<li><strong>Dimensions raisonnables</strong>: Évitez les images trop grandes (max 1920px de large)</li>
+<li><strong>Nommez clairement</strong> vos fichiers avec des noms descriptifs</li>
+<li><strong>Ajoutez toujours un texte alternatif</strong> pour l'accessibilité</li>
+</ul>
+<h3>Pour le CSS</h3>
+<ul>
+<li><strong>Respectez l'organisation</strong> existante des styles</li>
+<li><strong>Commentez vos modifications</strong> pour faciliter la maintenance</li>
+<li><strong>Testez sur différents appareils</strong> (desktop, tablette, mobile)</li>
+</ul>
+<h3>Pour le JavaScript</h3>
+<ul>
+<li><strong>Documentez votre code</strong> avec des commentaires</li>
+<li><strong>Testez vos modifications</strong> sur différents navigateurs</li>
+<li><strong>Évitez de modifier</strong> les fonctionnalités critiques sans comprendre leur fonctionnement</li>
+</ul>
+<h2>Optimisation des images</h2>
+<p>Pour optimiser les images avant de les ajouter au projet, vous pouvez utiliser le script <code>scripts/optimize-images.js</code>:</p>
+<pre><code>node scripts/optimize-images.js chemin/vers/votre/image.jpg
+</code></pre>
+<p>Ce script redimensionnera et compressera automatiquement l'image pour une utilisation optimale sur le web.</p>
+<h2>Ressources utiles</h2>
+<ul>
+<li><a href="https://web.dev/fast/#optimize-your-images">Guide d'optimisation des images</a></li>
+<li><a href="https://developer.mozilla.org/fr/docs/Web/CSS">Documentation CSS MDN</a></li>
+<li><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">Documentation JavaScript MDN</a></li>
+</ul>
+<p>Pour plus d'informations sur la modification du contenu, consultez le fichier <code>COMMENT_MODIFIER.md</code> à la racine du projet.</p>

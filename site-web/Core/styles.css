@@ -1,0 +1,571 @@
+/**
+ * Styles principaux pour Malvinaland
+ */
+
+:root {
+  --primary-color: #3f51b5;
+  --secondary-color: #e74c3c;
+  --text-color: #333333;
+  --background-color: #ffffff;
+  --header-background: #f8f9fa;
+  --footer-background: #f1f1f1;
+  --border-color: #e1e1e1;
+  --link-color: #3f51b5;
+  --link-hover-color: #303f9f;
+  --success-color: #2ecc71;
+  --warning-color: #f39c12;
+  --error-color: #e74c3c;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* En-tête */
+.site-header {
+  background-color: var(--header-background);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.site-title a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Navigation principale */
+.main-navigation ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.main-navigation a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.main-navigation a:hover,
+.main-navigation a.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.auth-links {
+  margin-left: auto;
+}
+
+.auth-link {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.login-link {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.logout-link {
+  background-color: var(--error-color);
+  color: white;
+  display: none;
+}
+
+/* Menu mobile */
+#mobile-nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: var(--text-color);
+  transition: all 0.3s;
+}
+
+#mobile-nav {
+  display: none;
+}
+
+/* Contenu principal */
+.site-content {
+  padding: 2rem 0;
+  min-height: calc(100vh - 200px);
+}
+
+/* Pied de page */
+.site-footer {
+  background-color: var(--footer-background);
+  padding: 1.5rem 0;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-navigation {
+  margin-top: 0.5rem;
+}
+
+.footer-navigation a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+
+.footer-navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Typographie */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Grille pour les cartes de mondes */
+.mondes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.monde-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: var(--text-color);
+  border-top: 4px solid var(--primary-color);
+  display: block;
+}
+
+.monde-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.monde-card h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+/* Mode stealth pour les organisateurs */
+.stealth-mode .site-content,
+.stealth-mode .site-header,
+.stealth-mode .site-footer {
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+.stealth-mode .pocket-button,
+.stealth-mode .contrast-button {
+  filter: none;
+  pointer-events: auto;
+  z-index: 1000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-navigation {
+    display: none;
+  }
+  
+  #mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  #mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    padding: 2rem;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  
+  #mobile-nav.active {
+    display: block;
+  }
+  
+  #mobile-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #mobile-nav a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  #mobile-nav a:hover,
+  #mobile-nav a.active {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .mondes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Overlay pour le menu mobile */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.overlay.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  /* Amélioration de l'accessibilité des liens de navigation sur mobile */
+  #mobile-nav a {
+    padding: 1.2rem;  /* Augmentation de la zone de toucher */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Amélioration de la lisibilité sur petit écran */
+  p, li {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+  
+  /* Ajustement des marges pour les petits écrans */
+  .container {
+    padding: 0 0.8rem;
+  }
+  
+  /* Amélioration de l'espacement des éléments de formulaire sur mobile */
+  input, select, textarea, button {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+  }
+}
+
+/* Styles pour le mode hors ligne */
+.offline-mode {
+  position: relative;
+}
+
+.offline-mode::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--warning-color);
+  z-index: 1000;
+}
+
+/* Styles pour les éléments non disponibles en mode hors ligne */
+.offline-mode .offline-hidden {
+  opacity: 0.5;
+  pointer-events: none;
+  position: relative;
+}
+
+.offline-mode .offline-hidden::after {
+  content: "Non disponible hors ligne";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+/* Styles pour les notifications */
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 90%;
+}
+
+.info-notification {
+  background-color: var(--primary-color);
+}
+
+.success-notification {
+  background-color: var(--success-color);
+}
+
+.warning-notification {
+  background-color: var(--warning-color);
+}
+
+.error-notification {
+  background-color: var(--error-color);
+}
+
+/* Indicateur de statut de connexion */
+.connection-status {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Bannière mode hors ligne */
+.offline-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--warning-color);
+  color: white;
+  z-index: 1000;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.offline-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.offline-icon {
+  font-size: 1.2rem;
+}
+
+.offline-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 10px;
+  margin-left: 10px;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animations */
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translate(-50%, 20px); }
+  10% { opacity: 1; transform: translate(-50%, 0); }
+  90% { opacity: 1; transform: translate(-50%, 0); }
+  100% { opacity: 0; transform: translate(-50%, -20px); }
+}
+
+/* Améliorations pour l'expérience mobile */
+@media (max-width: 768px) {
+  /* Assurer que tous les éléments interactifs ont une taille minimale de 44x44px */
+  button,
+  .cta-button,
+  .auth-link,
+  .main-navigation a,
+  #mobile-nav a,
+  .footer-navigation a,
+  input[type="submit"],
+  input[type="button"] {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    touch-action: manipulation;
+  }
+  
+  /* Améliorer le contraste des textes sur les fonds colorés */
+  .monde-card h3 {
+    color: var(--text-color);
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
+  
+  .monde-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top-width: 5px;
+  }
+  
+  /* Augmenter la taille des polices pour une meilleure lisibilité */
+  body {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+  }
+  
+  /* Améliorer l'espacement pour une meilleure lisibilité */
+  p, li {
+    margin-bottom: 1.2rem;
+  }
+  
+  /* Augmenter la zone de toucher pour les liens dans le pied de page */
+  .footer-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .footer-navigation a {
+    padding: 8px 12px;
+    margin: 0;
+  }
+}
+
+/* Préférence pour le mode sombre */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #f1f1f1;
+    --background-color: #121212;
+    --header-background: #1e1e1e;
+    --footer-background: #1e1e1e;
+    --border-color: #333333;
+  }
+  
+  .monde-card,
+  .feature-card {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  img {
+    filter: brightness(0.9);
+  }
+}
+
+/* Préférence pour la réduction des animations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

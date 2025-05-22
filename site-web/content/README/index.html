@@ -1,0 +1,54 @@
+<h1>Contenu de Malvinaland</h1>
+<p>Ce dossier contient tout le contenu du site Malvinaland sous forme de fichiers Markdown. C'est ici que vous effectuerez la plupart de vos modifications lorsque vous souhaiterez mettre à jour le contenu du site.</p>
+<h2>Structure du dossier</h2>
+<ul>
+<li><strong><a href="http://index.md">index.md</a></strong> - Page d'accueil du site</li>
+<li><strong><a href="http://carte.md">carte.md</a></strong> - Page de la carte interactive</li>
+<li><strong><a href="http://narration.md">narration.md</a></strong> - Page de narration globale</li>
+<li><strong><a href="http://login.md">login.md</a></strong> - Page de connexion pour les organisateurs</li>
+<li><strong>mondes/</strong> - Dossier contenant tous les mondes de Malvinaland</li>
+<li><strong>organisateurs/</strong> - Contenu réservé aux organisateurs</li>
+</ul>
+<h2>Comment modifier le contenu</h2>
+<h3>Pages principales</h3>
+<p>Les fichiers à la racine de ce dossier (<code>index.md</code>, <code>carte.md</code>, etc.) correspondent aux pages principales du site. Pour les modifier:</p>
+<ol>
+<li>Ouvrez le fichier correspondant à la page que vous souhaitez modifier</li>
+<li>Effectuez vos modifications en respectant la syntaxe Markdown</li>
+<li>Validez vos modifications (commit)</li>
+</ol>
+<h3>Mondes</h3>
+<p>Chaque monde a son propre dossier dans <code>mondes/</code>. Pour modifier un monde existant:</p>
+<ol>
+<li>Naviguez vers le dossier du monde dans <code>mondes/[nom-du-monde]/</code></li>
+<li>Ouvrez le fichier <code>index.md</code></li>
+<li>Modifiez le contenu en respectant la structure existante</li>
+</ol>
+<p>Pour ajouter un nouveau monde:</p>
+<ol>
+<li>Créez un nouveau dossier dans <code>mondes/</code> avec le nom du monde (en minuscules, sans espaces)</li>
+<li>Créez un fichier <code>index.md</code> dans ce dossier en utilisant le modèle disponible dans <code>templates/nouveau-monde.md</code></li>
+<li>Ajoutez les images du monde dans le dossier <code>assets/images/mondes/[nom-du-monde]/</code></li>
+<li>Mettez à jour le fichier <code>src/_data/mondes.js</code> pour inclure le nouveau monde dans la navigation</li>
+</ol>
+<h3>Contenu pour les organisateurs</h3>
+<p>Le dossier <code>organisateurs/</code> contient du contenu réservé aux organisateurs, comme les informations sur les PNJ. Ce contenu n'est visible que lorsqu'un organisateur est connecté.</p>
+<h2>Conseils pour la rédaction du contenu</h2>
+<ul>
+<li><strong>Utilisez la syntaxe Markdown</strong> pour formater votre texte (voir <code>STRUCTURE_CONTENU.md</code> pour plus d'informations)</li>
+<li><strong>Incluez des images</strong> pour rendre le contenu plus attrayant</li>
+<li><strong>Structurez votre contenu</strong> avec des titres et sous-titres</li>
+<li><strong>Soyez cohérent</strong> avec le reste du contenu</li>
+<li><strong>Utilisez les balises organisateurs-only</strong> pour le contenu réservé aux organisateurs:</li>
+</ul>
+<pre><code class="language-markdown">::: organisateurs-only
+Ce contenu ne sera visible que pour les organisateurs.
+:::
+</code></pre>
+<h2>Ressources utiles</h2>
+<ul>
+<li><a href="https://www.markdownguide.org/basic-syntax/">Guide de syntaxe Markdown</a></li>
+<li><a href="https://www.11ty.dev/docs/">Documentation Eleventy</a></li>
+<li><a href="../../templates/">Templates pour nouveau contenu</a></li>
+</ul>
+<p>Pour plus d'informations sur la modification du contenu, consultez le fichier <code>COMMENT_MODIFIER.md</code> à la racine du projet.</p>
