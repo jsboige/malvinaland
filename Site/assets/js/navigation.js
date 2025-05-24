@@ -17,54 +17,90 @@ document.addEventListener('DOMContentLoaded', function() {
 function initMobileNavigation() {
   const mobileNavToggle = document.getElementById('mobile-nav-toggle');
   const mobileNav = document.getElementById('mobile-nav');
-  
-  if (!mobileNavToggle || !mobileNav) return;
-  
-  mobileNavToggle.addEventListener('click', function() {
+
+  if (!mobileNavToggle || !mobileNav) {
+    console.error('Éléments du menu mobile (toggle ou nav) non trouvés pour navigation.js');
+    return;
+  }
+
+  // Vérifier si l'overlay existe, sinon le créer
+  let overlay = document.querySelector('.overlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.className = 'overlay'; // Assurez-vous que cette classe correspond à votre CSS
+    document.body.appendChild(overlay);
+    console.log('Overlay créé dynamiquement par navigation.js');
+  }
+
+  // Fonction pour basculer le menu mobile (inspirée de fix-mobile-menu.js)
+  function toggleMobileNav() {
     const isExpanded = mobileNavToggle.getAttribute('aria-expanded') === 'true';
-    
-    // Mettre à jour l'état du bouton
-    mobileNavToggle.setAttribute('aria-expanded', !isExpanded);
-    
-    // Mettre à jour l'état du menu
-    mobileNav.setAttribute('aria-hidden', isExpanded);
-    
-    // Afficher/masquer le menu
+
+    mobileNavToggle.setAttribute('aria-expanded', String(!isExpanded));
+    mobileNav.setAttribute('aria-hidden', String(isExpanded));
+
     if (isExpanded) {
       mobileNav.classList.remove('active');
+      overlay.classList.remove('active');
       document.body.style.overflow = '';
-      
-      // Animer les barres du bouton
-      mobileNavToggle.querySelectorAll('.bar').forEach(bar => {
-        bar.style.transform = '';
-      });
+
+      const bars = mobileNavToggle.querySelectorAll('.bar');
+      if (bars.length === 3) {
+        bars[0].style.transform = '';
+        bars[1].style.opacity = '1'; // Rétablir l'opacité
+        bars[2].style.transform = '';
+      }
     } else {
       mobileNav.classList.add('active');
-      document.body.style.overflow = 'hidden'; // Empêcher le défilement du body
-      
-      // Animer les barres du bouton pour former un X
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+
       const bars = mobileNavToggle.querySelectorAll('.bar');
-      bars[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-      bars[1].style.opacity = '0';
-      bars[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      if (bars.length === 3) {
+        bars[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        bars[1].style.opacity = '0';
+        bars[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      }
     }
-  });
-  
+  }
+
+  // Attacher l'événement au bouton de bascule
+  // Supprimer d'abord tout écouteur existant pour éviter les doublons si ce script est chargé plusieurs fois
+  mobileNavToggle.removeEventListener('click', toggleMobileNav);
+  mobileNavToggle.addEventListener('click', toggleMobileNav);
+
   // Fermer le menu mobile lorsqu'un lien est cliqué
   mobileNav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', function() {
-      mobileNavToggle.click();
-    });
+    link.removeEventListener('click', toggleMobileNavOnLinkClick); // Évite doublons
+    link.addEventListener('click', toggleMobileNavOnLinkClick);
   });
   
-  // Fermer le menu mobile lorsque l'utilisateur clique en dehors
-  document.addEventListener('click', function(event) {
-    if (mobileNav.classList.contains('active') && 
-        !mobileNav.contains(event.target) && 
-        !mobileNavToggle.contains(event.target)) {
-      mobileNavToggle.click();
+  function toggleMobileNavOnLinkClick() {
+    if (mobileNav.classList.contains('active')) {
+        toggleMobileNav();
     }
-  });
+  }
+
+  // Fermer le menu mobile lorsque l'utilisateur clique sur l'overlay
+  overlay.removeEventListener('click', toggleMobileNavOnOverlayClick); // Évite doublons
+  overlay.addEventListener('click', toggleMobileNavOnOverlayClick);
+
+  function toggleMobileNavOnOverlayClick() {
+    if (mobileNav.classList.contains('active')) {
+      toggleMobileNav();
+    }
+  }
+
+  // Fermer le menu mobile lorsque l'utilisateur appuie sur Échap
+  document.removeEventListener('keydown', handleEscKey); // Évite doublons
+  document.addEventListener('keydown', handleEscKey);
+
+  function handleEscKey(event) {
+    if (event.key === 'Escape' && mobileNav.classList.contains('active')) {
+      toggleMobileNav();
+    }
+  }
+  console.log('Navigation mobile initialisée et améliorée par navigation.js');
 }
 
 /**
