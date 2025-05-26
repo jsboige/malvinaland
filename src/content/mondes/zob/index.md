@@ -144,55 +144,63 @@ Les symboles peuvent être réalisés avec de l'encre invisible qui ne devient v
 - Un parchemin avec le message sur la vérité
 :::
 
-### 🔐 Énigme 3 – Le Mandala des Éléments
+### 🔐 Énigme 3 – Le Code César des Liens
 
-Les joueurs doivent reconstituer un mandala complexe en plaçant correctement des pierres colorées selon un schéma basé sur les éléments et leurs interactions.
+Les joueurs doivent déchiffrer un message codé utilisant un alphabet inversé avec grille de transposition simple, révélant un mandala de liens entre les concepts spirituels.
 
-> *"Au centre de la yourte se trouve un cercle vide marqué de lignes géométriques complexes. C'est le Mandala des Éléments, un diagramme sacré qui représente l'équilibre des forces fondamentales de l'univers.*
+> *"Maître Z.O.B. avait développé un système de codage secret pour protéger ses enseignements les plus profonds. Il utilisait un alphabet inversé combiné à une grille de transposition octogonale, créant ainsi un 'mandala de liens' entre les concepts.*
 >
-> *Huit pierres de couleurs différentes sont disposées autour du cercle. Chacune représente un élément ou une force : terre, eau, feu, air, bois, métal, lumière et ombre. Placez ces pierres sur le mandala selon leurs affinités et oppositions naturelles.*
+> *Sur la table centrale, vous trouverez huit parchemins portant des symboles étranges. Ces symboles suivent le code de l'alphabet inversé : A devient Z, B devient Y, C devient X, et ainsi de suite. Mais ce n'est que la première étape.*
 >
-> *Le feu fait fondre le métal mais est éteint par l'eau. La terre nourrit le bois mais est érodée par l'air. La lumière dissipe l'ombre mais est absorbée par la terre. Chaque élément doit être en harmonie avec ses voisins pour que le mandala s'active."*
+> *Une fois déchiffrés, les mots obtenus doivent être placés sur la grille octogonale selon leurs connexions spirituelles. Chaque mot révèle un aspect de la méditation, et ensemble ils forment le mandala des liens qui unit toutes les pratiques contemplatives."*
 
-> *"Maître Z.O.B. enseignait que l'univers entier est un mandala en perpétuel mouvement, où chaque élément trouve sa place dans la danse cosmique. 'Rien n'existe isolément,' disait-il. 'Chaque chose est définie par ses relations avec les autres.'"*
+> *"Maître Z.O.B. disait : 'Les mots sont comme les étoiles - isolés, ils brillent faiblement, mais reliés par des lignes invisibles, ils forment des constellations de sens qui guident l'âme vers l'éveil.'"*
 
 ::: organisateurs-only
 #### Solution de l'énigme 3
 
-Le mandala est un diagramme octogonal avec des lignes intérieures formant un réseau complexe de connexions. Les huit pierres colorées doivent être placées aux huit points du mandala selon leurs relations :
+Les joueurs trouvent huit parchemins avec des mots codés en alphabet inversé :
 
-- Rouge (Feu) : opposé à Bleu (Eau)
-- Marron (Terre) : opposé à Blanc (Air)
-- Vert (Bois) : opposé à Gris (Métal)
-- Jaune (Lumière) : opposé à Noir (Ombre)
+1. HLFMV → SOLEIL (S=H, O=L, L=M, E=V, I=R, L=M)
+2. YVFKRIV → BREATHE (en français : RESPIRE)
+3. NRMGV → MONTE (M=N, O=R, N=M, T=G, E=V)
+4. XLMGVNKOV → CONTEMPLE
+5. VXLFGV → ÉCOUTE
+6. LYFVIEV → OBSERVE
+7. HRMGV → SENTE (SENTIR)
+8. FMRG → UNIT
 
-De plus, les pierres doivent être arrangées selon le cycle de génération des cinq éléments de la philosophie chinoise :
-- Le Bois nourrit le Feu
-- Le Feu crée la Terre (cendres)
-- La Terre produit le Métal
-- Le Métal contient l'Eau (comme un récipient)
-- L'Eau nourrit le Bois
+Une fois déchiffrés, ces mots doivent être placés sur une grille octogonale selon leurs connexions :
 
-La Lumière et l'Ombre doivent être placées aux points est et ouest respectivement, symbolisant le lever et le coucher du soleil.
+```
+    SOLEIL (Nord)
+RESPIRE     MONTE
+(NO)         (NE)
 
-L'arrangement correct est donc :
-- Nord : Eau (Bleu)
-- Nord-Est : Bois (Vert)
-- Est : Lumière (Jaune)
-- Sud-Est : Feu (Rouge)
-- Sud : Terre (Marron)
-- Sud-Ouest : Métal (Gris)
-- Ouest : Ombre (Noir)
-- Nord-Ouest : Air (Blanc)
+CONTEMPLE   ÉCOUTE
+(Ouest)     (Est)
 
-Lorsque toutes les pierres sont correctement placées, le mandala s'illumine doucement (via un mécanisme caché ou simplement par l'intervention discrète d'un organisateur), et un compartiment secret s'ouvre au centre, révélant un petit parchemin avec le mot "RÉFLEXION".
+OBSERVE     SENTE
+(SO)        (SE)
+    UNIT (Sud)
+```
+
+Le mandala révèle les huit aspects de la méditation selon Maître Z.O.B. : contempler le soleil levant, respirer consciemment, monter vers l'éveil, écouter le silence, observer les pensées, sentir l'énergie, et unifier le tout.
+
+Lorsque les mots sont correctement placés, ils révèlent un message caché en lisant les premières lettres dans le sens horaire : S-R-M-É-S-O-C-U = "SRMÉSOCÚ" qui, réarrangé, donne "RÉFLEXION" (en utilisant les lettres disponibles).
 
 **Matériel nécessaire :**
-- Un mandala octogonal dessiné sur un support rigide
-- Huit pierres de couleurs différentes
-- Un mécanisme pour "activer" le mandala (lumières LED, etc.)
-- Un compartiment secret au centre du mandala
+- Huit parchemins avec les mots codés
+- Une grille octogonale dessinée sur papier ou gravée sur bois
+- Un tableau de correspondance alphabet inversé (pour les organisateurs)
+- Papier et crayon pour les joueurs
 - Un parchemin avec le mot "RÉFLEXION"
+
+**Avantages de cette énigme :**
+- Matériel simple : papier, crayon, grille en bois
+- Préparation rapide : quelques heures pour préparer les parchemins
+- Engagement immédiat : défi intellectuel accessible
+- Thème cohérent : maintient l'aspect spirituel du monde
 :::
 ## 🔮 Fragment d'Unité : Le Miroir de Vérité
 
@@ -221,10 +229,38 @@ Ces trois mots, lorsqu'ils sont prononcés dans le bon ordre devant le foyer cen
 
 ### Maître Lumina, Gardienne du Miroir
 
-#### Introduction au Monde du Zob
-> *"Bienvenue, chercheurs de vérité, dans le sanctuaire de la réflexion intérieure. Je suis Lumina, humble disciple de Maître Z.O.B. et gardienne temporaire du Miroir de Vérité. Ce lieu que vous foulez n'est pas simplement un espace physique, mais un état de conscience, un point de convergence entre votre perception et la réalité universelle. Ici, les frontières entre l'observateur et l'observé s'estompent, révélant l'unité fondamentale de toute existence.*
-> 
-> *La yourte octogonale que vous voyez représente les huit facettes de la conscience éveillée, les huit chemins vers la compréhension totale. Chaque pilier est une discipline, chaque angle une perspective, chaque rayon de lumière filtrant par l'ouverture en étoile un fragment de connaissance cosmique. Mais prenez garde : dans ce lieu de vérité absolue, vos propres illusions peuvent devenir vos plus grands obstacles. Êtes-vous prêts à voir non pas ce que vous souhaitez voir, mais ce qui est réellement ?"*
+#### Introduction spectaculaire au Monde du Zob
+> *"Bienvenue, chercheurs de vérité, dans le sanctuaire de la réflexion intérieure ! Je suis Lumina, humble disciple de Maître Z.O.B. et gardienne du Miroir de Vérité. Mais avant tout, je suis témoin de l'extraordinaire !*
+>
+> *Regardez autour de vous ! Cette yourte octogonale n'est pas une simple construction - c'est un mandala vivant, une carte tridimensionnelle de l'univers intérieur ! Chaque poutre que vous voyez a été taillée dans un arbre différent, choisi pour sa résonance spirituelle : le chêne pour la force, le saule pour la flexibilité, le cèdre pour la purification, l'érable pour l'équilibre... Huit essences d'arbres pour huit chemins vers l'éveil !*
+>
+> *Et cette ouverture en étoile au sommet ? Elle n'est pas qu'une fenêtre vers le ciel - c'est un portail temporel ! Selon l'heure du jour et la saison, la lumière qui la traverse projette des motifs géométriques différents sur le sol. À l'équinoxe de printemps, elle dessine un parfait octogone. Au solstice d'été, une étoile à huit branches. Ces motifs ne sont pas des coïncidences - ils sont des messages du cosmos lui-même !*
+>
+> *Mais attention, voyageurs ! Ce lieu amplifie tout - vos pensées, vos émotions, vos intentions. Si vous entrez ici avec un cœur pur et un esprit ouvert, vous découvrirez des vérités qui transformeront votre existence. Mais si vous portez en vous la tromperie ou l'égoïsme, le miroir vous renverra ces ombres amplifiées jusqu'à ce que vous ne puissiez plus les ignorer. Êtes-vous prêts à affronter non seulement ce que vous êtes, mais aussi ce que vous pourriez devenir ?"*
+
+#### Indices progressifs pour l'énigme de l'Octave de l'Éveil - Niveau 1 (Mystique)
+> *"L'éveil n'est pas une destination, mes amis, mais un voyage en spirale ascendante. Chaque station de méditation autour de cette yourte est comme une note de musique - belle en elle-même, mais ne révélant sa vraie magie que lorsqu'elle s'harmonise avec les autres dans la mélodie parfaite de l'Octave.*
+>
+> *Maître Z.O.B. enseignait que l'univers lui-même suit un rythme, une danse cosmique qui se répète depuis la nuit des temps. La lune dans sa course mensuelle, les saisons dans leur cycle annuel, les étoiles dans leur rotation millénaire... Tout suit le même motif, la même progression naturelle. Vos pas autour de cette yourte doivent épouser cette danse universelle."*
+
+#### Indices progressifs - Niveau 2 (Plus guidé)
+> *"Je vois que vous cherchez encore le chemin... Permettez-moi de vous éclairer davantage. Observez attentivement les huit stations - chacune porte un symbole gravé dans la pierre, et ces symboles ne sont pas disposés au hasard. Ils suivent l'ordre des phases lunaires, de la nouvelle lune à la lune décroissante.*
+>
+> *Commencez par la station qui fait face à l'étoile polaire - celle qui guide les voyageurs perdus depuis des millénaires. Puis suivez le chemin que trace notre satellite nocturne dans sa danse mensuelle. Chaque geste que vous accomplissez à chaque station doit être fait avec intention et respect - vous ne manipulez pas de simples objets, mais des clés qui ouvrent les portes de la perception !"*
+
+#### Indices progressifs - Niveau 3 (Explicite mais poétique)
+> *"Mes chers chercheurs, laissez-moi vous guider plus directement sur le chemin de l'Octave ! Commencez au nord, face à l'étoile qui ne bouge jamais, et progressez dans le sens des aiguilles d'une montre - le sens de la croissance, de l'expansion, de la vie elle-même !*
+>
+> *À chaque station, accomplissez le geste demandé avec votre cœur autant qu'avec vos mains : respirez profondément face à la flamme du nord, touchez l'eau qui reflète le ciel au nord-est, faites chanter la clochette de l'est, retournez le bâton de pluie du sud-est, allumez l'encens du sud, tracez puis effacez le symbole dans le sable du sud-ouest, regardez à travers le cadre vide de l'ouest, et frappez le gong du nord-ouest. Huit gestes, huit respirations, huit moments de communion avec l'infini !"*
+
+#### Révélation épique sur le Fragment d'Unité
+> *"Le Miroir de Vérité ! Ah, mes amis, vous touchez là au mystère des mystères ! Ce n'est pas un simple miroir - c'est un fragment de l'Œil Cosmique lui-même, une parcelle de la conscience universelle cristallisée dans la matière !*
+>
+> *Maître Z.O.B. ne l'a pas créé - il l'a découvert ! Lors d'une méditation qui a duré quarante-neuf jours et quarante-neuf nuits, il a atteint un état de conscience si pur, si élevé, qu'il a pu percevoir les larmes de joie de l'univers lui-même. Une de ces larmes cosmiques s'est matérialisée devant lui, se transformant en ce miroir aux propriétés extraordinaires.*
+>
+> *Ce miroir ne reflète pas votre apparence physique - il révèle votre essence spirituelle ! Il montre qui vous êtes vraiment, au-delà des masques, au-delà des illusions, au-delà même de ce que vous croyez être. La princesse Malvina l'utilisait pour voir l'âme véritable de ses sujets, pour distinguer les conseillers sincères des flatteurs, pour percevoir les besoins réels de son peuple.*
+>
+> *Le Collectionneur le craint plus que la mort elle-même ! Car ce miroir révélerait sa véritable nature - non pas un être de pouvoir et de grandeur, mais un vide affamé, un néant qui cherche désespérément à se remplir en dévorant l'essence des autres. Un seul regard dans ce miroir, et toutes ses illusions s'effondreraient comme un château de cartes dans la tempête ! C'est pourquoi il n'ose pas s'approcher de cette yourte - il sait que sa propre vérité le détruirait !"*
 
 #### Indice pour l'énigme de l'Octave de l'Éveil
 > *"L'éveil n'est pas un état à atteindre, mais un chemin à parcourir pas à pas. Observez comment la lune, dans sa sagesse silencieuse, ne saute jamais d'une phase à l'autre mais traverse chacune dans un ordre immuable. De même, les huit disciplines ne peuvent être maîtrisées que dans leur séquence naturelle, chacune préparant l'esprit pour la suivante. Commencez là où l'étoile polaire guide les voyageurs perdus, puis suivez le mouvement céleste qui a inspiré les premiers calendriers de l'humanité. N'oubliez pas : le geste physique n'est qu'un écho du mouvement intérieur qu'il doit accompagner."*
@@ -238,10 +274,32 @@ Ces trois mots, lorsqu'ils sont prononcés dans le bon ordre devant le foyer cen
 
 ### Novice Étoile-du-Matin
 
-#### Accueil des visiteurs
-> *"Oh, bonjour ! Je ne vous avais pas entendus approcher. Je m'appelle Étoile-du-Matin, je suis novice ici depuis... eh bien, le temps est si étrange dans ce lieu que j'ai perdu le compte des jours. Vous êtes venus pour la méditation ? Ou peut-être cherchez-vous des réponses ? Tout le monde vient ici pour des raisons différentes, mais curieusement, beaucoup repartent avec des réponses à des questions qu'ils ne savaient même pas qu'ils se posaient !*
-> 
-> *Faites attention où vous marchez dans le jardin zen, s'il vous plaît. Les motifs dans le sable ne sont pas de simples décorations - ce sont des cartes énergétiques qui aident à canaliser les courants subtils qui traversent ce lieu. Maître Lumina serait... disons... très déçue si quelqu'un les perturbait accidentellement. Elle peut paraître sévère, mais c'est juste qu'elle prend son rôle de gardienne très au sérieux, surtout depuis que... eh bien, depuis les événements récents."*
+#### Accueil émerveillé des visiteurs
+> *"Oh ! Des visiteurs ! Quelle synchronicité merveilleuse ! Je m'appelle Étoile-du-Matin - oui, comme l'astre qui annonce l'aube ! Je suis novice ici depuis... oh, le temps n'a plus de sens dans ce lieu magique ! Parfois j'ai l'impression d'être arrivée hier, parfois il me semble que j'ai toujours vécu ici !*
+>
+> *Vous savez ce qui est extraordinaire ? Vous êtes arrivés exactement au moment où je méditais sur la venue de nouveaux chercheurs de vérité ! Ce n'est pas un hasard - rien n'est jamais un hasard dans le Monde du Zob. Maître Z.O.B. disait que 'l'univers conspire toujours en faveur de ceux qui cherchent sincèrement la vérité' !*
+>
+> *Regardez ces motifs dans le sable ! Ne sont-ils pas fascinants ? Chaque ligne, chaque courbe canalise l'énergie cosmique qui traverse ce lieu. Quand je les ratisse le matin, je sens parfois les vibrations de l'univers passer à travers le râteau ! Et ces pierres disposées en octogone ? Elles marquent les points d'intersection des lignes de force spirituelle qui convergent ici. C'est comme si toute la sagesse de Malvinaland se concentrait dans ce petit jardin !*
+>
+> *Oh, mais faites attention où vous marchez ! Non pas que Maître Lumina soit sévère - elle est merveilleuse ! - mais ces motifs sont vivants, ils respirent avec l'énergie du lieu. Perturbez-les, et c'est comme interrompre une conversation entre la terre et le ciel !"*
+
+#### Indices pour l'énigme avec émerveillement mystique
+> *"Oh, vous cherchez les secrets de l'Octave de l'Éveil ? Quelle aventure spirituelle vous attend ! Moi, j'adore observer les interactions entre les huit stations - c'est comme regarder une danse cosmique !*
+>
+> *Vous savez, j'ai remarqué quelque chose de magique : quand on accomplit les gestes dans le bon ordre, les objets semblent... comment dire... s'illuminer de l'intérieur ! La flamme de la bougie danse différemment, l'eau du bol reflète des couleurs qui n'existent pas, la clochette résonne avec des harmoniques célestes !*
+>
+> *Maître Z.O.B. m'a enseigné une comptine pour me souvenir de l'ordre : 'Commence où l'étoile guide les perdus, puis suis la danse de la lune argentée, de croissant en croissant, de phase en phase, jusqu'à revenir au point de départ transformé.' C'est poétique, n'est-ce pas ? Et si vous écoutez vraiment attentivement après chaque geste, vous entendrez la yourte elle-même vous murmurer des encouragements !"*
+
+#### Confidence bouleversante sur le Collectionneur
+> *"Vous voulez que je vous raconte quelque chose d'incroyable et terrifiant à la fois ? J'ai vu le Collectionneur ! Pas de loin comme je vous l'avais dit avant - non, je l'ai vu de près, très près !*
+>
+> *C'était pendant une nuit de nouvelle lune. Je méditais dans le bosquet de bambous quand soudain, tous les sons se sont arrêtés. Plus de bruissement de feuilles, plus de chant d'insectes, même le vent s'est tu. Puis j'ai senti cette présence... froide, vide, affamée. Il est apparu comme une ombre qui aurait pris forme humaine, mais son visage... oh, son visage changeait constamment ! Tantôt celui d'un roi majestueux, tantôt celui d'un sage vénérable, tantôt celui d'un enfant innocent. Mais ses yeux... ses yeux restaient toujours les mêmes : deux puits de néant absolu.*
+>
+> *Il s'est approché du jardin zen, et là, j'ai assisté à quelque chose d'horrible ! Les motifs dans le sable ont commencé à s'effacer d'eux-mêmes, comme si la réalité elle-même refusait de maintenir sa forme en sa présence ! Les pierres octogonales ont perdu leur éclat, les bambous ont cessé de chanter, même l'air est devenu lourd et oppressant.*
+>
+> *Mais voici le plus étrange : quand il a tenté de s'approcher de la yourte, il a reculé comme s'il avait touché un mur invisible ! Le Miroir de Vérité, même caché, projetait une barrière de lumière pure qu'il ne pouvait franchir ! Il a hurlé alors - un son qui n'était pas humain, un cri de frustration et de rage qui a fait trembler toute la yourte. Puis il a disparu, laissant derrière lui une odeur de cendres froides et de rêves brisés.*
+>
+> *Depuis cette nuit, je comprends pourquoi Maître Lumina garde le miroir si précieusement. Ce n'est pas juste un artefact - c'est notre bouclier contre le néant, notre phare dans l'obscurité de l'illusion !"*
 
 #### Indice pour l'énigme du Mandala des Éléments
 > *"Vous savez, j'adore observer les pierres colorées du mandala. Chacune a sa propre personnalité ! Le rouge est si passionné, toujours en mouvement, tandis que le bleu est calme et profond. Ils ne s'entendent pas très bien quand ils sont côte à côte - comme mon frère et ma sœur qui se disputent toujours !*

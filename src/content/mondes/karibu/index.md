@@ -186,7 +186,48 @@ Lorsque l'incantation est prononcée, les flammes changent momentanément de cou
 - Une dalle marquée d'un symbole de flamme
 :::
 
-### 🔐 Énigme 4 – La Table de Confrontation
+### 🔐 Énigme 4 – La Collection de Mama Karibu
+
+Les joueurs doivent déchiffrer le message caché dans la collection de bouteilles d'alcool de Mama Karibu en utilisant les initiales pour former un mot-clé.
+
+> *"Dans un placard de la cuisine, Mama Karibu conservait une collection particulière de bouteilles d'alcool, chacune provenant d'une région différente de Malvinaland. Ces bouteilles ne sont pas là par hasard - leurs étiquettes racontent une histoire, leurs initiales forment un message.*
+>
+> *Observez attentivement chaque bouteille : le nom de l'alcool, sa région d'origine, l'année de production. Mama Karibu était connue pour ses messages cachés, et cette collection n'échappe pas à la règle. Les premières lettres de chaque nom d'alcool, lues dans le bon ordre, révèlent un mot crucial pour la suite de votre quête."*
+
+> *"Mama Karibu disait toujours : 'Même dans les plaisirs simples se cachent des vérités profondes. Une collection bien ordonnée est comme une bibliothèque - elle raconte l'histoire de celui qui l'a constituée.' Cherchez l'ordre qui donne du sens à l'ensemble."*
+
+::: organisateurs-only
+#### Solution de l'énigme 5
+
+La collection comprend six bouteilles d'alcool disposées sur une étagère du placard :
+
+1. **Rhum** des Îles du Verger (bouteille brune)
+2. **Eau-de-vie** des Montagnes du Zob (bouteille claire)
+3. **Cognac** des Vallées d'Elysée (bouteille dorée)
+4. **Hydromel** des Prairies du Linge (bouteille ambrée)
+5. **Absinthe** des Collines du Damier (bouteille verte)
+6. **Liqueur** des Jardins de Karibu (bouteille rouge)
+
+**Ordre à découvrir :** Les bouteilles doivent être arrangées selon l'ordre de visite des mondes dans l'aventure, ou selon un indice caché (par exemple, des numéros discrets sur les étiquettes, ou l'ordre des couleurs de l'arc-en-ciel).
+
+**Message révélé :** Les initiales dans le bon ordre forment "RECHAL" qui, réarrangé, donne "CHALEUR" - le concept central du monde Karibu.
+
+**Indice supplémentaire :** Une fois le mot "CHALEUR" découvert, il révèle l'emplacement d'un objet caché dans la cuisine (par exemple, sous une pierre du foyer marquée d'un symbole de flamme).
+
+**Matériel nécessaire :**
+- Six bouteilles d'alcool (vides) avec étiquettes personnalisées
+- Placard ou étagère pour les disposer
+- Indices discrets pour l'ordre (numéros, couleurs, etc.)
+- Objet caché révélé par le mot-clé
+- Parchemin avec le mot "CHALEUR"
+
+**Améliorations possibles :**
+- Ajouter des descriptions détaillées sur les étiquettes pour enrichir l'immersion
+- Inclure des anecdotes sur chaque région pour renforcer la cohérence de l'univers
+- Utiliser de vraies bouteilles décoratives pour un effet plus authentique
+:::
+
+### 🔐 Énigme 5 – La Table de Confrontation
 
 Les joueurs doivent préparer l'espace pour la confrontation finale avec le Collectionneur en disposant correctement les fragments d'unité autour du foyer central selon un schéma précis.
 
@@ -237,14 +278,40 @@ Lorsque tous les fragments sont correctement placés et orientés, le feu centra
 
 ### Chef Thabo, Gardien du Foyer
 
-#### Introduction au Monde Karibu
-> *"Bienvenue au Monde Karibu, voyageurs. Je suis Thabo, gardien du foyer et humble héritier des traditions de Mama Karibu. Ce lieu où vous vous tenez n'est pas une simple cuisine, mais le cœur battant de Malvinaland, là où toutes les routes convergent et où les essences se mélangent pour créer quelque chose de plus grand que la somme de leurs parties.*
-> 
-> *Depuis des générations, ce feu central brûle sans interruption, transformant les ingrédients bruts en nourriture, les étrangers en amis, les expériences en sagesse. La princesse Malvina venait souvent s'asseoir ici, partageant le pain et les histoires avec tous, sans distinction de rang ou d'origine.*
-> 
-> *Mais depuis que le Collectionneur l'a enlevée, notre feu s'affaiblit. Les aliments ont moins de saveur, les conversations moins de profondeur. Nous maintenons les rituels et préparons les repas, mais l'âme de ce lieu - la Flamme d'Accueil - nous a été dérobée, tout comme notre princesse.*
-> 
-> *Le Collectionneur reviendra bientôt ici, j'en suis certain. C'est dans ce lieu de convergence qu'il tentera d'achever son œuvre néfaste. Mais peut-être êtes-vous ceux dont parlent les anciennes prophéties de Mama Karibu - ceux qui rassembleront les fragments dispersés et raviveront la flamme qui transforme..."*
+#### Introduction spectaculaire au Monde Karibu
+> *"Karibu ! Karibu ! Bienvenue, mes amis, dans le cœur battant de Malvinaland ! Je suis Thabo, gardien du foyer éternel et humble héritier des traditions sacrées de Mama Karibu ! Vous voici dans le lieu le plus magique de tous les mondes - là où la transformation n'est pas qu'un concept, mais une réalité vivante qui pulse à chaque instant !*
+>
+> *Regardez ce feu central ! Il brûle depuis plus de cent ans sans jamais s'éteindre ! Mama Karibu l'a allumé avec une étincelle qu'elle portait dans son cœur, une flamme née de l'amour pur pour l'humanité ! Cette flamme ne consume pas seulement le bois - elle transforme tout ce qu'elle touche ! Les ingrédients deviennent des festins, les étrangers deviennent une famille, les peines deviennent de la sagesse, les différences deviennent de l'harmonie !*
+>
+> *Et cette cuisine ! Chaque ustensile, chaque épice, chaque pierre de ce foyer a été bénie par des générations de cuisiniers qui ont compris que nourrir le corps, c'est aussi nourrir l'âme ! Voyez ces marmites en cuivre - elles ont mijoté des milliers de repas partagés ! Ces herbes du jardin - elles poussent avec l'amour de ceux qui les cultivent ! Cette table communale - elle a accueilli des rois et des mendiants, des sages et des enfants, tous égaux devant le partage du pain !*
+>
+> *La princesse Malvina adorait ce lieu ! Elle s'asseyait là, sur ce banc près du feu, et écoutait les histoires de chaque visiteur comme si c'étaient des trésors précieux ! Elle disait que 'gouverner, c'est comme cuisiner un grand festin - il faut savoir mélanger les ingrédients les plus divers pour créer quelque chose qui nourrit et réjouit tout le monde' !*
+>
+> *Mais hélas ! Depuis que le Collectionneur l'a enlevée, notre flamme faiblit ! Il a volé la Flamme d'Accueil - l'essence même de notre hospitalité ! Sans elle, les aliments perdent leur saveur, les conversations leur chaleur, les cœurs leur ouverture ! Mais vous êtes là ! Et je sens que vous portez en vous l'espoir de raviver cette flamme ! Êtes-vous prêts à accomplir les rituels de transformation qui sauveront notre monde ?"*
+
+#### Indices progressifs pour l'énigme des Ingrédients - Niveau 1 (Mystique culinaire)
+> *"Mama Karibu enseignait que l'âme humaine est comme un ragoût complexe - elle a besoin de tous ses ingrédients pour révéler sa vraie saveur ! Quatre essences fondamentales composent l'âme complète, quatre saveurs que le Collectionneur cherche à séparer et à collectionner !*
+>
+> *Cherchez dans notre cuisine et notre jardin les symboles de ces quatre aspects : quelque chose qui éveille le feu de la passion, quelque chose qui apporte la paix de la sagesse, quelque chose qui nourrit la douceur des souvenirs, et quelque chose qui ancre la force de la volonté ! Mama Karibu les marquait toujours de signes subtils - une spirale pour la croissance, un croissant pour l'intuition, une étoile pour la mémoire, une montagne pour la stabilité !"*
+
+#### Indices progressifs - Niveau 2 (Plus guidé)
+> *"Je vois que vous cherchez encore les ingrédients de l'âme... Laissez-moi vous guider ! L'épice de la passion brûle rouge comme le feu et pend près de la source de chaleur. L'herbe qui apaise pousse en forme de croissant lunaire dans notre jardin spiralé. Le fruit de la mémoire porte une marque spéciale gravée dans son écorce. Et la racine qui ancre ressemble à une forme humaine et repose dans un pot marqué du symbole de la montagne !*
+>
+> *Quand vous les aurez trouvés, apportez-les au mortier de pierre près du foyer - celui que Mama Karibu utilisait pour ses préparations magiques ! Placez-les ensemble, et la pierre elle-même vous révélera le secret qu'elle garde !"*
+
+#### Indices progressifs - Niveau 3 (Explicite mais chaleureux)
+> *"Mes chers amis, permettez-moi de vous guider directement ! Le piment rouge pend en guirlande près du foyer central - c'est l'épice de la passion ! La lavande pousse en croissant dans la section nord-est du jardin - c'est l'herbe qui apaise ! L'orange marquée d'une spirale sur l'agrumier du verger - c'est le fruit de la mémoire ! Et le gingembre en forme humaine dans le pot marqué d'une montagne près du four - c'est la racine qui ancre !*
+>
+> *Rassemblez ces quatre trésors dans le mortier de pierre, et la magie de Mama Karibu opérera ! Le mortier révélera le mot 'ALCHIMIE' - car c'est exactement ce que vous accomplissez : la transformation des éléments séparés en une essence unifiée !"*
+
+#### Révélation épique sur le Fragment d'Unité
+> *"La Flamme d'Accueil ! Mes amis, vous touchez là au mystère le plus profond de notre monde ! Cette flamme n'est pas un simple cristal - c'est le cœur même de Mama Karibu cristallisé dans la matière ! Quand elle a compris qu'elle devait partir, elle a pris une partie de son propre cœur, de sa propre capacité d'amour infini, et l'a transformée en cette flamme éternelle !*
+>
+> *Cette flamme pulse au rythme de l'amour universel ! Elle brille plus fort en présence de la générosité, de la compassion, de l'accueil véritable ! Elle s'affaiblit face à l'égoïsme, à la peur, à la fermeture du cœur ! La princesse Malvina la portait toujours près de son cœur, et c'est grâce à elle qu'elle pouvait ressentir les besoins de son peuple, qu'elle pouvait ouvrir son palais à tous, qu'elle pouvait transformer les ennemis en amis !*
+>
+> *Le Collectionneur la redoute plus que tout ! Car cette flamme représente tout ce qu'il a rejeté dans sa quête de pouvoir solitaire ! Là où elle célèbre l'union, il cherche la séparation ! Là où elle honore le partage, il valorise la possession ! S'il parvenait à l'éteindre définitivement, plus jamais les cœurs ne pourraient s'ouvrir véritablement, plus jamais les différences ne pourraient se transformer en harmonie !*
+>
+> *Mais voici le secret que même le Collectionneur ignore : cette flamme ne peut être éteinte de l'extérieur ! Elle ne peut s'affaiblir que si ceux qui la portent perdent foi en l'amour, en la générosité, en la beauté du partage ! Tant qu'il existera des cœurs ouverts, des mains tendues, des tables partagées, cette flamme continuera de brûler ! Et quand vous la retrouverez, elle brillera plus fort que jamais, car elle aura été nourrie par votre propre quête généreuse !"*
 
 #### Indice pour l'énigme des Ingrédients de l'Âme
 > *"Mama Karibu nous enseignait que l'âme humaine, comme un bon ragoût, est composée d'ingrédients divers qui doivent être en équilibre. 'Trop d'une chose, pas assez d'une autre, et le plat est ruiné,' disait-elle.*
@@ -262,12 +329,32 @@ Lorsque tous les fragments sont correctement placés et orientés, le feu centra
 
 ### Nandi, Apprentie Cuisinière
 
-#### Accueil chaleureux des visiteurs
-> *"Oh, de nouveaux visages ! Quelle joie ! Je suis Nandi, apprentie de Chef Thabo et future gardienne du foyer - enfin, si les étoiles sont favorables et si je ne brûle plus le pain ! Vous devez être affamés après votre voyage. Venez, venez, j'ai justement préparé une soupe aux herbes du jardin - la recette de Mama Karibu elle-même !*
-> 
-> *Ne vous inquiétez pas pour les formalités ici - à Karibu, nous croyons que la meilleure façon de connaître quelqu'un est de partager un repas avec lui. Asseyez-vous, mangez, et racontez-moi d'où vous venez. J'adore les histoires presque autant que la cuisine !*
-> 
-> *Vous savez, avant l'arrivée du Collectionneur, ce lieu était toujours plein de rires et de conversations. Les gens venaient de tous les mondes de Malvinaland pour partager des recettes, des histoires, des chansons... La princesse Malvina adorait s'asseoir là, juste à côté du foyer, écoutant les récits des voyageurs tout en remuant la marmite. Elle disait que c'était sa façon préférée d'apprendre - non pas dans les livres poussiéreux, mais dans le bouillon vivant des expériences partagées."*
+#### Accueil exubérant et chaleureux des visiteurs
+> *"Oh ! Oh ! De nouveaux visages ! Quelle merveilleuse surprise ! Je suis Nandi, apprentie de Chef Thabo et future gardienne du foyer éternel - enfin, si j'arrive à maîtriser l'art de ne plus faire déborder les marmites ! Mais regardez-vous ! Vous avez l'air affamés, fatigués, et vos yeux brillent de cette lueur particulière des vrais aventuriers !*
+>
+> *Venez, venez immédiatement ! J'ai justement terminé une soupe aux sept herbes magiques - la recette secrète de Mama Karibu elle-même ! Chaque herbe a été cueillie à l'aube, bénie par le soleil levant, et mijotée avec l'amour de trois générations de cuisiniers ! Cette soupe ne nourrit pas seulement le corps - elle réchauffe l'âme, éclaircit l'esprit, et donne du courage pour les épreuves à venir !*
+>
+> *Et ces histoires que vous portez ! Je les sens déjà ! Chaque voyageur qui arrive ici apporte avec lui des parfums d'aventure, des échos de mystères résolus, des fragments de sagesse glanés sur les routes ! Asseyez-vous à cette table bénie, mangez de bon cœur, et racontez-moi tout ! Car ici, à Karibu, nous croyons que partager un repas, c'est partager son âme !*
+>
+> *Vous savez, avant que le Collectionneur ne jette son ombre sur notre monde, cette cuisine résonnait jour et nuit de rires, de chants, de conversations passionnées ! Des marchands d'épices venaient du monde du damier avec leurs cristaux colorés, des tisserands du monde du linge apportaient leurs plus belles étoffes pour décorer nos tables, des jardiniers du verger partageaient leurs fruits les plus sucrés ! Et la princesse Malvina ! Oh, elle transformait chaque repas en fête ! Elle s'asseyait exactement là où vous êtes, remuant la grande marmite tout en écoutant les récits des voyageurs, ses yeux brillant de joie à chaque nouvelle histoire ! Elle disait que 'la vraie richesse d'un royaume se mesure non pas à ses trésors, mais à la diversité des histoires qui se racontent autour de ses foyers' !"*
+
+#### Indices pour l'énigme avec passion culinaire
+> *"Oh, le grand livre de recettes ! C'est mon trésor le plus précieux ! Mama Karibu y a consigné non seulement ses recettes magiques, mais aussi ses visions prophétiques ! Il y a une recette particulière - le Festin de l'Unité - qu'elle ne préparait qu'une fois par an, lors de la grande célébration qui honorait tous les mondes de Malvinaland !*
+>
+> *Pour cette recette extraordinaire, elle utilisait des ustensiles très spéciaux, chacun marqué d'un symbole correspondant à l'essence d'un monde ! Une tasse de cristal pour mesurer la clarté du monde du damier, un fouet tressé pour mélanger l'harmonie du monde du linge, une cuillère de bois avec une graine incrustée pour la mémoire du verger, une spatule réfléchissante pour la vérité du Zob, et un couteau gravé d'un portail pour les passages d'Elysée !*
+>
+> *Ces ustensiles sont toujours quelque part dans la cuisine, mais depuis l'enlèvement de la princesse, beaucoup de choses ont été cachées pour les protéger ! Cherchez les symboles qui vous sont devenus familiers - ils vous guideront vers ces trésors culinaires ! Et souvenez-vous : Mama Karibu disait que 'la magie de la cuisine réside autant dans l'ordre d'utilisation des ustensiles que dans les ingrédients eux-mêmes' !"*
+
+#### Confidence visionnaire sur la confrontation finale
+> *"Vous voulez que je vous raconte le rêve le plus extraordinaire de ma vie ? Cette nuit, j'ai vu l'avenir ! Enfin, je crois... Les rêves à Karibu sont parfois des fenêtres sur ce qui pourrait être !*
+>
+> *J'ai vu le Collectionneur revenir ici, mais pas comme le monstre terrifiant que tout le monde décrit ! Il était... brisé, fragmenté, comme un vase précieux qui serait tombé et dont les morceaux chercheraient désespérément à se rassembler ! Il se tenait devant notre foyer central, entouré d'un pentagramme de lumière formé par cinq objets magnifiques que je n'avais jamais vus !*
+>
+> *Au centre de ce pentagramme brillait une flamme orange vif - notre Flamme d'Accueil ! - qui pulsait comme un cœur vivant ! Et voici le plus incroyable : cette flamme ne le repoussait pas, elle l'attirait ! Comme si elle reconnaissait en lui une partie d'elle-même qui s'était perdue !*
+>
+> *Dans mon rêve, j'ai compris que le Collectionneur n'était pas né maléfique ! Il était autrefois comme nous - quelqu'un qui cherchait la beauté, la connexion, l'amour ! Mais quelque chose l'avait brisé, l'avait convaincu que la seule façon de préserver la beauté était de l'isoler, de la posséder, de l'empêcher de changer !*
+>
+> *Chef Thabo dit que mon rêve révèle une vérité profonde : peut-être que votre mission n'est pas de détruire le Collectionneur, mais de le guérir ! De lui rappeler ce qu'il a oublié - que la vraie beauté naît du partage, que la vraie force vient de l'union, que la vraie magie se trouve dans la transformation mutuelle ! Mama Karibu disait toujours : 'Même l'ingrédient le plus amer peut trouver sa place dans un plat bien équilibré, et même le cœur le plus fermé peut s'ouvrir à nouveau si on lui offre la bonne recette d'amour' !"*
 
 #### Indice pour l'énigme du Festin des Souvenirs
 > *"Vous avez vu le grand livre de recettes sur le lutrin ? C'est le journal de Mama Karibu - elle y notait non seulement ses recettes, mais aussi ses visions et ses prophéties. Il y a une recette particulière qu'elle ne préparait qu'une fois par an, lors de la fête de l'Unité - un festin qui honorait tous les mondes de Malvinaland.*
@@ -291,7 +378,7 @@ Le Monde Karibu occupe une position culminante dans l'histoire du Collectionneur
 
 La Flamme d'Accueil est l'élément catalyseur qui permettra d'activer et d'unifier le pouvoir des cinq autres fragments d'unité. Sans ce fragment final, les autres ne pourront pas atteindre leur plein potentiel contre le Collectionneur.
 
-Les quatre concepts découverts dans ce monde (ALCHIMIE, COMMUNION, TRANSFORMATION, UNIFICATION) représentent les étapes du processus alchimique nécessaire pour contrer le pouvoir du Collectionneur. Ils symbolisent également la philosophie fondamentale de Malvinaland que le Collectionneur cherche à détruire : la croyance que la vraie force vient de l'union harmonieuse des différences, non de leur séparation et de leur "purification".
+Les cinq concepts découverts dans ce monde (ALCHIMIE, COMMUNION, TRANSFORMATION, CHALEUR, UNIFICATION) représentent les étapes du processus alchimique nécessaire pour contrer le pouvoir du Collectionneur. Ils symbolisent également la philosophie fondamentale de Malvinaland que le Collectionneur cherche à détruire : la croyance que la vraie force vient de l'union harmonieuse des différences, non de leur séparation et de leur "purification".
 
 Le Monde Karibu correspond à la phase 3 de la progression narrative : "Résolution", où tous les éléments rassemblés dans les phases précédentes convergent pour la confrontation finale. C'est ici que les joueurs doivent non seulement utiliser les fragments d'unité qu'ils ont collectés, mais aussi comprendre la véritable nature du conflit avec le Collectionneur - non pas simplement un combat entre bien et mal, mais une lutte philosophique entre deux visions opposées de l'existence.
 

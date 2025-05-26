@@ -222,29 +222,86 @@ Si les joueurs exécutent correctement cette séquence, le Gardien Principal ré
 - Un message gravé ou caché sur le socle de la statue
 :::
 
-### 🔐 Énigme 4 – Le Cabinet des Reflets
+### 🔐 Énigme 4 – La Lampe à Pétrole des Secrets
 
-Les joueurs doivent naviguer dans un labyrinthe de miroirs et de cristaux pour reconstituer un rayon de lumière fragmenté, révélant ainsi l'emplacement de l'Œil de la Vérité.
+Les joueurs doivent découvrir le mécanisme d'ouverture d'une lampe à pétrole décorative qui cache un mot secret, révélant ainsi l'emplacement de l'Œil de la Vérité.
 
-> *"Dans la pièce la plus secrète de la maison orange se trouve le Cabinet des Reflets - un espace où la lumière est divisée, réfléchie et transformée par un système complexe de miroirs et de cristaux. Une source de lumière unique entre par une petite ouverture, mais son rayon est fragmenté en sept couleurs qui partent dans différentes directions.*
+> *"Dans la bibliothèque se trouve une lampe à pétrole ancienne, vestige des premières années de Professeure Bastet. Cette lampe n'est pas qu'un simple objet décoratif - elle recèle un mécanisme secret que seuls les vrais chercheurs de connaissance peuvent découvrir.*
 >
-> *Votre tâche est de réorienter les miroirs et les prismes pour que les sept rayons colorés convergent vers un point unique. Ce n'est que lorsque le spectre sera réunifié que l'Œil de la Vérité se révélera."*
+> *La lampe semble ordinaire au premier regard, mais observez attentivement ses détails : les motifs gravés sur le métal, la forme particulière de son réservoir, la manière dont la lumière joue sur sa surface. Un mécanisme à ressort y est dissimulé, et quand il est activé correctement, il révèle un mot caché qui vous guidera vers l'Œil de la Vérité."*
 
-> *"Professeure Bastet enseignait que 'la vérité, comme la lumière blanche, semble simple et uniforme, mais contient en réalité toutes les couleurs de l'existence. Pour comprendre pleinement la vérité, il faut d'abord accepter sa nature composite, puis apprendre à réunifier ses aspects fragmentés.'"*
+> *"Professeure Bastet disait : 'La connaissance la plus précieuse est souvent cachée dans les objets les plus familiers. Une lampe éclaire non seulement l'obscurité extérieure, mais peut aussi illuminer les mystères intérieurs pour celui qui sait la regarder avec les bons yeux.'"*
 
 ::: organisateurs-only
+#### Solution de l'énigme 4
+
+La lampe à pétrole est placée sur une étagère de la bibliothèque. Elle présente plusieurs éléments à observer :
+
+1. **Motifs gravés** : Sur le réservoir sont gravés huit symboles représentant les phases de la lune
+2. **Mécanisme caché** : Un petit ressort est dissimulé sous la base de la lampe
+3. **Séquence d'activation** : Les joueurs doivent presser les symboles lunaires dans l'ordre des phases (nouvelle lune → croissant → premier quartier → gibbeuse croissante → pleine lune → gibbeuse décroissante → dernier quartier → croissant décroissant)
+
+**Indices pour découvrir la séquence :**
+- Un petit livre sur l'astronomie est ouvert à la page des phases lunaires près de la lampe
+- Les sphinx félins regardent tous vers la fenêtre où l'on peut voir la lune (ou une représentation)
+- Une citation de Professeure Bastet gravée discrètement : "Suivez le cycle éternel qui guide les marées et les cœurs"
+
+**Mécanisme d'ouverture :**
+Quand la séquence correcte est pressée, un petit compartiment s'ouvre à la base de la lampe par un mécanisme à ressort simple. À l'intérieur se trouve un parchemin roulé avec le mot "ILLUMINATION".
+
+**Révélation finale :**
+Ce mot, combiné avec les trois précédents ("REFLETS", "PERCEPTION", "CLAIRVOYANCE"), forme la phrase-clé : "PERCEPTION-REFLETS-CLAIRVOYANCE-ILLUMINATION". Cette phrase, prononcée devant le miroir ondulé de l'énigme 2, fait apparaître une dernière inscription qui indique l'emplacement de l'Œil de la Vérité : "Sous l'œil de pierre qui veille sur l'étang" (la statue de chat).
+
+**Matériel nécessaire :**
+- Une lampe à pétrole décorative (brocante, récupération)
+- Mécanisme à ressort simple (peut être simulé par un organisateur)
+- Huit symboles des phases lunaires gravés ou collés
+- Petit livre d'astronomie ouvert à la bonne page
+- Parchemin avec le mot "ILLUMINATION"
+- L'Œil de la Vérité caché sous/dans la statue de chat
+
+**Avantages de cette énigme :**
+- Matériel accessible : lampe de brocante, mécanisme simple
+- Préparation rapide : quelques heures pour préparer la lampe et les symboles
+- Engagement immédiat : manipulation tactile satisfaisante
+- Thème cohérent : s'intègre parfaitement dans l'univers de la bibliothèque mystérieuse
+:::
 ## 🗣️ Dialogues et Tirades des PNJ
 
 ### Professeur Félix, Bibliothécaire Principal
 
-#### Introduction au Monde Orange des Sphinx
-> *"Bienvenue au Monde Orange des Sphinx, chercheurs de connaissance. Je suis le Professeur Félix, bibliothécaire principal et humble serviteur des gardiens félins. Ce lieu que vous contemplez n'est pas une simple demeure, mais un sanctuaire du savoir, une forteresse de l'intellect où sont préservées des connaissances que certains préféreraient voir disparaître.*
-> 
-> *Les murs orange que vous voyez ne sont pas simplement décoratifs - leur couleur est celle de l'illumination intellectuelle, du moment précis où l'esprit s'éveille à une compréhension nouvelle. Professeure Bastet les a conçus ainsi pour rappeler à tous les visiteurs que la connaissance est comme le soleil levant : elle dissipe les ténèbres de l'ignorance, mais peut aussi aveugler ceux qui la regardent sans préparation.*
-> 
-> *Nos gardiens félins ne sont pas de simples chats, comme vous l'avez sans doute déjà remarqué. Ils sont les véritables maîtres de ce lieu, les héritiers de la sagesse de Professeure Bastet. Ils vous observent, vous évaluent, déterminant si vous êtes dignes d'accéder aux trésors de connaissance que nous préservons. Ne vous fiez pas à leur apparence - derrière leurs yeux se cache une intelligence qui a contemplé les mystères de l'univers pendant des générations.*
-> 
-> *Depuis l'enlèvement de la princesse Malvina par le Collectionneur d'Âmes, nous avons dû redoubler de vigilance. Car ce qu'il convoite par-dessus tout, c'est l'Œil de la Vérité - le seul artefact capable de percer ses illusions et de révéler sa véritable nature. Si vous êtes venus chercher cet objet, sachez que vous devrez d'abord prouver votre valeur intellectuelle et la pureté de vos intentions. Car comme le disait Professeure Bastet : 'La connaissance sans sagesse est comme une arme dans les mains d'un enfant - dangereuse pour tous, y compris pour celui qui la manie.'"*
+#### Introduction spectaculaire au Monde Orange des Sphinx
+> *"Bienvenue au Monde Orange des Sphinx, intrépides chercheurs de connaissance ! Je suis le Professeur Félix, bibliothécaire principal et humble serviteur des gardiens félins les plus extraordinaires que cette terre ait jamais portés !*
+>
+> *Regardez autour de vous ! Cette maison orange n'est pas une simple demeure - c'est un phare intellectuel, un sanctuaire de la sagesse qui brille comme un soleil terrestre ! Professeure Bastet a choisi cette couleur orange avec un génie visionnaire : c'est la teinte exacte de l'illumination intellectuelle, la couleur que prend l'esprit humain au moment précis où il s'éveille à une vérité nouvelle ! Chaque brique, chaque tuile a été imprégnée d'essences d'agrumes et d'épices orientales pour stimuler les facultés mentales de quiconque s'en approche !*
+>
+> *Et ces sphinx félins que vous voyez ? Mes amis, vous êtes en présence de créatures extraordinaires ! Ils ne sont pas de simples chats - ils sont les gardiens vivants de la connaissance universelle ! Chacun d'eux maîtrise une branche du savoir : Aristote le noir connaît la philosophie antique, Cléopâtre la blanche maîtrise les mathématiques, Hermès l'orange déchiffre les langues mortes, et ainsi de suite ! Ils vous observent en ce moment même, évaluant votre potentiel intellectuel, jaugeant la sincérité de votre quête !*
+>
+> *Mais attention ! Depuis l'enlèvement de notre bien-aimée princesse Malvina, une ombre plane sur notre sanctuaire. Le Collectionneur d'Âmes convoite l'Œil de la Vérité - le seul artefact capable de percer ses illusions et de révéler sa nature véritable ! Cet œil cristallin peut voir à travers tous les mensonges, toutes les tromperies, tous les déguisements ! C'est pourquoi le Collectionneur n'ose pas s'approcher directement - il sait qu'un seul regard dans cet œil révélerait le vide béant qui constitue son essence ! Êtes-vous prêts à affronter les épreuves intellectuelles qui vous attendent ?"*
+
+#### Indices progressifs pour l'énigme du Conclave - Niveau 1 (Érudit)
+> *"Les sphinx félins communiquent dans un langage qui transcende les mots - le langage pur de l'intellect et de l'intuition. Leurs énigmes ne sont pas de simples devinettes, mais des clés qui ouvrent les portes de la compréhension supérieure.*
+>
+> *Observez attentivement chaque gardien : leur position dans l'espace n'est pas aléatoire, leur apparence n'est pas fortuite. Professeure Bastet les a disposés selon un schéma cosmique qui reflète l'ordre même de l'univers. Comme elle le disait : 'La vérité se révèle à ceux qui savent voir les connexions invisibles entre les choses apparemment disparates.' Cherchez le motif qui unit leurs différences !"*
+
+#### Indices progressifs - Niveau 2 (Plus guidé)
+> *"Je vois que les énigmes des sphinx vous résistent encore... Permettez-moi de vous éclairer davantage. La princesse Malvina, lors de sa première visite, était également perplexe. Puis soudain, elle s'est exclamée : 'Mais bien sûr ! C'est comme l'arc après la pluie !'*
+>
+> *Réfléchissez à cela : qu'est-ce qui, dans la nature, présente un spectre ordonné de couleurs ? Qu'est-ce qui transforme la lumière blanche en un éventail de teintes distinctes mais harmonieuses ? Les sphinx sont disposés selon ce même principe - chacun représente une fréquence différente de la connaissance, mais ensemble ils forment le spectre complet de la sagesse !"*
+
+#### Indices progressifs - Niveau 3 (Révélateur)
+> *"Mes chers chercheurs, laissez-moi vous révéler le secret ! Les sept sphinx sont disposés selon l'ordre des couleurs de l'arc-en-ciel ! Commencez par celui qui porte les teintes du feu (rouge), puis progressez vers l'orange, le jaune, le vert, le bleu, l'indigo, et enfin le violet !*
+>
+> *Mais attention aux correspondances subtiles : le sphinx calico avec ses taches rousses représente le rouge, l'orange est évident, le blanc crémeux évoque le jaune, le tigré aux yeux verts incarne cette couleur, le gris bleuté représente le bleu, le siamois aux extrémités sombres évoque l'indigo, et le noir aux reflets violacés clôt le spectre ! Résolvez leurs énigmes dans cet ordre, et les premières lettres de vos réponses formeront le mot qui ouvre la bibliothèque secrète !"*
+
+#### Révélation épique sur le Fragment d'Unité
+> *"L'Œil de la Vérité ! Mes amis, vous touchez là au joyau le plus précieux de notre collection ! Ce n'est pas un simple cristal - c'est un fragment de l'Œil Cosmique d'Horus lui-même, l'œil qui voit tout, qui sait tout, qui comprend tout !*
+>
+> *Professeure Bastet l'a découvert dans les ruines d'un temple oublié, au cœur du désert de Nubie. Elle méditait depuis quarante jours dans la chambre secrète du temple quand soudain, un rayon de soleil a frappé une pierre particulière, révélant ce cristal ambré qui pulsait d'une lumière vivante ! À l'instant où elle l'a touché, toute la connaissance des anciens prêtres égyptiens a déferlé dans son esprit !*
+>
+> *Cet œil ne se contente pas de révéler la vérité - il la projette ! Quand la princesse Malvina le tenait, elle pouvait voir l'essence véritable de chaque personne qui s'approchait d'elle. Les flatteurs apparaissaient comme des serpents, les traîtres comme des ombres mouvantes, mais les cœurs purs brillaient comme des soleils ! C'est grâce à cet œil qu'elle a pu gouverner avec tant de sagesse et de justice !*
+>
+> *Le Collectionneur le redoute plus que la mort ! Car cet œil révélerait sa véritable nature : non pas un être de pouvoir et de grandeur, mais un vide affamé qui dévore l'essence des autres pour tenter de combler son propre néant ! Un seul regard dans cet œil, et toutes ses illusions s'effondreraient ! C'est pourquoi il rôde autour de notre sanctuaire sans jamais oser y pénétrer - il sait que sa propre vérité le détruirait !"*
 
 #### Indice pour l'énigme du Conclave des Sphinx
 > *"Les sphinx félins ont toujours communiqué par énigmes, même entre eux. C'est leur façon de s'assurer que leurs interlocuteurs sont capables de penser au-delà de l'évident, de voir les connexions cachées entre les choses apparemment sans rapport.*
@@ -264,12 +321,32 @@ Les joueurs doivent naviguer dans un labyrinthe de miroirs et de cristaux pour r
 
 ### Mina, Apprentie Bibliothécaire
 
-#### Accueil des visiteurs
-> *"Oh, bonjour ! Je ne vous avais pas entendus arriver. Les sphinx vous ont laissés passer ? Ils doivent vous trouver intéressants alors ! Je m'appelle Mina, je suis l'apprentie du Professeur Félix - enfin, son apprentie humaine, parce que les vrais maîtres ici sont les félins, bien sûr.*
-> 
-> *Vous êtes venus pour la bibliothèque ? Ou pour les énigmes ? Ou peut-être... non, je ne devrais pas supposer. Professeur Félix dit toujours que les suppositions sont les ennemies de la connaissance véritable. Mais je suis tellement excitée d'avoir de la visite ! Depuis l'enlèvement de la princesse, nous recevons si peu de monde...*
-> 
-> *Vous savez, j'étais encore toute petite quand la princesse Malvina venait étudier ici. Je me souviens qu'elle s'asseyait souvent près de la fenêtre, là-bas, avec trois ou quatre sphinx lovés autour d'elle, comme s'ils participaient à sa lecture. Elle prenait toujours le temps de m'expliquer les passages difficiles des livres que j'essayais de déchiffrer. 'La connaissance n'a de valeur que si elle est partagée,' disait-elle. C'est pour ça que je veux devenir bibliothécaire - pour partager ce que j'apprends."*
+#### Accueil enthousiaste et émerveillé des visiteurs
+> *"Oh ! Des visiteurs ! Quelle merveilleuse surprise ! Les sphinx vous ont laissés passer ? Incroyable ! Ils sont si sélectifs d'habitude ! Je m'appelle Mina, apprentie bibliothécaire et future gardienne des secrets félins - enfin, si j'arrive à mémoriser tous les catalogues sans me perdre dans mes propres notes !*
+>
+> *Vous savez ce qui est extraordinaire ? Aristote le sphinx noir m'a réveillée ce matin en miaulant la mélodie de l'hymne à la connaissance - il ne fait ça que quand des chercheurs sincères approchent ! Et Cléopâtre la blanche a passé toute la matinée à arranger ses moustaches dans un motif géométrique parfait - c'est son signe qu'elle se prépare à poser des énigmes particulièrement brillantes !*
+>
+> *Oh, vous devez absolument voir la bibliothèque ! Nous avons des manuscrits qui brillent dans l'obscurité, des livres qui se réécrivent selon l'humeur du lecteur, et même un grimoire qui ronronne quand on le caresse ! Professeure Bastet avait un don pour enchanter les objets de connaissance. Elle disait que 'les livres ne sont pas des objets inertes, mais des créatures vivantes qui n'attendent qu'à partager leurs secrets avec ceux qui les approchent avec respect et curiosité' !*
+>
+> *Et la princesse Malvina ! Oh, si vous l'aviez vue étudier ici ! Elle s'asseyait dans le grand fauteuil près de la fenêtre est, entourée de sphinx qui semblaient littéralement boire ses paroles ! Parfois, quand elle lisait à voix haute, les livres sur les étagères s'ouvraient d'eux-mêmes aux pages correspondantes, comme s'ils voulaient participer à la discussion ! Elle avait ce don magique de faire vivre la connaissance, de la transformer en quelque chose de vivant et de passionnant !"*
+
+#### Indices pour l'énigme avec émerveillement intellectuel
+> *"Oh, les manuscrits fragmentés ! C'est l'une de mes énigmes préférées ! Professeure Bastet était un génie pour cacher ses messages les plus précieux ! Elle disait que 'la vérité fragmentée est comme un puzzle cosmique - chaque pièce contient une partie de l'image, mais c'est seulement en les assemblant qu'on voit la beauté du tout' !*
+>
+> *J'ai découvert quelque chose de fascinant à propos de ces fragments : ils ne sont pas dispersés au hasard ! Professeure Bastet les a cachés dans des livres qui correspondent à leur contenu symbolique. Le fragment sur l'astronomie dans le livre d'étoiles, celui sur les herbes dans l'herbier magique, celui sur la poésie dans le recueil de vers enchantés !*
+>
+> *Et voici le secret que j'ai découvert en observant les sphinx : quand vous trouvez un fragment, regardez attentivement la première lettre ! Professeure Bastet adorait les acrostiches et les messages cachés. Elle disait que 'les mots contiennent d'autres mots, comme des poupées russes de signification' ! Si vous arrangez les fragments dans le bon ordre, les premières lettres forment un mot qui révèle l'essence même de ce que vous cherchez !"*
+
+#### Confidence bouleversante sur les sphinx félins
+> *"Vous voulez que je vous raconte le secret le plus incroyable de ce lieu ? Les sphinx ne sont pas ce qu'ils semblent être ! J'ai découvert la vérité par accident, et c'est... c'est à couper le souffle !*
+>
+> *Une nuit, très tard, je suis revenue chercher un livre que j'avais oublié. En approchant de la bibliothèque, j'ai vu une lumière dorée filtrer par les fenêtres. Curieuse, j'ai regardé à l'intérieur et... oh, mes amis, ce que j'ai vu défie toute logique !*
+>
+> *Tous les sphinx étaient assis en cercle parfait au centre de la pièce principale, leurs yeux brillant d'une lumière dorée surnaturelle ! Au centre du cercle, une brume lumineuse tourbillonnait, prenant lentement forme humaine ! Et cette forme... c'était Professeure Bastet ! Pas un fantôme, pas un souvenir, mais elle-même, reconstituée à partir de l'essence spirituelle de chaque sphinx !*
+>
+> *J'ai compris alors que Professeure Bastet n'avait jamais vraiment quitté ce lieu ! Elle s'était fragmentée volontairement, divisant son âme en plusieurs parties qu'elle avait infusées dans les sphinx ! Chacun d'eux porte une facette de sa personnalité, une branche de sa connaissance ! Ensemble, ils forment un être collectif d'une sagesse inimaginable !*
+>
+> *Le lendemain, j'ai trouvé sur mon bureau une note écrite de sa main élégante : 'La curiosité est le début de la sagesse, mais la discrétion en est la gardienne. Tu as vu ce que peu d'humains ont le privilège de voir. Utilise cette connaissance avec sagesse, car les sphinx te font désormais confiance.' Depuis ce jour, ils me parlent parfois - vraiment parlent ! - me révélant des secrets que même Professeur Félix ne connaît pas !"*
 
 #### Indice pour l'énigme des Manuscrits Fragmentés
 > *"Les manuscrits fragmentés ? Oh, c'est l'un de mes sujets préférés ! Professeure Bastet avait une façon très particulière de protéger les textes les plus précieux. Au lieu de les cacher ou de les verrouiller, elle les divisait en fragments et les dispersait dans différents livres de la bibliothèque.*
@@ -298,34 +375,6 @@ Les quatre concepts découverts dans ce monde (REFLETS, PERCEPTION, CLAIRVOYANCE
 Le Monde Orange des Sphinx correspond à la phase 2 de la progression narrative : "Exploration", où les joueurs découvrent un aspect essentiel de la lutte contre le Collectionneur - l'importance de la vérité et du discernement pour contrer ses illusions. C'est ici que les joueurs apprennent que le Collectionneur n'est pas simplement un antagoniste externe, mais une entité qui se nourrit de la confusion et de la tromperie.
 
 Dans la confrontation finale au monde Karibu, l'Œil de la Vérité devra être utilisé en conjonction avec les autres fragments d'unité : combiné avec le Cristal Photonique du monde du damier, il amplifiera la vision au-delà des apparences ; avec le Fil d'Harmonie du monde du linge, il tissera des connexions entre les vérités fragmentées ; avec la Graine de Mémoire du monde du verger, il restaurera les souvenirs altérés par le Collectionneur ; avec le Sceau des Passages du monde Elysée, il ouvrira un chemin vers la vérité ; et avec la Flamme d'Accueil du monde Karibu, il transformera la vérité révélée en action libératrice.
-#### Solution de l'énigme 4
-
-Le "Cabinet des Reflets" est représenté par un espace délimité dans la maison, où un système de miroirs, de prismes et de filtres colorés est installé. Une source de lumière (lampe ou torche) entre par une petite ouverture et son rayon est divisé en sept couleurs par un prisme central.
-
-Les joueurs doivent manipuler sept miroirs orientables pour diriger chaque rayon coloré vers un point de convergence marqué sur un écran blanc. Chaque miroir présente un défi spécifique :
-
-1. Miroir Rouge : Partiellement obscurci par un obstacle qu'il faut déplacer
-2. Miroir Orange : Fixé sur un pivot qui tourne selon un motif précis qu'il faut comprendre
-3. Miroir Jaune : Divisé en trois sections qui doivent être alignées correctement
-4. Miroir Vert : Caché derrière une énigme mathématique dont la solution indique l'angle correct
-5. Miroir Bleu : Contrôlé par un mécanisme à contrepoids qu'il faut équilibrer
-6. Miroir Indigo : Couvert de symboles qui doivent être alignés dans un ordre spécifique
-7. Miroir Violet : Mobile mais extrêmement sensible, nécessitant une main très stable
-
-Lorsque tous les rayons sont correctement alignés et convergent vers le point central de l'écran, ils forment à nouveau un rayon de lumière blanche qui, en traversant un dernier cristal, projette le mot "ILLUMINATION" sur le mur opposé.
-
-Ce rayon révèle également une niche cachée dans le mur, contenant un coffret verrouillé. Les trois mots-clés découverts dans les énigmes précédentes ("REFLETS", "PERCEPTION", "CLAIRVOYANCE") doivent être combinés pour former le code qui ouvre ce coffret : "PERCEPTION-REFLETS-CLAIRVOYANCE", qui correspond à l'ordre des étapes nécessaires pour atteindre la vérité selon la philosophie de Professeure Bastet.
-
-À l'intérieur du coffret se trouve l'Œil de la Vérité - le Fragment d'Unité de ce monde.
-
-**Matériel nécessaire :**
-- Un système de miroirs et prismes (peut être simplifié selon les contraintes pratiques)
-- Une source de lumière
-- Un écran blanc pour la projection
-- Sept défis distincts pour les sept miroirs
-- Un coffret verrouillé avec un mécanisme à code
-- L'Œil de la Vérité (représenté par un cristal ambré en forme d'œil)
-:::
 
 ## 🔮 Fragment d'Unité : L'Œil de la Vérité
 
