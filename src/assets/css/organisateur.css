@@ -569,7 +569,7 @@
   }
   
   .card-title {
-    font-size: 0.8rem;
+    font-size: 0.875rem; /* 14px minimum pour l'accessibilité mobile */
   }
   
   .tirade {
