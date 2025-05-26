@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>README - Malvinaland</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .doc-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    
+    .doc-content h1 {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .doc-content h2 {
+      color: var(--secondary-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    
+    .doc-content h3 {
+      color: var(--primary-color);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .doc-content pre {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 4px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    
+    .doc-content code {
+      background: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .doc-content blockquote {
+      border-left: 4px solid var(--primary-color);
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #f8f9fa;
+      font-style: italic;
+    }
+    
+    .doc-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    .doc-content th,
+    .doc-content td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    
+    .doc-content th {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .doc-content ul,
+    .doc-content ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+    
+    .doc-content li {
+      margin: 0.5rem 0;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: var(--link-hover-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <div class="doc-content">
+        <a href="/documentation/" class="back-link">â† Retour Ã  la documentation</a>
+        # Documentation Complète Malvinaland
+<br>
+<p>Bienvenue dans la documentation complète de Malvinaland ! Cette section centralise toutes les informations nécessaires pour administrer, organiser et préparer le jeu grandeur nature Malvinaland.</p>
+<br>
+## 📚 Documentation Disponible
+<br>
+### 🔧 Pour les Administrateurs et Organisateurs
+<ul>
+<li><strong><a href="MANUEL_ADMINISTRATEUR.md">Manuel Administrateur/Organisateur</a></strong> - Guide complet pour gérer le site et le contenu</li>
+<li><strong><a href="GUIDE_DEMARRAGE_RAPIDE.md">Guide de Démarrage Rapide</a></strong> - Les étapes essentielles pour commencer</li>
+</ul>
+<br>
+### 🏰 Guides de Préparation par Monde
+<p>Guides détaillés pour la préparation physique de chaque monde :</p>
+<br>
+<ol>
+<li><strong><a href="guides-preparation/GUIDE_ASSEMBLEE.md">Monde de l'Assemblée</a></strong></li>
+<li><strong><a href="guides-preparation/GUIDE_DAMIER.md">Monde du Damier</a></strong></li>
+<li><strong><a href="guides-preparation/GUIDE_ELYSEE.md">Monde Elysée</a></strong></li>
+<li><strong><a href="guides-preparation/GUIDE_GRANGE.md">Monde de la Grange</a></strong></li>
+<li><strong><a href="guides-preparation/GUIDE_JEUX.md">Monde des Jeux</a></strong></li>
+<li><strong><a href="guides-preparation/GUIDE_KARIBU.md">Monde Karibu</a></strong></li>
+<li><strong><a href="guides-preparation/GUIDE_LINGE.md">Monde du Linge</a></strong></li>
+<li><strong><a href="guides-preparation/GUIDE_REVES.md">Monde des Rêves</a></strong></li>
+<li><strong><a href="guides-preparation/GUIDE_SPHINX.md">Monde des Sphinx</a></strong></li>
+<li><strong><a href="guides-preparation/GUIDE_VERGER.md">Monde du Verger</a></strong></li>
+<li><strong><a href="guides-preparation/GUIDE_ZOB.md">Monde du Zob</a></strong></li>
+</ul>
+<br>
+### 🎭 Gestion des PNJ
+<ul>
+<li><strong><a href="GUIDE_PNJ_COMPLET.md">Guide PNJ Complet</a></strong> - Tout sur la gestion des personnages non-joueurs</li>
+</ul>
+<br>
+### 🛠️ Maintenance et Support
+<ul>
+<li><strong><a href="GUIDE_MAINTENANCE_SIMPLIFIE.md">Guide de Maintenance Simplifié</a></strong> - Maintenance courante pour non-techniciens</li>
+<li><strong><a href="../GUIDE_MAINTENANCE.md">Guide de Maintenance Avancé</a></strong> - Maintenance technique complète</li>
+<li><strong><a href="GUIDE_RESOLUTION_PROBLEMES.md">Résolution de Problèmes</a></strong> - Solutions aux problèmes courants</li>
+</ul>
+<br>
+## 🎯 Public Cible
+<br>
+<p>Cette documentation s'adresse à :</p>
+<ul>
+<li><strong>Malvina et l'équipe organisatrice</strong> - Pour la gestion quotidienne du contenu</li>
+<li><strong>Administrateurs non-techniques</strong> - Pour les tâches d'administration de base</li>
+<li><strong>Préparateurs physiques</strong> - Pour l'installation des énigmes et l'aménagement des lieux</li>
+<li><strong>Animateurs PNJ</strong> - Pour la gestion des personnages et interactions</li>
+</ul>
+<br>
+## 🚀 Par Où Commencer ?
+<br>
+<ol>
+<li><strong>Nouveau dans l'équipe ?</strong> → Commencez par le <a href="GUIDE_DEMARRAGE_RAPIDE.md">Guide de Démarrage Rapide</a></li>
+<li><strong>Préparer un événement ?</strong> → Consultez les <a href="#-guides-de-préparation-par-monde">Guides de Préparation par Monde</a></li>
+<li><strong>Modifier le contenu ?</strong> → Voir la section "Mise à jour du contenu" du <a href="MANUEL_ADMINISTRATEUR.md">Manuel Administrateur</a></li>
+<li><strong>Problème technique ?</strong> → Consultez le <a href="GUIDE_RESOLUTION_PROBLEMES.md">Guide de Résolution de Problèmes</a></li>
+</ul>
+<br>
+## 📝 Conventions
+<br>
+<ul>
+<li>🟢 <strong>Facile</strong> : Accessible aux débutants</li>
+<li>🟡 <strong>Intermédiaire</strong> : Nécessite quelques connaissances techniques</li>
+<li>🔴 <strong>Avancé</strong> : Réservé aux utilisateurs expérimentés</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<p><em>Cette documentation est maintenue par l'équipe Malvinaland. Pour toute question ou suggestion d'amélioration, contactez l'équipe technique.</em></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Malvinaland - Documentation</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/documentation/">Documentation</a> |
+        <a href="/content/narration/">Narration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+</body>
+</html>

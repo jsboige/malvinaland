@@ -1,0 +1,1105 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUIDE_MAINTENANCE_SIMPLIFIE - Malvinaland</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .doc-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    
+    .doc-content h1 {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .doc-content h2 {
+      color: var(--secondary-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    
+    .doc-content h3 {
+      color: var(--primary-color);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .doc-content pre {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 4px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    
+    .doc-content code {
+      background: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .doc-content blockquote {
+      border-left: 4px solid var(--primary-color);
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #f8f9fa;
+      font-style: italic;
+    }
+    
+    .doc-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    .doc-content th,
+    .doc-content td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    
+    .doc-content th {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .doc-content ul,
+    .doc-content ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+    
+    .doc-content li {
+      margin: 0.5rem 0;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: var(--link-hover-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <div class="doc-content">
+        <a href="/documentation/" class="back-link">â† Retour Ã  la documentation</a>
+        # Guide de Maintenance Simplifié - Malvinaland
+<br>
+## 📋 Table des Matières
+<br>
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#maintenance-quotidienne">Maintenance Quotidienne</a></li>
+<li><a href="#maintenance-hebdomadaire">Maintenance Hebdomadaire</a></li>
+<li><a href="#maintenance-mensuelle">Maintenance Mensuelle</a></li>
+<li><a href="#commandes-essentielles">Commandes Essentielles</a></li>
+<li><a href="#surveillance-du-site">Surveillance du Site</a></li>
+<li><a href="#résolution-de-problèmes-courants">Résolution de Problèmes Courants</a></li>
+<li><a href="#quand-faire-appel-à-léquipe-technique">Quand Faire Appel à l'Équipe Technique</a></li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Introduction
+<br>
+<p>Ce guide présente les tâches de maintenance de base que peut effectuer un administrateur non-technique pour maintenir Malvinaland en bon état de fonctionnement.</p>
+<br>
+### 🎯 Objectifs de la Maintenance
+<ul>
+<li><strong>Maintenir les performances</strong> du site</li>
+<li><strong>Prévenir les problèmes</strong> avant qu'ils surviennent</li>
+<li><strong>Assurer la disponibilité</strong> pour les joueurs et PNJ</li>
+<li><strong>Préserver l'intégrité</strong> du contenu</li>
+</ul>
+<br>
+### 🟢 Niveau de Difficulté
+<p>Ce guide est conçu pour être accessible aux débutants. Toutes les commandes sont expliquées étape par étape.</p>
+<br>
+### ⚠️ Règles de Sécurité
+<ul>
+<li><strong>Toujours sauvegarder</strong> avant toute opération</li>
+<li><strong>Tester en local</strong> avant de déployer</li>
+<li><strong>Ne jamais modifier</strong> directement les fichiers dans <code>src/</code> ou <code>site/</code></li>
+<li><strong>Demander de l'aide</strong> en cas de doute</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Maintenance Quotidienne
+<br>
+### 🌅 Chaque Matin (5 minutes)
+<br>
+#### 1. Vérification du Site
+<p>``<code>powershell</p>
+# Ouvrir PowerShell et naviguer vers le projet
+<p>cd d:\Production\malvinaland</p>
+<br>
+# Vérifier que le site fonctionne
+<p>.\outils-techniques\verify-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>Ce que fait cette commande :</strong></p>
+<ul>
+<li>Vérifie que tous les fichiers importants sont présents</li>
+<li>Contrôle que le site se charge correctement</li>
+<li>Signale les problèmes éventuels</li>
+</ul>
+<br>
+#### 2. Contrôle des Accès PNJ
+<ol>
+<li><strong>Ouvrir le navigateur</strong> : </code>https://malvinaland.myia.io<code></li>
+<li><strong>Tester la connexion PNJ</strong> :</li>
+</ul>
+<p>   - Identifiant : </code>pnj<code></p>
+<p>   - Mot de passe : </code>malvina2025<code></p>
+<ol>
+<li><strong>Vérifier l'accès</strong> au dashboard</li>
+<li><strong>Se déconnecter</strong> après vérification</li>
+</ul>
+<br>
+#### 3. Vérification Rapide du Contenu
+<ul>
+<li><strong>Parcourir 2-3 mondes</strong> au hasard</li>
+<li><strong>Vérifier que les images</strong> se chargent</li>
+<li><strong>Contrôler que les sections organisateurs</strong> sont accessibles avec les bons identifiants</li>
+</ul>
+<br>
+### 🌆 Chaque Soir (3 minutes)
+<br>
+#### Nettoyage Léger
+<p></code>`<code>powershell</p>
+# Nettoyer les fichiers temporaires
+<p>.\outils-techniques\clean-temp-files.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>Ce que fait cette commande :</strong></p>
+<ul>
+<li>Supprime les fichiers temporaires</li>
+<li>Libère de l'espace disque</li>
+<li>Prépare le système pour le lendemain</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Maintenance Hebdomadaire
+<br>
+### 📅 Chaque Lundi (15 minutes)
+<br>
+#### 1. Nettoyage Complet
+<p></code>`<code>powershell</p>
+# Nettoyage complet du projet
+<p>.\outils-techniques\clean-repository-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>Ce que fait cette commande :</strong></p>
+<ul>
+<li>Nettoie tous les fichiers temporaires</li>
+<li>Organise les fichiers</li>
+<li>Optimise l'espace de stockage</li>
+<li>Vérifie la cohérence du projet</li>
+</ul>
+<br>
+#### 2. Vérification de Santé Complète
+<p></code>`<code>powershell</p>
+# Vérification approfondie
+<p>.\outils-techniques\verify-repository-health.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>Ce que fait cette commande :</strong></p>
+<ul>
+<li>Contrôle l'intégrité de tous les fichiers</li>
+<li>Vérifie les liens entre les pages</li>
+<li>Identifie les images manquantes</li>
+<li>Génère un rapport de santé</li>
+</ul>
+<br>
+#### 3. Test de Déploiement
+<p></code>`<code>powershell</p>
+# Tester le déploiement local
+<p>.\outils-techniques\deploy-site-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>Puis :</strong></p>
+<ol>
+<li><strong>Ouvrir</strong> </code>http://localhost:8080<code></li>
+<li><strong>Tester</strong> 3-4 mondes différents</li>
+<li><strong>Vérifier</strong> la navigation</li>
+<li><strong>Fermer</strong> le navigateur de test</li>
+</ul>
+<br>
+### 📊 Rapport Hebdomadaire
+<br>
+#### Créer un Rapport Simple
+<p>Notez dans un fichier texte :</p>
+<ul>
+<li><strong>Date</strong> de la maintenance</li>
+<li><strong>Problèmes détectés</strong> (s'il y en a)</li>
+<li><strong>Actions effectuées</strong></li>
+<li><strong>Observations</strong> sur les performances</li>
+</ul>
+<br>
+<p><strong>Exemple :</strong></p>
+<p></code>`<code></p>
+<p>Maintenance du 24/05/2025</p>
+<ul>
+<li>Nettoyage : OK</li>
+<li>Vérification santé : OK</li>
+<li>Test déploiement : OK</li>
+<li>Observations : Site rapide, pas de problème détecté</li>
+</ul>
+<p></code>`<code></p>
+<br>
+<p>---</p>
+<br>
+## Maintenance Mensuelle
+<br>
+### 📅 Premier Lundi du Mois (30 minutes)
+<br>
+#### 1. Nettoyage Périodique Avancé
+<p></code>`<code>powershell</p>
+# Nettoyage périodique complet
+<p>.\scripts\clean-repository-periodic.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>Ce que fait cette commande :</strong></p>
+<ul>
+<li>Nettoyage approfondi de tous les dossiers</li>
+<li>Suppression des anciens fichiers de sauvegarde</li>
+<li>Optimisation de la structure des fichiers</li>
+<li>Préparation pour les mises à jour</li>
+</ul>
+<br>
+#### 2. Optimisation des Images
+<p></code>`<code>powershell</p>
+# Optimiser toutes les images
+<p>node .\scripts\optimize-images.js</p>
+<p></code>`<code></p>
+<br>
+<p><strong>Ce que fait cette commande :</strong></p>
+<ul>
+<li>Compresse les images pour améliorer les performances</li>
+<li>Convertit les formats si nécessaire</li>
+<li>Réduit la taille des fichiers</li>
+<li>Améliore la vitesse de chargement</li>
+</ul>
+<br>
+#### 3. Sauvegarde Complète
+<p></code>`<code>powershell</p>
+# Créer une sauvegarde du dossier contenu
+<p>xcopy "contenu" "sauvegarde-contenu-$(Get-Date -Format 'yyyy-MM-dd')" /E /I</p>
+<p></code>`<code></p>
+<br>
+<p><strong>Ce que fait cette commande :</strong></p>
+<ul>
+<li>Crée une copie complète du dossier </code>contenu/<code></li>
+<li>Nomme la sauvegarde avec la date</li>
+<li>Permet de restaurer en cas de problème</li>
+</ul>
+<br>
+#### 4. Test de Déploiement Complet
+<p></code>`<code>powershell</p>
+# Déploiement de test complet
+<p>.\outils-techniques\deploy-iis-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>Puis vérifier :</strong></p>
+<ul>
+<li><strong>Tous les mondes</strong> fonctionnent</li>
+<li><strong>Toutes les images</strong> se chargent</li>
+<li><strong>Les accès PNJ</strong> sont opérationnels</li>
+<li><strong>La navigation</strong> est fluide</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Commandes Essentielles
+<br>
+### 🔧 Commandes de Base
+<br>
+#### Voir le Site en Local
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\deploy-site-simple.ps1</p>
+<p></code>`<code></p>
+<p><strong>Utilisation :</strong> Tester vos modifications avant publication</p>
+<br>
+#### Publier sur le Serveur
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\deploy-iis-simple.ps1</p>
+<p></code>`<code></p>
+<p><strong>Utilisation :</strong> Mettre en ligne les modifications</p>
+<br>
+#### Nettoyer le Projet
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\clean-repository-simple.ps1</p>
+<p></code>`<code></p>
+<p><strong>Utilisation :</strong> Maintenance hebdomadaire</p>
+<br>
+#### Vérifier la Santé
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\verify-simple.ps1</p>
+<p></code>`<code></p>
+<p><strong>Utilisation :</strong> Contrôle quotidien</p>
+<br>
+### 🆘 Commandes d'Urgence
+<br>
+#### Redémarrage Complet
+<p></code>`<code>powershell</p>
+# En cas de problème majeur
+<p>.\outils-techniques\deploy-iis-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+#### Restauration de Sauvegarde
+<p></code>`<code>powershell</p>
+# Restaurer le contenu depuis une sauvegarde
+<p>xcopy "sauvegarde-contenu-[DATE]" "contenu" /E /Y</p>
+<p></code>`<code></p>
+<br>
+#### Vérification d'Urgence
+<p></code>`<code>powershell</p>
+# Diagnostic rapide
+<p>.\outils-techniques\verify-minimal.ps1</p>
+<p></code>`<code></p>
+<br>
+<p>---</p>
+<br>
+## Surveillance du Site
+<br>
+### 📊 Indicateurs à Surveiller
+<br>
+#### Performance du Site
+<ul>
+<li><strong>Temps de chargement</strong> : Doit être inférieur à 3 secondes</li>
+<li><strong>Disponibilité</strong> : Le site doit être accessible 24h/24</li>
+<li><strong>Images</strong> : Toutes les images doivent s'afficher</li>
+<li><strong>Navigation</strong> : Tous les liens doivent fonctionner</li>
+</ul>
+<br>
+#### Accès PNJ
+<ul>
+<li><strong>Connexion</strong> : Les identifiants doivent fonctionner</li>
+<li><strong>Dashboard</strong> : L'interface doit être responsive</li>
+<li><strong>Contenu</strong> : Toutes les fiches doivent être accessibles</li>
+</ul>
+<br>
+#### Espace Disque
+<p></code>`<code>powershell</p>
+# Vérifier l'espace disque disponible
+<p>Get-WmiObject -Class Win32_LogicalDisk | Select-Object DeviceID, @{Name="Size(GB)";Expression={[math]::Round(<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUIDE_MAINTENANCE_SIMPLIFIE - Malvinaland</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .doc-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    
+    .doc-content h1 {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .doc-content h2 {
+      color: var(--secondary-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    
+    .doc-content h3 {
+      color: var(--primary-color);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .doc-content pre {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 4px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    
+    .doc-content code {
+      background: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .doc-content blockquote {
+      border-left: 4px solid var(--primary-color);
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #f8f9fa;
+      font-style: italic;
+    }
+    
+    .doc-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    .doc-content th,
+    .doc-content td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    
+    .doc-content th {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .doc-content ul,
+    .doc-content ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+    
+    .doc-content li {
+      margin: 0.5rem 0;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: var(--link-hover-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <div class="doc-content">
+        <a href="/documentation/" class="back-link">â† Retour Ã  la documentation</a>
+        {{CONTENT}}
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Malvinaland - Documentation</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/documentation/">Documentation</a> |
+        <a href="/content/narration/">Narration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+</body>
+</html>.Size/1GB,2)}}, @{Name="FreeSpace(GB)";Expression={[math]::Round(<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUIDE_MAINTENANCE_SIMPLIFIE - Malvinaland</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .doc-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    
+    .doc-content h1 {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .doc-content h2 {
+      color: var(--secondary-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    
+    .doc-content h3 {
+      color: var(--primary-color);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .doc-content pre {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 4px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    
+    .doc-content code {
+      background: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .doc-content blockquote {
+      border-left: 4px solid var(--primary-color);
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #f8f9fa;
+      font-style: italic;
+    }
+    
+    .doc-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    .doc-content th,
+    .doc-content td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    
+    .doc-content th {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .doc-content ul,
+    .doc-content ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+    
+    .doc-content li {
+      margin: 0.5rem 0;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: var(--link-hover-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <div class="doc-content">
+        <a href="/documentation/" class="back-link">â† Retour Ã  la documentation</a>
+        {{CONTENT}}
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Malvinaland - Documentation</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/documentation/">Documentation</a> |
+        <a href="/content/narration/">Narration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+</body>
+</html>.FreeSpace/1GB,2)}}</p>
+<p></code>`<code></p>
+<br>
+### 🚨 Alertes à Surveiller
+<br>
+#### Signaux d'Alarme
+<ul>
+<li><strong>Site inaccessible</strong> : Erreur 404 ou 500</li>
+<li><strong>Images manquantes</strong> : Icônes cassées</li>
+<li><strong>Connexion PNJ impossible</strong> : Erreur d'authentification</li>
+<li><strong>Lenteur excessive</strong> : Chargement > 5 secondes</li>
+</ul>
+<br>
+#### Actions Immédiates
+<ol>
+<li><strong>Noter l'heure</strong> et la nature du problème</li>
+<li><strong>Tenter un redéploiement</strong> : </code>.\outils-techniques\deploy-iis-simple.ps1<code></li>
+<li><strong>Vérifier les fichiers</strong> : </code>.\outils-techniques\verify-simple.ps1<code></li>
+<li><strong>Contacter l'équipe technique</strong> si le problème persiste</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Résolution de Problèmes Courants
+<br>
+### 🔧 Problèmes Techniques
+<br>
+#### Le Site ne se Charge Pas
+<p><strong>Symptômes :</strong> Erreur 404, page blanche, timeout</p>
+<br>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li><strong>Redéployer le site</strong> :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\deploy-iis-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+<ol>
+<li><strong>Vérifier les fichiers</strong> :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\verify-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+<ol>
+<li><strong>Redémarrer IIS</strong> (si vous avez les droits) :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>iisreset</p>
+<p></code>`<code></p>
+<br>
+#### Les Images ne s'Affichent Pas
+<p><strong>Symptômes :</strong> Icônes cassées, espaces vides</p>
+<br>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li><strong>Vérifier les images manquantes</strong> :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>.\scripts\identify-missing-images.ps1</p>
+<p></code>`<code></p>
+<br>
+<ol>
+<li><strong>Optimiser les images</strong> :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>node .\scripts\optimize-images.js</p>
+<p></code>`<code></p>
+<br>
+<ol>
+<li><strong>Redéployer</strong> :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\deploy-iis-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+#### Les PNJ ne Peuvent pas se Connecter
+<p><strong>Symptômes :</strong> Erreur de connexion, page d'erreur</p>
+<br>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li><strong>Vérifier les identifiants</strong> : </code>pnj<code> / </code>malvina2025<code></li>
+<li><strong>Tester avec les identifiants admin</strong> : </code>admin_malvina<code> / </code>Malv1n@2025!<code></li>
+<li><strong>Redéployer le site</strong> :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\deploy-iis-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+### 📝 Problèmes de Contenu
+<br>
+#### Modifications qui ne s'Affichent Pas
+<p><strong>Symptômes :</strong> Ancien contenu visible, modifications ignorées</p>
+<br>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li><strong>Vider le cache du navigateur</strong> : Ctrl+F5</li>
+<li><strong>Régénérer le site</strong> :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\deploy-site-simple.ps1</p>
+<p></code>`<code></p>
+<ol>
+<li><strong>Redéployer</strong> :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\deploy-iis-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+#### Erreur dans un Fichier Markdown
+<p><strong>Symptômes :</strong> Page qui ne s'affiche pas, erreur de format</p>
+<br>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li><strong>Vérifier la syntaxe</strong> du fichier modifié</li>
+<li><strong>Consulter les templates</strong> dans le dossier </code>templates/<code></li>
+<li><strong>Restaurer depuis une sauvegarde</strong> si nécessaire</li>
+</ul>
+<br>
+### 🚀 Problèmes de Performance
+<br>
+#### Site Lent
+<p><strong>Symptômes :</strong> Chargement > 5 secondes, timeouts</p>
+<br>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li><strong>Optimiser les images</strong> :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>node .\scripts\optimize-images.js</p>
+<p></code>`<code></p>
+<br>
+<ol>
+<li><strong>Nettoyer le projet</strong> :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\clean-repository-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+<ol>
+<li><strong>Optimiser la configuration IIS</strong> :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>.\scripts\optimize-iis-config.ps1</p>
+<p></code>`<code></p>
+<br>
+<p>---</p>
+<br>
+## Quand Faire Appel à l'Équipe Technique
+<br>
+### 🔴 Situations Critiques (Appel Immédiat)
+<br>
+#### Sécurité
+<ul>
+<li><strong>Site piraté</strong> ou contenu malveillant</li>
+<li><strong>Accès non autorisé</strong> aux sections administrateur</li>
+<li><strong>Fuite de données</strong> ou informations sensibles exposées</li>
+</ul>
+<br>
+#### Panne Majeure
+<ul>
+<li><strong>Site complètement inaccessible</strong> depuis plus de 30 minutes</li>
+<li><strong>Perte de données</strong> dans le dossier </code>contenu/<code></li>
+<li><strong>Corruption de fichiers</strong> importante</li>
+</ul>
+<br>
+#### Erreurs Système
+<ul>
+<li><strong>Erreurs serveur 500</strong> persistantes</li>
+<li><strong>Problèmes de base de données</strong> (si applicable)</li>
+<li><strong>Échec de tous les scripts</strong> de déploiement</li>
+</ul>
+<br>
+### 🟡 Situations Non-Critiques (Appel sous 24h)
+<br>
+#### Performance
+<ul>
+<li><strong>Lenteur persistante</strong> malgré les optimisations</li>
+<li><strong>Problèmes d'affichage</strong> sur certains navigateurs</li>
+<li><strong>Erreurs intermittentes</strong> difficiles à reproduire</li>
+</ul>
+<br>
+#### Fonctionnalités
+<ul>
+<li><strong>Nouvelles fonctionnalités</strong> demandées</li>
+<li><strong>Modifications importantes</strong> de structure</li>
+<li><strong>Intégration</strong> de nouveaux outils</li>
+</ul>
+<br>
+### 📞 Informations à Fournir
+<br>
+#### Lors de l'Appel
+<ol>
+<li><strong>Description précise</strong> du problème</li>
+<li><strong>Heure d'apparition</strong> du problème</li>
+<li><strong>Actions effectuées</strong> avant le problème</li>
+<li><strong>Messages d'erreur</strong> exacts (capture d'écran)</li>
+<li><strong>Impact</strong> sur les utilisateurs</li>
+</ul>
+<br>
+#### Logs à Conserver
+<ul>
+<li><strong>Résultats des scripts</strong> de vérification</li>
+<li><strong>Messages d'erreur</strong> PowerShell</li>
+<li><strong>Captures d'écran</strong> des problèmes</li>
+<li><strong>Historique</strong> des actions récentes</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## 📚 Ressources et Documentation
+<br>
+### 📖 Documentation Complémentaire
+<ul>
+<li><strong><a href="MANUEL_ADMINISTRATEUR.md">Manuel Administrateur Complet</a></strong> - Pour aller plus loin</li>
+<li><strong><a href="../GUIDE_MAINTENANCE.md">Guide de Maintenance Avancé</a></strong> - Version technique complète</li>
+<li><strong><a href="GUIDE_DEMARRAGE_RAPIDE.md">Guide de Démarrage Rapide</a></strong> - Pour les bases</li>
+</ul>
+<br>
+### 🛠️ Outils Utiles
+<ul>
+<li><strong>PowerShell ISE</strong> : Environnement de script plus convivial</li>
+<li><strong>Notepad++</strong> : Éditeur de texte pour modifier les fichiers</li>
+<li><strong>Navigateur de test</strong> : Firefox ou Chrome pour les vérifications</li>
+</ul>
+<br>
+### 📝 Modèles de Rapport
+<br>
+#### Rapport de Maintenance Hebdomadaire
+<p></code>`<code></p>
+<p>RAPPORT DE MAINTENANCE - Semaine du [DATE]</p>
+<br>
+<p>✅ TÂCHES EFFECTUÉES :</p>
+<ul>
+<li>Nettoyage hebdomadaire : [OK/PROBLÈME]</li>
+<li>Vérification santé : [OK/PROBLÈME]</li>
+<li>Test déploiement : [OK/PROBLÈME]</li>
+</ul>
+<br>
+<p>⚠️ PROBLÈMES DÉTECTÉS :</p>
+<ul>
+<li>[Description du problème 1]</li>
+<li>[Description du problème 2]</li>
+</ul>
+<br>
+<p>🔧 ACTIONS CORRECTIVES :</p>
+<ul>
+<li>[Action effectuée 1]</li>
+<li>[Action effectuée 2]</li>
+</ul>
+<br>
+<p>📊 OBSERVATIONS :</p>
+<ul>
+<li>Performance générale : [BONNE/MOYENNE/MAUVAISE]</li>
+<li>Disponibilité : [%]</li>
+<li>Commentaires : [Observations libres]</li>
+</ul>
+<br>
+<p>Responsable : [Votre nom]</p>
+<p>Date : [Date du rapport]</p>
+<p></code>`<code></p>
+<br>
+<p>---</p>
+<br>
+## 🎯 Checklist de Maintenance
+<br>
+### ✅ Quotidienne (5 min/jour)
+<ul>
+<li>[ ] Vérification du site avec </code>verify-simple.ps1<code></li>
+<li>[ ] Test de connexion PNJ</li>
+<li>[ ] Contrôle visuel de 2-3 mondes</li>
+<li>[ ] Nettoyage des fichiers temporaires</li>
+</ul>
+<br>
+### ✅ Hebdomadaire (15 min/semaine)
+<ul>
+<li>[ ] Nettoyage complet avec </code>clean-repository-simple.ps1<code></li>
+<li>[ ] Vérification de santé avec </code>verify-repository-health.ps1<code></li>
+<li>[ ] Test de déploiement local</li>
+<li>[ ] Rédaction du rapport hebdomadaire</li>
+</ul>
+<br>
+### ✅ Mensuelle (30 min/mois)
+<ul>
+<li>[ ] Nettoyage périodique avec </code>clean-repository-periodic.ps1`</li>
+<li>[ ] Optimisation des images</li>
+<li>[ ] Sauvegarde complète du contenu</li>
+<li>[ ] Test de déploiement complet</li>
+<li>[ ] Bilan mensuel des performances</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<p><em>Guide de maintenance simplifié mis à jour le 24/05/2025 - Version non-technique</em></p>
+<br>
+<p><strong>Rappel Important :</strong> En cas de doute, il vaut mieux demander de l'aide que de risquer d'endommager le système. L'équipe technique est là pour vous accompagner !</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Malvinaland - Documentation</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/documentation/">Documentation</a> |
+        <a href="/content/narration/">Narration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+</body>
+</html>

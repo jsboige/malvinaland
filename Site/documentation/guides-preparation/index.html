@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides de Préparation des Mondes - Malvinaland</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .doc-header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+    }
+    
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .guide-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-left: 4px solid var(--primary-color);
+    }
+    
+    .guide-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+    
+    .guide-card h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .guide-card .icon {
+      font-size: 1.5em;
+    }
+    
+    .guide-card p {
+      margin-bottom: 1rem;
+      color: #666;
+    }
+    
+    .guide-card a {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    
+    .guide-card a:hover {
+      background-color: var(--link-hover-color);
+    }
+    
+    .back-link {
+      display: inline-block;
+      background-color: #6c757d;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-bottom: 2rem;
+      transition: background-color 0.3s;
+    }
+    
+    .back-link:hover {
+      background-color: #5a6268;
+      color: white;
+    }
+    
+    .info-box {
+      background: #e8f4fd;
+      border: 1px solid #bee5eb;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .info-box h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/">🏠 Accueil</a></li>
+          <li><a href="/content/carte/">🗺️ Carte</a></li>
+          <li><a href="/documentation/" class="active">📖 Documentation</a></li>
+          <li><a href="/content/narration/">📚 Narration</a></li>
+          <li><a href="/content/personnages/">👥 Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">🔑 Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">🚪 Déconnexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/">🏠 Accueil</a></li>
+          <li><a href="/content/carte/">🗺️ Carte</a></li>
+          <li><a href="/documentation/" class="active">📖 Documentation</a></li>
+          <li><a href="/content/narration/">📚 Narration</a></li>
+          <li><a href="/content/personnages/">👥 Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">🔑 Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">🚪 Déconnexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <a href="/documentation/" class="back-link">← Retour Documentation</a>
+      
+      <div class="doc-header">
+        <h1>🏗️ Guides de Préparation des Mondes</h1>
+        <p>Guides détaillés pour préparer chaque monde du jeu de piste Malvinaland</p>
+      </div>
+
+      <div class="info-box">
+        <h3>ℹ️ À propos de ces guides</h3>
+        <p>Ces guides vous aideront à préparer chaque monde de Malvinaland pour une session de jeu. Chaque guide contient :</p>
+        <ul>
+          <li>Description détaillée du monde</li>
+          <li>Matériel nécessaire</li>
+          <li>Instructions de préparation</li>
+          <li>Conseils pour l'animation</li>
+          <li>Points de sécurité à vérifier</li>
+        </ul>
+      </div>
+
+      <div class="guide-grid">
+        <div class="guide-card">
+          <h3><span class="icon">🌾</span>Monde de la Grange</h3>
+          <p>Guide complet pour préparer le monde de la Grange avec ses quatre façades distinctives et son espace végétalisé.</p>
+          <a href="GUIDE_GRANGE.md">Consulter le Guide</a>
+        </div>
+
+        <div class="guide-card">
+          <h3><span class="icon">🧵</span>Monde du Linge</h3>
+          <p>Instructions pour préparer le sanctuaire des traditions du lavage avec la corde à linge bleue comme élément central.</p>
+          <a href="GUIDE_LINGE.md">Consulter le Guide</a>
+        </div>
+
+        <div class="guide-card">
+          <h3><span class="icon">🎮</span>Monde des Jeux</h3>
+          <p>Préparation du Royaume de l'Enfance Éternelle avec le grand trampoline octogonal au centre.</p>
+          <a href="GUIDE_JEUX.md">Consulter le Guide</a>
+        </div>
+
+        <div class="guide-card">
+          <h3><span class="icon">🌳</span>Monde du Verger</h3>
+          <p>Guide pour préparer le sanctuaire naturel abritant le modeste verger de jeunes arbres fruitiers variés.</p>
+          <a href="GUIDE_VERGER.md">Consulter le Guide</a>
+        </div>
+
+        <div class="guide-card">
+          <h3><span class="icon">📝</span>Template Guide Monde</h3>
+          <p>Modèle à utiliser pour créer des guides de préparation pour les autres mondes de Malvinaland.</p>
+          <a href="TEMPLATE_GUIDE_MONDE.md">Consulter le Template</a>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h3>🚀 Prochaines étapes</h3>
+        <p>Une fois que vous avez consulté les guides de préparation :</p>
+        <ol>
+          <li>Consultez le <a href="/documentation/MANUEL_ADMINISTRATEUR.html">Manuel Administrateur</a> pour la vue d'ensemble</li>
+          <li>Référez-vous au <a href="/documentation/GUIDE_PNJ_COMPLET.html">Guide PNJ</a> pour l'animation</li>
+          <li>Utilisez le <a href="/documentation/GUIDE_RESOLUTION_PROBLEMES.html">Guide de Résolution</a> en cas de problème</li>
+        </ol>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 26/05/2025 Malvinaland - Guides de Préparation</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/documentation/">Documentation</a> |
+        <a href="/content/narration/">Narration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+  <script src="/assets/js/fix-mobile-menu.js" defer></script>
+</body>
+</html>

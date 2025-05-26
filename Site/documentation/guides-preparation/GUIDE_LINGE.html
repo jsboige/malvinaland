@@ -1,0 +1,643 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUIDE_LINGE - Malvinaland</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .doc-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    
+    .doc-content h1 {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .doc-content h2 {
+      color: var(--secondary-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    
+    .doc-content h3 {
+      color: var(--primary-color);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .doc-content pre {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 4px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    
+    .doc-content code {
+      background: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .doc-content blockquote {
+      border-left: 4px solid var(--primary-color);
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #f8f9fa;
+      font-style: italic;
+    }
+    
+    .doc-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    .doc-content th,
+    .doc-content td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    
+    .doc-content th {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .doc-content ul,
+    .doc-content ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+    
+    .doc-content li {
+      margin: 0.5rem 0;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: var(--link-hover-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <div class="doc-content">
+        <a href="/documentation/" class="back-link">â† Retour Ã  la documentation</a>
+        # Guide de Préparation - Monde du Linge
+<br>
+## 📋 Informations Générales
+<br>
+<ul>
+<li><strong>Nom du Monde</strong> : Le Monde du Linge</li>
+<li><strong>Thème</strong> : Laverie traditionnelle, codes secrets, séchage</li>
+<li><strong>Durée estimée</strong> : 30-45 minutes</li>
+<li><strong>Nombre de joueurs</strong> : 3-6 joueurs simultanément</li>
+<li><strong>Niveau de difficulté</strong> : 🟢 Facile</li>
+</ul>
+<br>
+## 🎭 Vue d'Ensemble du Monde
+<br>
+### Description et Ambiance
+<p>Le Monde du Linge évoque une laverie d'autrefois avec ses cordes à linge, ses bassines et l'odeur de savon de Marseille. L'ambiance est celle d'un lieu de travail communautaire où les secrets se transmettent par des codes cachés dans le linge étendu. Les couleurs et les motifs des vêtements racontent une histoire que les joueurs doivent déchiffrer.</p>
+<br>
+### Histoire et Contexte
+<p>Cette ancienne laverie était le lieu de rendez-vous secret d'un réseau de résistants qui utilisaient le linge étendu pour transmettre des messages codés. Les joueurs doivent découvrir ce système de communication et décoder les messages laissés par les anciens occupants pour comprendre leur mission secrète.</p>
+<br>
+### Objectifs pour les Joueurs
+<ul>
+<li>Comprendre le système de codage par les couleurs et motifs du linge</li>
+<li>Décoder les messages secrets transmis via les cordes à linge</li>
+<li>Reconstituer l'histoire du réseau de résistance</li>
+<li>Découvrir le message final caché dans la laverie</li>
+</ul>
+<br>
+## 🗺️ Plan d'Aménagement
+<br>
+### Schéma du Lieu
+<p>``<code></p>
+<p>    [Entrée]</p>
+<p>        |</p>
+<p>   [Zone Accueil]</p>
+<p>   (Panneau laverie)</p>
+<p>        |</p>
+<p>[Zone Centrale Laverie]</p>
+<p>   |           |</p>
+<p>[Corde à Linge 1] [Corde à Linge 2]</p>
+<p>   |           |</p>
+<p>[Bassines et Savons] [Table de Tri]</p>
+<p>        |</p>
+<p>   [Zone Décodage]</p>
+<p>   (Table avec indices)</p>
+<p>        |</p>
+<p>    [Sortie]</p>
+<p></code>``</p>
+<br>
+### Zones Principales
+<ol>
+<li><strong>Zone d'Accueil</strong> : Panneau d'entrée avec contexte historique</li>
+<li><strong>Zone Centrale</strong> : Espace principal avec cordes à linge</li>
+<li><strong>Corde à Linge 1</strong> : Énigme des couleurs et motifs</li>
+<li><strong>Corde à Linge 2</strong> : Énigme de l'ordre chronologique</li>
+<li><strong>Zone Bassines</strong> : Énigme des symboles cachés dans l'eau</li>
+<li><strong>Table de Décodage</strong> : Synthèse et solution finale</li>
+</ul>
+<br>
+### Flux de Circulation
+<p>Les joueurs explorent librement les différentes cordes à linge, collectent les indices, puis se regroupent à la table de décodage pour résoudre l'énigme finale.</p>
+<br>
+## 📦 Matériel Complet pour le Monde
+<br>
+### 🛠️ Matériel de Construction
+<ul>
+<li>[ ] Corde à linge solide (20 mètres)</li>
+<li>[ ] Poteaux ou supports pour tendre les cordes (4 unités)</li>
+<li>[ ] Pinces à linge en bois (50 unités)</li>
+<li>[ ] Bassines en métal ou plastique (3 unités)</li>
+<li>[ ] Table en bois ou pliante (1 unité)</li>
+<li>[ ] Panneaux d'affichage (2 unités)</li>
+</ul>
+<br>
+### 🎨 Matériel de Décoration
+<ul>
+<li>[ ] Vêtements et tissus colorés (30 pièces variées)</li>
+<li>[ ] Savons de Marseille décoratifs (5 unités)</li>
+<li>[ ] Seaux et arrosoirs vintage (3 unités)</li>
+<li>[ ] Nappes à carreaux ou tissus vichy</li>
+<li>[ ] Plantes artificielles (lavande, romarin)</li>
+<li>[ ] Lanternes ou éclairage tamisé</li>
+</ul>
+<br>
+### 📄 Matériel à Imprimer
+<ul>
+<li>[ ] Panneau d'accueil "Laverie du Vieux Pont" (1 exemplaire A3)</li>
+<li>[ ] Grille de décodage couleurs (4 exemplaires A4)</li>
+<li>[ ] Cartes indices avec symboles (15 cartes)</li>
+<li>[ ] Instructions pour PNJ (2 exemplaires A4)</li>
+<li>[ ] Certificat "Messager Secret" (6 exemplaires)</li>
+</ul>
+<br>
+### 🔧 Outils Nécessaires
+<ul>
+<li>[ ] Perceuse pour fixer les supports</li>
+<li>[ ] Visseuse</li>
+<li>[ ] Mètre ruban</li>
+<li>[ ] Niveau à bulle</li>
+<li>[ ] Ciseaux et cutter</li>
+<li>[ ] Agrafeuse</li>
+</ul>
+<br>
+### 💡 Matériel Électrique/Électronique
+<ul>
+<li>[ ] Éclairage LED blanc chaud (guirlandes)</li>
+<li>[ ] Rallonge électrique (15 mètres)</li>
+<li>[ ] Minuteur ou chronomètre (pour animation)</li>
+</ul>
+<br>
+## 🧩 Énigmes Détaillées
+<br>
+### Énigme 1 : Le Code des Couleurs
+<br>
+#### 🎯 Objectif
+<p>Les joueurs doivent comprendre que chaque couleur de vêtement correspond à une lettre pour former un message secret.</p>
+<br>
+#### 📋 Matériel Spécifique
+<ul>
+<li>12 vêtements de couleurs différentes</li>
+<li>Grille de correspondance couleur-lettre</li>
+<li>Corde à linge principale</li>
+<li>Pinces à linge numérotées discrètement</li>
+</ul>
+<br>
+#### 🔨 Instructions de Construction
+<ol>
+<li><strong>Préparation</strong> :</li>
+</ul>
+<p>   - Sélectionner 12 vêtements de couleurs distinctes</p>
+<p>   - Créer la grille de correspondance (Rouge=R, Bleu=B, etc.)</p>
+<p>   - Numéroter discrètement les pinces à linge</p>
+<br>
+<ol>
+<li><strong>Assemblage</strong> :</li>
+</ul>
+<p>   - Tendre la corde à linge principale entre deux supports</p>
+<p>   - Préparer les vêtements dans l'ordre du message</p>
+<p>   - Plastifier la grille de correspondance</p>
+<br>
+<ol>
+<li><strong>Installation</strong> :</li>
+</ul>
+<p>   - Étendre les vêtements dans l'ordre correct</p>
+<p>   - Placer la grille de correspondance à proximité</p>
+<p>   - Vérifier que l'ordre est lisible de gauche à droite</p>
+<br>
+#### 📍 Mise en Place sur Site
+<ul>
+<li><strong>Emplacement</strong> : Zone centrale, bien visible</li>
+<li><strong>Orientation</strong> : Lecture de gauche à droite</li>
+<li><strong>Sécurisation</strong> : Fixer solidement les supports de corde</li>
+<li><strong>Test</strong> : Vérifier que le message se décode correctement</li>
+</ul>
+<br>
+#### 💡 Indices et Solution
+<ul>
+<li><strong>Indices niveau 1</strong> : "Chaque couleur a sa signification"</li>
+<li><strong>Indices niveau 2</strong> : "Lisez de gauche à droite, comme un livre"</li>
+<li><strong>Solution complète</strong> : ROUGE-ORANGE-VERT-BLEU-JAUNE → "RONDE" (exemple)</li>
+</ul>
+<br>
+#### 🔄 Variantes
+<ul>
+<li><strong>Version simplifiée</strong> : Utiliser seulement 6 couleurs</li>
+<li><strong>Version complexe</strong> : Ajouter des vêtements distracteurs</li>
+<li><strong>Adaptations</strong> : Utiliser des foulards au lieu de vêtements</li>
+</ul>
+<br>
+#### ⚠️ Points d'Attention
+<ul>
+<li>S'assurer que les couleurs sont bien distinctes</li>
+<li>Vérifier que les vêtements ne tombent pas</li>
+<li>Prévoir des vêtements de rechange</li>
+</ul>
+<br>
+### Énigme 2 : L'Ordre Chronologique du Séchage
+<br>
+#### 🎯 Objectif
+<p>Remettre les vêtements dans l'ordre où ils ont été étendus en se basant sur leur degré de séchage et les indices temporels.</p>
+<br>
+#### 📋 Matériel Spécifique
+<ul>
+<li>8 vêtements à différents stades de "séchage"</li>
+<li>Vaporisateur pour humidifier</li>
+<li>Étiquettes temporelles discrètes</li>
+<li>Deuxième corde à linge</li>
+</ul>
+<br>
+#### 🔨 Instructions de Construction
+<ol>
+<li><strong>Préparation</strong> :</li>
+</ul>
+<p>   - Préparer 8 vêtements avec différents niveaux d'humidité</p>
+<p>   - Créer des étiquettes avec heures (8h, 9h, 10h, etc.)</p>
+<p>   - Préparer le vaporisateur avec de l'eau</p>
+<br>
+<ol>
+<li><strong>Assemblage</strong> :</li>
+</ul>
+<p>   - Humidifier les vêtements selon l'ordre chronologique</p>
+<p>   - Fixer discrètement les étiquettes temporelles</p>
+<p>   - Mélanger l'ordre sur la corde</p>
+<br>
+<ol>
+<li><strong>Installation</strong> :</li>
+</ul>
+<p>   - Étendre les vêtements dans le désordre</p>
+<p>   - Placer le vaporisateur à disposition</p>
+<p>   - Laisser les indices temporels accessibles</p>
+<br>
+#### 📍 Mise en Place sur Site
+<ul>
+<li><strong>Emplacement</strong> : Deuxième corde, parallèle à la première</li>
+<li><strong>Orientation</strong> : Accessible des deux côtés</li>
+<li><strong>Sécurisation</strong> : Protéger le sol de l'humidité</li>
+<li><strong>Test</strong> : Vérifier les différences d'humidité</li>
+</ul>
+<br>
+#### 💡 Indices et Solution
+<ul>
+<li><strong>Indices niveau 1</strong> : "Le temps de séchage révèle l'ordre"</li>
+<li><strong>Indices niveau 2</strong> : "Le plus humide a été étendu en dernier"</li>
+<li><strong>Solution complète</strong> : Ordre du plus sec au plus humide = ordre chronologique</li>
+</ul>
+<br>
+#### 🔄 Variantes
+<ul>
+<li><strong>Version simplifiée</strong> : Utiliser seulement 5 vêtements</li>
+<li><strong>Version complexe</strong> : Ajouter des indices de température</li>
+<li><strong>Adaptations</strong> : Utiliser des tissus différents (coton, laine)</li>
+</ul>
+<br>
+#### ⚠️ Points d'Attention
+<ul>
+<li>Maintenir les différences d'humidité pendant la session</li>
+<li>Protéger le sol et les joueurs de l'eau</li>
+<li>Prévoir des serviettes pour essuyer</li>
+</ul>
+<br>
+### Énigme 3 : Les Symboles dans l'Eau
+<br>
+#### 🎯 Objectif
+<p>Découvrir les symboles cachés au fond des bassines d'eau savonneuse pour former un code final.</p>
+<br>
+#### 📋 Matériel Spécifique
+<ul>
+<li>3 bassines transparentes ou métalliques</li>
+<li>Symboles plastifiés lestés</li>
+<li>Savon liquide pour opacifier l'eau</li>
+<li>Petites épuisettes ou passoires</li>
+<li>Serviettes</li>
+</ul>
+<br>
+#### 🔨 Instructions de Construction
+<ol>
+<li><strong>Préparation</strong> :</li>
+</ul>
+<p>   - Plastifier et lester les symboles (triangle, cercle, carré)</p>
+<p>   - Préparer l'eau savonneuse légèrement opaque</p>
+<p>   - Numéroter discrètement les bassines</p>
+<br>
+<ol>
+<li><strong>Assemblage</strong> :</li>
+</ul>
+<p>   - Placer un symbole au fond de chaque bassine</p>
+<p>   - Remplir d'eau savonneuse</p>
+<p>   - Disposer les épuisettes à proximité</p>
+<br>
+<ol>
+<li><strong>Installation</strong> :</li>
+</ul>
+<p>   - Positionner les bassines sur une table stable</p>
+<p>   - Placer des serviettes autour</p>
+<p>   - Vérifier que les symboles sont cachés mais récupérables</p>
+<br>
+#### 📍 Mise en Place sur Site
+<ul>
+<li><strong>Emplacement</strong> : Table près des cordes à linge</li>
+<li><strong>Orientation</strong> : Accessible de tous les côtés</li>
+<li><strong>Sécurisation</strong> : Protéger le sol, fixer les bassines</li>
+<li><strong>Test</strong> : Vérifier que les symboles sont récupérables</li>
+</ul>
+<br>
+#### 💡 Indices et Solution
+<ul>
+<li><strong>Indices niveau 1</strong> : "Parfois il faut plonger pour trouver la vérité"</li>
+<li><strong>Indices niveau 2</strong> : "Trois bassines, trois symboles, un message"</li>
+<li><strong>Solution complète</strong> : Triangle + Cercle + Carré = Code géométrique final</li>
+</ul>
+<br>
+#### 🔄 Variantes
+<ul>
+<li><strong>Version simplifiée</strong> : Eau moins opaque</li>
+<li><strong>Version complexe</strong> : Ajouter des symboles distracteurs</li>
+<li><strong>Adaptations</strong> : Utiliser des objets flottants</li>
+</ul>
+<br>
+#### ⚠️ Points d'Attention
+<ul>
+<li>Maintenir la propreté de l'eau</li>
+<li>Éviter que les joueurs se mouillent trop</li>
+<li>Vérifier que les symboles ne se perdent pas</li>
+</ul>
+<br>
+## 🎭 Animation et PNJ
+<br>
+### Rôle des PNJ
+<p>Le PNJ incarne une ancienne lavandière qui connaît les secrets de la laverie. Elle guide les joueurs avec des références au travail du linge et aux traditions de communication secrète.</p>
+<br>
+### Interactions Clés
+<ul>
+<li><strong>À l'arrivée</strong> : "Bienvenue dans ma laverie ! Ici, le linge raconte des histoires..."</li>
+<li><strong>Pendant les énigmes</strong> : Donne des conseils sur le "bon ordre" et les "couleurs qui parlent"</li>
+<li><strong>À la sortie</strong> : "Vous avez appris à lire les messages du linge, vous êtes de vrais messagers !"</li>
+</ul>
+<br>
+### Phrases et Répliques Types
+<ul>
+<li>"Chaque couleur a son langage, il faut savoir l'écouter"</li>
+<li>"L'ordre du séchage, c'est l'ordre du temps qui passe"</li>
+<li>"Parfois les secrets se cachent là où on ne les attend pas"</li>
+<li>"Le linge propre cache souvent les plus beaux mystères"</li>
+</ul>
+<br>
+### Costumes et Accessoires PNJ
+<ul>
+<li>Tablier de lavandière traditionnel</li>
+<li>Foulard noué sur la tête</li>
+<li>Manches retroussées</li>
+<li>Panier à linge en osier</li>
+<li>Savon de Marseille comme accessoire</li>
+</ul>
+<br>
+## 🏗️ Installation Complète
+<br>
+### ⏰ Planning d'Installation
+<ul>
+<li><strong>J-7</strong> : Préparation et achat du matériel</li>
+<li><strong>J-2</strong> : Préparation des vêtements et supports</li>
+<li><strong>J-1</strong> : Installation des cordes et décor</li>
+<li><strong>J-0</strong> : Tests finaux et mise en eau des bassines</li>
+</ul>
+<br>
+### 👥 Équipe Nécessaire
+<ul>
+<li><strong>Responsable installation</strong> : 1 personne</li>
+<li><strong>Assistants</strong> : 2 personnes</li>
+<li><strong>Compétences requises</strong> : Bricolage de base, sens de l'organisation</li>
+</ul>
+<br>
+### 🔧 Étapes d'Installation
+<br>
+#### 1. Préparation du Lieu (30 min)
+<ul>
+<li>[ ] Nettoyer et délimiter l'espace laverie</li>
+<li>[ ] Vérifier la sécurité (sol, évacuation d'eau)</li>
+<li>[ ] Marquer les emplacements des cordes</li>
+</ul>
+<br>
+#### 2. Installation des Supports (60 min)
+<ul>
+<li>[ ] Fixer les poteaux ou supports de corde</li>
+<li>[ ] Tendre les cordes à linge à bonne hauteur</li>
+<li>[ ] Vérifier la solidité et la tension</li>
+<li>[ ] Installer l'éclairage d'ambiance</li>
+</ul>
+<br>
+#### 3. Installation des Énigmes (90 min)
+<ul>
+<li>[ ] Disposer les vêtements sur les cordes (45 min)</li>
+<li>[ ] Préparer les bassines avec symboles (30 min)</li>
+<li>[ ] Installer la table de décodage (15 min)</li>
+<li>[ ] Tests de fonctionnement</li>
+</ul>
+<br>
+#### 4. Finalisation (30 min)
+<ul>
+<li>[ ] Vérification générale de sécurité</li>
+<li>[ ] Test complet du parcours</li>
+<li>[ ] Briefing équipe PNJ</li>
+<li>[ ] Préparation matériel de nettoyage</li>
+</ul>
+<br>
+## ✅ Checklist de Préparation
+<br>
+### 📦 Matériel
+<ul>
+<li>[ ] Tous les vêtements sont propres et colorés</li>
+<li>[ ] Les cordes sont tendues et solides</li>
+<li>[ ] Les bassines sont prêtes avec symboles</li>
+<li>[ ] Les grilles de décodage sont plastifiées</li>
+</ul>
+<br>
+### 🏗️ Installation
+<ul>
+<li>[ ] Les cordes à linge sont installées et sécurisées</li>
+<li>[ ] L'éclairage d'ambiance fonctionne</li>
+<li>[ ] Les zones de circulation sont dégagées</li>
+<li>[ ] Le matériel de nettoyage est disponible</li>
+</ul>
+<br>
+### 👥 Équipe
+<ul>
+<li>[ ] Le PNJ connaît l'histoire de la laverie</li>
+<li>[ ] Le costume de lavandière est prêt</li>
+<li>[ ] Les solutions des énigmes sont maîtrisées</li>
+<li>[ ] Les rotations sont organisées</li>
+</ul>
+<br>
+### 🔧 Technique
+<ul>
+<li>[ ] L'eau des bassines est à la bonne opacité</li>
+<li>[ ] Les symboles sont bien lestés</li>
+<li>[ ] Les vêtements sont aux bons niveaux d'humidité</li>
+<li>[ ] Le matériel de séchage est disponible</li>
+</ul>
+<br>
+## 🚨 Gestion des Problèmes
+<br>
+### Problèmes Courants
+<ol>
+<li><strong>Vêtements qui tombent des cordes</strong></li>
+</ul>
+<p>   - <strong>Cause</strong> : Pinces à linge défaillantes ou vent</p>
+<p>   - <strong>Solution</strong> : Utiliser des pinces de rechange, fixer différemment</p>
+<br>
+<ol>
+<li><strong>Eau des bassines qui se salit trop</strong></li>
+</ul>
+<p>   - <strong>Cause</strong> : Manipulation intensive</p>
+<p>   - <strong>Solution</strong> : Changer l'eau régulièrement, filtrer</p>
+<br>
+<ol>
+<li><strong>Symboles perdus dans les bassines</strong></li>
+</ul>
+<p>   - <strong>Cause</strong> : Lestage insuffisant ou manipulation</p>
+<p>   - <strong>Solution</strong> : Utiliser les symboles de rechange, vérifier régulièrement</p>
+<br>
+### Solutions de Secours
+<ul>
+<li><strong>Plan B énigme couleurs</strong> : Utiliser des cartes colorées au lieu de vêtements</li>
+<li><strong>Plan B énigme séchage</strong> : Donner directement l'ordre chronologique</li>
+<li><strong>Plan B énigme bassines</strong> : Placer les symboles sur la table</li>
+</ul>
+<br>
+### Contacts d'Urgence
+<ul>
+<li><strong>Responsable technique</strong> : [Numéro à compléter]</li>
+<li><strong>Responsable sécurité</strong> : [Numéro à compléter]</li>
+</ul>
+<br>
+## 📝 Notes Post-Événement
+<br>
+### Retours d'Expérience
+<p>[Section à remplir après l'événement]</p>
+<ul>
+<li>Facilité de compréhension des énigmes</li>
+<li>Problèmes d'humidité ou de propreté</li>
+<li>Appréciation de l'ambiance laverie</li>
+<li>Suggestions d'amélioration</li>
+</ul>
+<br>
+### Améliorations Proposées
+<p>[Idées d'amélioration pour les prochaines éditions]</p>
+<ul>
+<li>Système de séchage plus réaliste</li>
+<li>Énigmes supplémentaires avec motifs</li>
+<li>Amélioration de la gestion de l'eau</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<p><em>Guide de préparation créé le 24/05/2025 - Version 1.0</em></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Malvinaland - Documentation</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/documentation/">Documentation</a> |
+        <a href="/content/narration/">Narration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+</body>
+</html>

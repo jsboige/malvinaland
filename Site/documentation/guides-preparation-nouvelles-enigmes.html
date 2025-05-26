@@ -1,0 +1,500 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>guides-preparation-nouvelles-enigmes - Malvinaland</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .doc-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    
+    .doc-content h1 {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .doc-content h2 {
+      color: var(--secondary-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    
+    .doc-content h3 {
+      color: var(--primary-color);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .doc-content pre {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 4px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    
+    .doc-content code {
+      background: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .doc-content blockquote {
+      border-left: 4px solid var(--primary-color);
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #f8f9fa;
+      font-style: italic;
+    }
+    
+    .doc-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    .doc-content th,
+    .doc-content td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    
+    .doc-content th {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .doc-content ul,
+    .doc-content ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+    
+    .doc-content li {
+      margin: 0.5rem 0;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: var(--link-hover-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <div class="doc-content">
+        <a href="/documentation/" class="back-link">â† Retour Ã  la documentation</a>
+        # Guide de Préparation - Nouvelles Énigmes Malvinaland
+<br>
+## 📋 Vue d'Ensemble
+<br>
+<p>Ce guide présente les instructions de préparation pour les quatre nouvelles énigmes prioritaires implémentées dans Malvinaland. Toutes privilégient des matériaux de récupération et brocante, avec des temps de préparation courts et des coûts réduits.</p>
+<br>
+<p>---</p>
+<br>
+## 🔐 1. "Le Code César des Liens" (Monde du Zob)
+<br>
+### 🎯 Description
+<p>Énigme de déchiffrement utilisant un alphabet inversé avec grille de transposition octogonale, révélant un mandala de concepts spirituels.</p>
+<br>
+### 📦 Matériel Nécessaire
+<ul>
+<li><strong>Papier/parchemin</strong> : 8 feuilles format A5 (récupération)</li>
+<li><strong>Crayon/feutre</strong> : Pour écrire les mots codés</li>
+<li><strong>Grille octogonale</strong> : Planche en bois ou carton épais</li>
+<li><strong>Règle et compas</strong> : Pour tracer la grille</li>
+</ul>
+<br>
+### 🛒 Sources d'Approvisionnement
+<ul>
+<li><strong>Papier</strong> : Récupération, vieux livres, papeterie</li>
+<li><strong>Bois</strong> : Chutes de menuiserie, brocante, magasins de bricolage</li>
+<li><strong>Coût total</strong> : 5-15€</li>
+</ul>
+<br>
+### 🔨 Instructions de Construction
+<br>
+#### Étape 1 : Préparation des parchemins (30 min)
+<ol>
+<li>Découper 8 feuilles format A5</li>
+<li>Vieillir le papier avec du thé ou café (optionnel)</li>
+<li>Écrire les mots codés en alphabet inversé :</li>
+</ul>
+<p>   - HLFMV (SOLEIL)</p>
+<p>   - YVFKRIV (RESPIRE) </p>
+<p>   - NRMGV (MONTE)</p>
+<p>   - XLMGVNKOV (CONTEMPLE)</p>
+<p>   - VXLFGV (ÉCOUTE)</p>
+<p>   - LYFVIEV (OBSERVE)</p>
+<p>   - HRMGV (SENTE)</p>
+<p>   - FMRG (UNIT)</p>
+<br>
+#### Étape 2 : Création de la grille octogonale (45 min)
+<ol>
+<li>Tracer un octogone de 30cm de diamètre sur bois/carton</li>
+<li>Marquer les 8 directions (N, NE, E, SE, S, SO, O, NO)</li>
+<li>Créer 8 emplacements pour poser les mots déchiffrés</li>
+<li>Poncer et vernir si bois (optionnel)</li>
+</ul>
+<br>
+### ⏰ Temps de Préparation
+<ul>
+<li><strong>Préparation</strong> : 1h15</li>
+<li><strong>Installation</strong> : 15 min</li>
+<li><strong>Total</strong> : 1h30</li>
+</ul>
+<br>
+### 💡 Conseils Pratiques
+<ul>
+<li>Plastifier les parchemins pour la durabilité</li>
+<li>Prévoir un tableau alphabet inversé pour les organisateurs</li>
+<li>Tester la lisibilité des mots codés</li>
+</ul>
+<br>
+### 🔄 Variantes Budget
+<ul>
+<li><strong>Version économique</strong> : Carton + feutres (3€)</li>
+<li><strong>Version premium</strong> : Bois gravé + parchemins vieillis (25€)</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## 🕯️ 2. "La Lampe à Pétrole des Secrets" (Monde des Sphinx)
+<br>
+### 🎯 Description
+<p>Mécanisme à ressort avec phases lunaires gravées, révélant un compartiment secret quand la séquence correcte est activée.</p>
+<br>
+### 📦 Matériel Nécessaire
+<ul>
+<li><strong>Lampe à pétrole</strong> : Modèle décoratif de brocante</li>
+<li><strong>Symboles lunaires</strong> : 8 autocollants ou gravures</li>
+<li><strong>Mécanisme simple</strong> : Ressort + compartiment</li>
+<li><strong>Livre d'astronomie</strong> : Pour l'indice des phases</li>
+</ul>
+<br>
+### 🛒 Sources d'Approvisionnement
+<ul>
+<li><strong>Lampe</strong> : Brocante, vide-greniers (10-25€)</li>
+<li><strong>Ressort</strong> : Magasin bricolage, récupération (2€)</li>
+<li><strong>Livre</strong> : Bibliothèque, occasion (gratuit-5€)</li>
+<li><strong>Coût total</strong> : 12-32€</li>
+</ul>
+<br>
+### 🔨 Instructions de Construction
+<br>
+#### Étape 1 : Préparation de la lampe (45 min)
+<ol>
+<li>Nettoyer la lampe à pétrole</li>
+<li>Vider complètement le réservoir</li>
+<li>Vérifier la stabilité de la base</li>
+<li>Identifier l'emplacement pour le compartiment secret</li>
+</ul>
+<br>
+#### Étape 2 : Installation des symboles lunaires (30 min)
+<ol>
+<li>Dessiner ou coller 8 symboles des phases lunaires sur le réservoir</li>
+<li>Ordre : Nouvelle lune → Croissant → Premier quartier → Gibbeuse croissante → Pleine lune → Gibbeuse décroissante → Dernier quartier → Croissant décroissant</li>
+<li>Numéroter discrètement au dos pour les organisateurs</li>
+</ul>
+<br>
+#### Étape 3 : Mécanisme à ressort (30 min)
+<ol>
+<li>Fixer un petit compartiment sous la base</li>
+<li>Installer un ressort simple ou simuler l'ouverture</li>
+<li>Placer le parchemin "ILLUMINATION" dans le compartiment</li>
+<li>Tester le mécanisme d'ouverture</li>
+</ul>
+<br>
+### ⏰ Temps de Préparation
+<ul>
+<li><strong>Préparation</strong> : 1h45</li>
+<li><strong>Installation</strong> : 10 min</li>
+<li><strong>Total</strong> : 1h55</li>
+</ul>
+<br>
+### 💡 Conseils Pratiques
+<ul>
+<li>Choisir une lampe stable et sécurisée</li>
+<li>Marquer la séquence correcte pour les organisateurs</li>
+<li>Prévoir une lampe de secours en cas de casse</li>
+</ul>
+<br>
+### 🔄 Variantes Budget
+<ul>
+<li><strong>Version simple</strong> : Lampe plastique + autocollants (8€)</li>
+<li><strong>Version authentique</strong> : Vraie lampe ancienne + gravure (50€)</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## 🥊 3. Énigmes Développées de la Grange
+<br>
+### A. "L'Épreuve du Sac de Boxe"
+<br>
+#### 📦 Matériel Nécessaire
+<ul>
+<li><strong>Sac de boxe</strong> : Occasion, salle de sport (20-40€)</li>
+<li><strong>Corde solide</strong> : Pour suspension (5€)</li>
+<li><strong>Compartiment étanche</strong> : Boîte plastique (2€)</li>
+<li><strong>Support de fixation</strong> : Poutre ou structure solide</li>
+</ul>
+<br>
+#### 🔨 Instructions (1h)
+<ol>
+<li>Fixer solidement le sac à une poutre</li>
+<li>Attacher le compartiment sous la base</li>
+<li>Tester la séquence : 3 coups forts, 2 légers, 1 puissant</li>
+<li>Vérifier la sécurité de l'installation</li>
+</ul>
+<br>
+### B. "Les Secrets du Masque Africain"
+<br>
+#### 📦 Matériel Nécessaire
+<ul>
+<li><strong>Masque africain</strong> : Brocante, magasin déco (15-30€)</li>
+<li><strong>Symboles</strong> : Peinture ou autocollants (3€)</li>
+<li><strong>Objets des 4 éléments</strong> : Récupération (gratuit)</li>
+</ul>
+<br>
+#### 🔨 Instructions (45 min)
+<ol>
+<li>Ajouter les symboles sur le masque si nécessaire</li>
+<li>Cacher 4 objets représentant les éléments</li>
+<li>Créer le guide d'interprétation pour organisateurs</li>
+</ul>
+<br>
+### C. "La Navigation de l'Avion Écrasé"
+<br>
+#### 📦 Matériel Nécessaire
+<ul>
+<li><strong>Banquette de voiture</strong> : Casse auto, récupération (10-20€)</li>
+<li><strong>Carte de navigation</strong> : Impression ou dessin (2€)</li>
+<li><strong>Boussole</strong> : Magasin sport, jouet (5€)</li>
+</ul>
+<br>
+#### 🔨 Instructions (30 min)
+<ol>
+<li>Installer la banquette comme "siège d'avion"</li>
+<li>Cacher la carte dans un compartiment secret</li>
+<li>Marquer le point de départ et les directions</li>
+</ul>
+<br>
+### ⏰ Temps Total Grange
+<ul>
+<li><strong>Préparation</strong> : 2h15</li>
+<li><strong>Installation</strong> : 30 min</li>
+<li><strong>Coût total</strong> : 62-105€</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## 🍾 4. "La Collection de Mama Karibu" (Monde Karibu)
+<br>
+### 🎯 Description
+<p>6 bouteilles thématiques avec initiales formant un mot-clé selon l'ordre des régions de Malvinaland.</p>
+<br>
+### 📦 Matériel Nécessaire
+<ul>
+<li><strong>6 bouteilles vides</strong> : Récupération, brocante (gratuit-10€)</li>
+<li><strong>Étiquettes personnalisées</strong> : Impression (3€)</li>
+<li><strong>Placard/étagère</strong> : Récupération ou simple (5-15€)</li>
+</ul>
+<br>
+### 🛒 Sources d'Approvisionnement
+<ul>
+<li><strong>Bouteilles</strong> : Restaurants, bars, récupération</li>
+<li><strong>Impression</strong> : Imprimante domestique, reprographie</li>
+<li><strong>Coût total</strong> : 8-28€</li>
+</ul>
+<br>
+### 🔨 Instructions de Construction
+<br>
+#### Étape 1 : Préparation des bouteilles (45 min)
+<ol>
+<li>Nettoyer 6 bouteilles de formes différentes</li>
+<li>Retirer les anciennes étiquettes</li>
+<li>Choisir les couleurs : brune, claire, dorée, ambrée, verte, rouge</li>
+</ul>
+<br>
+#### Étape 2 : Création des étiquettes (30 min)
+<ol>
+<li><strong>Rhum</strong> des Îles du Verger (bouteille brune)</li>
+<li><strong>Eau-de-vie</strong> des Montagnes du Zob (bouteille claire)</li>
+<li><strong>Cognac</strong> des Vallées d'Elysée (bouteille dorée)</li>
+<li><strong>Hydromel</strong> des Prairies du Linge (bouteille ambrée)</li>
+<li><strong>Absinthe</strong> des Collines du Damier (bouteille verte)</li>
+<li><strong>Liqueur</strong> des Jardins de Karibu (bouteille rouge)</li>
+</ul>
+<br>
+#### Étape 3 : Installation (15 min)
+<ol>
+<li>Disposer les bouteilles dans le placard</li>
+<li>Ajouter des indices sur l'ordre (numéros discrets)</li>
+<li>Préparer la solution : R-E-C-H-A-L = RACHEL (réarrangé)</li>
+</ul>
+<br>
+### ⏰ Temps de Préparation
+<ul>
+<li><strong>Préparation</strong> : 1h15</li>
+<li><strong>Installation</strong> : 15 min</li>
+<li><strong>Total</strong> : 1h30</li>
+</ul>
+<br>
+### 💡 Conseils Pratiques
+<ul>
+<li>Utiliser de vraies bouteilles pour l'authenticité</li>
+<li>Plastifier les étiquettes contre l'humidité</li>
+<li>Prévoir l'ordre de solution pour les organisateurs</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## 📋 Récapitulatif Global
+<br>
+### ⏰ Temps Total de Préparation
+<ul>
+<li><strong>Code César</strong> : 1h30</li>
+<li><strong>Lampe à Pétrole</strong> : 1h55</li>
+<li><strong>Énigmes Grange</strong> : 2h45</li>
+<li><strong>Collection Bouteilles</strong> : 1h30</li>
+<li><strong>Total</strong> : 7h40</li>
+</ul>
+<br>
+### 💰 Coût Total Estimé
+<ul>
+<li><strong>Budget minimal</strong> : 87-180€</li>
+<li><strong>Budget confortable</strong> : 150-300€</li>
+</ul>
+<br>
+### 🛠️ Outils Nécessaires
+<ul>
+<li>Perceuse (pour fixations)</li>
+<li>Scie (découpes bois)</li>
+<li>Pinceau (décoration)</li>
+<li>Colle forte</li>
+<li>Mètre et niveau</li>
+</ul>
+<br>
+### ⚠️ Points de Sécurité
+<ul>
+<li>Vérifier la solidité des fixations (sac de boxe)</li>
+<li>S'assurer que les lampes sont sécurisées</li>
+<li>Tester tous les mécanismes avant l'événement</li>
+<li>Prévoir des solutions de secours</li>
+</ul>
+<br>
+### 🔧 Solutions de Dépannage
+<ul>
+<li><strong>Mécanisme bloqué</strong> : Prévoir un organisateur pour simuler</li>
+<li><strong>Matériel cassé</strong> : Avoir des pièces de rechange</li>
+<li><strong>Énigme trop difficile</strong> : Indices supplémentaires préparés</li>
+<li><strong>Problème de temps</strong> : Versions simplifiées prêtes</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## 📞 Conseils d'Expérience
+<br>
+### ✅ Bonnes Pratiques
+<ul>
+<li>Tester chaque énigme avec des volontaires</li>
+<li>Prévoir 20% de temps supplémentaire</li>
+<li>Documenter les solutions pour les organisateurs</li>
+<li>Prendre des photos du montage pour reproduction</li>
+</ul>
+<br>
+### 🎯 Optimisations
+<ul>
+<li>Grouper les achats en brocante</li>
+<li>Réutiliser le matériel entre événements</li>
+<li>Impliquer l'équipe dans la construction</li>
+<li>Créer des kits de montage réutilisables</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<p><em>Guide créé le 26/05/2025 - Version 1.0</em></p>
+<p><em>Temps de préparation total : 7h40 | Budget : 87-300€</em></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Malvinaland - Documentation</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/documentation/">Documentation</a> |
+        <a href="/content/narration/">Narration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+</body>
+</html>

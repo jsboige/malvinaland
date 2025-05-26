@@ -1,0 +1,662 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUIDE_VERGER - Malvinaland</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .doc-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    
+    .doc-content h1 {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .doc-content h2 {
+      color: var(--secondary-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    
+    .doc-content h3 {
+      color: var(--primary-color);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .doc-content pre {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 4px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    
+    .doc-content code {
+      background: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .doc-content blockquote {
+      border-left: 4px solid var(--primary-color);
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #f8f9fa;
+      font-style: italic;
+    }
+    
+    .doc-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    .doc-content th,
+    .doc-content td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    
+    .doc-content th {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .doc-content ul,
+    .doc-content ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+    
+    .doc-content li {
+      margin: 0.5rem 0;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: var(--link-hover-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <div class="doc-content">
+        <a href="/documentation/" class="back-link">â† Retour Ã  la documentation</a>
+        # Guide de Préparation - Monde du Verger
+<br>
+## 📋 Informations Générales
+<br>
+<ul>
+<li><strong>Nom du Monde</strong> : Le Monde du Verger</li>
+<li><strong>Thème</strong> : Nature, cycles saisonniers, récolte, sagesse paysanne</li>
+<li><strong>Durée estimée</strong> : 40-55 minutes</li>
+<li><strong>Nombre de joueurs</strong> : 4-8 joueurs simultanément</li>
+<li><strong>Niveau de difficulté</strong> : 🟢 Facile</li>
+</ul>
+<br>
+## 🎭 Vue d'Ensemble du Monde
+<br>
+### Description et Ambiance
+<p>Le Monde du Verger évoque un jardin fruitier en automne, avec ses arbres chargés de fruits, ses paniers de récolte et l'odeur de la terre humide. L'ambiance est paisible et naturelle, invitant à la contemplation et à la découverte des secrets de la nature. Les joueurs explorent un univers où chaque fruit, chaque feuille raconte une histoire.</p>
+<br>
+### Histoire et Contexte
+<p>Ce verger ancestral était tenu par une famille de jardiniers qui avait développé un système secret de communication basé sur les cycles de la nature et les propriétés des fruits. Chaque arbre, chaque récolte cachait des messages pour les générations futures. Les joueurs doivent découvrir ces codes naturels pour comprendre la sagesse transmise par les anciens jardiniers.</p>
+<br>
+### Objectifs pour les Joueurs
+<ul>
+<li>Comprendre les cycles naturels et leurs significations secrètes</li>
+<li>Décoder les messages cachés dans les fruits et les saisons</li>
+<li>Résoudre les énigmes liées aux propriétés des plantes</li>
+<li>Découvrir le trésor caché du maître jardinier</li>
+</ul>
+<br>
+## 🗺️ Plan d'Aménagement
+<br>
+### Schéma du Lieu
+<p>``<code></p>
+<p>    [Entrée]</p>
+<p>        |</p>
+<p>   [Portail du Verger]</p>
+<p>   (Panneau d'accueil)</p>
+<p>        |</p>
+<p>[Allée Centrale du Verger]</p>
+<p>   |           |</p>
+<p>[Pommiers] [Poiriers]</p>
+<p>   |           |</p>
+<p>[Zone Récolte] [Cabane du Jardinier]</p>
+<p>        |</p>
+<p>   [Compost et Graines]</p>
+<p>   (Énigme finale)</p>
+<p>        |</p>
+<p>    [Sortie]</p>
+<p></code>``</p>
+<br>
+### Zones Principales
+<ol>
+<li><strong>Portail d'Entrée</strong> : Panneau avec règles du verger</li>
+<li><strong>Allée Centrale</strong> : Chemin principal entre les arbres</li>
+<li><strong>Zone Pommiers</strong> : Énigme des couleurs et variétés</li>
+<li><strong>Zone Poiriers</strong> : Énigme des saisons et cycles</li>
+<li><strong>Cabane du Jardinier</strong> : Énigme des outils et techniques</li>
+<li><strong>Zone Compost</strong> : Synthèse finale et trésor</li>
+</ul>
+<br>
+### Flux de Circulation
+<p>Les joueurs suivent l'allée centrale, explorent chaque zone d'arbres fruitiers, visitent la cabane du jardinier, puis convergent vers la zone de compost pour la résolution finale.</p>
+<br>
+## 📦 Matériel Complet pour le Monde
+<br>
+### 🛠️ Matériel de Construction
+<ul>
+<li>[ ] Panneaux en bois pour arbres (6 unités)</li>
+<li>[ ] Poteaux de support (8 unités)</li>
+<li>[ ] Planches pour cabane (10 planches)</li>
+<li>[ ] Grillage ou filet (pour délimiter)</li>
+<li>[ ] Bacs de plantation (4 unités)</li>
+<li>[ ] Arrosoirs décoratifs (3 unités)</li>
+</ul>
+<br>
+### 🎨 Matériel de Décoration
+<ul>
+<li>[ ] Fruits artificiels variés (pommes, poires, prunes - 50 unités)</li>
+<li>[ ] Feuillages artificiels d'automne (branches colorées)</li>
+<li>[ ] Paniers en osier (6 unités)</li>
+<li>[ ] Bâches de jute ou toile naturelle</li>
+<li>[ ] Paille ou foin pour le sol</li>
+<li>[ ] Lanternes rustiques (4 unités)</li>
+<li>[ ] Épouvantail décoratif</li>
+</ul>
+<br>
+### 🌱 Matériel Naturel/Végétal
+<ul>
+<li>[ ] Vraies pommes de différentes variétés (20 unités)</li>
+<li>[ ] Vraies poires (15 unités)</li>
+<li>[ ] Feuilles d'automne séchées</li>
+<li>[ ] Branches d'arbres fruitiers</li>
+<li>[ ] Graines diverses (tournesol, courge, etc.)</li>
+<li>[ ] Terre et compost (pour l'ambiance)</li>
+</ul>
+<br>
+### 📄 Matériel à Imprimer
+<ul>
+<li>[ ] Panneau "Verger des Quatre Saisons" (1 exemplaire A3)</li>
+<li>[ ] Cartes variétés de fruits (16 cartes)</li>
+<li>[ ] Calendrier des saisons (4 exemplaires A4)</li>
+<li>[ ] Guide des outils de jardinage (2 exemplaires A4)</li>
+<li>[ ] Certificat "Gardien du Verger" (8 exemplaires)</li>
+</ul>
+<br>
+### 🔧 Outils Nécessaires
+<ul>
+<li>[ ] Scie pour découper le bois</li>
+<li>[ ] Perceuse et visseuse</li>
+<li>[ ] Marteau et clous</li>
+<li>[ ] Cutter et ciseaux</li>
+<li>[ ] Mètre ruban</li>
+<li>[ ] Agrafeuse</li>
+</ul>
+<br>
+### 💡 Matériel Électrique/Électronique
+<ul>
+<li>[ ] Guirlandes LED blanc chaud (pour ambiance)</li>
+<li>[ ] Rallonge électrique (15 mètres)</li>
+<li>[ ] Enceinte portable (pour sons de nature)</li>
+</ul>
+<br>
+## 🧩 Énigmes Détaillées
+<br>
+### Énigme 1 : Les Variétés et Leurs Secrets
+<br>
+#### 🎯 Objectif
+<p>Associer chaque variété de fruit à sa caractéristique secrète (couleur, saison, propriété) pour former un code basé sur les initiales des variétés.</p>
+<br>
+#### 📋 Matériel Spécifique
+<ul>
+<li>8 variétés de fruits artificiels étiquetés</li>
+<li>Cartes descriptives des propriétés</li>
+<li>Tableau de correspondance variétés-codes</li>
+<li>Panier de tri</li>
+</ul>
+<br>
+#### 🔨 Instructions de Construction
+<ol>
+<li><strong>Préparation</strong> :</li>
+</ul>
+<p>   - Sélectionner 8 variétés avec des initiales formant un mot</p>
+<p>   - Créer les cartes descriptives de chaque variété</p>
+<p>   - Préparer le tableau de correspondance</p>
+<br>
+<ol>
+<li><strong>Assemblage</strong> :</li>
+</ul>
+<p>   - Étiqueter chaque fruit avec sa variété</p>
+<p>   - Disposer les cartes descriptives mélangées</p>
+<p>   - Placer le panier de tri au centre</p>
+<br>
+<ol>
+<li><strong>Installation</strong> :</li>
+</ul>
+<p>   - Disposer les fruits sur une table sous les "pommiers"</p>
+<p>   - Placer les cartes à proximité</p>
+<p>   - Installer le tableau de correspondance</p>
+<br>
+#### 📍 Mise en Place sur Site
+<ul>
+<li><strong>Emplacement</strong> : Zone pommiers, table centrale</li>
+<li><strong>Orientation</strong> : Accessible de tous les côtés</li>
+<li><strong>Sécurisation</strong> : Fixer les éléments légers</li>
+<li><strong>Test</strong> : Vérifier que l'association fonctionne</li>
+</ul>
+<br>
+#### 💡 Indices et Solution
+<ul>
+<li><strong>Indices niveau 1</strong> : "Chaque variété a ses secrets, ses initiales aussi"</li>
+<li><strong>Indices niveau 2</strong> : "Associez les bonnes propriétés aux bonnes variétés"</li>
+<li><strong>Solution complète</strong> : Golden + Reinette + Ariane + Idared + Noisette + Elstar + Starking = "GRAINES"</li>
+</ul>
+<br>
+#### 🔄 Variantes
+<ul>
+<li><strong>Version simplifiée</strong> : Utiliser seulement 5 variétés</li>
+<li><strong>Version complexe</strong> : Ajouter des propriétés nutritionnelles</li>
+<li><strong>Adaptations</strong> : Utiliser des légumes au lieu de fruits</li>
+</ul>
+<br>
+#### ⚠️ Points d'Attention
+<ul>
+<li>Vérifier que les fruits artificiels sont en bon état</li>
+<li>S'assurer que les étiquettes sont lisibles</li>
+<li>Prévoir des fruits de rechange</li>
+</ul>
+<br>
+### Énigme 2 : Le Cycle des Saisons
+<br>
+#### 🎯 Objectif
+<p>Remettre dans l'ordre chronologique les activités du verger selon les saisons pour découvrir le rythme secret du jardinier.</p>
+<br>
+#### 📋 Matériel Spécifique
+<ul>
+<li>12 cartes d'activités saisonnières</li>
+<li>Roue des saisons (support circulaire)</li>
+<li>Flèches ou marqueurs pour indiquer l'ordre</li>
+<li>Calendrier de référence</li>
+</ul>
+<br>
+#### 🔨 Instructions de Construction
+<ol>
+<li><strong>Préparation</strong> :</li>
+</ul>
+<p>   - Créer 12 cartes avec activités (3 par saison)</p>
+<p>   - Fabriquer une roue des saisons en carton</p>
+<p>   - Préparer les marqueurs d'ordre</p>
+<br>
+<ol>
+<li><strong>Assemblage</strong> :</li>
+</ul>
+<p>   - Disposer la roue au centre</p>
+<p>   - Mélanger les cartes d'activités</p>
+<p>   - Placer les marqueurs à disposition</p>
+<br>
+<ol>
+<li><strong>Installation</strong> :</li>
+</ul>
+<p>   - Installer sur une table dans la zone poiriers</p>
+<p>   - Assurer une bonne visibilité</p>
+<p>   - Fixer la roue pour éviter qu'elle bouge</p>
+<br>
+#### 📍 Mise en Place sur Site
+<ul>
+<li><strong>Emplacement</strong> : Zone poiriers, table dédiée</li>
+<li><strong>Orientation</strong> : Roue visible de face</li>
+<li><strong>Sécurisation</strong> : Fixer la roue des saisons</li>
+<li><strong>Test</strong> : Vérifier l'ordre chronologique correct</li>
+</ul>
+<br>
+#### 💡 Indices et Solution
+<ul>
+<li><strong>Indices niveau 1</strong> : "Chaque chose en son temps, chaque saison ses tâches"</li>
+<li><strong>Indices niveau 2</strong> : "Commencez par le réveil de la nature"</li>
+<li><strong>Solution complète</strong> : Printemps (taille, plantation, floraison) → Été (arrosage, surveillance, éclaircissage) → Automne (récolte, conservation, préparation) → Hiver (repos, planification, entretien)</li>
+</ul>
+<br>
+#### 🔄 Variantes
+<ul>
+<li><strong>Version simplifiée</strong> : Une seule activité par saison</li>
+<li><strong>Version complexe</strong> : Ajouter les phases lunaires</li>
+<li><strong>Adaptations</strong> : Utiliser des photos au lieu de cartes</li>
+</ul>
+<br>
+#### ⚠️ Points d'Attention
+<ul>
+<li>Vérifier que l'ordre saisonnier est logique</li>
+<li>S'assurer que les activités correspondent aux saisons</li>
+<li>Prévoir une aide pour les non-jardiniers</li>
+</ul>
+<br>
+### Énigme 3 : Les Outils du Maître Jardinier
+<br>
+#### 🎯 Objectif
+<p>Associer chaque outil de jardinage à sa fonction spécifique et découvrir le message caché dans l'ordre d'utilisation optimal.</p>
+<br>
+#### 📋 Matériel Spécifique
+<ul>
+<li>8 outils de jardinage (vrais ou factices)</li>
+<li>Cartes descriptives des fonctions</li>
+<li>Schéma d'un jardin avec zones numérotées</li>
+<li>Tableau de correspondance outil-zone</li>
+</ul>
+<br>
+#### 🔨 Instructions de Construction
+<ol>
+<li><strong>Préparation</strong> :</li>
+</ul>
+<p>   - Sélectionner 8 outils représentatifs</p>
+<p>   - Créer les cartes de fonctions</p>
+<p>   - Dessiner le schéma du jardin avec zones</p>
+<br>
+<ol>
+<li><strong>Assemblage</strong> :</li>
+</ul>
+<p>   - Disposer les outils sur un râtelier</p>
+<p>   - Mélanger les cartes de fonctions</p>
+<p>   - Préparer le schéma du jardin</p>
+<br>
+<ol>
+<li><strong>Installation</strong> :</li>
+</ul>
+<p>   - Installer dans la cabane du jardinier</p>
+<p>   - Accrocher le râtelier à hauteur accessible</p>
+<p>   - Placer le schéma bien visible</p>
+<br>
+#### 📍 Mise en Place sur Site
+<ul>
+<li><strong>Emplacement</strong> : Cabane du jardinier</li>
+<li><strong>Orientation</strong> : Outils accessibles, schéma visible</li>
+<li><strong>Sécurisation</strong> : Fixer les outils pour éviter les chutes</li>
+<li><strong>Test</strong> : Vérifier que l'association est logique</li>
+</ul>
+<br>
+#### 💡 Indices et Solution
+<ul>
+<li><strong>Indices niveau 1</strong> : "Chaque outil a sa place, chaque geste son moment"</li>
+<li><strong>Indices niveau 2</strong> : "Suivez l'ordre logique du travail au jardin"</li>
+<li><strong>Solution complète</strong> : Bêche (préparation) → Râteau (nivellement) → Plantoir (plantation) → Arrosoir (arrosage) → Sécateur (taille) → Panier (récolte) → Code final</li>
+</ul>
+<br>
+#### 🔄 Variantes
+<ul>
+<li><strong>Version simplifiée</strong> : Utiliser seulement 5 outils</li>
+<li><strong>Version complexe</strong> : Ajouter des outils spécialisés</li>
+<li><strong>Adaptations</strong> : Utiliser des images d'outils</li>
+</ul>
+<br>
+#### ⚠️ Points d'Attention
+<ul>
+<li>S'assurer que les outils sont sécurisés</li>
+<li>Vérifier que les fonctions sont claires</li>
+<li>Prévoir des explications pour les non-initiés</li>
+</ul>
+<br>
+## 🎭 Animation et PNJ
+<br>
+### Rôle des PNJ
+<p>Le PNJ incarne un vieux jardinier sage qui connaît tous les secrets de la nature. Il guide les joueurs avec des proverbes de jardinier et des références aux cycles naturels.</p>
+<br>
+### Interactions Clés
+<ul>
+<li><strong>À l'arrivée</strong> : "Bienvenue dans mon verger ! Ici, la nature enseigne à qui sait l'écouter..."</li>
+<li><strong>Pendant les énigmes</strong> : Donne des conseils avec des métaphores naturelles</li>
+<li><strong>À la sortie</strong> : "Vous avez appris les secrets de la terre, vous êtes de vrais gardiens du verger !"</li>
+</ul>
+<br>
+### Phrases et Répliques Types
+<ul>
+<li>"Qui plante un arbre plante l'espoir"</li>
+<li>"Chaque fruit mûrit en son temps"</li>
+<li>"La terre ne ment jamais, elle récompense le travail patient"</li>
+<li>"Les saisons enseignent la patience et la persévérance"</li>
+</ul>
+<br>
+### Costumes et Accessoires PNJ
+<ul>
+<li>Salopette de jardinier ou pantalon de toile</li>
+<li>Chemise à carreaux ou pull en laine</li>
+<li>Chapeau de paille ou casquette</li>
+<li>Bottes de jardinage</li>
+<li>Panier en osier comme accessoire</li>
+<li>Gants de jardinage autour du cou</li>
+</ul>
+<br>
+## 🏗️ Installation Complète
+<br>
+### ⏰ Planning d'Installation
+<ul>
+<li><strong>J-7</strong> : Achat des fruits et matériel naturel</li>
+<li><strong>J-3</strong> : Construction des éléments en bois</li>
+<li><strong>J-1</strong> : Installation du décor et des arbres</li>
+<li><strong>J-0</strong> : Mise en place des fruits et tests finaux</li>
+</ul>
+<br>
+### 👥 Équipe Nécessaire
+<ul>
+<li><strong>Responsable installation</strong> : 1 personne (connaissances jardinage)</li>
+<li><strong>Assistants</strong> : 2-3 personnes</li>
+<li><strong>Compétences requises</strong> : Bricolage, sens artistique, notions de jardinage</li>
+</ul>
+<br>
+### 🔧 Étapes d'Installation
+<br>
+#### 1. Préparation du Lieu (60 min)
+<ul>
+<li>[ ] Nettoyer et délimiter l'espace verger</li>
+<li>[ ] Vérifier la sécurité du terrain</li>
+<li>[ ] Marquer les emplacements des "arbres"</li>
+</ul>
+<br>
+#### 2. Installation des Structures (120 min)
+<ul>
+<li>[ ] Monter les panneaux d'arbres fruitiers</li>
+<li>[ ] Construire la cabane du jardinier</li>
+<li>[ ] Installer les supports et râteliers</li>
+<li>[ ] Disposer les bacs et jardinières</li>
+</ul>
+<br>
+#### 3. Décoration et Ambiance (90 min)
+<ul>
+<li>[ ] Accrocher les fruits artificiels aux arbres</li>
+<li>[ ] Disposer les feuillages d'automne</li>
+<li>[ ] Placer la paille et les éléments naturels</li>
+<li>[ ] Installer l'éclairage d'ambiance</li>
+</ul>
+<br>
+#### 4. Installation des Énigmes (90 min)
+<ul>
+<li>[ ] Préparer l'énigme des variétés (30 min)</li>
+<li>[ ] Installer l'énigme des saisons (30 min)</li>
+<li>[ ] Mettre en place l'énigme des outils (30 min)</li>
+<li>[ ] Tests complets de toutes les énigmes</li>
+</ul>
+<br>
+#### 5. Finalisation (30 min)
+<ul>
+<li>[ ] Vérification générale de sécurité</li>
+<li>[ ] Test du parcours complet</li>
+<li>[ ] Briefing de l'équipe PNJ</li>
+<li>[ ] Préparation des solutions de secours</li>
+</ul>
+<br>
+## ✅ Checklist de Préparation
+<br>
+### 📦 Matériel
+<ul>
+<li>[ ] Tous les fruits (artificiels et vrais) sont prêts</li>
+<li>[ ] Les outils de jardinage sont sécurisés</li>
+<li>[ ] Les cartes et supports sont imprimés</li>
+<li>[ ] Le matériel de décoration est complet</li>
+</ul>
+<br>
+### 🏗️ Installation
+<ul>
+<li>[ ] Les "arbres" sont installés et stables</li>
+<li>[ ] La cabane du jardinier est fonctionnelle</li>
+<li>[ ] L'ambiance de verger est créée</li>
+<li>[ ] Toutes les énigmes sont en place et testées</li>
+</ul>
+<br>
+### 👥 Équipe
+<ul>
+<li>[ ] Le PNJ connaît les bases du jardinage</li>
+<li>[ ] Le costume de jardinier est prêt et authentique</li>
+<li>[ ] Toutes les solutions sont maîtrisées</li>
+<li>[ ] Les rotations sont organisées</li>
+</ul>
+<br>
+### 🔧 Technique
+<ul>
+<li>[ ] L'éclairage d'ambiance fonctionne</li>
+<li>[ ] Les structures sont stables et sécurisées</li>
+<li>[ ] Les fruits sont bien fixés aux arbres</li>
+<li>[ ] Les outils sont sécurisés et accessibles</li>
+</ul>
+<br>
+## 🚨 Gestion des Problèmes
+<br>
+### Problèmes Courants
+<ol>
+<li><strong>Fruits qui tombent des arbres</strong></li>
+</ul>
+<p>   - <strong>Cause</strong> : Fixation insuffisante ou manipulation</p>
+<p>   - <strong>Solution</strong> : Refixer avec du fil de fer ou colle forte</p>
+<br>
+<ol>
+<li><strong>Outils qui disparaissent</strong></li>
+</ul>
+<p>   - <strong>Cause</strong> : Joueurs qui les emportent par mégarde</p>
+<p>   - <strong>Solution</strong> : Attacher les outils avec des cordes discrètes</p>
+<br>
+<ol>
+<li><strong>Cartes qui s'abîment avec l'humidité</strong></li>
+</ul>
+<p>   - <strong>Cause</strong> : Environnement extérieur ou semi-extérieur</p>
+<p>   - <strong>Solution</strong> : Plastifier toutes les cartes importantes</p>
+<br>
+### Solutions de Secours
+<ul>
+<li><strong>Plan B énigme variétés</strong> : Donner directement le code "GRAINES"</li>
+<li><strong>Plan B énigme saisons</strong> : Utiliser un calendrier classique comme aide</li>
+<li><strong>Plan B énigme outils</strong> : Expliquer oralement l'usage de chaque outil</li>
+</ul>
+<br>
+### Contacts d'Urgence
+<ul>
+<li><strong>Responsable technique</strong> : [Numéro à compléter]</li>
+<li><strong>Responsable sécurité</strong> : [Numéro à compléter]</li>
+</ul>
+<br>
+## 📝 Notes Post-Événement
+<br>
+### Retours d'Expérience
+<p>[Section à remplir après l'événement]</p>
+<ul>
+<li>Appréciation de l'ambiance naturelle</li>
+<li>Facilité de compréhension des énigmes</li>
+<li>Résistance du matériel aux conditions extérieures</li>
+<li>Suggestions d'amélioration</li>
+</ul>
+<br>
+### Améliorations Proposées
+<p>[Idées d'amélioration pour les prochaines éditions]</p>
+<ul>
+<li>Ajout de vrais arbres fruitiers (si possible)</li>
+<li>Énigmes sur les insectes et la biodiversité</li>
+<li>Atelier de plantation en bonus</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<p><em>Guide de préparation créé le 24/05/2025 - Version 1.0</em></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Malvinaland - Documentation</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/documentation/">Documentation</a> |
+        <a href="/content/narration/">Narration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation - Malvinaland</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .doc-header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+    }
+    
+    .doc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .doc-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-left: 4px solid var(--primary-color);
+    }
+    
+    .doc-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+    
+    .doc-card h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .doc-card .icon {
+      font-size: 1.5em;
+    }
+    
+    .doc-card p {
+      margin-bottom: 1rem;
+      color: #666;
+    }
+    
+    .doc-card a {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    
+    .doc-card a:hover {
+      background-color: var(--link-hover-color);
+    }
+    
+    .quick-links {
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .quick-links h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+    
+    .quick-links ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .quick-links li {
+      margin: 0.5rem 0;
+    }
+    
+    .quick-links a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .quick-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/">🏠 Accueil</a></li>
+          <li><a href="/content/carte/">🗺️ Carte</a></li>
+          <li><a href="/documentation/" class="active">📖 Documentation</a></li>
+          <li><a href="/content/narration/">📚 Narration</a></li>
+          <li><a href="/content/personnages/">👥 Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">🔑 Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">🚪 Déconnexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/">🏠 Accueil</a></li>
+          <li><a href="/content/carte/">🗺️ Carte</a></li>
+          <li><a href="/documentation/" class="active">📖 Documentation</a></li>
+          <li><a href="/content/narration/">📚 Narration</a></li>
+          <li><a href="/content/personnages/">👥 Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">🔑 Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">🚪 Déconnexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <div class="doc-header">
+        <h1>📖 Documentation Malvinaland</h1>
+        <p>Tout ce que vous devez savoir pour organiser et participer au jeu de piste immersif</p>
+      </div>
+
+      <div class="quick-links">
+        <h3>🚀 Démarrage rapide</h3>
+        <ul>
+          <li><a href="GUIDE_DEMARRAGE_RAPIDE.html">Guide de démarrage rapide</a> - Commencez ici !</li>
+          <li><a href="MANUEL_ADMINISTRATEUR.html">Manuel administrateur</a> - Pour les organisateurs</li>
+          <li><a href="LISTE_GUIDES_CREES.html">Liste complète des guides</a> - Vue d'ensemble</li>
+        </ul>
+      </div>
+
+      <div class="doc-grid">
+        <div class="doc-card">
+          <h3><span class="icon">👨‍💼</span>Pour les Organisateurs</h3>
+          <p>Guides complets pour organiser et administrer le jeu de piste Malvinaland.</p>
+          <a href="MANUEL_ADMINISTRATEUR.html">Manuel Administrateur</a>
+        </div>
+
+        <div class="doc-card">
+          <h3><span class="icon">🎭</span>Gestion des PNJ</h3>
+          <p>Guide complet pour incarner et gérer les personnages non-joueurs du jeu.</p>
+          <a href="GUIDE_PNJ_COMPLET.html">Guide PNJ</a>
+        </div>
+
+        <div class="doc-card">
+          <h3><span class="icon">🏗️</span>Préparation des Mondes</h3>
+          <p>Guides détaillés pour préparer chaque monde du jeu de piste.</p>
+          <a href="guides-preparation/">Guides de Préparation</a>
+        </div>
+
+        <div class="doc-card">
+          <h3><span class="icon">🔧</span>Maintenance</h3>
+          <p>Guide simplifié pour maintenir et dépanner le système Malvinaland.</p>
+          <a href="GUIDE_MAINTENANCE_SIMPLIFIE.html">Guide Maintenance</a>
+        </div>
+
+        <div class="doc-card">
+          <h3><span class="icon">🆘</span>Résolution de Problèmes</h3>
+          <p>Solutions aux problèmes courants et procédures de dépannage.</p>
+          <a href="GUIDE_RESOLUTION_PROBLEMES.html">Guide de Résolution</a>
+        </div>
+
+        <div class="doc-card">
+          <h3><span class="icon">📋</span>Vue d'Ensemble</h3>
+          <p>Liste complète de tous les guides créés et leur utilisation.</p>
+          <a href="LISTE_GUIDES_CREES.html">Liste des Guides</a>
+        </div>
+      </div>
+
+      <div class="quick-links">
+        <h3>🌍 Guides par Monde</h3>
+        <ul>
+          <li><a href="guides-preparation/GUIDE_GRANGE.html">🌾 Monde de la Grange</a></li>
+          <li><a href="guides-preparation/GUIDE_LINGE.html">🧵 Monde du Linge</a></li>
+          <li><a href="guides-preparation/GUIDE_JEUX.html">🎮 Monde des Jeux</a></li>
+          <li><a href="guides-preparation/GUIDE_VERGER.html">🌳 Monde du Verger</a></li>
+          <li><a href="guides-preparation/TEMPLATE_GUIDE_MONDE.html">📝 Template pour autres mondes</a></li>
+        </ul>
+      </div>
+
+      <div class="quick-links">
+        <h3>ℹ️ Informations importantes</h3>
+        <p>Cette documentation a été créée pour faciliter l'organisation et la participation au jeu de piste Malvinaland. Elle contient tous les éléments nécessaires pour :</p>
+        <ul>
+          <li>Organiser une session de jeu</li>
+          <li>Préparer les différents mondes</li>
+          <li>Gérer les personnages non-joueurs</li>
+          <li>Résoudre les problèmes techniques</li>
+          <li>Maintenir le système</li>
+        </ul>
+        <p><strong>Commencez par le <a href="GUIDE_DEMARRAGE_RAPIDE.html">Guide de démarrage rapide</a> si c'est votre première fois !</strong></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 24/05/2025 Malvinaland - Documentation</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/documentation/">Documentation</a> |
+        <a href="/content/narration/">Narration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+</body>
+</html>

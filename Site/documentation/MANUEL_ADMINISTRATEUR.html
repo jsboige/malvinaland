@@ -1,0 +1,675 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MANUEL_ADMINISTRATEUR - Malvinaland</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .doc-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    
+    .doc-content h1 {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .doc-content h2 {
+      color: var(--secondary-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    
+    .doc-content h3 {
+      color: var(--primary-color);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .doc-content pre {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 4px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    
+    .doc-content code {
+      background: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .doc-content blockquote {
+      border-left: 4px solid var(--primary-color);
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #f8f9fa;
+      font-style: italic;
+    }
+    
+    .doc-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    .doc-content th,
+    .doc-content td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    
+    .doc-content th {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .doc-content ul,
+    .doc-content ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+    
+    .doc-content li {
+      margin: 0.5rem 0;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: var(--link-hover-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <div class="doc-content">
+        <a href="/documentation/" class="back-link">â† Retour Ã  la documentation</a>
+        # Manuel Administrateur/Organisateur Malvinaland
+<br>
+## 📋 Table des Matières
+<br>
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#structure-du-projet">Structure du Projet</a></li>
+<li><a href="#mise-à-jour-du-contenu">Mise à Jour du Contenu</a></li>
+<li><a href="#génération-et-déploiement">Génération et Déploiement</a></li>
+<li><a href="#gestion-des-pnj">Gestion des PNJ</a></li>
+<li><a href="#maintenance-courante">Maintenance Courante</a></li>
+<li><a href="#résolution-de-problèmes">Résolution de Problèmes</a></li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Introduction
+<br>
+<p>Ce manuel s'adresse aux administrateurs et organisateurs de Malvinaland qui souhaitent gérer le contenu du site, déployer les mises à jour et maintenir le système. Il est conçu pour être accessible aux personnes non-techniques tout en fournissant les informations nécessaires pour une gestion autonome.</p>
+<br>
+### 🎯 Objectifs de ce Manuel
+<ul>
+<li>Comprendre la structure du projet</li>
+<li>Modifier et ajouter du contenu (mondes, énigmes, personnages)</li>
+<li>Déployer le site sur le serveur</li>
+<li>Gérer les accès PNJ</li>
+<li>Effectuer la maintenance de base</li>
+</ul>
+<br>
+### 🟢 Niveau de Difficulté
+<p>Ce manuel est conçu pour être accessible aux débutants. Les sections avancées sont clairement marquées.</p>
+<br>
+<p>---</p>
+<br>
+## Structure du Projet
+<br>
+### 📁 Vue d'Ensemble des Dossiers
+<br>
+<p>Le projet Malvinaland est organisé en plusieurs dossiers principaux :</p>
+<br>
+<p>``<code></p>
+<p>malvinaland/</p>
+<p>├── 📁 contenu/              # ✏️ CONTENU À MODIFIER</p>
+<p>│   ├── index.md             # Page d'accueil</p>
+<p>│   ├── carte.md             # Page de la carte</p>
+<p>│   ├── narration.md         # Narration générale</p>
+<p>│   ├── login.md             # Page de connexion</p>
+<p>│   └── mondes/              # Contenu des mondes</p>
+<p>│       ├── assemblee/</p>
+<p>│       ├── damier/</p>
+<p>│       └── ...</p>
+<p>├── 📁 documentation/        # 📚 CETTE DOCUMENTATION</p>
+<p>├── 📁 guides/              # 📖 Guides simplifiés</p>
+<p>├── 📁 outils-techniques/   # 🔧 Scripts simplifiés</p>
+<p>├── 📁 scripts/             # ⚙️ Scripts avancés</p>
+<p>├── 📁 src/                 # 🏗️ Code source (généré automatiquement)</p>
+<p>├── 📁 site/                # 🌐 Site final (généré automatiquement)</p>
+<p>├── 📁 ressources/          # 🖼️ Images haute résolution</p>
+<p>└── 📁 templates/           # 📝 Modèles pour nouveau contenu</p>
+<p></code>`<code></p>
+<br>
+### 🎯 Dossiers Importants pour les Administrateurs
+<br>
+#### 📁 </code>contenu/<code> - <strong>LE PLUS IMPORTANT</strong>
+<p>C'est ici que vous modifiez tout le contenu visible sur le site :</p>
+<ul>
+<li><strong>Pages principales</strong> : </code>index.md<code>, </code>carte.md<code>, </code>narration.md<code></li>
+<li><strong>Mondes</strong> : </code>contenu/mondes/[nom-du-monde]/index.md<code></li>
+<li><strong>Contenu organisateurs</strong> : </code>contenu/organisateurs/<code></li>
+</ul>
+<br>
+#### 📁 </code>templates/<code>
+<p>Modèles pour créer du nouveau contenu :</p>
+<ul>
+<li></code>nouveau-monde.md<code> - Structure pour un nouveau monde</li>
+<li></code>nouvelle-enigme.md<code> - Structure pour une nouvelle énigme</li>
+</ul>
+<br>
+#### 📁 </code>outils-techniques/<code>
+<p>Scripts simplifiés pour les tâches courantes :</p>
+<ul>
+<li></code>deploy-site-simple.ps1<code> - Voir le site en local</li>
+<li></code>clean-repository-simple.ps1<code> - Nettoyer le projet</li>
+</ul>
+<br>
+#### 📁 </code>ressources/<code>
+<p>Images en haute résolution pour le site.</p>
+<br>
+### 🔍 Fichiers de Configuration Clés
+<br>
+<ul>
+<li><strong></code>src/_data/mondes.js<code></strong> - Liste des mondes disponibles (à modifier lors d'ajout de monde)</li>
+<li><strong></code>src/_data/site.js<code></strong> - Configuration générale du site</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Mise à Jour du Contenu
+<br>
+### 🟢 Modifier le Contenu Existant
+<br>
+#### Modifier un Monde
+<ol>
+<li><strong>Localiser le fichier</strong> : </code>contenu/mondes/[nom-du-monde]/index.md<code></li>
+<li><strong>Ouvrir avec un éditeur de texte</strong> (Notepad++, VS Code, ou même Bloc-notes)</li>
+<li><strong>Modifier le contenu</strong> en respectant la structure Markdown</li>
+<li><strong>Sauvegarder le fichier</strong></li>
+</ul>
+<br>
+#### Structure d'un Fichier de Monde
+<p></code>`<code>markdown</p>
+<p>---</p>
+<p>title: "Nom du Monde"</p>
+<p>description: "Description courte"</p>
+<p>layout: "monde"</p>
+<p>---</p>
+<br>
+# Nom du Monde
+<br>
+## Introduction
+<p>Description générale du monde...</p>
+<br>
+## Ambiance et Atmosphère
+<p>Description de l'ambiance...</p>
+<br>
+## Histoire et Contexte
+<p>Contexte narratif...</p>
+<br>
+<p><div class="organisateurs-only"></p>
+<br>
+## Notes pour les Organisateurs
+<p>Informations réservées aux organisateurs...</p>
+<br>
+### Énigmes
+<br>
+#### Énigme 1 : Nom de l'énigme
+<p><strong>Objectif :</strong> ...</p>
+<p><strong>Matériel :</strong> ...</p>
+<p><strong>Mise en place :</strong> ...</p>
+<p><strong>Solution :</strong> ...</p>
+<br>
+<p></div></p>
+<p></code>`<code></p>
+<br>
+#### Modifier les Pages Principales
+<ul>
+<li><strong>Page d'accueil</strong> : </code>contenu/index.md<code></li>
+<li><strong>Carte interactive</strong> : </code>contenu/carte.md<code></li>
+<li><strong>Narration générale</strong> : </code>contenu/narration.md<code></li>
+</ul>
+<br>
+### 🟡 Ajouter du Nouveau Contenu
+<br>
+#### Ajouter un Nouveau Monde
+<br>
+<ol>
+<li><strong>Créer le dossier</strong> : </code>contenu/mondes/[nouveau-monde]/<code></li>
+<li><strong>Copier le template</strong> : Copier </code>templates/nouveau-monde.md<code> vers </code>contenu/mondes/[nouveau-monde]/index.md<code></li>
+<li><strong>Remplir le contenu</strong> selon la structure fournie</li>
+<li><strong>Mettre à jour la liste des mondes</strong> dans </code>src/_data/mondes.js<code> :</li>
+</ul>
+<br>
+<p></code>`<code>javascript</p>
+<p>// Ajouter votre monde à la liste</p>
+<p>{</p>
+<p>  id: 'nouveau-monde',</p>
+<p>  title: 'Nom du Nouveau Monde',</p>
+<p>  description: 'Description courte',</p>
+<p>  path: '/mondes/nouveau-monde/'</p>
+<p>}</p>
+<p></code>`<code></p>
+<br>
+#### Ajouter une Énigme à un Monde Existant
+<br>
+<ol>
+<li><strong>Ouvrir le fichier du monde</strong> : </code>contenu/mondes/[nom-du-monde]/index.md<code></li>
+<li><strong>Utiliser le template d'énigme</strong> de </code>templates/nouvelle-enigme.md<code></li>
+<li><strong>Ajouter l'énigme</strong> dans la section </code><div class="organisateurs-only"><code></li>
+</ul>
+<br>
+### 🖼️ Gestion des Images
+<br>
+#### Ajouter des Images
+<ol>
+<li><strong>Placer l'image</strong> dans le dossier </code>ressources/<code></li>
+<li><strong>Référencer dans le Markdown</strong> :</li>
+</ul>
+<p></code>`<code>markdown</p>
+<p>!<a href="../../../ressources/nom-image.jpg">Description de l'image</a></p>
+<p></code>`<code></p>
+<br>
+#### Optimisation des Images
+<ul>
+<li>Utilisez des formats web (JPG, PNG, WebP)</li>
+<li>Taille recommandée : maximum 1920px de largeur</li>
+<li>Pour optimiser automatiquement : exécutez </code>outils-techniques/optimize-images.js<code></li>
+</ul>
+<br>
+### ✍️ Syntaxe Markdown Essentielle
+<br>
+<p></code>`<code>markdown</p>
+# Titre Principal
+## Sous-titre
+### Sous-sous-titre
+<br>
+<p><strong>Texte en gras</strong></p>
+<p><em>Texte en italique</em></p>
+<br>
+<ul>
+<li>Liste à puces</li>
+<li>Élément 2</li>
+</ul>
+<br>
+<ol>
+<li>Liste numérotée</li>
+<li>Élément 2</li>
+</ul>
+<br>
+<p><a href="https://exemple.com">Lien</a></p>
+<br>
+<p>!<a href="chemin/vers/image.jpg">Image</a></p>
+<br>
+<p>> Citation ou note importante</p>
+<br>
+<p></code>Code ou commande<code></p>
+<br>
+<p><div class="organisateurs-only"></p>
+<p>Contenu visible uniquement par les organisateurs</p>
+<p></div></p>
+<p></code>`<code></p>
+<br>
+<p>---</p>
+<br>
+## Génération et Déploiement
+<br>
+### 🔄 Comprendre le Processus
+<br>
+<p>Le site Malvinaland fonctionne en deux étapes :</p>
+<ol>
+<li><strong>Génération</strong> : Le contenu de </code>contenu/<code> et </code>src/<code> est transformé en site web dans </code>site/<code></li>
+<li><strong>Déploiement</strong> : Le contenu de </code>site/<code> est copié sur le serveur IIS</li>
+</ul>
+<br>
+### 🟢 Voir le Site en Local (Test)
+<br>
+<p>Pour tester vos modifications avant de les publier :</p>
+<br>
+<ol>
+<li><strong>Ouvrir PowerShell</strong> dans le dossier du projet</li>
+<li><strong>Exécuter</strong> :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\deploy-site-simple.ps1</p>
+<p></code>`<code></p>
+<ol>
+<li><strong>Ouvrir le navigateur</strong> à l'adresse indiquée (généralement </code>http://localhost:8080<code>)</li>
+</ul>
+<br>
+### 🟡 Déployer sur le Serveur IIS
+<br>
+#### Déploiement Automatique (Recommandé)
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\deploy-iis-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+#### Vérification Post-Déploiement
+<ol>
+<li><strong>Vérifier que le site fonctionne</strong> en visitant l'URL de production</li>
+<li><strong>Tester la connexion PNJ</strong> avec les identifiants habituels</li>
+<li><strong>Vérifier quelques pages de mondes</strong></li>
+</ul>
+<br>
+### 🔴 Déploiement Avancé
+<br>
+<p>Pour les utilisateurs expérimentés, des scripts plus avancés sont disponibles :</p>
+<ul>
+<li></code>scripts/deploy-iis-improved.ps1<code> - Déploiement avec vérifications</li>
+<li></code>scripts/deploy-iis-admin.ps1<code> - Déploiement avec droits administrateur</li>
+</ul>
+<br>
+### ⚠️ Que Faire en Cas de Problème
+<br>
+<ol>
+<li><strong>Vérifier les fichiers</strong> : Assurez-vous que tous les fichiers sont présents dans </code>site/<code></li>
+<li><strong>Redémarrer IIS</strong> (si vous avez les droits) :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>iisreset</p>
+<p></code>`<code></p>
+<ol>
+<li><strong>Vider le cache du navigateur</strong></li>
+<li><strong>Consulter les logs</strong> dans le gestionnaire IIS</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Gestion des PNJ
+<br>
+### 🎭 Interface PNJ
+<br>
+<p>Les PNJ (Personnages Non-Joueurs) ont accès à une interface spéciale pour consulter les informations organisateurs.</p>
+<br>
+#### Accès PNJ
+<ul>
+<li><strong>URL</strong> : </code>https://malvinaland.myia.io<code></li>
+<li><strong>Identifiant</strong> : </code>pnj<code></li>
+<li><strong>Mot de passe</strong> : </code>malvina2025<code></li>
+</ul>
+<br>
+#### Fonctionnalités PNJ
+<ul>
+<li><strong>Dashboard</strong> : Vue d'ensemble des mondes et énigmes</li>
+<li><strong>Fiches détaillées</strong> : Informations spécifiques pour chaque PNJ</li>
+<li><strong>Mode urgence</strong> : Accès rapide aux informations critiques</li>
+<li><strong>Recherche</strong> : Filtrage par monde, énigme ou mot-clé</li>
+</ul>
+<br>
+### 🔧 Gestion des Fiches PNJ
+<br>
+#### Modifier les Fiches PNJ
+<p>Les fiches PNJ sont stockées dans </code>contenu/organisateurs/pnj/<code></p>
+<br>
+#### Ajouter une Nouvelle Fiche PNJ
+<ol>
+<li><strong>Créer un fichier</strong> : </code>contenu/organisateurs/pnj/[nom-pnj].md<code></li>
+<li><strong>Utiliser la structure</strong> :</li>
+</ul>
+<p></code>`<code>markdown</p>
+<p>---</p>
+<p>title: "Nom du PNJ"</p>
+<p>role: "Rôle du personnage"</p>
+<p>monde: "monde-associe"</p>
+<p>---</p>
+<br>
+# Nom du PNJ
+<br>
+## Rôle et Objectifs
+<p>Description du rôle...</p>
+<br>
+## Informations Clés
+<ul>
+<li>Information 1</li>
+<li>Information 2</li>
+</ul>
+<br>
+## Interactions avec les Joueurs
+<p>Instructions pour les interactions...</p>
+<br>
+## Phrases et Répliques Types
+<ul>
+<li>"Phrase d'accueil"</li>
+<li>"Phrase d'aide"</li>
+</ul>
+<br>
+## Matériel et Accessoires
+<p>Liste du matériel nécessaire...</p>
+<p></code>`<code></p>
+<br>
+### 🔐 Gestion des Accès
+<br>
+#### Identifiants de Test
+<p>Pour tester l'interface administrateur :</p>
+<ul>
+<li><strong>Identifiant</strong> : </code>admin_malvina<code></li>
+<li><strong>Mot de passe</strong> : </code>Malv1n@2025!<code></li>
+</ul>
+<br>
+#### Modifier les Identifiants
+<p>Les identifiants sont configurés dans le code source. Pour les modifier, contactez l'équipe technique.</p>
+<br>
+<p>---</p>
+<br>
+## Maintenance Courante
+<br>
+### 🧹 Nettoyage Régulier
+<br>
+#### Nettoyage Simple (Recommandé chaque semaine)
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\clean-repository-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+<p>Cette commande :</p>
+<ul>
+<li>Supprime les fichiers temporaires</li>
+<li>Nettoie les caches</li>
+<li>Organise les fichiers</li>
+</ul>
+<br>
+#### Nettoyage Périodique (Recommandé chaque mois)
+<p></code>`<code>powershell</p>
+<p>.\scripts\clean-repository-periodic.ps1</p>
+<p></code>`<code></p>
+<br>
+### 🔍 Vérifications de Routine
+<br>
+#### Vérification de la Santé du Projet
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\verify-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+#### Vérification des Images Manquantes
+<p></code>`<code>powershell</p>
+<p>.\scripts\identify-missing-images.ps1</p>
+<p></code>`<code></p>
+<br>
+### 📊 Optimisation
+<br>
+#### Optimisation des Images
+<p></code>`<code>powershell</p>
+<p>node .\scripts\optimize-images.js</p>
+<p></code>`<code></p>
+<br>
+#### Optimisation de la Configuration IIS
+<p></code>`<code>powershell</p>
+<p>.\scripts\optimize-iis-config.ps1</p>
+<p></code>`<code></p>
+<br>
+### 📝 Bonnes Pratiques
+<br>
+<ol>
+<li><strong>Sauvegarde régulière</strong> : Sauvegardez le dossier </code>contenu/<code> régulièrement</li>
+<li><strong>Test avant déploiement</strong> : Toujours tester en local avant de déployer</li>
+<li><strong>Nettoyage périodique</strong> : Exécutez les scripts de nettoyage régulièrement</li>
+<li><strong>Vérification post-modification</strong> : Vérifiez que le site fonctionne après chaque modification importante</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Résolution de Problèmes
+<br>
+### 🚨 Problèmes Courants
+<br>
+#### Le Site ne se Charge Pas
+<ol>
+<li><strong>Vérifier IIS</strong> : Le service IIS est-il démarré ?</li>
+<li><strong>Vérifier les fichiers</strong> : Les fichiers sont-ils présents dans </code>site/<code> ?</li>
+<li><strong>Redémarrer IIS</strong> :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>iisreset</p>
+<p></code>`<code></p>
+<br>
+#### Les Modifications ne s'Affichent Pas
+<ol>
+<li><strong>Régénérer le site</strong> :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\deploy-site-simple.ps1</p>
+<p></code>`<code></p>
+<ol>
+<li><strong>Vider le cache du navigateur</strong> (Ctrl+F5)</li>
+<li><strong>Redéployer</strong> :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\deploy-iis-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+#### Erreur lors du Déploiement
+<ol>
+<li><strong>Vérifier les droits</strong> : Avez-vous les droits d'écriture sur le serveur ?</li>
+<li><strong>Vérifier l'espace disque</strong> : Y a-t-il suffisamment d'espace ?</li>
+<li><strong>Utiliser le déploiement admin</strong> :</li>
+</ul>
+<p></code>`<code>powershell</p>
+<p>.\scripts\deploy-iis-admin.ps1</p>
+<p></code>`<code></p>
+<br>
+#### Les PNJ ne Peuvent pas se Connecter
+<ol>
+<li><strong>Vérifier les identifiants</strong> : </code>pnj<code> / </code>malvina2025<code></li>
+<li><strong>Vérifier l'URL</strong> : </code>https://malvinaland.myia.io<code></li>
+<li><strong>Tester avec les identifiants admin</strong> : </code>admin_malvina<code> / </code>Malv1n@2025!<code></li>
+</ul>
+<br>
+### 🆘 Contacts d'Urgence
+<br>
+<p>En cas de problème majeur :</p>
+<ol>
+<li><strong>Consulter</strong> le <a href="../GUIDE_MAINTENANCE.md">Guide de Maintenance Avancé</a></li>
+<li><strong>Contacter</strong> l'équipe technique</li>
+<li><strong>Documenter</strong> le problème pour améliorer ce guide</li>
+</ul>
+<br>
+### 📞 Support Technique
+<br>
+<p>Pour obtenir de l'aide :</p>
+<ul>
+<li><strong>Documentation avancée</strong> : Consultez </code>GUIDE_MAINTENANCE.md<code></li>
+<li><strong>Scripts de diagnostic</strong> : Utilisez </code>verify-repository-health.ps1`</li>
+<li><strong>Logs système</strong> : Consultez les logs IIS pour plus de détails</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## 📚 Ressources Supplémentaires
+<br>
+<ul>
+<li><strong><a href="GUIDE_DEMARRAGE_RAPIDE.md">Guide de Démarrage Rapide</a></strong> - Pour commencer rapidement</li>
+<li><strong><a href="guides-preparation/">Guides de Préparation</a></strong> - Préparation physique des mondes</li>
+<li><strong><a href="GUIDE_PNJ_COMPLET.md">Guide PNJ Complet</a></strong> - Gestion détaillée des PNJ</li>
+<li><strong><a href="../GUIDE_MAINTENANCE.md">Guide de Maintenance Avancé</a></strong> - Maintenance technique</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<p><em>Ce manuel est maintenu par l'équipe Malvinaland. Version mise à jour le 24/05/2025.</em></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Malvinaland - Documentation</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/documentation/">Documentation</a> |
+        <a href="/content/narration/">Narration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEMPLATE_GUIDE_MONDE - Malvinaland</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .doc-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    
+    .doc-content h1 {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .doc-content h2 {
+      color: var(--secondary-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    
+    .doc-content h3 {
+      color: var(--primary-color);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .doc-content pre {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 4px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    
+    .doc-content code {
+      background: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .doc-content blockquote {
+      border-left: 4px solid var(--primary-color);
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #f8f9fa;
+      font-style: italic;
+    }
+    
+    .doc-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    .doc-content th,
+    .doc-content td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    
+    .doc-content th {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .doc-content ul,
+    .doc-content ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+    
+    .doc-content li {
+      margin: 0.5rem 0;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: var(--link-hover-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <div class="doc-content">
+        <a href="/documentation/" class="back-link">â† Retour Ã  la documentation</a>
+        # Guide de Préparation - [NOM DU MONDE]
+<br>
+## 📋 Informations Générales
+<br>
+<ul>
+<li><strong>Nom du Monde</strong> : [Nom complet]</li>
+<li><strong>Thème</strong> : [Thème principal]</li>
+<li><strong>Durée estimée</strong> : [Temps de passage des joueurs]</li>
+<li><strong>Nombre de joueurs</strong> : [Capacité recommandée]</li>
+<li><strong>Niveau de difficulté</strong> : 🟢 Facile / 🟡 Moyen / 🔴 Difficile</li>
+</ul>
+<br>
+## 🎭 Vue d'Ensemble du Monde
+<br>
+### Description et Ambiance
+<p>[Description générale du monde, de son ambiance et de son atmosphère]</p>
+<br>
+### Histoire et Contexte
+<p>[Contexte narratif du monde dans l'univers Malvinaland]</p>
+<br>
+### Objectifs pour les Joueurs
+<p>[Ce que les joueurs doivent accomplir dans ce monde]</p>
+<br>
+## 🗺️ Plan d'Aménagement
+<br>
+### Schéma du Lieu
+<p>``<code></p>
+<p>[Dessiner un schéma simple du lieu avec :]</p>
+<ul>
+<li>Entrée/Sortie</li>
+<li>Zones d'énigmes</li>
+<li>Emplacements PNJ</li>
+<li>Zones de circulation</li>
+<li>Points d'attention sécurité</li>
+</ul>
+<p></code>``</p>
+<br>
+### Zones Principales
+<ol>
+<li><strong>Zone d'Accueil</strong> : [Description]</li>
+<li><strong>Zone Énigme 1</strong> : [Description]</li>
+<li><strong>Zone Énigme 2</strong> : [Description]</li>
+<li><strong>Zone de Sortie</strong> : [Description]</li>
+</ul>
+<br>
+### Flux de Circulation
+<p>[Comment les joueurs se déplacent dans l'espace]</p>
+<br>
+## 📦 Matériel Complet pour le Monde
+<br>
+### 🛠️ Matériel de Construction
+<ul>
+<li>[ ] [Élément 1] (quantité)</li>
+<li>[ ] [Élément 2] (quantité)</li>
+<li>[ ] [Élément 3] (quantité)</li>
+</ul>
+<br>
+### 🎨 Matériel de Décoration
+<ul>
+<li>[ ] [Élément décoratif 1]</li>
+<li>[ ] [Élément décoratif 2]</li>
+<li>[ ] [Élément décoratif 3]</li>
+</ul>
+<br>
+### 📄 Matériel à Imprimer
+<ul>
+<li>[ ] [Document 1] (nombre d'exemplaires)</li>
+<li>[ ] [Document 2] (nombre d'exemplaires)</li>
+<li>[ ] [Document 3] (nombre d'exemplaires)</li>
+</ul>
+<br>
+### 🔧 Outils Nécessaires
+<ul>
+<li>[ ] [Outil 1]</li>
+<li>[ ] [Outil 2]</li>
+<li>[ ] [Outil 3]</li>
+</ul>
+<br>
+### 💡 Matériel Électrique/Électronique
+<ul>
+<li>[ ] [Élément électrique 1]</li>
+<li>[ ] [Élément électrique 2]</li>
+</ul>
+<br>
+## 🧩 Énigmes Détaillées
+<br>
+### Énigme 1 : [Nom de l'énigme]
+<br>
+#### 🎯 Objectif
+<p>[Ce que les joueurs doivent accomplir]</p>
+<br>
+#### 📋 Matériel Spécifique
+<ul>
+<li>[Matériel 1]</li>
+<li>[Matériel 2]</li>
+<li>[Matériel 3]</li>
+</ul>
+<br>
+#### 🔨 Instructions de Construction
+<ol>
+<li><strong>Préparation</strong> :</li>
+</ul>
+<p>   - [Étape de préparation 1]</p>
+<p>   - [Étape de préparation 2]</p>
+<br>
+<ol>
+<li><strong>Assemblage</strong> :</li>
+</ul>
+<p>   - [Étape d'assemblage 1]</p>
+<p>   - [Étape d'assemblage 2]</p>
+<br>
+<ol>
+<li><strong>Installation</strong> :</li>
+</ul>
+<p>   - [Étape d'installation 1]</p>
+<p>   - [Étape d'installation 2]</p>
+<br>
+#### 📍 Mise en Place sur Site
+<ul>
+<li><strong>Emplacement</strong> : [Où placer l'énigme]</li>
+<li><strong>Orientation</strong> : [Comment orienter l'énigme]</li>
+<li><strong>Sécurisation</strong> : [Comment sécuriser l'installation]</li>
+<li><strong>Test</strong> : [Comment tester que l'énigme fonctionne]</li>
+</ul>
+<br>
+#### 💡 Indices et Solution
+<ul>
+<li><strong>Indices niveau 1</strong> : [Indices subtils]</li>
+<li><strong>Indices niveau 2</strong> : [Indices plus directs]</li>
+<li><strong>Solution complète</strong> : [Solution détaillée]</li>
+</ul>
+<br>
+#### 🔄 Variantes
+<ul>
+<li><strong>Version simplifiée</strong> : [Pour joueurs débutants]</li>
+<li><strong>Version complexe</strong> : [Pour joueurs expérimentés]</li>
+<li><strong>Adaptations</strong> : [Selon l'espace disponible]</li>
+</ul>
+<br>
+#### ⚠️ Points d'Attention
+<ul>
+<li>[Point de sécurité 1]</li>
+<li>[Point technique 1]</li>
+<li>[Point logistique 1]</li>
+</ul>
+<br>
+### Énigme 2 : [Nom de l'énigme]
+<p>[Répéter la même structure pour chaque énigme]</p>
+<br>
+## 🎭 Animation et PNJ
+<br>
+### Rôle des PNJ
+<p>[Description du rôle des PNJ dans ce monde]</p>
+<br>
+### Interactions Clés
+<ul>
+<li><strong>À l'arrivée</strong> : [Ce que fait le PNJ]</li>
+<li><strong>Pendant les énigmes</strong> : [Comment le PNJ aide/guide]</li>
+<li><strong>À la sortie</strong> : [Comment le PNJ conclut]</li>
+</ul>
+<br>
+### Phrases et Répliques Types
+<ul>
+<li>"Phrase d'accueil"</li>
+<li>"Phrase d'encouragement"</li>
+<li>"Phrase d'aide"</li>
+<li>"Phrase de conclusion"</li>
+</ul>
+<br>
+### Costumes et Accessoires PNJ
+<ul>
+<li>[Costume principal]</li>
+<li>[Accessoires nécessaires]</li>
+<li>[Maquillage si nécessaire]</li>
+</ul>
+<br>
+## 🏗️ Installation Complète
+<br>
+### ⏰ Planning d'Installation
+<ul>
+<li><strong>J-7</strong> : [Préparation matériel]</li>
+<li><strong>J-1</strong> : [Installation décor]</li>
+<li><strong>J-0</strong> : [Tests finaux et ajustements]</li>
+</ul>
+<br>
+### 👥 Équipe Nécessaire
+<ul>
+<li><strong>Responsable installation</strong> : 1 personne</li>
+<li><strong>Assistants</strong> : [Nombre] personnes</li>
+<li><strong>Compétences requises</strong> : [Compétences spécifiques]</li>
+</ul>
+<br>
+### 🔧 Étapes d'Installation
+<br>
+#### 1. Préparation du Lieu (30 min)
+<ul>
+<li>[ ] Nettoyer l'espace</li>
+<li>[ ] Vérifier la sécurité</li>
+<li>[ ] Marquer les emplacements</li>
+</ul>
+<br>
+#### 2. Installation du Décor (60 min)
+<ul>
+<li>[ ] [Étape décor 1]</li>
+<li>[ ] [Étape décor 2]</li>
+<li>[ ] [Étape décor 3]</li>
+</ul>
+<br>
+#### 3. Installation des Énigmes (90 min)
+<ul>
+<li>[ ] [Installation énigme 1]</li>
+<li>[ ] [Installation énigme 2]</li>
+<li>[ ] [Tests de fonctionnement]</li>
+</ul>
+<br>
+#### 4. Finalisation (30 min)
+<ul>
+<li>[ ] Vérification générale</li>
+<li>[ ] Test complet du parcours</li>
+<li>[ ] Briefing équipe</li>
+</ul>
+<br>
+## ✅ Checklist de Préparation
+<br>
+### 📦 Matériel
+<ul>
+<li>[ ] Tout le matériel est disponible</li>
+<li>[ ] Les impressions sont faites</li>
+<li>[ ] Les outils sont prêts</li>
+<li>[ ] Le matériel de secours est prévu</li>
+</ul>
+<br>
+### 🏗️ Installation
+<ul>
+<li>[ ] Le lieu est préparé</li>
+<li>[ ] Les énigmes sont installées</li>
+<li>[ ] Les tests sont concluants</li>
+<li>[ ] La sécurité est vérifiée</li>
+</ul>
+<br>
+### 👥 Équipe
+<ul>
+<li>[ ] Les PNJ sont briefés</li>
+<li>[ ] Les costumes sont prêts</li>
+<li>[ ] Les rôles sont distribués</li>
+<li>[ ] Le planning est communiqué</li>
+</ul>
+<br>
+### 🔧 Technique
+<ul>
+<li>[ ] L'électricité fonctionne (si nécessaire)</li>
+<li>[ ] L'éclairage est adapté</li>
+<li>[ ] Les mécanismes fonctionnent</li>
+<li>[ ] Les solutions de secours sont prêtes</li>
+</ul>
+<br>
+## 🚨 Gestion des Problèmes
+<br>
+### Problèmes Courants
+<ol>
+<li><strong>[Problème type 1]</strong></li>
+</ul>
+<p>   - <strong>Cause</strong> : [Cause probable]</p>
+<p>   - <strong>Solution</strong> : [Solution rapide]</p>
+<br>
+<ol>
+<li><strong>[Problème type 2]</strong></li>
+</ul>
+<p>   - <strong>Cause</strong> : [Cause probable]</p>
+<p>   - <strong>Solution</strong> : [Solution rapide]</p>
+<br>
+### Solutions de Secours
+<ul>
+<li><strong>Plan B énigme 1</strong> : [Alternative si l'énigme ne fonctionne pas]</li>
+<li><strong>Plan B énigme 2</strong> : [Alternative si l'énigme ne fonctionne pas]</li>
+</ul>
+<br>
+### Contacts d'Urgence
+<ul>
+<li><strong>Responsable technique</strong> : [Contact]</li>
+<li><strong>Responsable sécurité</strong> : [Contact]</li>
+</ul>
+<br>
+## 📝 Notes Post-Événement
+<br>
+### Retours d'Expérience
+<p>[Section à remplir après l'événement]</p>
+<ul>
+<li>Ce qui a bien fonctionné</li>
+<li>Ce qui peut être amélioré</li>
+<li>Suggestions pour la prochaine fois</li>
+</ul>
+<br>
+### Améliorations Proposées
+<p>[Idées d'amélioration pour les prochaines éditions]</p>
+<br>
+<p>---</p>
+<br>
+<p><em>Guide de préparation créé le [DATE] - Version [VERSION]</em></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Malvinaland - Documentation</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/documentation/">Documentation</a> |
+        <a href="/content/narration/">Narration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+</body>
+</html>

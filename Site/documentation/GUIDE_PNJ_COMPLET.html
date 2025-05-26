@@ -1,0 +1,769 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUIDE_PNJ_COMPLET - Malvinaland</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .doc-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    
+    .doc-content h1 {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .doc-content h2 {
+      color: var(--secondary-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    
+    .doc-content h3 {
+      color: var(--primary-color);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .doc-content pre {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 4px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    
+    .doc-content code {
+      background: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .doc-content blockquote {
+      border-left: 4px solid var(--primary-color);
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #f8f9fa;
+      font-style: italic;
+    }
+    
+    .doc-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    .doc-content th,
+    .doc-content td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    
+    .doc-content th {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .doc-content ul,
+    .doc-content ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+    
+    .doc-content li {
+      margin: 0.5rem 0;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: var(--link-hover-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <div class="doc-content">
+        <a href="/documentation/" class="back-link">â† Retour Ã  la documentation</a>
+        # Guide PNJ Complet - Malvinaland
+<br>
+## 📋 Table des Matières
+<br>
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#accès-à-linterface-pnj">Accès à l'Interface PNJ</a></li>
+<li><a href="#navigation-dans-le-dashboard">Navigation dans le Dashboard</a></li>
+<li><a href="#rôles-et-responsabilités">Rôles et Responsabilités</a></li>
+<li><a href="#gestion-des-interactions">Gestion des Interactions</a></li>
+<li><a href="#utilisation-des-fiches-pnj">Utilisation des Fiches PNJ</a></li>
+<li><a href="#mode-urgence">Mode Urgence</a></li>
+<li><a href="#bonnes-pratiques">Bonnes Pratiques</a></li>
+<li><a href="#résolution-de-problèmes">Résolution de Problèmes</a></li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Introduction
+<br>
+<p>Ce guide s'adresse à tous les PNJ (Personnages Non-Joueurs) de Malvinaland. Il vous permettra de maîtriser l'interface dédiée, de comprendre votre rôle et d'offrir la meilleure expérience possible aux joueurs.</p>
+<br>
+### 🎭 Qu'est-ce qu'un PNJ ?
+<p>Un PNJ est un personnage incarné par un membre de l'équipe organisatrice qui interagit avec les joueurs pour :</p>
+<ul>
+<li>Guider subtilement sans donner directement les solutions</li>
+<li>Maintenir l'immersion dans l'univers Malvinaland</li>
+<li>Apporter de l'aide en cas de blocage</li>
+<li>Enrichir l'expérience narrative</li>
+</ul>
+<br>
+### 🎯 Objectifs de ce Guide
+<ul>
+<li>Maîtriser l'interface technique PNJ</li>
+<li>Comprendre votre rôle dans chaque monde</li>
+<li>Savoir gérer les différentes situations</li>
+<li>Optimiser l'expérience joueur</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Accès à l'Interface PNJ
+<br>
+### 🔐 Connexion à l'Interface
+<br>
+#### Identifiants de Connexion
+<ul>
+<li><strong>URL</strong> : <code>https://malvinaland.myia.io</code></li>
+<li><strong>Identifiant</strong> : <code>pnj</code></li>
+<li><strong>Mot de passe</strong> : <code>malvina2025</code></li>
+</ul>
+<br>
+#### Première Connexion
+<ol>
+<li><strong>Ouvrir le navigateur</strong> sur votre smartphone ou tablette</li>
+<li><strong>Saisir l'URL</strong> : <code>https://malvinaland.myia.io</code></li>
+<li><strong>Entrer les identifiants</strong> :</li>
+</ul>
+<p>   - Login : <code>pnj</code></p>
+<p>   - Mot de passe : <code>malvina2025</code></p>
+<ol>
+<li><strong>Cliquer sur "Se connecter"</strong></li>
+<li><strong>Vérifier l'accès</strong> au dashboard PNJ</li>
+</ul>
+<br>
+#### Optimisation Smartphone
+<ul>
+<li><strong>Ajouter à l'écran d'accueil</strong> pour un accès rapide</li>
+<li><strong>Activer le mode plein écran</strong> pour une meilleure lisibilité</li>
+<li><strong>Vérifier la connexion internet</strong> avant chaque session</li>
+<li><strong>Garder le téléphone chargé</strong> pendant l'événement</li>
+</ul>
+<br>
+### 🔄 Gestion de Session
+<ul>
+<li><strong>Session automatique</strong> : Reste connecté pendant 4 heures</li>
+<li><strong>Déconnexion manuelle</strong> : Bouton "Déconnexion" en haut à droite</li>
+<li><strong>Reconnexion rapide</strong> : Les identifiants peuvent être sauvegardés</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Navigation dans le Dashboard
+<br>
+### 🏠 Page d'Accueil Dashboard
+<p>La page d'accueil vous donne une vue d'ensemble :</p>
+<ul>
+<li><strong>Mondes actifs</strong> : Liste des mondes en cours</li>
+<li><strong>Alertes</strong> : Notifications importantes</li>
+<li><strong>Votre statut</strong> : Monde assigné et rôle</li>
+<li><strong>Accès rapide</strong> : Liens vers vos fiches principales</li>
+</ul>
+<br>
+### 🗺️ Navigation par Monde
+<p>Chaque monde dispose de sa propre section :</p>
+<ul>
+<li><strong>Vue d'ensemble</strong> : Description et objectifs</li>
+<li><strong>Énigmes</strong> : Détail de chaque énigme avec solutions</li>
+<li><strong>Votre rôle</strong> : Instructions spécifiques à votre personnage</li>
+<li><strong>Phrases types</strong> : Répliques et expressions à utiliser</li>
+</ul>
+<br>
+### 🔍 Fonction Recherche
+<ul>
+<li><strong>Recherche globale</strong> : Barre de recherche en haut</li>
+<li><strong>Filtres</strong> : Par monde, par type d'énigme, par difficulté</li>
+<li><strong>Mots-clés</strong> : Recherche dans le contenu des fiches</li>
+<li><strong>Historique</strong> : Accès aux dernières consultations</li>
+</ul>
+<br>
+### 📱 Interface Mobile
+<p>L'interface est optimisée pour smartphone :</p>
+<ul>
+<li><strong>Menu hamburger</strong> : Navigation principale</li>
+<li><strong>Swipe</strong> : Navigation entre les sections</li>
+<li><strong>Zoom</strong> : Agrandissement du texte si nécessaire</li>
+<li><strong>Mode sombre</strong> : Disponible pour économiser la batterie</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Rôles et Responsabilités
+<br>
+### 🎭 Types de Rôles PNJ
+<br>
+#### 1. Guide/Gardien de Monde
+<ul>
+<li><strong>Responsabilité</strong> : Accueillir et orienter les joueurs</li>
+<li><strong>Interactions</strong> : Présentation du monde, conseils généraux</li>
+<li><strong>Phrases types</strong> : "Bienvenue dans...", "Attention à..."</li>
+</ul>
+<br>
+#### 2. Aide-Énigme
+<ul>
+<li><strong>Responsabilité</strong> : Assister sur des énigmes spécifiques</li>
+<li><strong>Interactions</strong> : Indices progressifs, déblocage en cas de difficulté</li>
+<li><strong>Phrases types</strong> : "Avez-vous pensé à...", "Parfois il faut..."</li>
+</ul>
+<br>
+#### 3. Personnage Narratif
+<ul>
+<li><strong>Responsabilité</strong> : Enrichir l'histoire et l'immersion</li>
+<li><strong>Interactions</strong> : Dialogues en character, révélations narratives</li>
+<li><strong>Phrases types</strong> : Selon le personnage incarné</li>
+</ul>
+<br>
+#### 4. PNJ Polyvalent
+<ul>
+<li><strong>Responsabilité</strong> : Adaptation selon les besoins</li>
+<li><strong>Interactions</strong> : Flexibilité selon la situation</li>
+<li><strong>Phrases types</strong> : Répertoire varié selon le contexte</li>
+</ul>
+<br>
+### 📋 Responsabilités Communes
+<br>
+#### Avant l'Arrivée des Joueurs
+<ul>
+<li>[ ] Consulter votre fiche PNJ du jour</li>
+<li>[ ] Vérifier les énigmes de votre monde</li>
+<li>[ ] Préparer votre costume et accessoires</li>
+<li>[ ] Tester l'accès à l'interface mobile</li>
+</ul>
+<br>
+#### Pendant l'Événement
+<ul>
+<li>[ ] Maintenir le character de votre personnage</li>
+<li>[ ] Observer discrètement les joueurs</li>
+<li>[ ] Intervenir au bon moment</li>
+<li>[ ] Consulter l'interface en cas de doute</li>
+</ul>
+<br>
+#### Après le Passage des Joueurs
+<ul>
+<li>[ ] Noter les observations importantes</li>
+<li>[ ] Signaler les problèmes techniques</li>
+<li>[ ] Préparer pour le groupe suivant</li>
+<li>[ ] Communiquer avec l'équipe si nécessaire</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Gestion des Interactions
+<br>
+### 🎯 Principes Fondamentaux
+<br>
+#### 1. Ne Jamais Donner Directement la Solution
+<ul>
+<li><strong>Utiliser des indices progressifs</strong> : Du plus subtil au plus direct</li>
+<li><strong>Poser des questions</strong> : "Avez-vous remarqué que..."</li>
+<li><strong>Orienter l'attention</strong> : "Regardez bien ici..."</li>
+<li><strong>Encourager la réflexion</strong> : "Qu'est-ce que cela vous évoque ?"</li>
+</ul>
+<br>
+#### 2. Maintenir l'Immersion
+<ul>
+<li><strong>Rester dans le character</strong> : Parler comme votre personnage</li>
+<li><strong>Utiliser le vocabulaire du monde</strong> : Termes appropriés au thème</li>
+<li><strong>Éviter les références modernes</strong> : Sauf si le monde le permet</li>
+<li><strong>Adapter votre gestuelle</strong> : Cohérente avec le personnage</li>
+</ul>
+<br>
+#### 3. Adapter au Niveau des Joueurs
+<ul>
+<li><strong>Observer avant d'agir</strong> : Évaluer leur progression</li>
+<li><strong>Adapter la difficulté</strong> : Plus ou moins d'aide selon les besoins</li>
+<li><strong>Respecter leur rythme</strong> : Ne pas précipiter</li>
+<li><strong>Encourager sans frustrer</strong> : Maintenir la motivation</li>
+</ul>
+<br>
+### 💬 Techniques d'Interaction
+<br>
+#### Indices Progressifs (Méthode des 3 Niveaux)
+<br>
+<p><strong>Niveau 1 - Indice Subtil</strong></p>
+<ul>
+<li>Attirer l'attention sans révéler</li>
+<li>"Il y a quelque chose d'intéressant par ici..."</li>
+<li>Gestes discrets vers la zone importante</li>
+</ul>
+<br>
+<p><strong>Niveau 2 - Indice Orienté</strong></p>
+<ul>
+<li>Donner une direction plus précise</li>
+<li>"Avez-vous pensé à regarder les couleurs ?"</li>
+<li>Questions qui orientent la réflexion</li>
+</ul>
+<br>
+<p><strong>Niveau 3 - Indice Direct</strong></p>
+<ul>
+<li>Donner une information claire sans la solution complète</li>
+<li>"Ces symboles correspondent à des lettres"</li>
+<li>Révéler une partie du mécanisme</li>
+</ul>
+<br>
+#### Gestion des Blocages
+<ol>
+<li><strong>Identifier le type de blocage</strong> :</li>
+</ul>
+<p>   - Incompréhension de la consigne</p>
+<p>   - Mauvaise piste suivie</p>
+<p>   - Manque de confiance</p>
+<p>   - Fatigue ou frustration</p>
+<br>
+<ol>
+<li><strong>Adapter votre intervention</strong> :</li>
+</ul>
+<p>   - Reformuler différemment</p>
+<p>   - Rediriger vers la bonne piste</p>
+<p>   - Encourager et rassurer</p>
+<p>   - Proposer une pause si nécessaire</p>
+<br>
+### 🚨 Situations Particulières
+<br>
+#### Joueurs Très Rapides
+<ul>
+<li><strong>Ne pas freiner</strong> leur progression naturelle</li>
+<li><strong>Enrichir l'expérience</strong> avec des détails narratifs</li>
+<li><strong>Préparer des défis bonus</strong> si disponibles</li>
+<li><strong>Maintenir l'intérêt</strong> jusqu'à la fin</li>
+</ul>
+<br>
+#### Joueurs en Difficulté
+<ul>
+<li><strong>Patience et bienveillance</strong> : Ne jamais montrer d'impatience</li>
+<li><strong>Décomposer les étapes</strong> : Simplifier l'approche</li>
+<li><strong>Valoriser les tentatives</strong> : "C'est une bonne idée, mais..."</li>
+<li><strong>Proposer des alternatives</strong> : Différentes façons d'aborder</li>
+</ul>
+<br>
+#### Groupes Mixtes
+<ul>
+<li><strong>Identifier les leaders</strong> : S'adresser à eux en priorité</li>
+<li><strong>Inclure tout le monde</strong> : Donner un rôle à chacun</li>
+<li><strong>Gérer les conflits</strong> : Rediriger vers l'énigme</li>
+<li><strong>Équilibrer les participations</strong> : Encourager les plus timides</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Utilisation des Fiches PNJ
+<br>
+### 📄 Structure d'une Fiche PNJ
+<br>
+#### Informations Générales
+<ul>
+<li><strong>Nom du personnage</strong> : Votre identité dans le monde</li>
+<li><strong>Rôle et fonction</strong> : Votre mission spécifique</li>
+<li><strong>Monde d'affectation</strong> : Où vous intervenez</li>
+<li><strong>Costume et accessoires</strong> : Description de votre apparence</li>
+</ul>
+<br>
+#### Contexte et Histoire
+<ul>
+<li><strong>Background du personnage</strong> : Son histoire personnelle</li>
+<li><strong>Relation au monde</strong> : Pourquoi il est là</li>
+<li><strong>Motivations</strong> : Ce qui guide ses actions</li>
+<li><strong>Secrets éventuels</strong> : Informations à révéler ou cacher</li>
+</ul>
+<br>
+#### Instructions Pratiques
+<ul>
+<li><strong>Énigmes à superviser</strong> : Vos responsabilités spécifiques</li>
+<li><strong>Moments d'intervention</strong> : Quand agir</li>
+<li><strong>Phrases et répliques</strong> : Votre répertoire de dialogues</li>
+<li><strong>Gestes et attitudes</strong> : Comment vous comporter</li>
+</ul>
+<br>
+### 🔍 Consultation Efficace
+<br>
+#### Avant l'Événement
+<ol>
+<li><strong>Lecture complète</strong> : Parcourir toute votre fiche</li>
+<li><strong>Mémorisation des éléments clés</strong> : Retenir l'essentiel</li>
+<li><strong>Préparation du costume</strong> : Rassembler les accessoires</li>
+<li><strong>Répétition mentale</strong> : Visualiser les interactions</li>
+</ul>
+<br>
+#### Pendant l'Événement
+<ol>
+<li><strong>Consultation rapide</strong> : Vérifier un détail spécifique</li>
+<li><strong>Recherche ciblée</strong> : Utiliser la fonction recherche</li>
+<li><strong>Mode discret</strong> : Consulter sans casser l'immersion</li>
+<li><strong>Mise à jour</strong> : Noter les observations importantes</li>
+</ul>
+<br>
+### 📱 Accès Mobile Optimisé
+<br>
+#### Navigation Rapide
+<ul>
+<li><strong>Favoris</strong> : Marquer vos sections importantes</li>
+<li><strong>Raccourcis</strong> : Accès direct aux énigmes de votre monde</li>
+<li><strong>Mode hors-ligne</strong> : Télécharger pour consultation sans réseau</li>
+<li><strong>Synchronisation</strong> : Mise à jour automatique des modifications</li>
+</ul>
+<br>
+#### Conseils d'Utilisation
+<ul>
+<li><strong>Luminosité adaptée</strong> : Réglage selon l'éclairage ambiant</li>
+<li><strong>Mode silencieux</strong> : Éviter les notifications parasites</li>
+<li><strong>Batterie de secours</strong> : Prévoir une solution de recharge</li>
+<li><strong>Plan B papier</strong> : Avoir une version imprimée de secours</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Mode Urgence
+<br>
+### 🚨 Qu'est-ce que le Mode Urgence ?
+<br>
+<p>Le mode urgence est un système d'accès rapide aux informations critiques en cas de :</p>
+<ul>
+<li><strong>Problème technique majeur</strong> : Énigme qui ne fonctionne plus</li>
+<li><strong>Situation de sécurité</strong> : Incident nécessitant une intervention</li>
+<li><strong>Blocage total</strong> : Groupe complètement bloqué</li>
+<li><strong>Urgence médicale</strong> : Besoin d'assistance immédiate</li>
+</ul>
+<br>
+### 🔴 Activation du Mode Urgence
+<br>
+#### Accès Rapide
+<ol>
+<li><strong>Bouton rouge</strong> en haut de l'interface : "MODE URGENCE"</li>
+<li><strong>Code d'accès</strong> : <code>MALVINA911</code></li>
+<li><strong>Sélection du type</strong> : Technique / Sécurité / Médical / Autre</li>
+</ul>
+<br>
+#### Informations Disponibles
+<ul>
+<li><strong>Contacts d'urgence</strong> : Numéros de téléphone directs</li>
+<li><strong>Procédures d'évacuation</strong> : Plans et consignes</li>
+<li><strong>Solutions de secours</strong> : Alternatives pour chaque énigme</li>
+<li><strong>Premiers secours</strong> : Gestes de base</li>
+</ul>
+<br>
+### 📞 Contacts d'Urgence
+<br>
+#### Équipe Technique
+<ul>
+<li><strong>Responsable technique</strong> : [Numéro à compléter]</li>
+<li><strong>Assistant technique</strong> : [Numéro à compléter]</li>
+</ul>
+<br>
+#### Équipe Sécurité
+<ul>
+<li><strong>Responsable sécurité</strong> : [Numéro à compléter]</li>
+<li><strong>Secours externes</strong> : 15 (SAMU), 18 (Pompiers), 17 (Police)</li>
+</ul>
+<br>
+#### Équipe Organisation
+<ul>
+<li><strong>Coordinateur général</strong> : [Numéro à compléter]</li>
+<li><strong>Responsable PNJ</strong> : [Numéro à compléter]</li>
+</ul>
+<br>
+### 🛠️ Solutions de Secours par Énigme
+<br>
+#### Énigmes Mécaniques
+<ul>
+<li><strong>Plan B</strong> : Version manuelle de l'énigme</li>
+<li><strong>Contournement</strong> : Donner directement la solution</li>
+<li><strong>Alternative</strong> : Énigme de remplacement</li>
+</ul>
+<br>
+#### Énigmes Électroniques
+<ul>
+<li><strong>Mode dégradé</strong> : Fonctionnement sans électronique</li>
+<li><strong>Reset</strong> : Procédure de redémarrage</li>
+<li><strong>Remplacement</strong> : Matériel de secours</li>
+</ul>
+<br>
+#### Énigmes Physiques
+<ul>
+<li><strong>Réparation rapide</strong> : Outils et matériel disponibles</li>
+<li><strong>Adaptation</strong> : Modification temporaire</li>
+<li><strong>Substitution</strong> : Élément de remplacement</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Bonnes Pratiques
+<br>
+### 🎭 Excellence dans l'Incarnation
+<br>
+#### Préparation du Personnage
+<ul>
+<li><strong>Étudier le background</strong> : Connaître l'histoire de votre personnage</li>
+<li><strong>Développer la gestuelle</strong> : Mouvements caractéristiques</li>
+<li><strong>Travailler la voix</strong> : Ton, accent, expressions</li>
+<li><strong>Maîtriser le costume</strong> : Porter les accessoires naturellement</li>
+</ul>
+<br>
+#### Cohérence du Jeu
+<ul>
+<li><strong>Rester dans le character</strong> : Même lors des pauses</li>
+<li><strong>Adapter aux situations</strong> : Réactions cohérentes</li>
+<li><strong>Éviter les anachronismes</strong> : Respecter l'époque du monde</li>
+<li><strong>Maintenir l'énergie</strong> : Même en fin de journée</li>
+</ul>
+<br>
+### 🤝 Interaction avec les Joueurs
+<br>
+#### Communication Efficace
+<ul>
+<li><strong>Écoute active</strong> : Comprendre avant de répondre</li>
+<li><strong>Langage corporel</strong> : Gestes ouverts et bienveillants</li>
+<li><strong>Ton adapté</strong> : Ni condescendant ni trop familier</li>
+<li><strong>Patience</strong> : Laisser le temps de la réflexion</li>
+</ul>
+<br>
+#### Gestion de Groupe
+<ul>
+<li><strong>Identifier les dynamiques</strong> : Leaders, suiveurs, timides</li>
+<li><strong>Inclure tout le monde</strong> : Donner un rôle à chacun</li>
+<li><strong>Gérer les conflits</strong> : Rediriger vers l'objectif commun</li>
+<li><strong>Maintenir l'engagement</strong> : Relancer l'intérêt si nécessaire</li>
+</ul>
+<br>
+### 📱 Utilisation Optimale de l'Interface
+<br>
+#### Consultation Discrète
+<ul>
+<li><strong>Moments appropriés</strong> : Quand les joueurs sont concentrés</li>
+<li><strong>Gestes naturels</strong> : Intégrer dans le jeu de rôle</li>
+<li><strong>Rapidité</strong> : Consultation efficace et brève</li>
+<li><strong>Plan B</strong> : Mémoriser l'essentiel au préalable</li>
+</ul>
+<br>
+#### Mise à Jour Continue
+<ul>
+<li><strong>Noter les observations</strong> : Comportements, difficultés, réussites</li>
+<li><strong>Signaler les problèmes</strong> : Techniques ou de contenu</li>
+<li><strong>Partager les bonnes pratiques</strong> : Avec l'équipe</li>
+<li><strong>Proposer des améliorations</strong> : Retours constructifs</li>
+</ul>
+<br>
+### 🔄 Amélioration Continue
+<br>
+#### Auto-Évaluation
+<ul>
+<li><strong>Analyser ses performances</strong> : Points forts et axes d'amélioration</li>
+<li><strong>Demander des retours</strong> : Aux joueurs et à l'équipe</li>
+<li><strong>Expérimenter</strong> : Nouvelles approches d'interaction</li>
+<li><strong>Se former</strong> : Techniques de jeu de rôle et d'animation</li>
+</ul>
+<br>
+#### Partage d'Expérience
+<ul>
+<li><strong>Débriefing équipe</strong> : Partager les observations</li>
+<li><strong>Documentation</strong> : Enrichir les fiches PNJ</li>
+<li><strong>Formation des nouveaux</strong> : Transmettre l'expérience</li>
+<li><strong>Innovation</strong> : Proposer de nouvelles idées</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Résolution de Problèmes
+<br>
+### 🔧 Problèmes Techniques Courants
+<br>
+#### Interface qui ne Répond Plus
+<ol>
+<li><strong>Actualiser la page</strong> : F5 ou tirer vers le bas sur mobile</li>
+<li><strong>Vérifier la connexion</strong> : WiFi ou données mobiles</li>
+<li><strong>Redémarrer l'application</strong> : Fermer et rouvrir le navigateur</li>
+<li><strong>Utiliser un autre appareil</strong> : Si disponible</li>
+</ul>
+<br>
+#### Impossible de se Connecter
+<ol>
+<li><strong>Vérifier les identifiants</strong> : <code>pnj</code> / <code>malvina2025</code></li>
+<li><strong>Contrôler l'URL</strong> : <code>https://malvinaland.myia.io</code></li>
+<li><strong>Tester sur un autre réseau</strong> : Données mobiles vs WiFi</li>
+<li><strong>Contacter l'équipe technique</strong> : En dernier recours</li>
+</ul>
+<br>
+#### Contenu qui ne s'Affiche Pas
+<ol>
+<li><strong>Vider le cache</strong> : Paramètres du navigateur</li>
+<li><strong>Désactiver les bloqueurs</strong> : AdBlock ou similaires</li>
+<li><strong>Essayer un autre navigateur</strong> : Chrome, Firefox, Safari</li>
+<li><strong>Signaler le problème</strong> : À l'équipe technique</li>
+</ul>
+<br>
+### 🎭 Problèmes d'Interaction
+<br>
+#### Joueurs Agressifs ou Irrespectueux
+<ol>
+<li><strong>Rester calme et professionnel</strong> : Ne pas entrer dans le conflit</li>
+<li><strong>Rediriger vers l'activité</strong> : "Concentrons-nous sur l'énigme"</li>
+<li><strong>Faire appel à l'équipe</strong> : Si la situation persiste</li>
+<li><strong>Documenter l'incident</strong> : Pour amélioration future</li>
+</ul>
+<br>
+#### Groupe Complètement Bloqué
+<ol>
+<li><strong>Évaluer la situation</strong> : Comprendre le blocage</li>
+<li><strong>Appliquer les indices progressifs</strong> : Méthode des 3 niveaux</li>
+<li><strong>Proposer une approche différente</strong> : Changer d'angle</li>
+<li><strong>Utiliser le mode urgence</strong> : Si nécessaire</li>
+</ul>
+<br>
+#### Énigme Défaillante
+<ol>
+<li><strong>Identifier le problème</strong> : Technique ou conceptuel</li>
+<li><strong>Appliquer la solution de secours</strong> : Selon les procédures</li>
+<li><strong>Informer l'équipe technique</strong> : Pour réparation</li>
+<li><strong>Adapter l'expérience</strong> : Maintenir l'immersion</li>
+</ul>
+<br>
+### 📞 Escalade et Support
+<br>
+#### Niveaux d'Escalade
+<ol>
+<li><strong>Auto-résolution</strong> : Problèmes mineurs et courants</li>
+<li><strong>Équipe PNJ</strong> : Consultation des collègues</li>
+<li><strong>Responsable PNJ</strong> : Problèmes d'interaction complexes</li>
+<li><strong>Équipe technique</strong> : Problèmes techniques majeurs</li>
+<li><strong>Coordination générale</strong> : Situations critiques</li>
+</ul>
+<br>
+#### Quand Faire Appel
+<ul>
+<li><strong>Sécurité des joueurs</strong> : Immédiatement</li>
+<li><strong>Problème technique majeur</strong> : Dès identification</li>
+<li><strong>Conflit persistant</strong> : Après tentative de résolution</li>
+<li><strong>Doute sur la procédure</strong> : Avant d'agir</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## 📚 Ressources Complémentaires
+<br>
+### 📖 Documentation Associée
+<ul>
+<li><strong><a href="MANUEL_ADMINISTRATEUR.md">Manuel Administrateur</a></strong> - Pour comprendre le système global</li>
+<li><strong><a href="guides-preparation/">Guides de Préparation</a></strong> - Pour connaître les mondes en détail</li>
+<li><strong><a href="GUIDE_MAINTENANCE_SIMPLIFIE.md">Guide de Maintenance</a></strong> - Pour les aspects techniques</li>
+</ul>
+<br>
+### 🎓 Formation et Perfectionnement
+<ul>
+<li><strong>Sessions de formation PNJ</strong> : Organisées avant chaque événement</li>
+<li><strong>Ateliers de jeu de rôle</strong> : Amélioration des techniques d'incarnation</li>
+<li><strong>Retours d'expérience</strong> : Partage entre PNJ expérimentés</li>
+<li><strong>Veille créative</strong> : Inspiration d'autres jeux grandeur nature</li>
+</ul>
+<br>
+### 📱 Outils Complémentaires
+<ul>
+<li><strong>Applications de chronomètre</strong> : Pour gérer le timing</li>
+<li><strong>Bloc-notes numérique</strong> : Pour prendre des notes rapides</li>
+<li><strong>Appareil photo</strong> : Pour documenter les problèmes (avec autorisation)</li>
+<li><strong>Batterie externe</strong> : Pour maintenir l'autonomie</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<p><em>Guide PNJ mis à jour le 24/05/2025 - Version complète</em></p>
+<br>
+<p><strong>Rappel Important</strong> : Votre rôle de PNJ est essentiel à la réussite de l'expérience Malvinaland. Vous êtes les gardiens de la magie et de l'immersion. Merci pour votre engagement !</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Malvinaland - Documentation</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/documentation/">Documentation</a> |
+        <a href="/content/narration/">Narration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+</body>
+</html>

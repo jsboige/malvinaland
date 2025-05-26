@@ -1,0 +1,1032 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUIDE_RESOLUTION_PROBLEMES - Malvinaland</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .doc-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    
+    .doc-content h1 {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .doc-content h2 {
+      color: var(--secondary-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    
+    .doc-content h3 {
+      color: var(--primary-color);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .doc-content pre {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 4px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    
+    .doc-content code {
+      background: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .doc-content blockquote {
+      border-left: 4px solid var(--primary-color);
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #f8f9fa;
+      font-style: italic;
+    }
+    
+    .doc-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    .doc-content th,
+    .doc-content td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    
+    .doc-content th {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .doc-content ul,
+    .doc-content ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+    
+    .doc-content li {
+      margin: 0.5rem 0;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: var(--link-hover-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <div class="doc-content">
+        <a href="/documentation/" class="back-link">â† Retour Ã  la documentation</a>
+        # Guide de Résolution de Problèmes - Malvinaland
+<br>
+## 📋 Table des Matières
+<br>
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#problèmes-du-site-web">Problèmes du Site Web</a></li>
+<li><a href="#problèmes-de-contenu">Problèmes de Contenu</a></li>
+<li><a href="#problèmes-de-déploiement">Problèmes de Déploiement</a></li>
+<li><a href="#problèmes-pnj-et-accès">Problèmes PNJ et Accès</a></li>
+<li><a href="#problèmes-de-performance">Problèmes de Performance</a></li>
+<li><a href="#problèmes-de-préparation-physique">Problèmes de Préparation Physique</a></li>
+<li><a href="#diagnostic-et-outils">Diagnostic et Outils</a></li>
+<li><a href="#escalade-et-contacts">Escalade et Contacts</a></li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Introduction
+<br>
+<p>Ce guide centralise toutes les solutions aux problèmes courants rencontrés avec Malvinaland. Il est organisé par type de problème avec des solutions progressives du plus simple au plus complexe.</p>
+<br>
+### 🎯 Comment Utiliser ce Guide
+<ol>
+<li><strong>Identifier le type de problème</strong> dans la table des matières</li>
+<li><strong>Suivre les solutions</strong> dans l'ordre proposé</li>
+<li><strong>Documenter</strong> ce qui a fonctionné pour les prochaines fois</li>
+<li><strong>Escalader</strong> si aucune solution ne fonctionne</li>
+</ul>
+<br>
+### 🚨 Niveaux d'Urgence
+<ul>
+<li>🔴 <strong>Critique</strong> : Site inaccessible, sécurité compromise</li>
+<li>🟡 <strong>Important</strong> : Fonctionnalités dégradées, PNJ bloqués</li>
+<li>🟢 <strong>Mineur</strong> : Problèmes cosmétiques, optimisations</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Problèmes du Site Web
+<br>
+### 🔴 Site Complètement Inaccessible
+<br>
+#### Symptômes
+<ul>
+<li>Erreur 404 "Page non trouvée"</li>
+<li>Erreur 500 "Erreur serveur interne"</li>
+<li>Timeout de connexion</li>
+<li>Page blanche</li>
+</ul>
+<br>
+#### Solutions Progressives
+<br>
+<p><strong>1. Vérification Rapide (2 min)</strong></p>
+<p>``<code>powershell</p>
+# Vérifier l'état du site
+<p>.\outils-techniques\verify-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>2. Redéploiement Simple (5 min)</strong></p>
+<p></code>`<code>powershell</p>
+# Redéployer le site
+<p>.\outils-techniques\deploy-iis-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>3. Redémarrage IIS (si droits admin)</strong></p>
+<p></code>`<code>powershell</p>
+# Redémarrer IIS
+<p>iisreset</p>
+<p></code>`<code></p>
+<br>
+<p><strong>4. Vérification Approfondie</strong></p>
+<p></code>`<code>powershell</p>
+# Diagnostic complet
+<p>.\outils-techniques\verify-repository-health.ps1</p>
+<p></code>`<code></p>
+<br>
+#### Si Rien ne Fonctionne
+<ul>
+<li><strong>Contacter immédiatement</strong> l'équipe technique</li>
+<li><strong>Noter l'heure</strong> exacte du problème</li>
+<li><strong>Documenter</strong> les messages d'erreur</li>
+</ul>
+<br>
+### 🟡 Pages Spécifiques Inaccessibles
+<br>
+#### Symptômes
+<ul>
+<li>Certaines pages fonctionnent, d'autres non</li>
+<li>Erreurs 404 sur des mondes spécifiques</li>
+<li>Navigation cassée</li>
+</ul>
+<br>
+#### Solutions
+<br>
+<p><strong>1. Vérifier les Fichiers</strong></p>
+<p></code>`<code>powershell</p>
+# Identifier les fichiers manquants
+<p>.\scripts\identify-missing-images.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>2. Régénérer le Site</strong></p>
+<p></code>`<code>powershell</p>
+# Régénération complète
+<p>.\outils-techniques\deploy-site-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>3. Vérifier le Contenu Source</strong></p>
+<ul>
+<li>Ouvrir le fichier </code>.md<code> correspondant dans </code>contenu/<code></li>
+<li>Vérifier la syntaxe Markdown</li>
+<li>Contrôler les balises </code>---<code> en début de fichier</li>
+</ul>
+<br>
+### 🟢 Problèmes d'Affichage
+<br>
+#### Symptômes
+<ul>
+<li>Mise en page cassée</li>
+<li>CSS qui ne se charge pas</li>
+<li>Images déformées</li>
+</ul>
+<br>
+#### Solutions
+<br>
+<p><strong>1. Vider le Cache</strong></p>
+<ul>
+<li><strong>Navigateur</strong> : Ctrl+F5 (Windows) ou Cmd+Shift+R (Mac)</li>
+<li><strong>Tester sur un autre navigateur</strong></li>
+</ul>
+<br>
+<p><strong>2. Optimiser les Ressources</strong></p>
+<p></code>`<code>powershell</p>
+# Optimiser les images
+<p>node .\scripts\optimize-images.js</p>
+<p></code>`<code></p>
+<br>
+<p><strong>3. Redéployer</strong></p>
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\deploy-iis-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+<p>---</p>
+<br>
+## Problèmes de Contenu
+<br>
+### 🟡 Modifications qui ne s'Affichent Pas
+<br>
+#### Symptômes
+<ul>
+<li>Contenu modifié mais ancien contenu visible</li>
+<li>Nouvelles pages non accessibles</li>
+<li>Images qui ne se mettent pas à jour</li>
+</ul>
+<br>
+#### Solutions
+<br>
+<p><strong>1. Vérification du Fichier Source</strong></p>
+<ul>
+<li>Ouvrir le fichier dans </code>contenu/<code></li>
+<li>Vérifier que les modifications sont bien sauvegardées</li>
+<li>Contrôler la syntaxe Markdown</li>
+</ul>
+<br>
+<p><strong>2. Régénération Forcée</strong></p>
+<p></code>`<code>powershell</p>
+# Nettoyer et régénérer
+<p>.\outils-techniques\clean-repository-simple.ps1</p>
+<p>.\outils-techniques\deploy-site-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>3. Redéploiement Complet</strong></p>
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\deploy-iis-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+### 🟢 Erreurs de Syntaxe Markdown
+<br>
+#### Symptômes
+<ul>
+<li>Page qui ne s'affiche pas correctement</li>
+<li>Formatage cassé</li>
+<li>Erreurs de génération</li>
+</ul>
+<br>
+#### Solutions
+<br>
+<p><strong>1. Vérifier la Syntaxe de Base</strong></p>
+<p></code>`<code>markdown</p>
+# Vérifier ces éléments :
+<ul>
+<li>Balises --- en début et fin de front matter</li>
+<li>Guillemets fermés dans le front matter</li>
+<li>Syntaxe Markdown correcte</li>
+<li>Chemins d'images valides</li>
+</ul>
+<p></code>`<code></p>
+<br>
+<p><strong>2. Utiliser les Templates</strong></p>
+<ul>
+<li>Copier la structure depuis </code>templates/nouveau-monde.md<code></li>
+<li>Vérifier avec un fichier qui fonctionne</li>
+</ul>
+<br>
+<p><strong>3. Outils de Validation</strong></p>
+<ul>
+<li>Utiliser un éditeur avec prévisualisation Markdown</li>
+<li>Tester avec un validateur en ligne</li>
+</ul>
+<br>
+### 🟡 Images Manquantes ou Cassées
+<br>
+#### Symptômes
+<ul>
+<li>Icônes cassées (□ avec X)</li>
+<li>Espaces vides à la place des images</li>
+<li>Erreurs 404 sur les images</li>
+</ul>
+<br>
+#### Solutions
+<br>
+<p><strong>1. Vérifier les Chemins</strong></p>
+<p></code>`<code>markdown</p>
+# Format correct pour les images :
+<p>!<a href="../../../ressources/nom-image.jpg">Description</a></p>
+<p></code>`<code></p>
+<br>
+<p><strong>2. Identifier les Images Manquantes</strong></p>
+<p></code>`<code>powershell</p>
+<p>.\scripts\identify-missing-images.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>3. Optimiser et Redéployer</strong></p>
+<p></code>`<code>powershell</p>
+<p>node .\scripts\optimize-images.js</p>
+<p>.\outils-techniques\deploy-iis-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+<p>---</p>
+<br>
+## Problèmes de Déploiement
+<br>
+### 🔴 Échec de Déploiement
+<br>
+#### Symptômes
+<ul>
+<li>Scripts de déploiement qui échouent</li>
+<li>Messages d'erreur PowerShell</li>
+<li>Permissions refusées</li>
+</ul>
+<br>
+#### Solutions
+<br>
+<p><strong>1. Vérifier les Droits</strong></p>
+<ul>
+<li>Exécuter PowerShell en tant qu'administrateur</li>
+<li>Vérifier les droits d'écriture sur le serveur</li>
+</ul>
+<br>
+<p><strong>2. Utiliser le Déploiement Admin</strong></p>
+<p></code>`<code>powershell</p>
+# Déploiement avec droits élevés
+<p>.\scripts\deploy-iis-admin.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>3. Déploiement Manuel</strong></p>
+<ul>
+<li>Copier manuellement le contenu de </code>site/<code> vers le serveur</li>
+<li>Vérifier les permissions des dossiers</li>
+</ul>
+<br>
+### 🟡 Déploiement Lent ou Qui Traîne
+<br>
+#### Symptômes
+<ul>
+<li>Scripts qui prennent très longtemps</li>
+<li>Processus qui semble bloqué</li>
+<li>Timeouts</li>
+</ul>
+<br>
+#### Solutions
+<br>
+<p><strong>1. Nettoyer Avant Déploiement</strong></p>
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\clean-repository-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>2. Optimiser les Ressources</strong></p>
+<p></code>`<code>powershell</p>
+<p>node .\scripts\optimize-images.js</p>
+<p></code>`<code></p>
+<br>
+<p><strong>3. Déploiement par Étapes</strong></p>
+<ul>
+<li>Déployer d'abord en local pour tester</li>
+<li>Puis déployer sur le serveur</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Problèmes PNJ et Accès
+<br>
+### 🔴 PNJ ne Peuvent pas se Connecter
+<br>
+#### Symptômes
+<ul>
+<li>Erreur de connexion sur l'interface PNJ</li>
+<li>Page de login qui ne répond pas</li>
+<li>Identifiants refusés</li>
+</ul>
+<br>
+#### Solutions
+<br>
+<p><strong>1. Vérifier les Identifiants</strong></p>
+<ul>
+<li><strong>URL</strong> : </code>https://malvinaland.myia.io<code></li>
+<li><strong>Login</strong> : </code>pnj<code></li>
+<li><strong>Mot de passe</strong> : </code>malvina2025<code></li>
+</ul>
+<br>
+<p><strong>2. Tester avec les Identifiants Admin</strong></p>
+<ul>
+<li><strong>Login</strong> : </code>admin_malvina<code></li>
+<li><strong>Mot de passe</strong> : </code>Malv1n@2025!<code></li>
+</ul>
+<br>
+<p><strong>3. Redéployer le Site</strong></p>
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\deploy-iis-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+### 🟡 Interface PNJ Lente ou Bugguée
+<br>
+#### Symptômes
+<ul>
+<li>Chargement très lent des pages</li>
+<li>Fonctionnalités qui ne répondent pas</li>
+<li>Affichage incorrect sur mobile</li>
+</ul>
+<br>
+#### Solutions
+<br>
+<p><strong>1. Optimisation Mobile</strong></p>
+<ul>
+<li>Vider le cache du navigateur mobile</li>
+<li>Redémarrer l'application navigateur</li>
+<li>Tester sur un autre appareil</li>
+</ul>
+<br>
+<p><strong>2. Optimisation Serveur</strong></p>
+<p></code>`<code>powershell</p>
+<p>.\scripts\optimize-iis-config.ps1</p>
+<p></code>`<code></p>
+<br>
+### 🟢 Contenu PNJ Manquant
+<br>
+#### Symptômes
+<ul>
+<li>Fiches PNJ vides ou incomplètes</li>
+<li>Sections organisateurs non visibles</li>
+<li>Informations manquantes</li>
+</ul>
+<br>
+#### Solutions
+<br>
+<p><strong>1. Vérifier le Contenu Source</strong></p>
+<ul>
+<li>Contrôler </code>contenu/organisateurs/pnj/<code></li>
+<li>Vérifier les balises </code><div class="organisateurs-only"><code></li>
+</ul>
+<br>
+<p><strong>2. Vérifier la Connexion</strong></p>
+<ul>
+<li>S'assurer d'être connecté avec les bons identifiants</li>
+<li>Tester la visibilité du contenu organisateur</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Problèmes de Performance
+<br>
+### 🟡 Site Très Lent
+<br>
+#### Symptômes
+<ul>
+<li>Chargement > 5 secondes</li>
+<li>Timeouts fréquents</li>
+<li>Navigation difficile</li>
+</ul>
+<br>
+#### Solutions
+<br>
+<p><strong>1. Optimisation des Images</strong></p>
+<p></code>`<code>powershell</p>
+<p>node .\scripts\optimize-images.js</p>
+<p></code>`<code></p>
+<br>
+<p><strong>2. Nettoyage Complet</strong></p>
+<p></code>`<code>powershell</p>
+<p>.\outils-techniques\clean-repository-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>3. Optimisation Serveur</strong></p>
+<p></code>`<code>powershell</p>
+<p>.\scripts\optimize-iis-config.ps1</p>
+<p></code>`<code></p>
+<br>
+### 🟢 Consommation Excessive d'Espace
+<br>
+#### Symptômes
+<ul>
+<li>Disque plein</li>
+<li>Avertissements d'espace</li>
+<li>Performances dégradées</li>
+</ul>
+<br>
+#### Solutions
+<br>
+<p><strong>1. Nettoyage Périodique</strong></p>
+<p></code>`<code>powershell</p>
+<p>.\scripts\clean-repository-periodic.ps1</p>
+<p></code>`<code></p>
+<br>
+<p><strong>2. Vérifier l'Espace Disque</strong></p>
+<p></code>`<code>powershell</p>
+<p>Get-WmiObject -Class Win32_LogicalDisk | Select-Object DeviceID, @{Name="FreeSpace(GB)";Expression={[math]::Round(<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUIDE_RESOLUTION_PROBLEMES - Malvinaland</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .doc-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    
+    .doc-content h1 {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .doc-content h2 {
+      color: var(--secondary-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    
+    .doc-content h3 {
+      color: var(--primary-color);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .doc-content pre {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 4px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    
+    .doc-content code {
+      background: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .doc-content blockquote {
+      border-left: 4px solid var(--primary-color);
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #f8f9fa;
+      font-style: italic;
+    }
+    
+    .doc-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    .doc-content th,
+    .doc-content td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    
+    .doc-content th {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .doc-content ul,
+    .doc-content ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+    
+    .doc-content li {
+      margin: 0.5rem 0;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: var(--link-hover-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <div class="doc-content">
+        <a href="/documentation/" class="back-link">â† Retour Ã  la documentation</a>
+        {{CONTENT}}
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Malvinaland - Documentation</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/documentation/">Documentation</a> |
+        <a href="/content/narration/">Narration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+</body>
+</html>.FreeSpace/1GB,2)}}</p>
+<p></code>`<code></p>
+<br>
+<p>---</p>
+<br>
+## Problèmes de Préparation Physique
+<br>
+### 🟡 Matériel Manquant ou Défaillant
+<br>
+#### Symptômes
+<ul>
+<li>Énigmes qui ne fonctionnent pas</li>
+<li>Matériel cassé ou perdu</li>
+<li>Installation impossible</li>
+</ul>
+<br>
+#### Solutions par Type d'Énigme
+<br>
+<p><strong>Énigmes Mécaniques</strong></p>
+<ul>
+<li><strong>Plan B</strong> : Version manuelle simplifiée</li>
+<li><strong>Réparation</strong> : Outils de base disponibles</li>
+<li><strong>Remplacement</strong> : Matériel de secours prévu</li>
+</ul>
+<br>
+<p><strong>Énigmes Électroniques</strong></p>
+<ul>
+<li><strong>Reset</strong> : Redémarrage des appareils</li>
+<li><strong>Mode dégradé</strong> : Fonctionnement sans électronique</li>
+<li><strong>Batterie de secours</strong> : Toujours prévoir</li>
+</ul>
+<br>
+<p><strong>Énigmes avec Cartes/Papier</strong></p>
+<ul>
+<li><strong>Plastification</strong> : Protection contre l'humidité</li>
+<li><strong>Exemplaires de secours</strong> : Toujours prévoir</li>
+<li><strong>Version simplifiée</strong> : Réduction du nombre d'éléments</li>
+</ul>
+<br>
+### 🟢 Problèmes d'Ambiance
+<br>
+#### Symptômes
+<ul>
+<li>Décor qui ne tient pas</li>
+<li>Éclairage insuffisant</li>
+<li>Ambiance pas immersive</li>
+</ul>
+<br>
+#### Solutions
+<br>
+<p><strong>Décor</strong></p>
+<ul>
+<li><strong>Fixation renforcée</strong> : Vis, colle, sangles</li>
+<li><strong>Matériaux résistants</strong> : Prévoir l'usure</li>
+<li><strong>Plan B déco</strong> : Version simplifiée</li>
+</ul>
+<br>
+<p><strong>Éclairage</strong></p>
+<ul>
+<li><strong>Batteries de secours</strong> : Pour l'éclairage LED</li>
+<li><strong>Éclairage naturel</strong> : Optimiser selon l'heure</li>
+<li><strong>Éclairage de secours</strong> : Lampes de poche</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## Diagnostic et Outils
+<br>
+### 🔧 Outils de Diagnostic
+<br>
+#### Vérification Rapide
+<p></code>`<code>powershell</p>
+# État général du système
+<p>.\outils-techniques\verify-simple.ps1</p>
+<p></code>`<code></p>
+<br>
+#### Diagnostic Complet
+<p></code>`<code>powershell</p>
+# Santé complète du repository
+<p>.\outils-techniques\verify-repository-health.ps1</p>
+<p></code>`<code></p>
+<br>
+#### Identification des Problèmes
+<p></code>`<code>powershell</p>
+# Images manquantes
+<p>.\scripts\identify-missing-images.ps1</p>
+<br>
+# Vérification minimale
+<p>.\outils-techniques\verify-minimal.ps1</p>
+<p></code>`<code></p>
+<br>
+### 📊 Surveillance Continue
+<br>
+#### Indicateurs à Surveiller
+<ul>
+<li><strong>Temps de réponse</strong> : < 3 secondes</li>
+<li><strong>Disponibilité</strong> : 99%+</li>
+<li><strong>Espace disque</strong> : > 20% libre</li>
+<li><strong>Accès PNJ</strong> : Fonctionnel 24h/24</li>
+</ul>
+<br>
+#### Alertes Automatiques
+<p></code>`<code>powershell</p>
+# Script de surveillance (à programmer)
+# Vérification toutes les heures
+<p>.\scripts\monitor-health.ps1</p>
+<p></code>`<code></p>
+<br>
+<p>---</p>
+<br>
+## Escalade et Contacts
+<br>
+### 🚨 Quand Escalader
+<br>
+#### Escalade Immédiate (< 15 min)
+<ul>
+<li><strong>Sécurité compromise</strong> : Accès non autorisé</li>
+<li><strong>Site complètement down</strong> : > 30 minutes</li>
+<li><strong>Perte de données</strong> : Fichiers corrompus</li>
+<li><strong>Urgence médicale</strong> : Pendant un événement</li>
+</ul>
+<br>
+#### Escalade Rapide (< 2h)
+<ul>
+<li><strong>Fonctionnalités critiques</strong> : PNJ bloqués</li>
+<li><strong>Performance dégradée</strong> : Site très lent</li>
+<li><strong>Problèmes récurrents</strong> : Échecs répétés</li>
+</ul>
+<br>
+#### Escalade Normale (< 24h)
+<ul>
+<li><strong>Améliorations</strong> : Nouvelles fonctionnalités</li>
+<li><strong>Optimisations</strong> : Performance générale</li>
+<li><strong>Formation</strong> : Besoin d'aide</li>
+</ul>
+<br>
+### 📞 Contacts d'Urgence
+<br>
+#### Équipe Technique
+<ul>
+<li><strong>Responsable technique</strong> : [À compléter]</li>
+<li><strong>Développeur principal</strong> : [À compléter]</li>
+<li><strong>Support système</strong> : [À compléter]</li>
+</ul>
+<br>
+#### Équipe Organisation
+<ul>
+<li><strong>Coordinateur général</strong> : [À compléter]</li>
+<li><strong>Responsable PNJ</strong> : [À compléter]</li>
+<li><strong>Responsable logistique</strong> : [À compléter]</li>
+</ul>
+<br>
+#### Services Externes
+<ul>
+<li><strong>Hébergeur</strong> : [Contacts support]</li>
+<li><strong>Fournisseur internet</strong> : [Support technique]</li>
+<li><strong>Secours</strong> : 15 (SAMU), 18 (Pompiers), 17 (Police)</li>
+</ul>
+<br>
+### 📝 Informations à Fournir
+<br>
+#### Lors de l'Escalade
+<ol>
+<li><strong>Nature exacte du problème</strong></li>
+<li><strong>Heure d'apparition</strong></li>
+<li><strong>Actions déjà tentées</strong></li>
+<li><strong>Messages d'erreur</strong> (captures d'écran)</li>
+<li><strong>Impact sur les utilisateurs</strong></li>
+<li><strong>Urgence</strong> (critique/important/mineur)</li>
+</ul>
+<br>
+#### Documentation à Conserver
+<ul>
+<li><strong>Logs des scripts</strong> exécutés</li>
+<li><strong>Captures d'écran</strong> des erreurs</li>
+<li><strong>Historique</strong> des actions récentes</li>
+<li><strong>Configuration</strong> actuelle du système</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+## 📚 Ressources Complémentaires
+<br>
+### 📖 Documentation Associée
+<ul>
+<li><strong><a href="MANUEL_ADMINISTRATEUR.md">Manuel Administrateur</a></strong> - Procédures complètes</li>
+<li><strong><a href="GUIDE_MAINTENANCE_SIMPLIFIE.md">Guide de Maintenance Simplifié</a></strong> - Maintenance courante</li>
+<li><strong><a href="GUIDE_PNJ_COMPLET.md">Guide PNJ Complet</a></strong> - Problèmes spécifiques PNJ</li>
+</ul>
+<br>
+### 🛠️ Outils Utiles
+<ul>
+<li><strong>PowerShell ISE</strong> : Environnement de script avancé</li>
+<li><strong>Notepad++</strong> : Éditeur pour fichiers de configuration</li>
+<li><strong>Process Monitor</strong> : Surveillance des processus système</li>
+<li><strong>Navigateurs multiples</strong> : Test de compatibilité</li>
+</ul>
+<br>
+### 📋 Templates de Rapport
+<br>
+#### Rapport d'Incident
+<p></code>`<code></p>
+<p>RAPPORT D'INCIDENT - [DATE/HEURE]</p>
+<br>
+<p>🚨 PROBLÈME :</p>
+<ul>
+<li>Description : [Description précise]</li>
+<li>Gravité : [Critique/Important/Mineur]</li>
+<li>Impact : [Nombre d'utilisateurs affectés]</li>
+</ul>
+<br>
+<p>🔍 DIAGNOSTIC :</p>
+<ul>
+<li>Symptômes observés : [Liste]</li>
+<li>Tests effectués : [Liste des vérifications]</li>
+<li>Résultats : [Ce qui a été trouvé]</li>
+</ul>
+<br>
+<p>🔧 ACTIONS CORRECTIVES :</p>
+<ul>
+<li>Solutions tentées : [Liste chronologique]</li>
+<li>Solution efficace : [Ce qui a fonctionné]</li>
+<li>Temps de résolution : [Durée]</li>
+</ul>
+<br>
+<p>📝 SUIVI :</p>
+<ul>
+<li>Actions préventives : [Pour éviter la récurrence]</li>
+<li>Documentation mise à jour : [Oui/Non]</li>
+<li>Formation nécessaire : [Si applicable]</li>
+</ul>
+<br>
+<p>Responsable : [Nom]</p>
+<p>Validé par : [Nom du superviseur]</p>
+<p></code>``</p>
+<br>
+<p>---</p>
+<br>
+## 🎯 Checklist de Résolution
+<br>
+### ✅ Avant de Commencer
+<ul>
+<li>[ ] Identifier précisément le problème</li>
+<li>[ ] Évaluer l'urgence et l'impact</li>
+<li>[ ] Sauvegarder si nécessaire</li>
+<li>[ ] Noter l'heure de début</li>
+</ul>
+<br>
+### ✅ Pendant la Résolution
+<ul>
+<li>[ ] Suivre les solutions dans l'ordre</li>
+<li>[ ] Documenter chaque action</li>
+<li>[ ] Tester après chaque étape</li>
+<li>[ ] Escalader si nécessaire</li>
+</ul>
+<br>
+### ✅ Après la Résolution
+<ul>
+<li>[ ] Vérifier que tout fonctionne</li>
+<li>[ ] Documenter la solution efficace</li>
+<li>[ ] Mettre à jour ce guide si nécessaire</li>
+<li>[ ] Informer l'équipe de la résolution</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<p><em>Guide de résolution de problèmes mis à jour le 24/05/2025 - Version complète</em></p>
+<br>
+<p><strong>Rappel Important</strong> : En cas de doute, il vaut mieux escalader rapidement que de risquer d'aggraver le problème. L'équipe technique est là pour vous aider !</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Malvinaland - Documentation</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/documentation/">Documentation</a> |
+        <a href="/content/narration/">Narration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,644 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUIDE_GRANGE - Malvinaland</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .doc-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    
+    .doc-content h1 {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .doc-content h2 {
+      color: var(--secondary-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    
+    .doc-content h3 {
+      color: var(--primary-color);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .doc-content pre {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 4px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    
+    .doc-content code {
+      background: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .doc-content blockquote {
+      border-left: 4px solid var(--primary-color);
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #f8f9fa;
+      font-style: italic;
+    }
+    
+    .doc-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    .doc-content th,
+    .doc-content td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    
+    .doc-content th {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .doc-content ul,
+    .doc-content ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+    
+    .doc-content li {
+      margin: 0.5rem 0;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: var(--link-hover-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <div class="doc-content">
+        <a href="/documentation/" class="back-link">â† Retour Ã  la documentation</a>
+        # Guide de Préparation - Monde de la Grange
+<br>
+## 📋 Informations Générales
+<br>
+<ul>
+<li><strong>Nom du Monde</strong> : Le Monde de la Grange</li>
+<li><strong>Thème</strong> : Ferme traditionnelle, vie rurale, animaux</li>
+<li><strong>Durée estimée</strong> : 45-60 minutes</li>
+<li><strong>Nombre de joueurs</strong> : 4-8 joueurs simultanément</li>
+<li><strong>Niveau de difficulté</strong> : 🟡 Moyen</li>
+</ul>
+<br>
+## 🎭 Vue d'Ensemble du Monde
+<br>
+### Description et Ambiance
+<p>La Grange est un monde chaleureux qui évoque la vie à la campagne d'autrefois. L'ambiance est rustique et conviviale, avec des odeurs de foin, des bruits d'animaux et une atmosphère de ferme traditionnelle. Les joueurs découvrent un univers où la nature et l'ingéniosité paysanne se mélangent.</p>
+<br>
+### Histoire et Contexte
+<p>Autrefois prospère, cette grange a été abandonnée suite à des événements mystérieux. Les joueurs doivent découvrir les secrets cachés dans cette ferme et résoudre les énigmes laissées par l'ancien fermier pour comprendre ce qui s'est passé et restaurer l'harmonie du lieu.</p>
+<br>
+### Objectifs pour les Joueurs
+<ul>
+<li>Découvrir l'histoire de la ferme abandonnée</li>
+<li>Résoudre les énigmes liées aux activités agricoles</li>
+<li>Comprendre le système de symboles utilisé par l'ancien fermier</li>
+<li>Retrouver le trésor caché de la ferme</li>
+</ul>
+<br>
+## 🗺️ Plan d'Aménagement
+<br>
+### Schéma du Lieu
+<p>``<code></p>
+<p>    [Entrée]</p>
+<p>        |</p>
+<p>   [Zone Accueil]</p>
+<p>   (Panneau ferme)</p>
+<p>        |</p>
+<p>[Zone Centrale Grange]</p>
+<p>   |           |</p>
+<p>[Coin Animaux] [Coin Outils]</p>
+<p>   |           |</p>
+<p>[Zone Symboles des Éléments]</p>
+<p>        |</p>
+<p>   [Zone Finale]</p>
+<p>   (Trésor fermier)</p>
+<p>        |</p>
+<p>    [Sortie]</p>
+<p></code>``</p>
+<br>
+### Zones Principales
+<ol>
+<li><strong>Zone d'Accueil</strong> : Panneau d'entrée avec contexte de la ferme</li>
+<li><strong>Zone Centrale</strong> : Espace principal avec décor de grange</li>
+<li><strong>Coin Animaux</strong> : Énigme des bruits d'animaux</li>
+<li><strong>Coin Outils</strong> : Énigme du code César avec outils agricoles</li>
+<li><strong>Zone Symboles</strong> : Énigme des symboles des éléments</li>
+<li><strong>Zone Finale</strong> : Découverte du trésor et conclusion</li>
+</ul>
+<br>
+### Flux de Circulation
+<p>Les joueurs entrent par l'accueil, explorent librement la zone centrale, résolvent les énigmes dans l'ordre qu'ils souhaitent, puis convergent vers la zone finale pour la conclusion.</p>
+<br>
+## 📦 Matériel Complet pour le Monde
+<br>
+### 🛠️ Matériel de Construction
+<ul>
+<li>[ ] Panneaux en bois ou carton (4 unités) - pour décor grange</li>
+<li>[ ] Corde naturelle (10 mètres) - pour suspensions</li>
+<li>[ ] Paille ou foin artificiel (2 bottes) - pour ambiance</li>
+<li>[ ] Seaux en métal ou plastique (3 unités)</li>
+<li>[ ] Outils agricoles factices (bêche, râteau, faux)</li>
+<li>[ ] Planches de bois (6 planches 50cm)</li>
+</ul>
+<br>
+### 🎨 Matériel de Décoration
+<ul>
+<li>[ ] Toile de jute (3 mètres)</li>
+<li>[ ] Lanternes LED style rustique (4 unités)</li>
+<li>[ ] Paniers en osier (3 unités)</li>
+<li>[ ] Figurines d'animaux de ferme (poule, cochon, vache, cheval)</li>
+<li>[ ] Plantes artificielles (épis de blé, tournesols)</li>
+<li>[ ] Fer à cheval décoratif</li>
+</ul>
+<br>
+### 📄 Matériel à Imprimer
+<ul>
+<li>[ ] Panneau d'accueil "Ferme du Vieux Moulin" (1 exemplaire A3)</li>
+<li>[ ] Cartes symboles des éléments (20 cartes format carte à jouer)</li>
+<li>[ ] Grille de décodage César (4 exemplaires A4)</li>
+<li>[ ] Instructions énigmes pour PNJ (2 exemplaires A4)</li>
+<li>[ ] Certificat de réussite "Gardien de la Ferme" (8 exemplaires)</li>
+</ul>
+<br>
+### 🔧 Outils Nécessaires
+<ul>
+<li>[ ] Perceuse avec mèches</li>
+<li>[ ] Visseuse</li>
+<li>[ ] Cutter et ciseaux</li>
+<li>[ ] Mètre ruban</li>
+<li>[ ] Niveau à bulle</li>
+<li>[ ] Marteau</li>
+</ul>
+<br>
+### 💡 Matériel Électrique/Électronique
+<ul>
+<li>[ ] Enceinte Bluetooth portable (pour sons d'animaux)</li>
+<li>[ ] Smartphone/tablette (pour contrôler les sons)</li>
+<li>[ ] Rallonge électrique (10 mètres)</li>
+<li>[ ] Multiprise</li>
+</ul>
+<br>
+## 🧩 Énigmes Détaillées
+<br>
+### Énigme 1 : Les Symboles des Éléments
+<br>
+#### 🎯 Objectif
+<p>Les joueurs doivent associer les symboles des éléments (terre, eau, air, feu) aux activités de la ferme pour découvrir un code secret.</p>
+<br>
+#### 📋 Matériel Spécifique
+<ul>
+<li>20 cartes avec symboles des éléments</li>
+<li>4 panneaux représentant les activités de ferme</li>
+<li>1 boîte à code à 4 chiffres</li>
+<li>Marqueurs permanents</li>
+</ul>
+<br>
+#### 🔨 Instructions de Construction
+<ol>
+<li><strong>Préparation</strong> :</li>
+</ul>
+<p>   - Imprimer les cartes symboles sur papier cartonné</p>
+<p>   - Plastifier les cartes pour la durabilité</p>
+<p>   - Préparer 4 panneaux avec dessins d'activités agricoles</p>
+<br>
+<ol>
+<li><strong>Assemblage</strong> :</li>
+</ul>
+<p>   - Coller les symboles sur les cartes</p>
+<p>   - Fixer les panneaux d'activités sur supports</p>
+<p>   - Programmer la boîte à code avec la solution (ex: 1847)</p>
+<br>
+<ol>
+<li><strong>Installation</strong> :</li>
+</ul>
+<p>   - Disposer les cartes mélangées sur une table rustique</p>
+<p>   - Placer les panneaux d'activités autour de la zone</p>
+<p>   - Positionner la boîte à code dans un coffre en bois</p>
+<br>
+#### 📍 Mise en Place sur Site
+<ul>
+<li><strong>Emplacement</strong> : Zone centrale de la grange, sur table en bois</li>
+<li><strong>Orientation</strong> : Face à l'entrée pour visibilité</li>
+<li><strong>Sécurisation</strong> : Fixer la table au sol si nécessaire</li>
+<li><strong>Test</strong> : Vérifier que le code fonctionne et que les cartes sont complètes</li>
+</ul>
+<br>
+#### 💡 Indices et Solution
+<ul>
+<li><strong>Indices niveau 1</strong> : "Les éléments guident les activités de la ferme"</li>
+<li><strong>Indices niveau 2</strong> : "Terre pour semer, eau pour arroser, air pour moudre, feu pour cuire"</li>
+<li><strong>Solution complète</strong> : Terre=1, Eau=8, Air=4, Feu=7 → Code 1847</li>
+</ul>
+<br>
+#### 🔄 Variantes
+<ul>
+<li><strong>Version simplifiée</strong> : Réduire à 3 éléments seulement</li>
+<li><strong>Version complexe</strong> : Ajouter des symboles distracteurs</li>
+<li><strong>Adaptations</strong> : Utiliser des objets physiques au lieu de cartes</li>
+</ul>
+<br>
+#### ⚠️ Points d'Attention
+<ul>
+<li>Vérifier que toutes les cartes sont présentes avant chaque session</li>
+<li>S'assurer que la boîte à code fonctionne correctement</li>
+<li>Prévoir des cartes de rechange en cas de perte</li>
+</ul>
+<br>
+### Énigme 2 : Le Code César du Fermier
+<br>
+#### 🎯 Objectif
+<p>Décoder un message secret laissé par l'ancien fermier en utilisant le code César avec un décalage basé sur les outils agricoles.</p>
+<br>
+#### 📋 Matériel Spécifique
+<ul>
+<li>5 outils agricoles numérotés (bêche=1, râteau=2, faux=3, houe=4, fourche=5)</li>
+<li>Message codé gravé sur planche de bois</li>
+<li>Grille de décodage César</li>
+<li>Crayon et papier pour calculs</li>
+</ul>
+<br>
+#### 🔨 Instructions de Construction
+<ol>
+<li><strong>Préparation</strong> :</li>
+</ul>
+<p>   - Numéroter discrètement les outils agricoles</p>
+<p>   - Graver ou écrire le message codé sur une planche vieillie</p>
+<p>   - Préparer la grille de décodage</p>
+<br>
+<ol>
+<li><strong>Assemblage</strong> :</li>
+</ul>
+<p>   - Disposer les outils dans l'ordre sur un râtelier</p>
+<p>   - Fixer la planche avec le message sur un mur</p>
+<p>   - Placer la grille de décodage à proximité</p>
+<br>
+<ol>
+<li><strong>Installation</strong> :</li>
+</ul>
+<p>   - Accrocher le râtelier à outils à hauteur accessible</p>
+<p>   - Fixer solidement la planche au mur</p>
+<p>   - Protéger la grille de décodage dans une pochette plastique</p>
+<br>
+#### 📍 Mise en Place sur Site
+<ul>
+<li><strong>Emplacement</strong> : Coin outils de la grange</li>
+<li><strong>Orientation</strong> : Message visible depuis l'entrée de la zone</li>
+<li><strong>Sécurisation</strong> : Fixer tous les éléments pour éviter les chutes</li>
+<li><strong>Test</strong> : Vérifier que le décodage fonctionne avec la grille</li>
+</ul>
+<br>
+#### 💡 Indices et Solution
+<ul>
+<li><strong>Indices niveau 1</strong> : "Les outils du fermier cachent un secret"</li>
+<li><strong>Indices niveau 2</strong> : "Comptez les outils pour trouver le décalage"</li>
+<li><strong>Solution complète</strong> : Décalage de 5 (nombre d'outils) → "TRESOR SOUS MEULE"</li>
+</ul>
+<br>
+#### 🔄 Variantes
+<ul>
+<li><strong>Version simplifiée</strong> : Utiliser un décalage plus simple (3)</li>
+<li><strong>Version complexe</strong> : Ajouter plusieurs messages à décoder</li>
+<li><strong>Adaptations</strong> : Utiliser des objets différents selon l'espace</li>
+</ul>
+<br>
+#### ⚠️ Points d'Attention
+<ul>
+<li>S'assurer que les outils sont bien fixés et sécurisés</li>
+<li>Vérifier que la grille de décodage est lisible</li>
+<li>Prévoir une solution de secours si un outil est perdu</li>
+</ul>
+<br>
+### Énigme 3 : La Mélodie des Animaux
+<br>
+#### 🎯 Objectif
+<p>Reconnaître et ordonner les cris d'animaux pour découvrir la séquence qui ouvre le passage vers la zone finale.</p>
+<br>
+#### 📋 Matériel Spécifique
+<ul>
+<li>Enceinte Bluetooth portable</li>
+<li>Smartphone avec sons d'animaux</li>
+<li>4 boutons colorés (rouge, bleu, vert, jaune)</li>
+<li>Figurines d'animaux correspondantes</li>
+<li>Panneau de contrôle artisanal</li>
+</ul>
+<br>
+#### 🔨 Instructions de Construction
+<ol>
+<li><strong>Préparation</strong> :</li>
+</ul>
+<p>   - Télécharger les sons d'animaux (coq, vache, cochon, cheval)</p>
+<p>   - Créer une playlist avec les sons dans l'ordre</p>
+<p>   - Fabriquer un panneau de contrôle avec 4 boutons</p>
+<br>
+<ol>
+<li><strong>Assemblage</strong> :</li>
+</ul>
+<p>   - Connecter les boutons au panneau (simulation, pas électronique)</p>
+<p>   - Disposer les figurines près des boutons correspondants</p>
+<p>   - Préparer l'enceinte avec le smartphone</p>
+<br>
+<ol>
+<li><strong>Installation</strong> :</li>
+</ul>
+<p>   - Placer le panneau à hauteur accessible</p>
+<p>   - Positionner l'enceinte pour une bonne diffusion</p>
+<p>   - Cacher le smartphone pour l'effet de surprise</p>
+<br>
+#### 📍 Mise en Place sur Site
+<ul>
+<li><strong>Emplacement</strong> : Coin animaux, près de l'entrée</li>
+<li><strong>Orientation</strong> : Panneau face aux joueurs</li>
+<li><strong>Sécurisation</strong> : Fixer le panneau et protéger l'électronique</li>
+<li><strong>Test</strong> : Vérifier la qualité sonore et la reconnaissance des animaux</li>
+</ul>
+<br>
+#### 💡 Indices et Solution
+<ul>
+<li><strong>Indices niveau 1</strong> : "Écoutez bien les habitants de la ferme"</li>
+<li><strong>Indices niveau 2</strong> : "L'ordre du réveil à la ferme : qui chante en premier ?"</li>
+<li><strong>Solution complète</strong> : Coq (rouge) → Vache (bleu) → Cochon (vert) → Cheval (jaune)</li>
+</ul>
+<br>
+#### 🔄 Variantes
+<ul>
+<li><strong>Version simplifiée</strong> : Réduire à 3 animaux</li>
+<li><strong>Version complexe</strong> : Ajouter des bruits parasites</li>
+<li><strong>Adaptations</strong> : Utiliser des peluches au lieu de figurines</li>
+</ul>
+<br>
+#### ⚠️ Points d'Attention
+<ul>
+<li>Vérifier la charge de la batterie de l'enceinte</li>
+<li>Tester le volume sonore (ni trop fort, ni trop faible)</li>
+<li>Prévoir une solution manuelle si la technologie échoue</li>
+</ul>
+<br>
+## 🎭 Animation et PNJ
+<br>
+### Rôle des PNJ
+<p>Le PNJ incarne l'esprit de l'ancien fermier ou un gardien de la ferme. Il guide subtilement les joueurs sans donner directement les solutions, en utilisant des métaphores agricoles et des références à la vie rurale.</p>
+<br>
+### Interactions Clés
+<ul>
+<li><strong>À l'arrivée</strong> : "Bienvenue dans ma ferme ! Elle cache bien des secrets..."</li>
+<li><strong>Pendant les énigmes</strong> : Donne des indices sous forme de proverbes paysans</li>
+<li><strong>À la sortie</strong> : "Vous avez prouvé que vous êtes de vrais gardiens de la terre !"</li>
+</ul>
+<br>
+### Phrases et Répliques Types
+<ul>
+<li>"Qui sème le vent récolte la tempête... mais qui sème la patience récolte la sagesse"</li>
+<li>"Les animaux parlent à qui sait les écouter"</li>
+<li>"Chaque outil a sa place, chaque symbole son sens"</li>
+<li>"La terre ne ment jamais, contrairement aux hommes"</li>
+</ul>
+<br>
+### Costumes et Accessoires PNJ
+<ul>
+<li>Salopette ou bleu de travail</li>
+<li>Chapeau de paille</li>
+<li>Foulard rouge autour du cou</li>
+<li>Bottes en caoutchouc</li>
+<li>Panier en osier comme accessoire</li>
+</ul>
+<br>
+## 🏗️ Installation Complète
+<br>
+### ⏰ Planning d'Installation
+<ul>
+<li><strong>J-7</strong> : Commande et préparation du matériel</li>
+<li><strong>J-2</strong> : Fabrication des éléments artisanaux</li>
+<li><strong>J-1</strong> : Installation du décor et des énigmes</li>
+<li><strong>J-0</strong> : Tests finaux et briefing équipe</li>
+</ul>
+<br>
+### 👥 Équipe Nécessaire
+<ul>
+<li><strong>Responsable installation</strong> : 1 personne expérimentée</li>
+<li><strong>Assistants</strong> : 2-3 personnes</li>
+<li><strong>Compétences requises</strong> : Bricolage de base, sens artistique</li>
+</ul>
+<br>
+### 🔧 Étapes d'Installation
+<br>
+#### 1. Préparation du Lieu (45 min)
+<ul>
+<li>[ ] Nettoyer et délimiter l'espace grange</li>
+<li>[ ] Vérifier la sécurité (sol, plafond, électricité)</li>
+<li>[ ] Marquer les emplacements des zones</li>
+</ul>
+<br>
+#### 2. Installation du Décor (90 min)
+<ul>
+<li>[ ] Disposer la paille et les éléments rustiques</li>
+<li>[ ] Installer les panneaux et supports</li>
+<li>[ ] Placer les lanternes et l'éclairage d'ambiance</li>
+<li>[ ] Disposer les accessoires décoratifs</li>
+</ul>
+<br>
+#### 3. Installation des Énigmes (120 min)
+<ul>
+<li>[ ] Mettre en place l'énigme des symboles (30 min)</li>
+<li>[ ] Installer l'énigme du code César (45 min)</li>
+<li>[ ] Configurer l'énigme des animaux (45 min)</li>
+<li>[ ] Tests de fonctionnement de chaque énigme</li>
+</ul>
+<br>
+#### 4. Finalisation (30 min)
+<ul>
+<li>[ ] Vérification générale de la sécurité</li>
+<li>[ ] Test complet du parcours joueur</li>
+<li>[ ] Briefing de l'équipe PNJ</li>
+<li>[ ] Préparation des solutions de secours</li>
+</ul>
+<br>
+## ✅ Checklist de Préparation
+<br>
+### 📦 Matériel
+<ul>
+<li>[ ] Tous les éléments de décor sont présents</li>
+<li>[ ] Les cartes et supports sont imprimés et plastifiés</li>
+<li>[ ] Les outils agricoles sont numérotés et sécurisés</li>
+<li>[ ] L'équipement audio fonctionne correctement</li>
+</ul>
+<br>
+### 🏗️ Installation
+<ul>
+<li>[ ] Le décor de grange est en place et sécurisé</li>
+<li>[ ] Toutes les énigmes sont installées et testées</li>
+<li>[ ] L'éclairage d'ambiance fonctionne</li>
+<li>[ ] Les zones de circulation sont dégagées</li>
+</ul>
+<br>
+### 👥 Équipe
+<ul>
+<li>[ ] Le PNJ connaît son rôle et ses répliques</li>
+<li>[ ] Le costume fermier est prêt et ajusté</li>
+<li>[ ] Les solutions de toutes les énigmes sont maîtrisées</li>
+<li>[ ] Le planning et les rotations sont organisés</li>
+</ul>
+<br>
+### 🔧 Technique
+<ul>
+<li>[ ] L'enceinte est chargée et connectée</li>
+<li>[ ] Les sons d'animaux sont testés et audibles</li>
+<li>[ ] La boîte à code fonctionne avec le bon code</li>
+<li>[ ] Les éléments fragiles sont protégés</li>
+</ul>
+<br>
+## 🚨 Gestion des Problèmes
+<br>
+### Problèmes Courants
+<ol>
+<li><strong>Panne de l'enceinte audio</strong></li>
+</ul>
+<p>   - <strong>Cause</strong> : Batterie déchargée ou problème de connexion</p>
+<p>   - <strong>Solution</strong> : Imiter les cris d'animaux ou utiliser un autre appareil</p>
+<br>
+<ol>
+<li><strong>Cartes symboles perdues ou abîmées</strong></li>
+</ul>
+<p>   - <strong>Cause</strong> : Manipulation intensive par les joueurs</p>
+<p>   - <strong>Solution</strong> : Utiliser les cartes de rechange préparées</p>
+<br>
+<ol>
+<li><strong>Boîte à code bloquée</strong></li>
+</ul>
+<p>   - <strong>Cause</strong> : Mécanisme grippé ou mauvaise manipulation</p>
+<p>   - <strong>Solution</strong> : Ouvrir manuellement et noter la réussite</p>
+<br>
+### Solutions de Secours
+<ul>
+<li><strong>Plan B énigme symboles</strong> : Utiliser des objets physiques (pierres, eau, plume, bougie)</li>
+<li><strong>Plan B énigme César</strong> : Donner directement l'indice "TRESOR SOUS MEULE"</li>
+<li><strong>Plan B énigme animaux</strong> : Faire mimer les animaux par le PNJ</li>
+</ul>
+<br>
+### Contacts d'Urgence
+<ul>
+<li><strong>Responsable technique</strong> : [Numéro à compléter]</li>
+<li><strong>Responsable sécurité</strong> : [Numéro à compléter]</li>
+</ul>
+<br>
+## 📝 Notes Post-Événement
+<br>
+### Retours d'Expérience
+<p>[Section à remplir après l'événement]</p>
+<ul>
+<li>Énigmes les plus appréciées</li>
+<li>Difficultés rencontrées</li>
+<li>Temps de résolution moyen</li>
+<li>Suggestions des joueurs</li>
+</ul>
+<br>
+### Améliorations Proposées
+<p>[Idées d'amélioration pour les prochaines éditions]</p>
+<ul>
+<li>Ajout d'énigmes supplémentaires</li>
+<li>Amélioration du décor</li>
+<li>Optimisation du flux de joueurs</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<p><em>Guide de préparation créé le 24/05/2025 - Version 1.0</em></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Malvinaland - Documentation</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/documentation/">Documentation</a> |
+        <a href="/content/narration/">Narration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+</body>
+</html>

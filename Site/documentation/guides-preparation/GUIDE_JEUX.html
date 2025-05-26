@@ -1,0 +1,651 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUIDE_JEUX - Malvinaland</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .doc-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    
+    .doc-content h1 {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .doc-content h2 {
+      color: var(--secondary-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    
+    .doc-content h3 {
+      color: var(--primary-color);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .doc-content pre {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 4px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    
+    .doc-content code {
+      background: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .doc-content blockquote {
+      border-left: 4px solid var(--primary-color);
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #f8f9fa;
+      font-style: italic;
+    }
+    
+    .doc-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    .doc-content th,
+    .doc-content td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    
+    .doc-content th {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .doc-content ul,
+    .doc-content ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+    
+    .doc-content li {
+      margin: 0.5rem 0;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: var(--link-hover-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Malvinaland</a></h1>
+      <nav class="main-navigation" id="desktop-nav">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Menu mobile -->
+      <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="/">ðŸ  Accueil</a></li>
+          <li><a href="/content/carte/">ðŸ—ºï¸ Carte</a></li>
+          <li><a href="/documentation/" class="active">ðŸ“– Documentation</a></li>
+          <li><a href="/content/narration/">ðŸ“š Narration</a></li>
+          <li><a href="/content/personnages/">ðŸ‘¥ Personnages</a></li>
+          <li class="auth-links">
+            <a href="/content/login/" class="auth-link login-link">ðŸ”‘ Connexion</a>
+            <a href="#" id="logout-button" class="auth-link logout-link">ðŸšª DÃ©connexion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <div class="doc-content">
+        <a href="/documentation/" class="back-link">â† Retour Ã  la documentation</a>
+        # Guide de Préparation - Monde des Jeux
+<br>
+## 📋 Informations Générales
+<br>
+<ul>
+<li><strong>Nom du Monde</strong> : Le Monde des Jeux</li>
+<li><strong>Thème</strong> : Jeux traditionnels, stratégie, compétition amicale</li>
+<li><strong>Durée estimée</strong> : 50-70 minutes</li>
+<li><strong>Nombre de joueurs</strong> : 4-10 joueurs simultanément</li>
+<li><strong>Niveau de difficulté</strong> : 🟡 Moyen</li>
+</ul>
+<br>
+## 🎭 Vue d'Ensemble du Monde
+<br>
+### Description et Ambiance
+<p>Le Monde des Jeux évoque une salle de jeux d'autrefois avec ses échiquiers, ses jeux de cartes et ses défis intellectuels. L'ambiance est celle d'un club de jeux où la réflexion et la stratégie sont reines. Les joueurs découvrent un univers où chaque jeu cache un secret et où la logique est la clé de la progression.</p>
+<br>
+### Histoire et Contexte
+<p>Cette ancienne salle de jeux était le lieu de rendez-vous d'un cercle de penseurs et de stratèges qui utilisaient les jeux pour transmettre des connaissances secrètes. Chaque partie cachait un message, chaque mouvement avait une signification. Les joueurs doivent découvrir ces codes cachés pour comprendre les mystères du cercle.</p>
+<br>
+### Objectifs pour les Joueurs
+<ul>
+<li>Résoudre les énigmes cachées dans les jeux traditionnels</li>
+<li>Comprendre les stratégies et patterns des anciens maîtres</li>
+<li>Décoder les messages secrets transmis par les parties</li>
+<li>Maîtriser les règles secrètes du cercle des joueurs</li>
+</ul>
+<br>
+## 🗺️ Plan d'Aménagement
+<br>
+### Schéma du Lieu
+<p>``<code></p>
+<p>    [Entrée]</p>
+<p>        |</p>
+<p>   [Zone Accueil]</p>
+<p>   (Règlement du club)</p>
+<p>        |</p>
+<p>[Zone Centrale Jeux]</p>
+<p>   |           |</p>
+<p>[Coin Échecs] [Coin Cartes]</p>
+<p>   |           |</p>
+<p>[Zone Dames/Dés] [Zone Énigmes Logiques]</p>
+<p>        |</p>
+<p>   [Salon Final]</p>
+<p>   (Synthèse des solutions)</p>
+<p>        |</p>
+<p>    [Sortie]</p>
+<p></code>``</p>
+<br>
+### Zones Principales
+<ol>
+<li><strong>Zone d'Accueil</strong> : Panneau avec règlement du club de jeux</li>
+<li><strong>Zone Centrale</strong> : Espace principal avec tables de jeu</li>
+<li><strong>Coin Échecs</strong> : Énigme de la partie d'échecs inachevée</li>
+<li><strong>Coin Cartes</strong> : Énigme des cartes et combinaisons</li>
+<li><strong>Zone Dames/Dés</strong> : Énigmes de logique et probabilités</li>
+<li><strong>Salon Final</strong> : Synthèse et résolution finale</li>
+</ul>
+<br>
+### Flux de Circulation
+<p>Les joueurs explorent librement les différentes zones de jeu, résolvent les énigmes dans l'ordre qu'ils souhaitent, puis se regroupent au salon final pour la synthèse.</p>
+<br>
+## 📦 Matériel Complet pour le Monde
+<br>
+### 🛠️ Matériel de Construction
+<ul>
+<li>[ ] Tables de jeu en bois (4 unités)</li>
+<li>[ ] Chaises confortables (8 unités)</li>
+<li>[ ] Étagères pour ranger les jeux (2 unités)</li>
+<li>[ ] Panneaux d'affichage (3 unités)</li>
+<li>[ ] Coffres ou boîtes de rangement (4 unités)</li>
+</ul>
+<br>
+### 🎨 Matériel de Décoration
+<ul>
+<li>[ ] Tapis de jeu en feutre vert (2 unités)</li>
+<li>[ ] Lampes de bureau style vintage (4 unités)</li>
+<li>[ ] Horloges d'échecs décoratives (2 unités)</li>
+<li>[ ] Portraits de grands joueurs (affiches)</li>
+<li>[ ] Plantes vertes en pot (4 unités)</li>
+<li>[ ] Rideaux ou tentures (pour ambiance feutrée)</li>
+</ul>
+<br>
+### 🎲 Matériel de Jeu
+<ul>
+<li>[ ] Jeu d'échecs complet avec échiquier (2 sets)</li>
+<li>[ ] Jeu de dames avec damier (1 set)</li>
+<li>[ ] Jeux de cartes standards (4 jeux)</li>
+<li>[ ] Dés de différentes tailles (10 unités)</li>
+<li>[ ] Jetons de poker (100 unités)</li>
+<li>[ ] Sabliers de différentes durées (3 unités)</li>
+</ul>
+<br>
+### 📄 Matériel à Imprimer
+<ul>
+<li>[ ] Panneau "Club des Stratèges" (1 exemplaire A3)</li>
+<li>[ ] Notation de la partie d'échecs (4 exemplaires A4)</li>
+<li>[ ] Cartes énigmes logiques (20 cartes)</li>
+<li>[ ] Grilles de solutions (4 exemplaires A4)</li>
+<li>[ ] Règlement du club (2 exemplaires A4)</li>
+<li>[ ] Certificat "Maître Stratège" (10 exemplaires)</li>
+</ul>
+<br>
+### 🔧 Outils Nécessaires
+<ul>
+<li>[ ] Tournevis pour montage des meubles</li>
+<li>[ ] Niveau à bulle</li>
+<li>[ ] Mètre ruban</li>
+<li>[ ] Agrafeuse pour affichages</li>
+<li>[ ] Cutter et ciseaux</li>
+</ul>
+<br>
+### 💡 Matériel Électrique/Électronique
+<ul>
+<li>[ ] Éclairage d'ambiance LED blanc chaud</li>
+<li>[ ] Rallonges électriques (10 mètres)</li>
+<li>[ ] Minuteur électronique (pour certaines énigmes)</li>
+</ul>
+<br>
+## 🧩 Énigmes Détaillées
+<br>
+### Énigme 1 : La Partie d'Échecs Inachevée
+<br>
+#### 🎯 Objectif
+<p>Les joueurs doivent analyser une partie d'échecs interrompue et trouver le coup gagnant qui révèle un code secret basé sur les coordonnées de l'échiquier.</p>
+<br>
+#### 📋 Matériel Spécifique
+<ul>
+<li>Échiquier avec position de jeu figée</li>
+<li>Pièces d'échecs positionnées selon le problème</li>
+<li>Notation de la partie sur papier</li>
+<li>Grille de correspondance coordonnées-lettres</li>
+</ul>
+<br>
+#### 🔨 Instructions de Construction
+<ol>
+<li><strong>Préparation</strong> :</li>
+</ul>
+<p>   - Créer une position d'échecs avec un mat en 2 coups</p>
+<p>   - Préparer la notation de la partie jusqu'à cette position</p>
+<p>   - Créer la grille de correspondance (a1=A, b2=B, etc.)</p>
+<br>
+<ol>
+<li><strong>Assemblage</strong> :</li>
+</ul>
+<p>   - Disposer les pièces exactement selon la position</p>
+<p>   - Fixer les pièces pour éviter qu'elles bougent</p>
+<p>   - Placer la notation à côté de l'échiquier</p>
+<br>
+<ol>
+<li><strong>Installation</strong> :</li>
+</ul>
+<p>   - Positionner l'échiquier sur une table stable</p>
+<p>   - Éclairer correctement pour la visibilité</p>
+<p>   - Placer des chaises pour l'observation</p>
+<br>
+#### 📍 Mise en Place sur Site
+<ul>
+<li><strong>Emplacement</strong> : Table centrale du coin échecs</li>
+<li><strong>Orientation</strong> : Accessible des deux côtés</li>
+<li><strong>Sécurisation</strong> : Fixer les pièces importantes</li>
+<li><strong>Test</strong> : Vérifier que la solution est unique</li>
+</ul>
+<br>
+#### 💡 Indices et Solution
+<ul>
+<li><strong>Indices niveau 1</strong> : "Le roi blanc est en danger, mais peut-il retourner la situation ?"</li>
+<li><strong>Indices niveau 2</strong> : "Cherchez le mat en 2 coups, les coordonnées comptent"</li>
+<li><strong>Solution complète</strong> : Dame en d8 puis mat en h8 → Code "D8H8"</li>
+</ul>
+<br>
+#### 🔄 Variantes
+<ul>
+<li><strong>Version simplifiée</strong> : Mat en 1 coup</li>
+<li><strong>Version complexe</strong> : Problème de mat en 3 coups</li>
+<li><strong>Adaptations</strong> : Utiliser des problèmes d'échecs célèbres</li>
+</ul>
+<br>
+#### ⚠️ Points d'Attention
+<ul>
+<li>S'assurer que la position est correcte et légale</li>
+<li>Vérifier qu'il n'y a qu'une seule solution optimale</li>
+<li>Prévoir une solution de secours si les pièces bougent</li>
+</ul>
+<br>
+### Énigme 2 : Le Code des Cartes
+<br>
+#### 🎯 Objectif
+<p>Découvrir le message secret caché dans une combinaison de cartes en utilisant les valeurs et couleurs selon un système de codage spécifique.</p>
+<br>
+#### 📋 Matériel Spécifique
+<ul>
+<li>12 cartes spécifiques disposées en pattern</li>
+<li>Grille de décodage valeur/couleur</li>
+<li>Support pour maintenir les cartes</li>
+<li>Cartes de rechange</li>
+</ul>
+<br>
+#### 🔨 Instructions de Construction
+<ol>
+<li><strong>Préparation</strong> :</li>
+</ul>
+<p>   - Sélectionner 12 cartes selon le message à coder</p>
+<p>   - Créer la grille de correspondance (As=1, Roi=13, Cœur=A, etc.)</p>
+<p>   - Préparer le support d'affichage</p>
+<br>
+<ol>
+<li><strong>Assemblage</strong> :</li>
+</ul>
+<p>   - Disposer les cartes selon le pattern choisi</p>
+<p>   - Fixer les cartes pour éviter qu'elles tombent</p>
+<p>   - Placer la grille de décodage à proximité</p>
+<br>
+<ol>
+<li><strong>Installation</strong> :</li>
+</ul>
+<p>   - Installer sur une table dédiée</p>
+<p>   - Assurer un bon éclairage</p>
+<p>   - Protéger les cartes de l'humidité</p>
+<br>
+#### 📍 Mise en Place sur Site
+<ul>
+<li><strong>Emplacement</strong> : Table du coin cartes</li>
+<li><strong>Orientation</strong> : Cartes visibles de face</li>
+<li><strong>Sécurisation</strong> : Fixer les cartes importantes</li>
+<li><strong>Test</strong> : Vérifier que le décodage fonctionne</li>
+</ul>
+<br>
+#### 💡 Indices et Solution
+<ul>
+<li><strong>Indices niveau 1</strong> : "Chaque carte a une valeur, chaque couleur un sens"</li>
+<li><strong>Indices niveau 2</strong> : "Lisez de gauche à droite, ligne par ligne"</li>
+<li><strong>Solution complète</strong> : Séquence de cartes → "VICTOIRE" (exemple)</li>
+</ul>
+<br>
+#### 🔄 Variantes
+<ul>
+<li><strong>Version simplifiée</strong> : Utiliser seulement 8 cartes</li>
+<li><strong>Version complexe</strong> : Ajouter les figures comme modificateurs</li>
+<li><strong>Adaptations</strong> : Utiliser des cartes spéciales ou tarot</li>
+</ul>
+<br>
+#### ⚠️ Points d'Attention
+<ul>
+<li>Protéger les cartes de l'usure</li>
+<li>Vérifier que toutes les cartes nécessaires sont présentes</li>
+<li>Prévoir des cartes de remplacement</li>
+</ul>
+<br>
+### Énigme 3 : Le Défi des Dés et Probabilités
+<br>
+#### 🎯 Objectif
+<p>Résoudre une série de défis logiques basés sur les probabilités et les combinaisons de dés pour découvrir une séquence numérique finale.</p>
+<br>
+#### 📋 Matériel Spécifique
+<ul>
+<li>6 dés de couleurs différentes</li>
+<li>Grille de calcul des probabilités</li>
+<li>Cartes défis avec problèmes</li>
+<li>Calculatrice simple</li>
+</ul>
+<br>
+#### 🔨 Instructions de Construction
+<ol>
+<li><strong>Préparation</strong> :</li>
+</ul>
+<p>   - Créer 5 défis de difficulté croissante</p>
+<p>   - Préparer les grilles de calcul</p>
+<p>   - Sélectionner des dés bien contrastés</p>
+<br>
+<ol>
+<li><strong>Assemblage</strong> :</li>
+</ul>
+<p>   - Organiser les défis par ordre de difficulté</p>
+<p>   - Préparer les supports de calcul</p>
+<p>   - Disposer les dés dans des compartiments</p>
+<br>
+<ol>
+<li><strong>Installation</strong> :</li>
+</ul>
+<p>   - Table avec espace de travail suffisant</p>
+<p>   - Bon éclairage pour les calculs</p>
+<p>   - Chaises confortables pour la réflexion</p>
+<br>
+#### 📍 Mise en Place sur Site
+<ul>
+<li><strong>Emplacement</strong> : Zone dames/dés</li>
+<li><strong>Orientation</strong> : Espace de travail face aux joueurs</li>
+<li><strong>Sécurisation</strong> : Éviter que les dés roulent</li>
+<li><strong>Test</strong> : Vérifier tous les calculs</li>
+</ul>
+<br>
+#### 💡 Indices et Solution
+<ul>
+<li><strong>Indices niveau 1</strong> : "Les probabilités ne mentent jamais"</li>
+<li><strong>Indices niveau 2</strong> : "Chaque défi donne un chiffre de la solution finale"</li>
+<li><strong>Solution complète</strong> : Séquence de 5 chiffres → Code final</li>
+</ul>
+<br>
+#### 🔄 Variantes
+<ul>
+<li><strong>Version simplifiée</strong> : Réduire à 3 défis</li>
+<li><strong>Version complexe</strong> : Ajouter des dés spéciaux</li>
+<li><strong>Adaptations</strong> : Utiliser des dominos ou autres objets</li>
+</ul>
+<br>
+#### ⚠️ Points d'Attention
+<ul>
+<li>Vérifier tous les calculs de probabilité</li>
+<li>S'assurer que les défis sont réalisables</li>
+<li>Prévoir une aide pour les calculs complexes</li>
+</ul>
+<br>
+## 🎭 Animation et PNJ
+<br>
+### Rôle des PNJ
+<p>Le PNJ incarne un ancien maître du club de jeux, sage et patient, qui guide les joueurs dans leur apprentissage des stratégies secrètes. Il utilise le vocabulaire des jeux et des métaphores liées à la stratégie.</p>
+<br>
+### Interactions Clés
+<ul>
+<li><strong>À l'arrivée</strong> : "Bienvenue dans notre cercle ! Ici, chaque jeu cache un enseignement..."</li>
+<li><strong>Pendant les énigmes</strong> : Guide avec des références aux grands maîtres et aux stratégies classiques</li>
+<li><strong>À la sortie</strong> : "Vous avez prouvé que vous maîtrisez l'art de la stratégie !"</li>
+</ul>
+<br>
+### Phrases et Répliques Types
+<ul>
+<li>"Un bon joueur anticipe, un maître comprend les patterns"</li>
+<li>"Chaque coup compte, chaque carte a sa place"</li>
+<li>"La logique est votre meilleure alliée dans ce monde"</li>
+<li>"Les grands maîtres ne jouent jamais au hasard"</li>
+</ul>
+<br>
+### Costumes et Accessoires PNJ
+<ul>
+<li>Veste de costume élégante ou gilet</li>
+<li>Nœud papillon ou cravate discrète</li>
+<li>Lunettes de lecture (même sans correction)</li>
+<li>Carnet de notes comme accessoire</li>
+<li>Stylo plume ou crayon de qualité</li>
+</ul>
+<br>
+## 🏗️ Installation Complète
+<br>
+### ⏰ Planning d'Installation
+<ul>
+<li><strong>J-7</strong> : Commande et préparation du matériel de jeu</li>
+<li><strong>J-3</strong> : Préparation des énigmes et supports</li>
+<li><strong>J-1</strong> : Installation des meubles et décor</li>
+<li><strong>J-0</strong> : Tests finaux et vérification des solutions</li>
+</ul>
+<br>
+### 👥 Équipe Nécessaire
+<ul>
+<li><strong>Responsable installation</strong> : 1 personne (connaissances en jeux)</li>
+<li><strong>Assistants</strong> : 2-3 personnes</li>
+<li><strong>Compétences requises</strong> : Logique, connaissance des jeux de base</li>
+</ul>
+<br>
+### 🔧 Étapes d'Installation
+<br>
+#### 1. Préparation du Lieu (45 min)
+<ul>
+<li>[ ] Nettoyer et organiser l'espace</li>
+<li>[ ] Vérifier l'éclairage et l'électricité</li>
+<li>[ ] Délimiter les zones de jeu</li>
+</ul>
+<br>
+#### 2. Installation du Mobilier (90 min)
+<ul>
+<li>[ ] Disposer les tables et chaises</li>
+<li>[ ] Installer les étagères et rangements</li>
+<li>[ ] Mettre en place l'éclairage d'ambiance</li>
+<li>[ ] Disposer les éléments décoratifs</li>
+</ul>
+<br>
+#### 3. Installation des Énigmes (120 min)
+<ul>
+<li>[ ] Préparer l'énigme d'échecs (45 min)</li>
+<li>[ ] Installer l'énigme des cartes (30 min)</li>
+<li>[ ] Mettre en place l'énigme des dés (45 min)</li>
+<li>[ ] Tests complets de toutes les énigmes</li>
+</ul>
+<br>
+#### 4. Finalisation (30 min)
+<ul>
+<li>[ ] Vérification générale de sécurité</li>
+<li>[ ] Test du parcours complet</li>
+<li>[ ] Briefing de l'équipe PNJ</li>
+<li>[ ] Préparation des solutions de secours</li>
+</ul>
+<br>
+## ✅ Checklist de Préparation
+<br>
+### 📦 Matériel
+<ul>
+<li>[ ] Tous les jeux sont complets et en bon état</li>
+<li>[ ] Les énigmes sont préparées et testées</li>
+<li>[ ] Les grilles de solution sont imprimées</li>
+<li>[ ] Le matériel de rechange est disponible</li>
+</ul>
+<br>
+### 🏗️ Installation
+<ul>
+<li>[ ] Les tables sont stables et bien éclairées</li>
+<li>[ ] Toutes les énigmes sont installées et fonctionnelles</li>
+<li>[ ] L'ambiance de club de jeux est créée</li>
+<li>[ ] Les zones de circulation sont dégagées</li>
+</ul>
+<br>
+### 👥 Équipe
+<ul>
+<li>[ ] Le PNJ maîtrise les règles de tous les jeux</li>
+<li>[ ] Le costume de maître de jeu est prêt</li>
+<li>[ ] Toutes les solutions sont connues et maîtrisées</li>
+<li>[ ] Les rotations et le planning sont organisés</li>
+</ul>
+<br>
+### 🔧 Technique
+<ul>
+<li>[ ] L'éclairage est suffisant pour tous les jeux</li>
+<li>[ ] Les positions d'échecs sont correctes</li>
+<li>[ ] Les cartes sont en bon état et lisibles</li>
+<li>[ ] Les calculs de probabilité sont vérifiés</li>
+</ul>
+<br>
+## 🚨 Gestion des Problèmes
+<br>
+### Problèmes Courants
+<ol>
+<li><strong>Pièces d'échecs déplacées</strong></li>
+</ul>
+<p>   - <strong>Cause</strong> : Manipulation par les joueurs</p>
+<p>   - <strong>Solution</strong> : Remettre en position avec le schéma de référence</p>
+<br>
+<ol>
+<li><strong>Cartes abîmées ou perdues</strong></li>
+</ul>
+<p>   - <strong>Cause</strong> : Usure ou manipulation intensive</p>
+<p>   - <strong>Solution</strong> : Utiliser les cartes de rechange préparées</p>
+<br>
+<ol>
+<li><strong>Erreur dans les calculs de probabilité</strong></li>
+</ul>
+<p>   - <strong>Cause</strong> : Complexité des calculs</p>
+<p>   - <strong>Solution</strong> : Fournir une aide ou simplifier le défi</p>
+<br>
+### Solutions de Secours
+<ul>
+<li><strong>Plan B énigme échecs</strong> : Donner directement la solution "D8H8"</li>
+<li><strong>Plan B énigme cartes</strong> : Utiliser une version simplifiée avec moins de cartes</li>
+<li><strong>Plan B énigme dés</strong> : Proposer des défis plus simples ou donner les réponses</li>
+</ul>
+<br>
+### Contacts d'Urgence
+<ul>
+<li><strong>Responsable technique</strong> : [Numéro à compléter]</li>
+<li><strong>Responsable sécurité</strong> : [Numéro à compléter]</li>
+</ul>
+<br>
+## 📝 Notes Post-Événement
+<br>
+### Retours d'Expérience
+<p>[Section à remplir après l'événement]</p>
+<ul>
+<li>Énigmes les plus appréciées</li>
+<li>Niveau de difficulté perçu</li>
+<li>Temps de résolution moyen</li>
+<li>Suggestions d'amélioration</li>
+</ul>
+<br>
+### Améliorations Proposées
+<p>[Idées d'amélioration pour les prochaines éditions]</p>
+<ul>
+<li>Ajout de nouveaux jeux (go, backgammon)</li>
+<li>Énigmes collaboratives entre équipes</li>
+<li>Système de scoring et classement</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<p><em>Guide de préparation créé le 24/05/2025 - Version 1.0</em></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Malvinaland - Documentation</p>
+      <div class="footer-navigation">
+        <a href="/">Accueil</a> |
+        <a href="/content/carte/">Carte</a> |
+        <a href="/documentation/">Documentation</a> |
+        <a href="/content/narration/">Narration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/auth.js" defer></script>
+</body>
+</html>
