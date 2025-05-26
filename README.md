@@ -2,10 +2,16 @@
 
 Ce dépôt contient le code source et les ressources du site Malvinaland, un univers imaginaire riche en mystères et en aventures.
 
+## 🌐 Site Web de Production
+
+**URL :** https://malvinaland.myia.io/
+**Hébergement :** IIS publie automatiquement le répertoire `site/` de ce dépôt
+**Aucun hébergement supplémentaire requis**
+
 ## Structure du dépôt
 
 - src/ : Code source du site
-- site/ : Site généré pour le déploiement
+- site/ : Site généré pour le déploiement (publié automatiquement par IIS)
 - scripts/ : Scripts de déploiement et de maintenance
 - ressources/ : Ressources partagées
 - docs/ : Documentation du projet

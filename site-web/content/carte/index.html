@@ -75,19 +75,40 @@
       <h1>Carte des Mondes de Malvinaland</h1>
 <p>Explorez la carte interactive des mondes de Malvinaland. Chaque monde est représenté par une couleur distinctive et contient ses propres mystères à découvrir.</p>
 <div class="carte-container">
-  <img src="/assets/images/carte-malvinaland.png?v=20250520" alt="Carte de Malvinaland" class="carte-image" usemap="#carte-map">
+  <img src="/assets/images/carte-malvinaland.png?v=20250520" alt="Carte de Malvinaland" class="carte-image" usemap="#carte-map" id="carte-interactive">
   <map name="carte-map">
-    <area shape="poly" coords="150,200,200,180,250,200,200,220" alt="Le monde de l'assemblée" href="/content/mondes/assemblee/" title="Le monde de l'assemblée">
-    <area shape="poly" coords="300,150,350,130,400,150,350,170" alt="Le monde de la grange" href="/content/mondes/grange/" title="Le monde de la grange">
-    <area shape="poly" coords="450,200,500,180,550,200,500,220" alt="Le monde des jeux" href="/content/mondes/jeux/" title="Le monde des jeux">
-    <area shape="poly" coords="300,250,350,230,400,250,350,270" alt="Le monde des rêves" href="/content/mondes/reves/" title="Le monde des rêves">
-    <area shape="poly" coords="450,300,500,280,550,300,500,320" alt="Le monde du damier" href="/content/mondes/damier/" title="Le monde du damier">
-    <area shape="poly" coords="150,300,200,280,250,300,200,320" alt="Le monde du linge" href="/content/mondes/linge/" title="Le monde du linge">
-    <area shape="poly" coords="300,350,350,330,400,350,350,370" alt="Le monde du verger" href="/content/mondes/verger/" title="Le monde du verger">
-    <area shape="poly" coords="450,350,500,330,550,350,500,370" alt="Le monde du Zob" href="/content/mondes/zob/" title="Le monde du Zob">
-    <area shape="poly" coords="150,350,200,330,250,350,200,370" alt="Le monde Elysée" href="/content/mondes/elysee/" title="Le monde Elysée">
-    <area shape="poly" coords="300,400,350,380,400,400,350,420" alt="Le monde Karibu" href="/content/mondes/karibu/" title="Le monde Karibu">
-    <area shape="poly" coords="450,400,500,380,550,400,500,420" alt="Le monde orange des Sphinx" href="/content/mondes/sphinx/" title="Le monde orange des Sphinx">
+    <!-- Le Monde de la Grange (vert, en haut à gauche) -->
+    <area shape="rect" coords="120,480,280,580" alt="Le monde de la grange" href="/content/mondes/grange/" title="Le monde de la grange">
+    
+    <!-- Le Monde des Sphinx (orange, au centre-haut) -->
+    <area shape="circle" coords="465,440,80" alt="Le monde orange des Sphinx" href="/content/mondes/sphinx/" title="Le monde orange des Sphinx">
+    
+    <!-- Le Monde du Linge (violet, en haut à droite) -->
+    <area shape="rect" coords="615,320,775,420" alt="Le monde du linge" href="/content/mondes/linge/" title="Le monde du linge">
+    
+    <!-- Le Monde du Verger (rose, en bas à droite) -->
+    <area shape="rect" coords="710,570,870,670" alt="Le monde du verger" href="/content/mondes/verger/" title="Le monde du verger">
+    
+    <!-- Le Monde des Jeux (bleu, en bas à gauche) -->
+    <area shape="rect" coords="15,100,175,200" alt="Le monde des jeux" href="/content/mondes/jeux/" title="Le monde des jeux">
+    
+    <!-- Le Monde de l'Assemblée (rouge/marron, au centre-bas) -->
+    <area shape="rect" coords="275,135,435,235" alt="Le monde de l'assemblée" href="/content/mondes/assemblee/" title="Le monde de l'assemblée">
+    
+    <!-- Le Monde du Damier (bleu clair, en haut centre) -->
+    <area shape="rect" coords="650,100,810,200" alt="Le monde du damier" href="/content/mondes/damier/" title="Le monde du damier">
+    
+    <!-- Ka Monde Karibu (marron/orange, au centre-bas) -->
+    <area shape="rect" coords="465,190,625,290" alt="Le monde Karibu" href="/content/mondes/karibu/" title="Le monde Karibu">
+    
+    <!-- Le Monde du Zob (gris/vert, en bas à droite) -->
+    <area shape="rect" coords="715,150,875,250" alt="Le monde du Zob" href="/content/mondes/zob/" title="Le monde du Zob">
+    
+    <!-- Le Monde des Rêves (violet, si visible) -->
+    <area shape="rect" coords="300,250,400,350" alt="Le monde des rêves" href="/content/mondes/reves/" title="Le monde des rêves">
+    
+    <!-- Le Monde Elysée (blanc, si visible) -->
+    <area shape="rect" coords="150,350,250,450" alt="Le monde Elysée" href="/content/mondes/elysee/" title="Le monde Elysée">
   </map>
 </div>
 <h2>Légende de la carte</h2>
@@ -111,13 +132,88 @@
     position: relative;
     max-width: 100%;
     margin: 2rem 0;
+    text-align: center;
   }
   
   .carte-image {
     max-width: 100%;
     height: auto;
-    border: 2px solid #3f51b5;
-    border-radius: 8px;
+    border: 3px solid #3f51b5;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(63, 81, 181, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .carte-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 32px rgba(63, 81, 181, 0.3);
+  }
+  
+  /* Styles pour les zones cliquables */
+  map area {
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  /* Indicateur visuel pour les zones cliquables */
+  .carte-container::after {
+    content: "💡 Cliquez sur les mondes colorés pour les explorer !";
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #3f51b5, #5c6bc0);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(63, 81, 181, 0.3);
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+  
+  /* Amélioration de la légende */
+  .carte-container + h2 {
+    color: #3f51b5;
+    border-bottom: 2px solid #3f51b5;
+    padding-bottom: 0.5rem;
+    margin-top: 3rem;
+  }
+  
+  .carte-container + h2 + ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .carte-container + h2 + ul li {
+    padding: 0.5rem 1rem;
+    background: #f8f9fa;
+    border-left: 4px solid #3f51b5;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .carte-container + h2 + ul li:hover {
+    background: #e3f2fd;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .carte-container::after {
+      font-size: 0.8rem;
+      padding: 0.4rem 0.8rem;
+    }
+    
+    .carte-container + h2 + ul {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 <script src="/assets/js/image-loader.js" defer></script>
@@ -146,7 +242,7 @@
   <script src="/assets/js/auth.js" defer></script>
   <script src="/assets/js/image-loader.js" defer></script>
   <script src="/assets/js/fix-mobile-menu.js" defer></script>
-  <script src="/assets/js/map-activator.js" defer></script>
+  <script src="/assets/js/carte-interactive.js" defer></script>
   <script src="/assets/js/register-sw.js" defer></script>
   
 </body>

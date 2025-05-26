@@ -1,0 +1,287 @@
+{
+  "grange": {
+    "nom": "Le monde de la grange",
+    "coords": [
+      120,
+      480,
+      280,
+      580
+    ],
+    "forme": "rect",
+    "couleur_moyenne": [
+      73.6394375,
+      120.2538125,
+      64.217875
+    ],
+    "couleur_attendue": [
+      34,
+      139,
+      34
+    ],
+    "variance": 3587.732854382836,
+    "taille_roi": [
+      100,
+      160,
+      3
+    ]
+  },
+  "sphinx": {
+    "nom": "Le monde orange des Sphinx",
+    "coords": [
+      465,
+      440,
+      80
+    ],
+    "forme": "circle",
+    "couleur_moyenne": [
+      63.3366015625,
+      117.3079296875,
+      56.771875
+    ],
+    "couleur_attendue": [
+      255,
+      140,
+      0
+    ],
+    "variance": 2077.9760095550364,
+    "taille_roi": [
+      160,
+      160,
+      3
+    ]
+  },
+  "linge": {
+    "nom": "Le monde du linge",
+    "coords": [
+      615,
+      320,
+      775,
+      420
+    ],
+    "forme": "rect",
+    "couleur_moyenne": [
+      173.63075,
+      154.77125,
+      66.89425
+    ],
+    "couleur_attendue": [
+      138,
+      43,
+      226
+    ],
+    "variance": 3524.919769812371,
+    "taille_roi": [
+      100,
+      160,
+      3
+    ]
+  },
+  "verger": {
+    "nom": "Le monde du verger",
+    "coords": [
+      710,
+      570,
+      870,
+      670
+    ],
+    "forme": "rect",
+    "couleur_moyenne": [
+      141.1126875,
+      116.7466875,
+      55.57425
+    ],
+    "couleur_attendue": [
+      255,
+      192,
+      203
+    ],
+    "variance": 5749.81224624219,
+    "taille_roi": [
+      100,
+      160,
+      3
+    ]
+  },
+  "jeux": {
+    "nom": "Le monde des jeux",
+    "coords": [
+      15,
+      100,
+      175,
+      200
+    ],
+    "forme": "rect",
+    "couleur_moyenne": [
+      68.221125,
+      103.524375,
+      57.709625
+    ],
+    "couleur_attendue": [
+      0,
+      100,
+      200
+    ],
+    "variance": 1431.9693169531085,
+    "taille_roi": [
+      100,
+      160,
+      3
+    ]
+  },
+  "assemblee": {
+    "nom": "Le monde de l'assemblée",
+    "coords": [
+      275,
+      135,
+      435,
+      235
+    ],
+    "forme": "rect",
+    "couleur_moyenne": [
+      131.8683125,
+      144.769,
+      104.897875
+    ],
+    "couleur_attendue": [
+      139,
+      69,
+      19
+    ],
+    "variance": 14036.394055386714,
+    "taille_roi": [
+      100,
+      160,
+      3
+    ]
+  },
+  "damier": {
+    "nom": "Le monde du damier",
+    "coords": [
+      650,
+      100,
+      810,
+      200
+    ],
+    "forme": "rect",
+    "couleur_moyenne": [
+      119.0119375,
+      139.3395,
+      83.9065625
+    ],
+    "couleur_attendue": [
+      135,
+      206,
+      235
+    ],
+    "variance": 7824.195241679651,
+    "taille_roi": [
+      100,
+      160,
+      3
+    ]
+  },
+  "karibu": {
+    "nom": "Le monde Karibu",
+    "coords": [
+      465,
+      190,
+      625,
+      290
+    ],
+    "forme": "rect",
+    "couleur_moyenne": [
+      77.9735625,
+      102.8669375,
+      62.51975
+    ],
+    "couleur_attendue": [
+      255,
+      165,
+      0
+    ],
+    "variance": 3281.1818303671703,
+    "taille_roi": [
+      100,
+      160,
+      3
+    ]
+  },
+  "zob": {
+    "nom": "Le monde du Zob",
+    "coords": [
+      715,
+      150,
+      875,
+      250
+    ],
+    "forme": "rect",
+    "couleur_moyenne": [
+      141.423625,
+      134.8045625,
+      63.485125
+    ],
+    "couleur_attendue": [
+      128,
+      128,
+      128
+    ],
+    "variance": 5411.200437277316,
+    "taille_roi": [
+      100,
+      160,
+      3
+    ]
+  },
+  "reves": {
+    "nom": "Le monde des rêves",
+    "coords": [
+      300,
+      250,
+      400,
+      350
+    ],
+    "forme": "rect",
+    "couleur_moyenne": [
+      123.828,
+      142.362,
+      97.2708
+    ],
+    "couleur_attendue": [
+      147,
+      112,
+      219
+    ],
+    "variance": 4408.977239360014,
+    "taille_roi": [
+      100,
+      100,
+      3
+    ]
+  },
+  "elysee": {
+    "nom": "Le monde Elysée",
+    "coords": [
+      150,
+      350,
+      250,
+      450
+    ],
+    "forme": "rect",
+    "couleur_moyenne": [
+      65.3985,
+      116.7476,
+      57.3866
+    ],
+    "couleur_attendue": [
+      255,
+      255,
+      255
+    ],
+    "variance": 1093.9251324299871,
+    "taille_roi": [
+      100,
+      100,
+      3
+    ]
+  }
+}

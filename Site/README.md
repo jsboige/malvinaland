@@ -2,6 +2,12 @@
 
 Ce site presente les differents mondes de Malvinaland, un univers imaginaire riche en mysteres et en aventures.
 
+## 🌐 Site Web de Production
+
+**URL :** https://malvinaland.myia.io/
+**Hebergement :** IIS publie automatiquement ce repertoire "site/"
+**Aucun hebergement supplementaire requis**
+
 ## Structure du site
 
 * index.html : Page d'accueil
