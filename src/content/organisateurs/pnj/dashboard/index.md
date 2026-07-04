@@ -1,6 +1,7 @@
 ---
 layout: layouts/organisateur.njk
 title: Dashboard PNJ - Malvinaland
+permalink: "/organisateurs/pnj/dashboard/"
 ---
 
 <div class="pnj-dashboard">

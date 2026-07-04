@@ -8,12 +8,37 @@ permalink: "/organisateurs/"
 
 Bienvenue dans l'espace réservé aux organisateurs de Malvinaland. Cette section contient des informations confidentielles sur le jeu, les énigmes et les personnages.
 
-## Ressources disponibles
+## 🗝️ Solutions des mondes
+
+Page de chaque monde **avec la solution** (contexte, mise en place, réponse aux énigmes) :
+
+- [Grange](/organisateurs/solutions/grange/)
+- [Sphinx](/organisateurs/solutions/sphinx/)
+- [Linge](/organisateurs/solutions/linge/)
+- [Verger](/organisateurs/solutions/verger/)
+- [Damier](/organisateurs/solutions/damier/)
+- [Zob](/organisateurs/solutions/zob/)
+- [Karibu](/organisateurs/solutions/karibu/)
+- [Assemblée](/organisateurs/solutions/assemblee/)
+- [Jeux](/organisateurs/solutions/jeux/)
+- [Élysée](/organisateurs/solutions/elysee/)
+- [Rêves](/organisateurs/solutions/reves/)
+
+## 📚 Documentation
+
+Guides de préparation et de conduite de partie :
+
+- [Guide PNJ complet](/organisateurs/documentation/GUIDE_PNJ_COMPLET.html)
+- [Manuel de l'administrateur](/organisateurs/documentation/MANUEL_ADMINISTRATEUR.html)
+- [Guide de maintenance simplifié](/organisateurs/documentation/GUIDE_MAINTENANCE_SIMPLIFIE.html)
+- [Guide de résolution de problèmes](/organisateurs/documentation/GUIDE_RESOLUTION_PROBLEMES.html)
+- [Démarrage rapide](/organisateurs/documentation/GUIDE_DEMARRAGE_RAPIDE.html)
+- [Préparation de nouvelles énigmes](/organisateurs/documentation/guides-preparation-nouvelles-enigmes.html)
+
+## 🎭 Personnages non-joueurs (PNJ)
 
 - [Liste des PNJ](/organisateurs/pnj/)
-- [Notes sur les énigmes](/organisateurs/notes/)
-- [Scénarios et scripts](/organisateurs/scenarios/)
-- [Matériel à imprimer](/organisateurs/materiel/)
+- [Dashboard PNJ](/organisateurs/pnj/dashboard/)
 
 ## Guide d'utilisation
 

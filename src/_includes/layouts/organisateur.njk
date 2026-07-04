@@ -21,31 +21,11 @@ customStyles: "/assets/css/organisateur.css"
 </div>
 
 <script>
-  // Vérifier si l'utilisateur est authentifié
-  document.addEventListener('DOMContentLoaded', function() {
-    const isAuthenticated = sessionStorage.getItem('authenticated') === 'true';
-    const userRole = sessionStorage.getItem('userRole');
-    
-    // Vérifier si l'utilisateur est authentifié et a un rôle valide
-    if (!isAuthenticated || (userRole !== 'organisateur' && userRole !== 'pnj')) {
-      // Rediriger vers la page de connexion
-      window.location.href = '/login/';
-      return;
-    }
-    
-    // Vérifier les restrictions d'accès pour les PNJ
-    if (userRole === 'pnj') {
-      // Les PNJ ne peuvent accéder qu'aux pages PNJ
-      const currentPath = window.location.pathname;
-      const isPnjPage = currentPath.includes('/pnj/') || currentPath === '/organisateurs/pnj/';
-      
-      if (!isPnjPage) {
-        // Rediriger vers le dashboard PNJ
-        window.location.href = '/organisateurs/pnj/dashboard/';
-      }
-    }
-  });
-  
+  // L'accès à l'espace organisateurs est désormais protégé CÔTÉ SERVEUR par Basic
+  // Auth IIS (voir web.config <location path="organisateurs">). L'ancien gate client
+  // (sessionStorage + redirection vers /login/) a été retiré : il était contournable
+  // et entrait en conflit avec le Basic Auth (rejetait les orgas authentifiés).
+
   // Fonction pour masquer rapidement le contenu
   document.getElementById('pocket-button').addEventListener('click', function() {
     document.body.classList.toggle('stealth-mode');
