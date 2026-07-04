@@ -1,6 +1,7 @@
 ---
 layout: layouts/organisateur.njk
 title: Espace Organisateurs - Malvinaland
+permalink: "/organisateurs/"
 ---
 
 # Espace Organisateurs de Malvinaland

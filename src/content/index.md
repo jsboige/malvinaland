@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Accueil - Malvinaland
+permalink: "/"
 ---
 
 # Bienvenue dans les mondes de Malvinaland

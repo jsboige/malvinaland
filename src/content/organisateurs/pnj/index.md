@@ -1,6 +1,7 @@
 ---
 layout: layouts/organisateur.njk
 title: Personnages Non-Joueurs - Malvinaland
+permalink: "/organisateurs/pnj/"
 ---
 
 # Personnages Non-Joueurs (PNJ)

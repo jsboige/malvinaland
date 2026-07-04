@@ -2,6 +2,7 @@
 layout: layouts/base.njk
 title: Personnages
 description: Les personnages qui peuplent les mondes de Malvinaland
+permalink: "/personnages/"
 ---
 
 # Les Personnages de Malvinaland

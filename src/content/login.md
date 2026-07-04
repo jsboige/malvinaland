@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Connexion - Malvinaland
+permalink: "/login/"
 ---
 
 <div class="login-container">

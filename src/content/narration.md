@@ -2,6 +2,7 @@
 layout: layouts/base.njk
 title: Narration Transversale
 description: L'histoire qui relie tous les mondes de Malvinaland
+permalink: "/narration/"
 ---
 
 # Narration transversale des Mondes de Malvinaland

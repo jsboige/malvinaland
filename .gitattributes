@@ -1,0 +1,19 @@
+# Normalisation des fins de ligne — atténue le bruit CRLF dû à Google Drive.
+# Le dépôt stocke en LF ; les fichiers sont checkout en LF.
+* text=auto eol=lf
+
+# Scripts Windows : conserver CRLF
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binaires (jamais de conversion de fins de ligne)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.pdf binary
