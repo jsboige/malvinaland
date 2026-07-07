@@ -31,13 +31,9 @@
             {% endfor %}
           {% endif %}
           
-          <li class="auth-links">
-            <a href="/login/" class="auth-link login-link">🔑 Connexion</a>
-            <a href="#" id="logout-button" class="auth-link logout-link">🚪 Déconnexion</a>
-          </li>
         </ul>
       </nav>
-      
+
       <!-- Menu mobile -->
       <button id="mobile-nav-toggle" aria-expanded="false" aria-label="Menu de navigation">
         <span class="bar"></span>
@@ -57,10 +53,6 @@
             {% endfor %}
           {% endif %}
           
-          <li class="auth-links">
-            <a href="/login/" class="auth-link login-link">🔑 Connexion</a>
-            <a href="#" id="logout-button" class="auth-link logout-link">🚪 Déconnexion</a>
-          </li>
         </ul>
       </nav>
     </div>
@@ -79,7 +71,7 @@
         {% for item in site.navigation %}
         <a href="{{ item.url }}">{{ item.text }}</a>{% if not loop.last %} | {% endif %}
         {% endfor %}
-        <a href="/login/" style="opacity: 0.5; font-size: 0.9em;">Organisateurs</a>
+        <a href="/organisateurs/" style="opacity: 0.5; font-size: 0.9em;">Organisateurs</a>
       </div>
     </div>
   </footer>
