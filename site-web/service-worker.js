@@ -3,7 +3,7 @@
  * Permet la consultation du site en mode hors-ligne
  */
 
-const CACHE_NAME = 'malvinaland-cache-v2';
+const CACHE_NAME = 'malvinaland-cache-v3';
 const URLS_TO_CACHE = [
   '/',
   '/index.html',
