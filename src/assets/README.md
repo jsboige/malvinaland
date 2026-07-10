@@ -12,9 +12,9 @@ assets/
 │   └── organisateur.css # Styles pour les pages organisateurs
 │
 ├── js/              # Scripts JavaScript
-│   ├── auth.js      # Gestion de l'authentification
 │   ├── image-loader.js # Chargement optimisé des images
-│   └── navigation.js # Gestion de la navigation
+│   ├── navigation.js # Gestion de la navigation
+│   └── register-sw.js # Service worker (PWA)
 │
 └── images/          # Images du site
     ├── mondes/      # Images des différents mondes
@@ -73,9 +73,13 @@ Si vous devez modifier l'apparence du site:
 
 Les scripts JavaScript gèrent les fonctionnalités interactives du site:
 
-- **auth.js**: Gestion de l'authentification des organisateurs
 - **image-loader.js**: Chargement optimisé des images et galeries
-- **navigation.js**: Gestion de la navigation et des transitions
+- **navigation.js**: Gestion de la navigation et des transitions (menu mobile)
+- **register-sw.js**: Enregistrement du service worker (PWA / hors-ligne)
+
+L'authentification des organisateurs est gérée côté serveur (Basic Auth IIS
+sur `/organisateurs/*`, voir `src/web.config`) — il n'y a plus de script
+d'authentification côté client (`auth.js` retiré).
 
 Si vous devez modifier le comportement du site:
 

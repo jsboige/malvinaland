@@ -11,6 +11,12 @@ module.exports = function(eleventyConfig) {
   // sans réécriture vers content/ : voir src/web.config). Rend le déploiement
   // reproductible et évite de re-servir l'ancien content/ non filtré.
   eleventyConfig.addPassthroughCopy({ "src/web.config": "web.config" });
+  // Émettre le service worker à la racine (portée "/"). Source unique :
+  // src/service-worker.js — les anciennes copies (racine, Site/, site-web/)
+  // ne doivent plus être éditées à la main.
+  eleventyConfig.addPassthroughCopy({ "src/service-worker.js": "service-worker.js" });
+  // Manifest PWA : même logique de source unique que le service worker.
+  eleventyConfig.addPassthroughCopy({ "src/manifest.json": "manifest.json" });
   
   // Configuration du Markdown
   const mdOptions = {

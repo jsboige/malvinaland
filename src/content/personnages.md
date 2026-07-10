@@ -90,11 +90,11 @@ Découvrez les personnages qui peuplent les mondes de Malvinaland. Chacun d'eux 
 
 Les personnages non-joueurs sont incarnés par des animateurs qui enrichissent l'expérience narrative en interagissant avec les participants. Ils peuvent fournir des indices, raconter des histoires ou proposer des défis.
 
-<div class="organisateurs-only">
-  <h3>Notes pour les organisateurs</h3>
-  <p>Pour accéder aux informations détaillées sur les personnages non-joueurs et leurs scripts, veuillez vous connecter à l'espace organisateurs.</p>
-  <a href="/organisateurs/pnj/" class="cta-button">Accéder aux fiches PNJ</a>
-</div>
+::: organisateurs-only
+<h3>Notes pour les organisateurs</h3>
+<p>Pour accéder aux informations détaillées sur les personnages non-joueurs et leurs scripts, rendez-vous dans l'espace organisateurs.</p>
+<a href="/organisateurs/pnj/" class="cta-button">Accéder aux fiches PNJ</a>
+:::
 
 <style>
   .personnage-card {

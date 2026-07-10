@@ -3,6 +3,18 @@
  * Ce script détecte les images avec l'attribut data-high-res et les charge en arrière-plan
  */
 document.addEventListener('DOMContentLoaded', function() {
+  // Masquer proprement les images manquantes (photos pas encore déposées en
+  // prod) : sans cela, mobile affiche des icônes d'image cassée.
+  document.querySelectorAll('.monde-gallery img, .carte-container img').forEach(function(img) {
+    img.addEventListener('error', function() {
+      img.style.display = 'none';
+    });
+    // L'événement error a pu se produire avant DOMContentLoaded.
+    if (img.complete && img.naturalWidth === 0) {
+      img.style.display = 'none';
+    }
+  });
+
   // Sélectionner toutes les images avec l'attribut data-high-res
   const images = document.querySelectorAll('img[data-high-res]');
   
