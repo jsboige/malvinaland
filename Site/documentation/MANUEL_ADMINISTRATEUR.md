@@ -259,9 +259,9 @@ iisreset
 Les PNJ (Personnages Non-Joueurs) ont accès à une interface spéciale pour consulter les informations organisateurs.
 
 #### Accès PNJ
-- **URL** : `https://malvinaland.myia.io`
-- **Identifiant** : `pnj`
-- **Mot de passe** : `malvina2025`
+- **URL** : `https://malvinaland.myia.io/organisateurs/`
+- **Identifiant** : `orga-malvina`
+- **Mot de passe** : `Malvina2026`
 
 #### Fonctionnalités PNJ
 - **Dashboard** : Vue d'ensemble des mondes et énigmes
@@ -308,8 +308,8 @@ Liste du matériel nécessaire...
 
 #### Identifiants de Test
 Pour tester l'interface administrateur :
-- **Identifiant** : `admin_malvina`
-- **Mot de passe** : `Malv1n@2025!`
+- **Identifiant** : `orga-malvina`
+- **Mot de passe** : `Malvina2026`
 
 #### Modifier les Identifiants
 Les identifiants sont configurés dans le code source. Pour les modifier, contactez l'équipe technique.
@@ -400,9 +400,9 @@ iisreset
 ```
 
 #### Les PNJ ne Peuvent pas se Connecter
-1. **Vérifier les identifiants** : `pnj` / `malvina2025`
+1. **Vérifier les identifiants** : `orga-malvina` / `Malvina2026`
 2. **Vérifier l'URL** : `https://malvinaland.myia.io`
-3. **Tester avec les identifiants admin** : `admin_malvina` / `Malv1n@2025!`
+3. **Tester avec les identifiants admin** : `orga-malvina` / `Malvina2026`
 
 ### 🆘 Contacts d'Urgence
 

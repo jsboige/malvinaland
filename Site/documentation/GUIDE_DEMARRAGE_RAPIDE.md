@@ -83,9 +83,9 @@ Puis ouvrir `http://localhost:8080` dans votre navigateur.
 ### 🎭 Animateur PNJ
 **Vous jouez un personnage non-joueur**
 
-1. **Se connecter** : `https://malvinaland.myia.io`
-   - Identifiant : `pnj`
-   - Mot de passe : `malvina2025`
+1. **Se connecter** : `https://malvinaland.myia.io/organisateurs/`
+   - Identifiant : `orga-malvina`
+   - Mot de passe : `Malvina2026`
 2. **Consulter** : Votre fiche PNJ dans le dashboard
 3. **Lire** : [Guide PNJ Complet](GUIDE_PNJ_COMPLET.md)
 

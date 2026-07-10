@@ -33,6 +33,22 @@ Page de chaque monde **avec la solution** (contexte, mise en place, réponse aux
 - [Élysée](/organisateurs/solutions/elysee/)
 - [Rêves](/organisateurs/solutions/reves/)
 
+## 🧭 Guides de préparation par monde
+
+Guide d'installation et de conduite pour chaque monde (aménagement, matériel, énigmes détaillées, rôle des PNJ, checklist) :
+
+- [Grange](/organisateurs/documentation/guides-preparation/GUIDE_GRANGE.html)
+- [Sphinx](/organisateurs/guides/sphinx/)
+- [Linge](/organisateurs/documentation/guides-preparation/GUIDE_LINGE.html)
+- [Verger](/organisateurs/documentation/guides-preparation/GUIDE_VERGER.html)
+- [Damier](/organisateurs/guides/damier/)
+- [Zob](/organisateurs/guides/zob/)
+- [Karibu](/organisateurs/guides/karibu/)
+- [Assemblée](/organisateurs/guides/assemblee/)
+- [Jeux](/organisateurs/documentation/guides-preparation/GUIDE_JEUX.html)
+- [Élysée](/organisateurs/guides/elysee/)
+- [Rêves](/organisateurs/guides/reves/)
+
 ## 📚 Documentation
 
 Guides de préparation et de conduite de partie :

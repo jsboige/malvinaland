@@ -38,18 +38,17 @@ Un PNJ est un personnage incarné par un membre de l'équipe organisatrice qui i
 ### 🔐 Connexion à l'Interface
 
 #### Identifiants de Connexion
-- **URL** : `https://malvinaland.myia.io`
-- **Identifiant** : `pnj`
-- **Mot de passe** : `malvina2025`
+- **URL** : `https://malvinaland.myia.io/organisateurs/`
+- **Identifiant** : `orga-malvina`
+- **Mot de passe** : `Malvina2026`
 
 #### Première Connexion
 1. **Ouvrir le navigateur** sur votre smartphone ou tablette
-2. **Saisir l'URL** : `https://malvinaland.myia.io`
-3. **Entrer les identifiants** :
-   - Login : `pnj`
-   - Mot de passe : `malvina2025`
-4. **Cliquer sur "Se connecter"**
-5. **Vérifier l'accès** au dashboard PNJ
+2. **Aller à** : `https://malvinaland.myia.io/organisateurs/`
+3. **La fenêtre de connexion du navigateur s'ouvre automatiquement**, saisir :
+   - Login : `orga-malvina`
+   - Mot de passe : `Malvina2026`
+4. **Valider** pour accéder au dashboard PNJ
 
 #### Optimisation Smartphone
 - **Ajouter à l'écran d'accueil** pour un accès rapide
@@ -283,7 +282,7 @@ Le mode urgence est un système d'accès rapide aux informations critiques en ca
 
 #### Accès Rapide
 1. **Bouton rouge** en haut de l'interface : "MODE URGENCE"
-2. **Code d'accès** : `MALVINA911`
+2. **Activation** : par le bouton bascule du dashboard (aucun code)
 3. **Sélection du type** : Technique / Sécurité / Médical / Autre
 
 #### Informations Disponibles
@@ -396,7 +395,7 @@ Le mode urgence est un système d'accès rapide aux informations critiques en ca
 4. **Utiliser un autre appareil** : Si disponible
 
 #### Impossible de se Connecter
-1. **Vérifier les identifiants** : `pnj` / `malvina2025`
+1. **Vérifier les identifiants** : `orga-malvina` / `Malvina2026`
 2. **Contrôler l'URL** : `https://malvinaland.myia.io`
 3. **Tester sur un autre réseau** : Données mobiles vs WiFi
 4. **Contacter l'équipe technique** : En dernier recours

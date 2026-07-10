@@ -53,10 +53,10 @@ cd d:\Production\malvinaland
 - Signale les problèmes éventuels
 
 #### 2. Contrôle des Accès PNJ
-1. **Ouvrir le navigateur** : `https://malvinaland.myia.io`
+1. **Ouvrir le navigateur** : `https://malvinaland.myia.io/organisateurs/`
 2. **Tester la connexion PNJ** :
-   - Identifiant : `pnj`
-   - Mot de passe : `malvina2025`
+   - Identifiant : `orga-malvina`
+   - Mot de passe : `Malvina2026`
 3. **Vérifier l'accès** au dashboard
 4. **Se déconnecter** après vérification
 
@@ -326,8 +326,8 @@ node .\scripts\optimize-images.js
 **Symptômes :** Erreur de connexion, page d'erreur
 
 **Solutions :**
-1. **Vérifier les identifiants** : `pnj` / `malvina2025`
-2. **Tester avec les identifiants admin** : `admin_malvina` / `Malv1n@2025!`
+1. **Vérifier les identifiants** : `orga-malvina` / `Malvina2026`
+2. **Tester avec les identifiants admin** : `orga-malvina` / `Malvina2026`
 3. **Redéployer le site** :
 ```powershell
 .\outils-techniques\deploy-iis-simple.ps1

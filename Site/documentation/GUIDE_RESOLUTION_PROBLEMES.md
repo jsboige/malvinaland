@@ -268,13 +268,13 @@ node .\scripts\optimize-images.js
 #### Solutions
 
 **1. Vérifier les Identifiants**
-- **URL** : `https://malvinaland.myia.io`
-- **Login** : `pnj`
-- **Mot de passe** : `malvina2025`
+- **URL** : `https://malvinaland.myia.io/organisateurs/`
+- **Login** : `orga-malvina`
+- **Mot de passe** : `Malvina2026`
 
 **2. Tester avec les Identifiants Admin**
-- **Login** : `admin_malvina`
-- **Mot de passe** : `Malv1n@2025!`
+- **Login** : `orga-malvina`
+- **Mot de passe** : `Malvina2026`
 
 **3. Redéployer le Site**
 ```powershell
