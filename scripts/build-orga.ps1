@@ -44,7 +44,10 @@ param(
 
 $ErrorActionPreference = "Stop"
 $root = (Get-Location).Path
-$stagingOrga = Join-Path $root "site-orga-tmp"
+# IMPORTANT : chemin RELATIF. Avec un --output absolu, Eleventy 2.0.1 rejette le
+# passthrough copy de ./src/assets ("Destination is not in the site output directory").
+# En relatif (resolu depuis cwd = racine du projet), le passthrough passe.
+$stagingOrga = "site-orga-tmp"
 $MONDES = @('grange','sphinx','linge','verger','damier','zob','karibu','assemblee','jeux','elysee','reves')
 
 function Write-Step($m) { Write-Host "`n==> $m" -ForegroundColor Cyan }
@@ -108,22 +111,43 @@ foreach ($slug in $MONDES) {
 }
 
 # --- 4. Copie de la documentation ------------------------------------------
+# Les docs HTML sont versionnees dans git sous Site/documentation/. Sur Windows,
+# la collision de casse Site/ <-> site/ (repertoire de build) peut empecher leur
+# extraction du clone (site\documentation\ reste vide). On essaie d'abord le
+# systeme de fichiers, puis on retombe sur une extraction directe depuis git.
 Write-Step "Documentation -> $TargetDir/organisateurs/documentation/"
 $docDst = Join-Path $TargetDir "organisateurs/documentation"
 New-Item -ItemType Directory -Force -Path $docDst | Out-Null
 $docSrc = Join-Path $root "Site/documentation"
+$docFiles = @()
 if (Test-Path $docSrc) {
-    $copied = 0
-    Get-ChildItem -Path $docSrc -Recurse -Filter *.html -File | ForEach-Object {
-        $rel = $_.FullName.Substring($docSrc.Length + 1)
+    $docFiles = Get-ChildItem -Path $docSrc -Recurse -Filter *.html -File
+}
+if ($docFiles.Count -eq 0) {
+    Write-Warn2 "Aucun .html sous $docSrc (collision casse Site/site ?) - extraction depuis git"
+    $gitFiles = & git -C $root ls-tree -r --name-only HEAD -- "Site/documentation/" 2>$null |
+        Where-Object { $_ -match '\.html$' }
+    foreach ($gf in $gitFiles) {
+        $rel = $gf.Substring("Site/documentation/".Length)
         $dstFile = Join-Path $docDst $rel
         New-Item -ItemType Directory -Force -Path (Split-Path $dstFile) | Out-Null
-        Copy-Item -LiteralPath $_.FullName -Destination $dstFile -Force
+        $content = & git -C $root show "HEAD:$gf" 2>$null
+        if ($null -ne $content) {
+            [System.IO.File]::WriteAllText($dstFile, ($content -join "`n"), (New-Object System.Text.UTF8Encoding($false)))
+            $docFiles += [PSCustomObject]@{ FullName = $dstFile }
+        }
+    }
+    Write-Ok "$($docFiles.Count) fichiers extraits de git (fallback collision casse)"
+} else {
+    $copied = 0
+    foreach ($f in $docFiles) {
+        $rel = $f.FullName.Substring($docSrc.Length + 1)
+        $dstFile = Join-Path $docDst $rel
+        New-Item -ItemType Directory -Force -Path (Split-Path $dstFile) | Out-Null
+        Copy-Item -LiteralPath $f.FullName -Destination $dstFile -Force
         $copied++
     }
     Write-Ok "$copied fichiers HTML de documentation"
-} else {
-    Write-Warn2 "Source documentation introuvable : $docSrc"
 }
 
 # --- 5. Nettoyage du staging orga ------------------------------------------
