@@ -8,6 +8,15 @@ permalink: "/organisateurs/"
 
 Bienvenue dans l'espace réservé aux organisateurs de Malvinaland. Cette section contient des informations confidentielles sur le jeu, les énigmes et les personnages.
 
+> **🔑 Accès organisateurs (unique)**
+> L'espace est protégé par une simple fenêtre de connexion du navigateur qui s'ouvre en arrivant sur `/organisateurs/` :
+> - **Identifiant :** `orga-malvina`
+> - **Mot de passe :** `Malvina2026`
+>
+> Le navigateur peut proposer de mémoriser ces identifiants — acceptez pour ne plus avoir à les saisir.
+>
+> ⚠️ **Les anciens identifiants (`pnj` / `malvina2025`, `organisateur` / `malvinaland2025`) mentionnés dans certains guides sont PÉRIMÉS.** Ils ne fonctionnent plus : seul l'accès ci-dessus est valide. L'ancienne page « Connexion » côté joueurs redirige désormais ici.
+
 ## 🗝️ Solutions des mondes
 
 Page de chaque monde **avec la solution** (contexte, mise en place, réponse aux énigmes) :
@@ -64,7 +73,7 @@ Les PNJ sont essentiels pour guider les joueurs et enrichir l'expérience de jeu
 
 ## Accès aux ressources
 
-Pour accéder à toutes les ressources organisateurs, assurez-vous d'être connecté avec vos identifiants. Certains contenus peuvent être téléchargés pour une utilisation hors ligne.
+L'accès à cet espace se fait via les identifiants indiqués en haut de cette page (`orga-malvina` / `Malvina2026`). Une fois connecté, toutes les ressources ci-dessus (solutions, documentation, PNJ) sont accessibles sans nouvelle saisie.
 
 ## Support et contact
 
